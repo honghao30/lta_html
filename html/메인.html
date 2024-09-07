@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" class="modal-open">
+<!-- 메인 플로팅 배너가 처음부터 열렸을때 modal-opan 클래스를 추가 -->
+<html lang="en"> 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,6 +32,30 @@
         <button class="btn_layer_close" onclick="searchClose();"><span class="hidden">닫기</span></button>
       </span>
     </div>
+    <!-- 검색 결과 영역 content_wrap -->
+    <div class="content_wrap">
+      <div class="search_total">
+        <p class="txt">검색결과 <strong>99</strong>개</p>
+        <ul>
+          <li class="no_data">
+            <span class="txt">검색 결과가 없습니다.</span>
+          </li>
+          <li><a href="#none"><span class="point">농</span>업</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+          <li><a href="#none"><span class="point">농</span>업진흥특별법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+          <li><a href="#none"><span class="point">농</span>촌일손</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+          <li><a href="#none"><span class="point">농</span>촌일손</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+          <li><a href="#none"><span class="point">농</span>업특별구역 지정에 관한 법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+          <li><a href="#none"><span class="point">농</span>경지침수에 따른 배상에 관한 법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+          <li><a href="#none"><span class="point">농</span>업구획 및 그 역할에 대한 법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+          <li><a href="#none"><span class="point">농</span>업진흥지역 설치에 관한 법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+          <li><a href="#none"><span class="point">농</span>림축산식품부</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+          <li><a href="#none"><span class="point">농</span>업진흥청</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- //검색 결과 영역 content_wrap -->
+
+    <!-- 상세 검색 영역 content_wrap -->
     <div class="content_wrap">
       <!-- select_box -->
       <div class="select_box full">
@@ -85,6 +110,7 @@
         </div>
       </div>
     </div>
+    <!-- //상세 검색 영역 content_wrap -->
   </div>
   <!-- mypagelayer 모바일 마이페이지 -->
   <div class="mypagelayer mo">
@@ -191,6 +217,24 @@
               <input type="text" class="ico_search" placeholder="검색어를 입력해 주세요.">
               <button class="btn_search"><span class="hidden">검색</span></button>
             </span>
+            <div class="search_total">
+              <p class="txt">최근검색어</p>
+              <ul>
+                <!-- <li class="no_data">
+                  <span class="txt">검색 결과가 없습니다.</span>
+                </li> -->
+                <li><a href="#none"><span class="point">농</span>업</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+                <li><a href="#none"><span class="point">농</span>업진흥특별법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+                <li><a href="#none"><span class="point">농</span>촌일손</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+                <li><a href="#none"><span class="point">농</span>촌일손</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+                <li><a href="#none"><span class="point">농</span>업특별구역 지정에 관한 법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+                <li><a href="#none"><span class="point">농</span>경지침수에 따른 배상에 관한 법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+                <li><a href="#none"><span class="point">농</span>업구획 및 그 역할에 대한 법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+                <li><a href="#none"><span class="point">농</span>업진흥지역 설치에 관한 법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+                <li><a href="#none"><span class="point">농</span>림축산식품부</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+                <li><a href="#none"><span class="point">농</span>업진흥청</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+              </ul>
+            </div>
           </span>
         </div>
         <div class="inner">
@@ -734,22 +778,205 @@
   </div> -->
 
   <!-- btn_top -->
-  <button id="top"><span class="hidden">위로 이동</span></button>
+  <button id="top" class="mo"><span class="hidden">위로 이동</span></button>
 
   <!-- layerPopup -->
   <!-- 하단 메인 팝업 영역 -->
   <section class="modal_new modal_overlay modal_on mo" id="main_banner_pop"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
     
-    <div class="modal_n_wrap roll-modal">
+    <div class="modal_n_wrap">
       <div class="modal-header">
-          <div class="tit">법령개정정보</div>
+        <div class="tit">
+          <label class="input_type check">
+            <input type="checkbox" name="q01">
+            <span class="txt">오늘은 그만 보기</span>
+          </label>
+        </div>
       </div>
       <div class="modal_n_body">
         <div class="pop_cont">
-          sdfsdfsf
+          <div class="swiper_wrap mo">
+            <div class="swiper mySwiper type03" id="mo_banner_swiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper_wrap">
+                    <div class="swiper mySwiper type01" id="mo_banner_swiper_cont1">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                      </div>
+                      <div class="sw_bts">
+                        <div class="swiper-button-next"><img src="img/mo/swiper/btn_sw_right.png" alt=""></div>
+                        <div class="swiper-button-prev"><img src="img/mo/swiper/btn_sw_left.png" alt=""></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-autoplay-button">
+                          <img src="img/mo/swiper/btn_sw_pause.png" alt="" class="pause">
+                          <img src="img/mo/swiper/btn_sw_play.png" alt="" class="play">
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      var mo_banner_swiper_cont1 = new Swiper("#mo_banner_swiper_cont1", {
+                        slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
+                        slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                        loop: true,
+                        autoplay: {
+                          delay: 3000,
+                          disableOnInteraction: false,
+                        },
+                        navigation: {
+                          nextEl: "#mo_banner_swiper_cont1 .swiper-button-next",
+                          prevEl: "#mo_banner_swiper_cont1 .swiper-button-prev",
+                        },
+                        pagination: {
+                          el: "#mo_banner_swiper_cont1 .swiper-pagination",
+                          type: "fraction",
+                          clickable: true,
+                        }
+                      });
+                      // mo_banner_swiper_cont1의 일시정지 및 재생 제어
+                      $("#mo_banner_swiper_cont1 .swiper-autoplay-button .pause").on("click", function() {
+                        mo_banner_swiper_cont1.autoplay.stop();
+                        $(this).hide();
+                        $("#mo_banner_swiper_cont1 .swiper-autoplay-button .play").show();
+                      });
+                      $("#mo_banner_swiper_cont1 .swiper-autoplay-button .play").on("click", function() {
+                        mo_banner_swiper_cont1.autoplay.start();
+                        $(this).hide();
+                        $("#mo_banner_swiper_cont1 .swiper-autoplay-button .pause").show();
+                      });
+                    </script>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper_wrap">
+                    <div class="swiper mySwiper type01" id="mo_banner_swiper_cont2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                      </div>
+                      <div class="sw_bts">
+                        <div class="swiper-button-next"><img src="img/mo/swiper/btn_sw_right.png" alt=""></div>
+                        <div class="swiper-button-prev"><img src="img/mo/swiper/btn_sw_left.png" alt=""></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-autoplay-button">
+                          <img src="img/mo/swiper/btn_sw_pause.png" alt="" class="pause">
+                          <img src="img/mo/swiper/btn_sw_play.png" alt="" class="play">
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      var mo_banner_swiper_cont2 = new Swiper("#mo_banner_swiper_cont2", {
+                        slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
+                        slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                        loop: true,
+                        autoplay: {
+                          delay: 3000,
+                          disableOnInteraction: false,
+                        },
+                        navigation: {
+                          nextEl: "#mo_banner_swiper_cont2 .swiper-button-next",
+                          prevEl: "#mo_banner_swiper_cont2 .swiper-button-prev",
+                        },
+                        pagination: {
+                          el: "#mo_banner_swiper_cont2 .swiper-pagination",
+                          type: "fraction",
+                          clickable: true,
+                        }
+                      });
+                      // mo_banner_swiper_cont2의 일시정지 및 재생 제어
+                      $("#mo_banner_swiper_cont2 .swiper-autoplay-button .pause").on("click", function() {
+                        mo_banner_swiper_cont2.autoplay.stop();
+                        $(this).hide();
+                        $("#mo_banner_swiper_cont2 .swiper-autoplay-button .play").show();
+                      });
+                      $("#mo_banner_swiper_cont2 .swiper-autoplay-button .play").on("click", function() {
+                        mo_banner_swiper_cont2.autoplay.start();
+                        $(this).hide();
+                        $("#mo_banner_swiper_cont2 .swiper-autoplay-button .pause").show();
+                      });
+                    </script>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper_wrap">
+                    <div class="swiper mySwiper type01" id="mo_banner_swiper_cont3">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                      </div>
+                      <div class="sw_bts">
+                        <div class="swiper-button-next"><img src="img/mo/swiper/btn_sw_right.png" alt=""></div>
+                        <div class="swiper-button-prev"><img src="img/mo/swiper/btn_sw_left.png" alt=""></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-autoplay-button">
+                          <img src="img/mo/swiper/btn_sw_pause.png" alt="" class="pause">
+                          <img src="img/mo/swiper/btn_sw_play.png" alt="" class="play">
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      var mo_banner_swiper_cont3 = new Swiper("#mo_banner_swiper_cont3", {
+                        slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
+                        slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                        loop: true,
+                        autoplay: {
+                          delay: 3000,
+                          disableOnInteraction: false,
+                        },
+                        navigation: {
+                          nextEl: "#mo_banner_swiper_cont3 .swiper-button-next",
+                          prevEl: "#mo_banner_swiper_cont3 .swiper-button-prev",
+                        },
+                        pagination: {
+                          el: "#mo_banner_swiper_cont3 .swiper-pagination",
+                          type: "fraction",
+                          clickable: true,
+                        }
+                      });
+                      // mo_banner_swiper_cont3의 일시정지 및 재생 제어
+                      $("#mo_banner_swiper_cont3 .swiper-autoplay-button .pause").on("click", function() {
+                        mo_banner_swiper_cont3.autoplay.stop();
+                        $(this).hide();
+                        $("#mo_banner_swiper_cont3 .swiper-autoplay-button .play").show();
+                      });
+                      $("#mo_banner_swiper_cont3 .swiper-autoplay-button .play").on("click", function() {
+                        mo_banner_swiper_cont3.autoplay.start();
+                        $(this).hide();
+                        $("#mo_banner_swiper_cont3 .swiper-autoplay-button .pause").show();
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <script>
+              var mo_banner_swiper1 = new Swiper("#mo_banner_swiper1", {
+                slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
+                slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                loop: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                // navigation: {
+                //   nextEl: ".swiper-button-next",
+                //   prevEl: ".swiper-button-prev",
+                // }
+              });
+            </script>
+          </div>
+          <!--  -->
         </div>
-        <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>
       </div>
+      <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>
     </div>
     <!--  -->
     <!--  -->

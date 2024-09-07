@@ -248,6 +248,28 @@ function mypageClose() {
   $('body').removeClass('leftmode');
 }
 
+// 검색결과 x 버튼 누를때
+$(document).ready(function() {
+  // .btn_del 버튼 클릭 시 해당 li 삭제
+  $('.search_total').on('click', '.btn_del', function() {
+    $(this).closest('li').remove();
+  });
+});
+
+// pc 검색영역 마우스 포커스 일때
+$(document).ready(function() {
+  // input 요소에 포커스가 가면 active 클래스 추가
+  $('.search_box .ico_search').on('focus', function() {
+    $('.search_total').addClass('active');
+  });
+
+  // input 요소에서 포커스가 빠지면 active 클래스 제거
+  $('.search_box .ico_search').on('blur', function() {
+    $('.search_total').removeClass('active');
+  });
+});
+
+
 
 
 
