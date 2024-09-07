@@ -199,6 +199,11 @@
     background: url(../img/pc/ico/ico_pencil.png) no-repeat 0 center;
     background-size: contain;
 }
+.btn.ico_pencll-notice span {    
+    background: url(../img/pc/ico/ico_pencll-notice.png) no-repeat 0 center;
+    background-size: contain;
+    color: #706DF0;
+}
 .button__wrap {
     display: flex;
     align-items: center;
@@ -465,9 +470,11 @@
 .table_cont .table-body-only {
     border-top: 1px solid #222;
 }
-.table-cont table.table-list thead tr th,
-.table-cont table.table-list tbody tr td {
+.table_cont table.table-list thead tr th,
+.table_cont table.table-list tbody tr td {
     height: 56px;
+    border-left: 0;
+    border-right: 0;
 }
 .table_cont .table-body-only tbody th {
     background: #F9F9FB;
@@ -887,6 +894,183 @@
     gap: 6px;
 }
 
+
+
+.document-title-ft18 {
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+}
+.notice-text {
+    margin-top: 5px;    
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    
+    color:#717B8A;   
+}
+.history-option {
+    margin-top: 20px;
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color:#222;
+}
+.history-option .radio-box label span {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color:#222;
+}
+
+.edit-wrap {
+    width: 100%;
+    height: 480px;
+}
+.flex-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* margin padding */
+.mt-8 {margin-top: 8px;}
+.mt-16 {margin-top: 16px;}
+.mt-32 {margin-top: 32px;}
+.mt-64 {margin-top: 64px;}
+
+.float-r {float:right !important;}
+
+.btn.ico_penci-bl span{
+    background:url(../img/pc/ico/ico_pencil.png) no-repeat 0 center;
+    background-size: 24px auto;
+    height: 57px;
+}
+
+
+.select_box.view-option {
+    height: 37px;
+    border-radius: 0;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+.select_box.view-option  .select {
+    height: 37px;
+    line-height: 37px;
+    border-radius: 0;
+    position: relative;
+}
+.select_box.view-option  .select::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 37px;
+    position: absolute;
+    left: 70px;
+    top:1px;
+    background-color: #E1E3E9;
+}
+.select_box.view-option .option {
+    top: 37px;
+}
+
+
+.text-red {
+    color:#FF5858;
+}
+.disply-flex {
+    display: flex;
+    gap: 10px;
+}
+.input_cont.multi-el {
+    display: flex;
+    align-items: center;
+}
+.input_cont.multi-el .tit {
+    color:#fff;
+    font-family: Pretendard;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    width: 140px;
+    padding: 0 16px;
+    border-left: 1px solid #fff;
+    margin-left:16px;
+}
+.input_cont.multi-el .tit.first-item {
+    padding-left: 0;
+    border-left: 0;
+    margin-left:0px;
+}
+
+/* //회원검색 */
+.search_cont.membership-search .ico_search {
+    max-width: 263px;
+}
+.search_cont.membership-search .tit {
+    width: 70px;
+}
+.form-element__wrap .form-element__inner.picker-input {
+    background-color: #fff;
+}
+.search-input-keyword {
+    padding: 0 16px;    
+    margin-left:16px;
+    position: relative;
+}
+.search-input-keyword::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left:0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    width: 1px;
+    height: 19px;
+}
+.search_box .input_cont .search-input-keyword .btn_search  {    
+    top: 0px;
+    right: 10px;
+}    
+
+.input_cont.multi-el .tit.size-sm {width: 70px;}
+.search-input-inner {
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    width:466px;
+}
+.search-input-inner .select_box .select {
+    border: 0;
+}
+.search-input-inner input {
+    width: 380px;
+    border: 0;
+}
+.btn-up,
+.btn-down {
+    border:0;
+    padding:0;
+    background-color: transparent;
+    width: 24px;
+}
+.btn-up img,
+.btn-down img {
+    width: 100%;
+}
+
+
 @media (max-width: 768px) {
     .document-title-area {
         display: flex;
@@ -1051,64 +1235,3 @@
     }
 
 }
-
-.document-title-ft18 {
-    font-family: 'Pretendard';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: -0.02em;
-}
-.notice-text {
-    margin-top: 5px;    
-    font-family: 'Pretendard';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    
-    color:#717B8A;   
-}
-.history-option {
-    margin-top: 20px;
-    font-family: 'Pretendard';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: -0.02em;
-    color:#222;
-}
-.history-option .radio-box label span {
-    font-family: 'Pretendard';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: -0.02em;
-    color:#222;
-}
-
-.edit-wrap {
-    width: 100%;
-    height: 480px;
-}
-.flex-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* margin padding */
-.mt-8 {margin-top: 8px;}
-.mt-16 {margin-top: 16px;}
-.mt-32 {margin-top: 32px;}
-.mt-64 {margin-top: 64px;}
-
-.float-r {float:right !important;}
-
-.btn.ico_penci-bl span{
-    background:url(../img/pc/ico/ico_pencil.png) no-repeat 0 center;
-    background-size: 24px auto;
-    height: 57px;
-}
-
