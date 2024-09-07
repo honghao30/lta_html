@@ -69,6 +69,37 @@
     gap: 10px;
     width: 100%;
 }
+.form-element__wrap .input-multi {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+}
+.form-element__wrap .input-multi .form-element__inner.input-type {
+    flex: 1;
+}
+.form-element__wrap .input-multi .input-unit {
+    width: fit-content;
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #222;
+}
+.form-element__wrap .input-multi .input-text-count {
+    width: 65px;
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #222;
+    text-align: right;
+}
+.form-element__wrap .input-multi .input-text-count .current {
+    color: #FF8B4A;
+}
 .form-element__wrap .error-msg {
     margin-top: 3px;
     color:#FF8B4A;
@@ -235,6 +266,14 @@
     width: 100%;
     height: 100%;
     background: url('../img/pc/ico/ico_btn_cancel.png') no-repeat;
+    background-size: contain;
+}
+.btn-gray-default i.ico-delete::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../img/pc/ico/icon_remove.png') no-repeat;
     background-size: contain;
 }
 .btn-gray-default i.ico-delete::before {
