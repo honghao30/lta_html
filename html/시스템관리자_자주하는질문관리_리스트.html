@@ -134,68 +134,41 @@
           <a href="#none" class="btn ico_print"><span>프린트</span></a>
         </div>
         <h2 class="title">자주하는질문 관리</h2>
-        <div class="search_cont pc">
+        <div class="search_cont pc-flex">
           <span class="search_box">
             <span class="input_cont multi-el">
-                <div class="tit first-item">설정</div>
+                <div class="tit first-item">대상</div>
                 <!-- 콤보박스 -->
-                <div class="select_box" style="min-width:120px;">
-                    <span class="select">전체</span>
-                    <div class="option">
-                        <div class="mCustomScrollbar _mCS_5 mCS-autoHide mCS_no_scrollbar" data-mcs-theme="minimal-dark" style="overflow: visible; height: 100px; position: relative;">
-                        <div id="mCSB_5" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0">
-                            <div class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                                <ul>
-                                    <li>전체</li>
-                                    <li>옵션</li>
-                                    <li>옵션</li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>  
-                </div>                
-                <div class="tit">대상</div>
+                <div class="select_box"  style="width: 120px">
+                  <span class="select">전체</span>
+                  <div class="option">
+                    <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                      <ul>
+                        <li>선택함1</li>
+                        <li>선택함2</li>
+                        <li>선택함3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>               
+                <div class="tit">공개</div>
                 <!-- 콤보박스 -->
-                <div class="select_box" style="min-width:120px;">
-                    <span class="select">전체</span>
-                    <div class="option">
-                        <div class="mCustomScrollbar _mCS_5 mCS-autoHide mCS_no_scrollbar" data-mcs-theme="minimal-dark" style="overflow: visible; height: 100px; position: relative;">
-                        <div id="mCSB_5" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0">
-                            <div class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                                <ul>
-                                    <li>전체</li>
-                                    <li>옵션</li>
-                                    <li>옵션</li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>  
+                <div class="select_box"  style="width: 120px">
+                  <span class="select">전체</span>
+                  <div class="option">
+                    <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                      <ul>
+                        <li>선택함1</li>
+                        <li>선택함2</li>
+                        <li>선택함3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+                <div class="search-input-keyword">
+                  <input type="text" class="ico_search" placeholder="검색어를 입력해 주세요.">
+                  <button class="btn_search"><span class="hidden">검색</span></button>
                 </div>  
-                <!-- //콤보박스 -->                   
-                <div class="tit">노출</div>
-                <!-- 콤보박스 -->
-                <div class="select_box" style="min-width:120px;">
-                    <span class="select">전체</span>
-                    <div class="option">
-                        <div class="mCustomScrollbar _mCS_5 mCS-autoHide mCS_no_scrollbar" data-mcs-theme="minimal-dark" style="overflow: visible; height: 100px; position: relative;">
-                        <div id="mCSB_5" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0">
-                            <div class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                                <ul>
-                                    <li>전체</li>
-                                    <li>옵션</li>
-                                    <li>옵션</li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                    </div>  
-                </div>  
-                <!-- //콤보박스 -->                  
-              <div class="tit">제목</div>
-              <input type="text" class="ico_search" placeholder="제목을 입력해 주세요.">
-              <button class="btn_search"><span class="hidden">검색</span></button>
             </span>            
           </span>
         </div>
@@ -211,7 +184,26 @@
 
       </div>
     </div>
+    <script>
+      const checkSearchInputWd = (width, selectCount) => {
+          const searchContainer = document.querySelector('.search_cont.pc-flex');
+          let wd1 = 0;
+          const tits = searchContainer.querySelectorAll('.tit');
+          tits.forEach(tit => {
+              wd1 += tit.offsetWidth + 1; 
+          });
+          let wd2 = width * selectCount; 
+          let wd3 = wd1 + wd2;            
+          
+          let wd4 = searchContainer.offsetWidth - 120;            
+          let wd5 = wd4 - wd3;
+          console.log(wd5);
+          searchContainer.querySelector('.ico_search').style.width = wd5 + 'px';
 
+          console.log(wd4);
+      }
+      checkSearchInputWd(125, 2);
+  </script>
     <div class="content_wrap">
       <div class="inner">
         <div class="top_info_box pc">

@@ -127,78 +127,34 @@
           <ul>
             <li><a href="#none">홈</a></li>
             <li><a href="#none">시스템관리</a></li>
-            <li><a href="#none">자료실관리</a></li>
+            <li><a href="#none">코드관리</a></li>
+            <li><a href="#none">공통상세코드</a></li>
           </ul>
         </div>
         <div class="pc">
           <a href="#none" class="btn ico_print"><span>프린트</span></a>
         </div>
-        <h2 class="title">자료실관리</h2>
-        <div class="search_cont pc">
+        <h2 class="title">공통상세코드</h2>
+        <div class="search_cont pc-flex">
           <span class="search_box">
-            <span class="input_cont multi-el">
-                <div class="tit size-sm first-item">분류</div>
+            <span class="input_cont multi-el">                
                 <!-- 콤보박스 -->
-                <div class="select_box"  style="width: 120px">
-                  <span class="select">전체</span>
-                  <div class="option">
-                    <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                      <ul>
-                        <li>선택함1</li>
-                        <li>선택함2</li>
-                        <li>선택함3</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>              
-                <div class="tit size-sm">대상</div>
-                <!-- 콤보박스 -->
-                <div class="select_box"  style="width: 120px">
-                  <span class="select">전체</span>
-                  <div class="option">
-                    <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                      <ul>
-                        <li>선택함1</li>
-                        <li>선택함2</li>
-                        <li>선택함3</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- //콤보박스 -->                   
-                <div class="tit size-sm">노출</div>
-                <!-- 콤보박스 -->
-                <div class="select_box"  style="width: 120px">
-                  <span class="select">전체</span>
-                  <div class="option">
-                    <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                      <ul>
-                        <li>선택함1</li>
-                        <li>선택함2</li>
-                        <li>선택함3</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div> 
-                <!-- //콤보박스 -->                  
-                <div class="search-input-keyword disply-flex">
-                  <div class="search-input-inner">
-                    <div class="select_box"  style="width: 120px">
-                      <span class="select">전체</span>
-                      <div class="option">
+                <div class="select_box"  style="width: 500px">
+                    <span class="select">선택하세요</span>
+                    <div class="option">
                         <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                          <ul>
+                        <ul>
                             <li>선택함1</li>
                             <li>선택함2</li>
                             <li>선택함3</li>
-                          </ul>
+                        </ul>
                         </div>
-                      </div>
-                    </div>                   
-                    <input type="text" class="ico_search" placeholder="검색어를 입력해 주세요.">
+                    </div>
+                </div>                                  
+                <div class="search-input-keyword">
+                    <input type="text" class="ico_search"  placeholder="검색어를 입력해 주세요.">
                     <button class="btn_search"><span class="hidden">검색</span></button>
-                  </div>
-                </div> 
+                </div>  
             </span>            
           </span>
         </div>
@@ -214,7 +170,26 @@
 
       </div>
     </div>
+    <script>
+        const checkSearchInputWd = (width, selectCount) => {
+            const searchContainer = document.querySelector('.search_cont.pc-flex');
+            let wd1 = 0;
+            const tits = searchContainer.querySelectorAll('.tit');
+            tits.forEach(tit => {
+                wd1 += tit.offsetWidth + 1; 
+            });
+            let wd2 = width * selectCount; 
+            let wd3 = wd1 + wd2;            
+            
+            let wd4 = searchContainer.offsetWidth - 120;            
+            let wd5 = wd4 - wd3;
+            console.log(wd5);
+            searchContainer.querySelector('.ico_search').style.width = wd5 + 'px';
 
+            console.log(wd4);
+        }
+        checkSearchInputWd(500, 1);
+    </script>
     <div class="content_wrap">
       <div class="inner">
         <div class="top_info_box pc-flex">
@@ -222,8 +197,9 @@
             <span class="total"><strong>10 / 10</strong>건</span>
           </div>
           <div class="right_cont">       
+                <a href="#none" class="btn ico_pencll-notice"><span>등록</span></a>
                 <!-- 콤보박스 -->
-                <div class="select_box  view-option"  style="width: 120px">
+                <div class="select_box view-option"  style="width: 120px">
                     <span class="select">전체</span>
                     <div class="option">
                         <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
@@ -251,182 +227,117 @@
         <div class="table_cont scroll-type">
           <table class="table-list">
             <colgroup>              
-              <col style="width:80px;">
-              <col style="width:380px;">
-              <col style="width:120px">
-              <col style="width:120px;">
-              <col style="width:120px;">
-              <col style="width:120px;">
-              <col style="width:120px;">
-              <col style="width:120px;">
+                <col style="width:80px;">
+                <col style="width:280px;">              
+                <col style="width:280px;">
+                <col style="width:280px;">
+                <col style="width:110px;">
+                <col style="width:110px;">
+                <col style="width:110px;">
             </colgroup>
             <thead>
                 <tr>                
                     <th>번호</th>
-                    <th>제목</th>
-                    <th>분류</th>
-                    <th>조회수</th>
-                    <th>대상</th>
-                    <th>노출여부</th>
+                    <th>코드ID</th>
+                    <th>상세코드</th>
+                    <th>상세코드명</th>
                     <th>등록일</th>
-                    <th>등록자</th>              
+                    <th>등록자</th>
+                    <th>사용여부</th>           
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>10</td>
-                    <td>
-                        <a href="#">지방이양사무관리시스템 오픈 안내</a>
-                    </td>
-                    <td>일반</td>
-                    <td>99</td>
-                    <td>전체</td>
-                    <td>
-                        <label class="input_type check only">
-                            <input type="checkbox" name="q01">
-                            <span class="txt"></span>
-                        </label>                        
-                    </td>
-                    <td>2024.10.10</td>
-                    <td>관리자</td>                
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>
-                        <a href="#">지방이양사무관리시스템 오픈 안내</a>
-                    </td>
-                    <td>이양</td>
-                    <td>99</td>
-                    <td>전체</td>
-                    <td>
-                        <label class="input_type check only">
-                            <input type="checkbox" name="q01">
-                            <span class="txt"></span>
-                        </label>                        
-                    </td>
-                    <td>2024.10.10</td>
-                    <td>관리자</td>                                            
-                </tr>         
-                <tr>
-                    <td>7</td>
-                    <td>
-                        <a href="#">지방이양사무관리시스템 오픈 안내</a>
-                    </td>
-                    <td>사무</td>
-                    <td>99</td>
-                    <td>전체</td>
-                    <td>
-                        <label class="input_type check only">
-                            <input type="checkbox" name="q01">
-                            <span class="txt"></span>
-                        </label>                        
-                    </td>
-                    <td>2024.10.10</td>
-                    <td>관리자</td>                                            
-                </tr>         
-                <tr>
-                    <td>6</td>
-                    <td>
-                        <a href="#">지방이양사무관리시스템 오픈 안내</a>
-                    </td>
-                    <td>법령</td>
-                    <td>99</td>
-                    <td>전체</td>
-                    <td>
-                        <label class="input_type check only">
-                            <input type="checkbox" name="q01">
-                            <span class="txt"></span>
-                        </label>                        
-                    </td>
-                    <td>2024.10.10</td>
-                    <td>관리자</td>                                            
-                </tr>         
-                <tr>
-                    <td>5</td>
-                    <td>
-                        <a href="#">지방이양사무관리시스템 오픈 안내</a>
-                    </td>
-                    <td>일반</td>
-                    <td>99</td>
-                    <td>전체</td>
-                    <td>
-                        <label class="input_type check only">
-                            <input type="checkbox" name="q01">
-                            <span class="txt"></span>
-                        </label>                        
-                    </td>
-                    <td>2024.10.10</td>
-                    <td>관리자</td>                                            
-                </tr>         
-                <tr>
-                    <td>4</td>
-                    <td>
-                        <a href="#">지방이양사무관리시스템 오픈 안내</a>
-                    </td>
-                    <td>일반</td>
-                    <td>99</td>
-                    <td>전체</td>
-                    <td>
-                        <label class="input_type check only">
-                            <input type="checkbox" name="q01">
-                            <span class="txt"></span>
-                        </label>                        
-                    </td>                    
-                    <td>2024.10.10</td>
-                    <td>관리자</td>                                            
-                </tr>         
-                <tr>
-                    <td>3</td>
-                    <td>
-                        <a href="#">지방이양사무관리시스템 오픈 안내</a>
-                    </td>
-                    <td>일반</td>
-                    <td>99</td>
-                    <td>전체</td>
-                    <td>
-                        <label class="input_type check only">
-                            <input type="checkbox" name="q01">
-                            <span class="txt"></span>
-                        </label>                        
-                    </td>
-                    <td>2024.10.10</td>
-                    <td>관리자</td>                                            
-                </tr>         
-                <tr>
-                    <td>2</td>
-                    <td>
-                        <a href="#">지방이양사무관리시스템 오픈 안내</a>
-                    </td>
-                    <td>일반</td>
-                    <td>99</td>
-                    <td>전체</td>
-                    <td>
-                        <label class="input_type check only">
-                            <input type="checkbox" name="q01">
-                            <span class="txt"></span>
-                        </label>                        
-                    </td>
-                    <td>2024.10.10</td>
-                    <td>관리자</td>                                            
-                </tr>         
-                <tr>
-                    <td>1</td>
-                    <td>
-                        <a href="#">지방이양사무관리시스템 오픈 안내</a>
-                    </td>
-                    <td>일반</td>
-                    <td>99</td>
-                    <td>전체</td>
-                    <td>
-                        <label class="input_type check only">
-                            <input type="checkbox" name="q01">
-                            <span class="txt"></span>
-                        </label>                        
-                    </td>
-                    <td>2024.10.10</td>
-                    <td>관리자</td>                                            
-                </tr>                 
-             </tbody>
+                    <tr>
+                        <td>10</td>
+                        <td>AB01</td>
+                        <td>AB01</td>
+                        <td><a href="#">등록구분</a></td>                        
+                        <td>2024.10.10</td>
+                        <td>System</td>
+                        <td>Y</td>             
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>AB01</td>
+                        <td>AB01</td>
+                        <td><a href="#">등록구분</a></td>                        
+                        <td>2024.10.10</td>
+                        <td>System</td>
+                        <td>Y</td>             
+                    </tr>     
+                    <tr>
+                        <td>8</td>
+                        <td>AB01</td>
+                        <td>AB01</td>
+                        <td><a href="#">등록구분</a></td>                        
+                        <td>2024.10.10</td>
+                        <td>System</td>
+                        <td>Y</td>              
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>AB01</td>
+                        <td>AB01</td>
+                        <td><a href="#">등록구분</a></td>                        
+                        <td>2024.10.10</td>
+                        <td>System</td>
+                        <td>Y</td>               
+                    </tr>  
+                    <tr>
+                        <td>6</td>
+                        <td>AB01</td>
+                        <td>AB01</td>
+                        <td><a href="#">등록구분</a></td>                        
+                        <td>2024.10.10</td>
+                        <td>System</td>
+                        <td>Y</td>             
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>AB01</td>
+                        <td>AB01</td>
+                        <td><a href="#">등록구분</a></td>                        
+                        <td>2024.10.10</td>
+                        <td>System</td>
+                        <td>Y</td>             
+                    </tr>     
+                    <tr>
+                        <td>4</td>
+                        <td>AB01</td>
+                        <td>AB01</td>
+                        <td><a href="#">등록구분</a></td>                        
+                        <td>2024.10.10</td>
+                        <td>System</td>
+                        <td>Y</td>               
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>AB01</td>
+                        <td>AB01</td>
+                        <td><a href="#">등록구분</a></td>                        
+                        <td>2024.10.10</td>
+                        <td>System</td>
+                        <td>Y</td>               
+                    </tr> 
+                    <tr>
+                        <td>2</td>
+                        <td>AB01</td>
+                        <td>AB01</td>
+                        <td><a href="#">등록구분</a></td>                        
+                        <td>2024.10.10</td>
+                        <td>System</td>
+                        <td>Y</td>              
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>AB01</td>
+                        <td>AB01</td>
+                        <td><a href="#">등록구분</a></td>                        
+                        <td>2024.10.10</td>
+                        <td>System</td>
+                        <td>Y</td>              
+                    </tr>                                                                                                                                                                                                                                                                                                      
+                </tbody>
           </table>
         </div>
 
