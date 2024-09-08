@@ -989,7 +989,8 @@
 }
 
 
-.text-red {
+.text-red,
+.red-color {
     color:#FF5858;
 }
 .disply-flex {
