@@ -372,6 +372,14 @@
     background: url('../img/pc/ico/ico_list.png') no-repeat;
     background-size: contain;
 }
+.btn-line-return i.ico-x::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../img/pc/ico/ico_btn_cancel.png') no-repeat;
+    background-size: contain;
+}
 .btn_cancel.bg-gray {background: #F9F9FB}
 .btn_cancel.bg-gray span{background:  url(../img/pc/ico/ico_btn_cancel.png) no-repeat 0 center;background-size:24px auto;}
 .btn_cancel_approval span{background:url(../img/mo/ico/icon_cancel_confirm.png) no-repeat 0 center;background-size:18px auto;padding-left: 25px;}
@@ -1606,4 +1614,17 @@ td:has(.text-type) {
 }
 .mo .has-text-count .input-type {
     flex: none !important;
+}
+.modal_n_body .mo.table_cont .table-body-only tbody td,
+.modal_n_body .mo.table_cont .table-body-only tbody th {
+    border-left: 0;
+    border-right: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+.modal_n_body .mo.table_cont .table-body-only tbody th {
+    background-color: #fff;
 }

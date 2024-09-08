@@ -258,14 +258,14 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="#">기획재정부</a></td>
+                      <td><a href="#none" class="pc">기획재정부</a><a href="#none"  onclick="modalControl('o','#main_layer_pop');return false" class="mo">기획재정부</a></td>
                         <td>자치분권지원국 자치분권지원과</td>
                         <td>2024.10.10</td>
                         <td>System</td>
                         <td>Y</td>             
                     </tr>
                     <tr>
-                        <td><a href="#">기획재정부</a></td>
+                      <td><a href="#none" class="pc">기획재정부</a><a href="#none"  onclick="modalControl('o','#main_layer_pop');return false" class="mo">기획재정부</a></td>
                         <td>자치분권지원국 자치분권지원과</td>
                         <td>2024.10.10</td>
                         <td>System</td>
@@ -340,7 +340,81 @@
       </div>
     </div>
   </div>
-
+        <!-- 모달 -->
+        <section class="modal_new modal_overlay roll-type" id="main_layer_pop"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+          <div class="modal_n_wrap roll-modal">
+              <div class="modal-header">
+                  <div class="tit">상세보기</div>
+              </div>
+              <div class="modal_n_body">
+                  <div class="table_cont form-table mo">
+                    <table class="table-body-only table-fixed">
+                      <colgroup>
+                        <col style="width:120px;">
+                        <col>
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">부처코드</th>
+                          <td>부처코드</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">부처명</th>
+                          <td>
+                            행정안전부
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">실/국/센터</th>
+                          <td>
+                            -
+                          </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">부서명</th>
+                            <td>
+                                -
+                            </td>                    
+                        </tr>
+                        <tr>
+                            <th scope="row">설명</th>
+                            <td>
+                                -
+                            </td>                    
+                        </tr>                
+                        <tr>
+                          <th scope="row">사용여부</th>
+                          <td>
+                                Y
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">등록일 / 수정일</th>
+                          <td>
+                            2024.01.01 / 2024.11.13
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">등록자 / 수정자</th>
+                          <td>
+                            SYSTEM / 마스터 관리자
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="button__wrap flex-end mt-32 mo">
+                      <button type="button" class="btn-line-return wd-108 "  onclick="modalControl('c')" >
+                        <i class="ico-x"></i> 확인
+                      </button>  
+                  </div>  
+              </div>
+              
+              <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>            
+          </div>
+        </section>
+        <!-- //모달 -->
   <!-- footer -->
   <div class="footer">
     <div class="inner">
