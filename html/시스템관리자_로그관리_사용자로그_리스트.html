@@ -328,7 +328,7 @@
                 <tbody>
                 <tr>
                     <td>10</td>
-                    <td>홍길동</td>
+                    <td><a href="#"  onclick="modalControl('o','#main_layer_pop');return false">홍길동</a></td>
                     <td>2024-07-26 19:24:34</td>
                     <td>selectNtwrkSvcMntrngList</td>
                     <td>조회</td>  
@@ -447,7 +447,93 @@
       </div>
     </div>
   </div>
-
+        <!-- 모달 -->
+        <section class="modal_new modal_overlay roll-type" id="main_layer_pop"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+          <div class="modal_n_wrap roll-modal">
+              <div class="modal-header">
+                  <div class="tit">상세보기</div>
+              </div>
+              <div class="modal_n_body">
+                  <div class="table_cont form-table">
+                    <table class="table-body-only table-fixed">
+                      <colgroup>
+                        <col style="width:30%;">
+                        <col>
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">요청ID</th>
+                          <td>SYSLOG_0000000000065</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">발생일자</th>
+                          <td>
+                            2024-07-26 19:24:34
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">서비스명</th>
+                          <td>
+                            egovframework.com.utl.sys.nsm.service.impl.EgovNtwrkSvcMntrngServiceImpl
+                          </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">메소드명</th>
+                            <td>
+                              selectNtwrkSvcMntrngList
+                            </td>                    
+                        </tr>
+                        <tr>
+                          <th scope="row">처리구분</th>
+                          <td>
+                            조회
+                          </td>                    
+                        </tr>                          
+                        <tr>
+                            <th scope="row">처리구분</th>
+                            <td>
+                              조회
+                            </td>                    
+                        </tr>                
+                        <tr>
+                          <th scope="row">처리시간</th>
+                          <td>
+                              33
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">요청자</th>
+                          <td>
+                            홍길동
+                          </td>
+                        </tr>  
+                        <tr>
+                          <th scope="row">등급</th>
+                          <td>
+                            8
+                          </td>
+                        </tr>                                 
+                        <tr>
+                            <th scope="row">요청자IP</th>
+                            <td>
+                              192.138.0.100
+                            </td>                                               
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="button__wrap flex-end mt-32">
+                      <button type="button" class="btn-line-return wd-108 "  onclick="modalControl('c')" >
+                        <i class="ico-x"></i> 확인
+                      </button>  
+                  </div>  
+              </div>
+              
+              <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>            
+          </div>
+        </section>
+        <!-- //모달 -->
   <!-- footer -->
   <div class="footer">
     <div class="inner">
