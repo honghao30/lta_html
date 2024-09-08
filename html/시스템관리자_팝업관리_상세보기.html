@@ -223,7 +223,7 @@
                   <th scope="row">제목</th>
                   <td colspan="3">
                     <div class="form-element__wrap">
-                      <div class="input-multi">
+                      <div class="input-multi has-text-count">
                         <span class="form-element__inner input-type">
                           <input type="text" value="지방이양사무관리시스템 오픈 안내" class="input-type1-font14" title="제목">
                         </span>
@@ -253,7 +253,7 @@
                     <ul class="file-list file-list-multi" style="max-width: 100%;">
                       <li>
                         <div class="input-wrap">
-                          <input type="file" name="" class="file" />
+                          <input type="file" name="" class="file" style="width: 272px;"/>
                           <div class="form-element__wrap">
                             <div class="input-multi file-up">
                               <span class="form-element__inner input-type" style="width: 272px; flex: none;">
@@ -460,13 +460,15 @@
                 <tr>
                   <th scope="row">제목</th>
                   <td>
-                    <div class="form-element__wrap">                                
-                      <span class="form-element__inner input-type">
-                        <input type="text" class="input-type1-font14" placeholder="제목을 입력해주세요." title="제목">
-                      </span>
-                      <span class="input-text-count">
-                        <span class="current">0</span> / <span>50자</span>
-                      </span>
+                    <div class="form-element__wrap">
+                      <div class="input-multi has-text-count">
+                        <span class="form-element__inner input-type">
+                          <input type="text" class="input-type1-font14" placeholder="제목을 입력해주세요." title="제목">
+                        </span>
+                        <span class="input-text-count">
+                          <span class="current">0</span> / <span>50자</span>
+                        </span>
+                      </div>
                     </div>                          
                   </td>    
                 </tr>
@@ -484,10 +486,10 @@
                   <td scope="row" colspan="2" class="full-width">
                     팝업 이미지 파일
                     <div class="info-text color-important mt-16">팝업 이미지 사이즈(크기) : 000x000</div>
-                    <ul class="mo-file-list mt-16">
+                    <ul class="file-list mo-file-list mt-16">
                       <li>
                         <div class="input-wrap">
-                          <input type="file" name="" class="file" />
+                          <input type="file" name="" class="file" style="width: 20%;"/>
                           <div class="file-up">
                             <span class="form-element__inner input-type">
                               <input type="text" placeholder="파일을 첨부해주세요." title="파일첨부">

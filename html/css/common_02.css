@@ -1598,3 +1598,12 @@ td:has(.text-type) {
     letter-spacing: -0.02em;
     text-align: center;
 }
+
+/* 모바일 폼 카운트텍스트 */
+.mo .has-text-count {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.mo .has-text-count .input-type {
+    flex: none !important;
+}

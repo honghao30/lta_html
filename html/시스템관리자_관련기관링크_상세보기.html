@@ -193,8 +193,7 @@
             <ul>
               <li><a href="#none">홈</a></li>
               <li><a href="#none">시스템관리</a></li>
-              <li><a href="#none">배너/팝업관리</a></li>
-              <li><a href="#none">배너관리</a></li>
+              <li><a href="#none">관련기관링크 관리</a></li>
             </ul>
           </div>
           <div class="pc">
@@ -217,15 +216,15 @@
               <tbody>
                 <tr>
                   <th scope="row">노출위치</th>
-                  <td colspan="3">메인</td>
+                  <td colspan="3">중앙부처</td>
                 </tr>
                 <tr>
-                  <th scope="row">제목</th>
+                  <th scope="row">관련기관명</th>
                   <td colspan="3">
                     <div class="form-element__wrap">
                       <div class="input-multi has-text-count">
                         <span class="form-element__inner input-type">
-                          <input type="text" value="지방이양사무관리시스템 오픈 안내" class="input-type1-font14" title="제목">
+                          <input type="text" value="행정안전부" class="input-type1-font14" title="관련기관명">
                         </span>
                         <span class="input-text-count">
                           <strong class="current">0</strong> / <strong>50자</strong>
@@ -240,7 +239,7 @@
                     <div class="form-element__wrap">
                       <div class="input-multi">
                         <span class="form-element__inner input-type">
-                          <input type="text" value="http://korea.go.kr" class="input-type1-font14" maxlength="" placeholder="랜딩URL" title="제목">
+                          <input type="text" value="http://korea.go.kr" class="input-type1-font14" maxlength="" placeholder="랜딩URL" title="랜딩URL">
                         </span>
                       </div>
                     </div>
@@ -257,7 +256,7 @@
                           <div class="form-element__wrap">
                             <div class="input-multi file-up">
                               <span class="form-element__inner input-type" style="width: 272px; flex: none;">
-                                <input type="text" value="file.png" title="파일첨부">
+                                <input type="text" placeholder="" title="파일첨부">
                               </span>
                               <button type="button" class="btn-border-gray">
                                 <i class="icon-file"></i>
@@ -290,6 +289,21 @@
                     </div>
                     <div class="info-text mt-8">배너 이미지 내용을 입력해 주세요.</div>
                   </td>
+                </tr>
+                <tr>
+                    <th>배너노출</th>
+                    <td colspan="3">
+                        <div class="radio-box">
+                            <label id="r0">
+                              <input type="radio" name="type8" value="type0a20" checked id="r0">
+                              <span>노출</span>
+                            </label>
+                            <label id="rb">
+                              <input type="radio" name="type8" value="type0a21" id="rb">
+                              <span>미노출</span>
+                            </label>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                   <th scope="row">노출 기간</th>
@@ -399,41 +413,12 @@
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row">노출 대상</th>
-                  <td>
-                    <div class="flex-row">
-                      <div class="radio-box">
-                        <label id="r0a3">
-                          <input type="radio" name="type8" value="type0a20" checked id="ra03">
-                          <span>전체</span>
-                        </label>
-                        <label id="rb04">
-                          <input type="radio" name="type8" value="type0a21" id="rb04">
-                          <span>지정</span>
-                        </label>
-                      </div>
-                      <!-- 콤보박스 -->
-                      <div class="select_box">
-                        <span class="select">10등급</span>
-                        <div class="option">
-                          <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                            <ul>
-                              <li>선택함1</li>
-                              <li>선택함2</li>
-                              <li>선택함3</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- //콤보박스 -->
-                    </div>
-                  </td>
-                  <th scope="row">노출 상태</th>
-                  <td>
+                  <th scope="row">사용 상태</th>
+                  <td colspan="3">
                     <div class="radio-box">
                       <label id="r03">
                         <input type="radio" name="type2" value="type020" checked id="r03">
-                        <span>정상</span>
+                        <span>사용</span>
                       </label>
                       <label id="r04">
                         <input type="radio" name="type2" value="type021" id="r04">
@@ -447,7 +432,7 @@
           </div>
 
           <div class="table_cont mo">
-            <table class="table-body-only no-line-type flex-wrap">
+            <table class="table-body-only no-line-type table-fixed flex-wrap">
               <colgroup>
                 <col width="30%" />
                 <col width="" />
@@ -455,15 +440,15 @@
               <tbody>
                 <tr>
                   <th scope="row">노출위치</th>
-                  <td>메인</td>
+                  <td>중앙부처</td>
                 </tr>
                 <tr>
-                  <th scope="row">제목</th>
+                  <th scope="row">관련<br/>기관명</th>
                   <td>
-                    <div class="form-element__wrap">     
+                    <div class="form-element__wrap">
                       <div class="input-multi has-text-count">
                         <span class="form-element__inner input-type">
-                          <input type="text" class="input-type1-font14" placeholder="제목을 입력해주세요." title="제목">
+                          <input type="text" class="input-type1-font14" title="관련기관명">
                         </span>
                         <span class="input-text-count">
                           <span class="current">0</span> / <span>50자</span>
@@ -523,6 +508,21 @@
                     <div class="info-text mt-8">배너 이미지 내용을 입력해 주세요.</div>
                   </td> 
                 </tr>   
+                <tr>
+                    <th>배너 노출
+                    <td>
+                        <div class="radio-box">
+                            <label id="r0a3">
+                                <input type="radio" name="type8" value="type0a20" checked id="ra03">
+                                <span>노출</span>
+                            </label>
+                            <label id="rb04">
+                                <input type="radio" name="type8" value="type0a21" id="rb04">
+                                <span>미노출</span>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
                 <tr>
                   <td scope="row" colspan="2" class="full-width">
                     노출기간
@@ -632,7 +632,22 @@
                       </div>
                     </div>
                   </td>
-                </tr>                                                                                                                                                     
+                </tr>       
+                <tr>
+                    <th>사용 상태</th>
+                    <td>
+                        <div class="radio-box">
+                            <label id="r0a3">
+                                <input type="radio" name="type8" value="type0a20" checked id="ra03">
+                                <span>사용</span>
+                            </label>
+                            <label id="rb04">
+                                <input type="radio" name="type8" value="type0a21" id="rb04">
+                                <span>미사용</span>
+                            </label>
+                        </div>
+                    </td>
+                </tr>                                                                                                                                              
               </tbody>
             </table>
           </div>

@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tabMenus('.law-tree-menu');
 
     const checkFormValLength = () => {
-        const formEls = document.querySelectorAll('.form-table input[type="text"]');
+        const formEls = document.querySelectorAll('.has-text-count input[type="text"]');
     
         formEls.forEach(el => {
             const countVal = parseInt(el.value.length);
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const countVal = parseInt(el.value.length);
                 const countEl = el.closest('.input-multi').querySelector('.input-text-count .current');
                 if(countEl) {
-                    countEl.innerText = countVal;
+                    countEl.innerText = countVal; 
                 }
                 const total = parseInt(el.closest('.input-multi').querySelector('.input-text-count .total').textContent);
     
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
     checkFormValLength();
     
     // 파일 첨부
-    const fileListWrap = document.querySelector('.file-list');
+    const fileListWrap = document.querySelectorAll('.file-list');
 
     // 파일명 표시 기능
     const addFileNameListener = (fileInput) => {
@@ -151,7 +151,43 @@ document.addEventListener("DOMContentLoaded", () => {
     const addFileAddListener = (button) => {
         button.addEventListener('click', () => {
             const newListItem = document.createElement('li');
-            newListItem.innerHTML = `
+            const m_newListItem = document.createElement('li');
+
+            console.log(fileListWrap[1].classList.value)
+            
+            if(fileListWrap[0].classList.value.includes('file-list-multi')) {
+                newListItem.innerHTML = `
+                    <div class="input-wrap">
+                        <input type="file" name="" class="file" style="width: 100px;"/>
+                        <div class="form-element__wrap">
+                        <div class="input-multi file-up">
+                            <span class="form-element__inner input-type" style="width: 272px; flex: none;">
+                                <input type="text" placeholder="파일을 선택해 주세요." title="파일첨부">
+                            </span>
+                            <button type="button" class="btn-border-gray">
+                                <i class="icon-file"></i>
+                                파일찾기
+                            </button>
+                            <button type="button" class="btn-dark-light file-remove">
+                                <i class="ico-minus"></i>
+                                삭제
+                            </button>
+                            <button type="button" class="btn-dark-light btn-add">
+                                <i class="ico-plus"></i>
+                                추가
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-element__wrap flex-row">
+                        <div class="input-label">대체 텍스트</div>
+                        <span class="form-element__inner input-type">
+                        <input type="text"class="input-type1-font14" maxlength="" placeholder="내용을 입력해 주세요." title="대체텍스트">
+                        </span>
+                    </div> 
+                `;
+            } else {
+                newListItem.innerHTML = `
                 <input type="file" name="" class="file" />
                 <div class="form-element__wrap">                                  
                     <div class="input-multi file-up">
@@ -173,17 +209,50 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 </div>  
             `;
-            fileListWrap.appendChild(newListItem);
+            }
+
+            if(fileListWrap[1].classList.value.includes('mo-file-list')) {
+                m_newListItem.innerHTML = `
+                    <div class="input-wrap">
+                        <input type="file" name="" class="file" style="width: 20%;" />
+                        <div class="file-up">
+                        <span class="form-element__inner input-type">
+                            <input type="text" placeholder="파일을 첨부해 주세요." title="파일첨부">
+                        </span>
+                        <button type="button" class="btn-delete file-remove">
+                            <i class="ico-minus"></i>
+                        </button>
+                        <button type="button" class="btn-add">
+                            <i class="ico-plus"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="input-wrap mt-16">
+                        <div class="input-label">대체 텍스트</div>
+                        <span class="form-element__inner input-type">
+                        <input type="text"class="input-type1-font14" maxlength="" placeholder="내용을 입력해 주세요." title="대체텍스트">
+                        </span>
+                    </div>
+                `;
+            } 
+            fileListWrap[0].appendChild(newListItem);
+            fileListWrap[1].appendChild(m_newListItem);
 
             // 새로 추가된 파일 입력란과 버튼에 이벤트 리스너 추가
             const newFileInput = newListItem.querySelector('input[type="file"]');
+            const m_newFileInput = m_newListItem.querySelector('input[type="file"]');
             addFileNameListener(newFileInput);
+            addFileNameListener(m_newFileInput);
 
             const newAddButton = newListItem.querySelector('.btn-add');
+            const m_newAddButton = m_newListItem.querySelector('.btn-add');
             addFileAddListener(newAddButton);
+            addFileAddListener(m_newAddButton);
 
             const newRemoveButton = newListItem.querySelector('.file-remove');
+            const m_newRemoveButton = m_newListItem.querySelector('.file-remove');
             addFileRemoveListener(newRemoveButton);
+            addFileRemoveListener(m_newRemoveButton);
         });
     };
 
