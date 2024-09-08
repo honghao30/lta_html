@@ -171,7 +171,7 @@
     color: #757575;
     opacity: 0.5;
 }
-.form-element__inner.text-area {height: 104px;padding: 0;}
+.form-element__inner.text-area {height: 404px;padding: 0;}
 .form-element__wrap .text-area {
     padding: 16px;
     align-items: normal;
@@ -499,6 +499,7 @@
     vertical-align: middle;
     color:#222222;
     padding:0 12px;
+    border: 0;
     border-bottom: 1px solid #D8DDE9;
 }
 .table_cont .table-body-only tbody td {
@@ -512,8 +513,10 @@
     vertical-align: middle;
     text-align: left;
     color:#222222;
+    border: 0;
     padding-left: 12px;
     cursor: default;
+    border-bottom: 1px solid #D8DDE9;
 }
 .table_cont .table-body-only tbody td input .noti_txt{}
 .table_cont .table-body-only tbody td input {
@@ -1183,6 +1186,7 @@
         align-items: center;
         justify-content: space-between;
     }
+    .form-element__inner.text-area {height: 204px;}
     .document-title-area .document-title-h16 {
         font-family: 'Pretendard';
         font-size: 18px;
@@ -1197,12 +1201,19 @@
     .scroll-type {
         overflow-x: scroll;
     }
-    .table_cont.scroll-type table {
+    /* .table_cont.scroll-type table {
         table-layout: fixed;
-    }
+    } */
+     .sort-type-wrap {
+        white-space: nowrap;
+     }
     .table_cont .table-body-only tbody td.inner-table .inner-table-cont table tbody tr td {
         word-break: break-word;
         line-height: 19px;
+    }
+    .modal_n_body .table_cont .table-body-only tbody td {
+        word-break: break-word;
+        white-space: normal;
     }
     .modal_n_wrap.roll-modal {
         width: 90vw;
@@ -1377,7 +1388,7 @@
 /* 모바일 등록 버튼 */
 .mo .btn_check span {
     background: url('../img/pc/ico/ico_check_wt.png') no-repeat;
-    background-size: 20px;
+    background-size: 20px;  
     color: #fff;
 }
 
