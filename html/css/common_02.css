@@ -1330,5 +1330,240 @@
         background-color: #fff;
         padding: 12px 16px;
     }
+    .btn.btn_add_mo {
+        background: #706DF0 !important;
+        color: #fff !important;
+    }
+    .btn.btn_add_mo span {
+        background: url(../img/mo/ico/ico_pencile_wt.png) no-repeat 0 center;
+        background-size: 24px auto;
+        color: #fff;        
+    }
+}
+
+.float-r {float:right !important;}
+
+/* 작성버튼 */
+.btn.ico_penci-bl span{
+    background:url(../img/pc/ico/ico_pencil.png) no-repeat 0 center;
+    background-size: 24px auto;
+    height: 57px;
+}
+/* 삭제버튼 */
+.btn_delete span {
+    background:#fff url(../img/pc/ico/icon_remove.png) no-repeat 0 center;
+    background-size: 19px;
+}
+/* 저장버튼 */
+.btn_save span {
+    background: url('../img/pc/ico/ico_btn_save.png') no-repeat;
+    background-size: 20px;
+}
+/* 모바일 등록 버튼 */
+.mo .btn_check span {
+    background: url('../img/pc/ico/ico_check_wt.png') no-repeat;
+    background-size: 20px;
+    color: #fff;
+}
+
+/* textarea */
+.form-element__inner.text-area textarea {
+    padding: 0;
+    font-size: 16px;
+    border-radius: 0;
+}
+
+/* fixed-table */
+.table-fixed {
+    table-layout: fixed;
+}
+.mo .table-fixed {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.mo .table-fixed td {
+    word-wrap: break-word;
+}
+.mo .table-fixed td .disabled-text {
+    border: 1px solid #E1E3E9;
+    border-radius: 12px;
+    padding: 16px;
+    color: rgba(34, 34, 34, 0.6);
+}
+
+/* flex-wrap */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* 모바일 input text count */
+.mo .input-text-count {
+    font-size: 16px;
+    font-weight: 400;
+}
+.mo .current {
+    color: #FF8B4A
+}
+
+/* 모바일 테이블 여백제거 */
+.mo.table_cont .table-body-only tbody th {
+    padding: 0;
+}
+.mo.table_cont .table-body-only tbody th.full-width,
+.mo.table_cont .table-body-only tbody td.full-width {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+.mo.table_cont .table-body-only tbody td {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* multiple inline selector ex)게시판관리 */
+.form-select-list {
+    display: flex;
+}
+.form-select-list li:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background-color: #E1E3E9;
+    margin: 0 16px;
+}
+.form-select-list .select_box {
+    margin-left: 8px;
+}
+.mo .form-select-list {
+    flex-direction: column;
+}
+.mo .form-select-list li {
+    display: flex;
+    align-items: center;
+}
+.mo .form-select-list li > div {
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+.mo .form-select-list li::after {
+    display: none;
+}
+.mo .form-select-list li .select_box {
+    margin-right: 16px;
+}
+
+/* 테이블영역 내 안내 텍스트 */
+.table_cont .info-text {
+    font-size: 16px;
+    color: #717B8A;
+}
+.table_cont .info-text.color-important {
+    color: #FF8B4A;
+    margin-bottom: 8px;
+}
+
+/* 테이블영역 내 구분선 */
+.divide-line {
+    width: 100%;
+    height: 1px;
+    background-color: #EFF0F3;   
+    margin: 12px 0;
+}
+
+/* 테이블 영역 내 선택 된 input 값에 따라 나오는 컨텐츠 영역 */
+.table-sub-contents td {
+    padding: 16px 0 !important;
+}
+
+/* 게시판 URL */
+.disabled-element-wrap {
+    background-color: #F4F7FB;
+    color: #717B8A;
+    border-radius: 12px;
+}
+
+/* input radio disabled */
+input[type="radio"]:disabled + span::before {
+    opacity: 0.6;
+}
+
+/* 모바일 게시판 url */
+.mo .form-element__inner.text-type {
+    height: auto;
+}
+td:has(.text-type) {
+    height: auto !important;
+}
+
+/* 배너/팝업 파일첨부리스트 */
+.file-list-multi li {
+    display: flex;
+}
+.file-list-multi .flex-row {
+    flex-direction: row;
+}
+.file-list-multi li .flex-row::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 16px;
+    background-color: #E1E3E9;
+    margin-left: 16px;
+}
+.form-element__wrap .input-label {
+    white-space: pre;
+}
+
+/* 모바일 라디오버튼 영역 */
+.mo .flex-wrap .radio-box {
+    flex-wrap: wrap;
+}
+.mo .flex-wrap .radio-box label+label {
+    margin-left: 0;
+}
+
+/* 모바일 파일 첨부 폼 */
+.mo-file-list .file-up {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.mo-file-list .file-up .input-type input {
+    background: url('../img/pc/ico/icon_file.png') no-repeat center right 16px;
+    background-size: 20px;
+}
+.mo-file-list li .file {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.mo-file-list .file-up button {
+    width: 36px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: #D8DDE9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+.mo-file-list .input-wrap {
+    display: flex;
+    align-items: center;
 
 }
+.mo-file-list .input-wrap .input-label {
+    margin-right: 16px;
+}
+.mo-file-list .input-wrap .input-type {
+    flex-grow: 1;
+}
+.mo-file-list .input-wrap .input-type input {
+    padding: 0 16px;
+}
+
