@@ -258,17 +258,64 @@ $(document).ready(function() {
 
 // pc 검색영역 마우스 포커스 일때
 $(document).ready(function() {
+  let isMouseInSearchTotal = false;
+
   // input 요소에 포커스가 가면 active 클래스 추가
   $('.search_box .ico_search').on('focus', function() {
     $('.search_total').addClass('active');
   });
 
-  // input 요소에서 포커스가 빠지면 active 클래스 제거
+  // input 요소에서 포커스가 빠지면 active 클래스 제거 (단, 마우스가 search_total에 없을 때만)
   $('.search_box .ico_search').on('blur', function() {
-    $('.search_total').removeClass('active');
+    if (!isMouseInSearchTotal) {
+      $('.search_total').removeClass('active');
+    }
+  });
+
+  // search_total에 마우스가 들어오면 active 클래스 유지
+  $('.search_total').on('mouseenter', function() {
+    isMouseInSearchTotal = true;
+    $(this).addClass('active');
+  });
+
+  // search_total에서 마우스가 나가면 active 클래스 제거 (단, input이 포커스 상태가 아닐 때만)
+  $('.search_total').on('mouseleave', function() {
+    isMouseInSearchTotal = false;
+    if (!$('.search_box .ico_search').is(':focus')) {
+      $(this).removeClass('active');
+    }
   });
 });
 
+// 탭
+$(document).ready(function() {
+  $('.tab-menu li a').click(function(e) {
+    e.preventDefault(); // 링크 기본 동작 방지
+
+    var index = $(this).parent().index(); // 클릭한 탭의 인덱스 가져오기
+
+    // 탭 메뉴 활성화 클래스 전환
+    $('.tab-menu li').removeClass('active');
+    $(this).parent().addClass('active');
+
+    // 탭 콘텐츠 활성화 클래스 전환 (인덱스 기준으로 매칭)
+    $('.tab').removeClass('active');
+    $('.tab').eq(index).addClass('active');
+  });
+});
+
+// 테이블에 체크박스 중복눌림 제어
+$(document).ready(function() {
+  // tr 클릭 시 data-href로 이동
+  $('.clickable-row').on('click', function() {
+    window.location.href = $(this).data('href');
+  });
+
+  // 체크박스 클릭 시 이벤트 전파를 막음
+  $('.no-click').on('click', function(event) {
+    event.stopPropagation();  // 부모 tr의 클릭 이벤트 전파를 막음
+  });
+});
 
 
 
