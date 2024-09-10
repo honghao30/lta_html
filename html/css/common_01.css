@@ -641,6 +641,9 @@ textarea{
 
 .input-wrap{position:relative;}
 
+.horizon_type{display: flex !important;flex-direction: row !important;align-items: center !important;gap: 10px !important;width: 100% !important;}
+.star{color: #FF5858;font-family: Pretendard;font-size: 18px;font-style: normal;font-weight: 400;line-height: 18px;letter-spacing: -0.36px;}
+
   /* 피씨 */
   @media (min-width: 481px) {
     .inner{max-width:1200px;margin:0 auto;}
@@ -702,7 +705,8 @@ textarea{
     .search_box{display:flex;align-items: center;height:50px;}
     .search_box .input_cont{position:relative;flex: 1;padding: 5px;}
     .search_box .input_cont .btn_search{position:absolute;top:5px;right:5px;width:50px;height:50px;background:url(../img/pc/ico/ico_search.png) no-repeat center center;border:none;}
-    input[type="text"]{border-radius: 12px;border: 1px solid #E1E3E9;line-height:50px;height:50px;font-size:16px;}
+    input[type="text"],
+    input[type="password"]{border-radius: 12px;border: 1px solid #E1E3E9;line-height:50px;height:50px;font-size:16px;}
 
     .search_cont_detail.on{height:100px;padding: 24px 155px 24px 40px;transition: height .1s;opacity: 1;overflow:visible;}
     .search_cont_detail{opacity:0; background: #E7EAFA;padding: 24px 180px 24px 40px;position:relative;height:0;padding:0;transition: height .1s;overflow:hidden;}
@@ -897,10 +901,24 @@ textarea{
       border-radius: 24px;
       background: #F1F1FE;
     }
-    .join_agree .top_info_box{margin-bottom:0;}
+    .join_agree .top_info_box{margin-top:0 !important;margin-bottom:0;}
     .join_agree .top_info_box label.check{margin:5px 0;}
     .join_agree li+li{margin-top:16px;padding-top:16px;border-top:1px solid #C4C5F7;}
     .join_agree li:last-child{padding-bottom:16px;border-bottom:1px solid #C4C5F7;}
+    
+    .join_step_wrap .top_info_box{margin-top:64px;}
+    .join_step_wrap .table_cont{margin-bottom:64px;}
+
+    .input_del{position:relative;}
+    .input_del.on .del{display:block;}
+    .input_del input{padding-right:30px !important;}
+    .input_del .del{display:none;position:absolute;top:50%;right: 0;transform: translate(-50%, -50%);background: url(../img/pc/btn_del.png) no-repeat center;width:20px;height:20px;border:none;}
+
+    .input_view{position:relative;}
+    .input_view.on .view{display:block;}
+    .input_view input{padding-right:20px !important;}
+    .input_view .view{display:none;position:absolute;top:50%;right: 0;transform: translate(-50%, -50%);background: url(../img/pc/btn_view_close.png) no-repeat center;width:20px;height:20px;border:none;}
+    .input_view .view.active{background: url(../img/pc/btn_view_open.png) no-repeat center;}
 
 
     /* common_02.css 추가 아니면 수정할부분 */
@@ -1302,7 +1320,7 @@ textarea{
           height: 24px;
         }
         .join_step ul li:last-child:after{display:none;}
-        .join_step{}
+        .join_step+.top_info_box{padding:64px 0;}
         .join_step{}
         .join_agree{
           margin-top:32px;padding:20px;
@@ -1315,6 +1333,18 @@ textarea{
         .join_agree .top_info_box label.check{margin:5px 0;}
         .join_agree li+li{margin-top:13px;padding-top:13px;border-top:1px solid #C4C5F7;}
         .join_agree li:last-child{padding-bottom:13px;border-bottom:1px solid #C4C5F7;}
+        
+        .input_del{position:relative;}
+        .input_del.on .del{display:block;}
+        .input_del input{padding-right:20px !important;}
+        .input_del .del{display:none;position:absolute;top:50%;right: 0;transform: translate(-50%, -50%);background: url(../img/pc/btn_del.png) no-repeat center;width:20px;height:20px;border:none;}
+
+        .input_view{position:relative;}
+        .input_view.on .view{display:block;}
+        .input_view input{padding-right:20px !important;}
+        .input_view .view{display:none;position:absolute;top:50%;right: 0;transform: translate(-50%, -50%);background: url(../img/pc/btn_view_close.png) no-repeat center;width:20px;height:20px;border:none;}
+        .input_view .view.active{background: url(../img/pc/btn_view_open.png) no-repeat center;}
+
 
         /* common_02.css 추가 아니면 수정할부분 */
         /* common_02.css 추가 아니면 수정할부분 */

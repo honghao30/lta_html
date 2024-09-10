@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const treeDepthMenuList = container.querySelectorAll('.tree-depth-list');
         const treeDepthMenus = container.querySelectorAll('.tree-depth-list li a');
         const depthTreeMenus = container.querySelectorAll('.depthmenu03 li a');
-        
+        console.log(menuAll, oneDepth)
         if (menuAll) {
             menuAll.addEventListener('click', () => {
                 menuAll.classList.toggle('is-active');
@@ -59,11 +59,10 @@ document.addEventListener("DOMContentLoaded", () => {
         depthTreeMenus.forEach(menu => {
             menu.addEventListener('click', (event) => {
                 event.preventDefault();
-                const activeMenu = document.querySelector('.depthmenu03 li.is-active');
-                if (activeMenu) {
-                    activeMenu.classList.remove('is-active');
-                }                
-                menu.parentElement.classList.add('is-active');
+                menu.classList.toggle('is-active');
+                if (menu.parentElement.nextElementSibling) {
+                    menu.parentElement.nextElementSibling.classList.toggle('is-active');
+                }
             });
         });        
     };
@@ -128,161 +127,151 @@ document.addEventListener("DOMContentLoaded", () => {
     
     checkFormValLength();
     
-    // 파일 첨부   
+    // 파일 첨부
+    const fileListWrap = document.querySelectorAll('.file-list');
+
     // 파일명 표시 기능
     const addFileNameListener = (fileInput) => {
-        if (fileInput) { // fileInput 요소가 존재하는지 확인
-            fileInput.addEventListener('change', () => {
-                const fileName = fileInput.files.length > 0 ? fileInput.files[0].name : '';
-                const textInput = fileInput.closest('li').querySelector('.input-type input[type="text"]');
-                if (textInput) {
-                    textInput.value = fileName;
-                }
-            });
-        }
+        fileInput.addEventListener('change', () => {
+            const fileName = fileInput.files.length > 0 ? fileInput.files[0].name : '';
+            const textInput = fileInput.closest('li').querySelector('.input-type input[type="text"]');
+            if (textInput) {
+                textInput.value = fileName;
+            }
+        });
     };
-    
-    // 파일 입력란 삭제 기능
-    const addFileRemoveListener = (button) => {
-        if (button) { // button 요소가 존재하는지 확인
-            button.addEventListener('click', () => {
-                button.closest('li').remove();
-            });
-        }
-    };
-    
-    // 파일 입력란 추가 기능
-    const addFileAddListener = (button) => {            
-        if (button) { // button 요소가 존재하는지 확인
-            button.addEventListener('click', () => {
-                const newListItem = document.createElement('li');
-                const m_newListItem = document.createElement('li');
-                console.log(newListItem)
-    
-                if (fileListWrap[0].classList.value.includes('file-list-multi')) {
-                    newListItem.innerHTML = `
-                        <div class="input-wrap">
-                            <input type="file" name="" class="file" style="width: 382px;"/>
-                            <div class="form-element__wrap">
-                                <div class="input-multi file-up">
-                                    <span class="form-element__inner input-type" style="width: 272px; flex: none;">
-                                        <input type="text" placeholder="파일을 선택해 주세요." title="파일첨부">
-                                    </span>
-                                    <button type="button" class="btn-border-gray">
-                                        <i class="icon-file"></i>
-                                        파일찾기
-                                    </button>
-                                    <button type="button" class="btn-dark-light file-remove">
-                                        <i class="ico-minus"></i>
-                                        삭제
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-element__wrap flex-row" style="margin-left: 87px;">
-                            <div class="input-label">대체 텍스트</div>
-                            <span class="form-element__inner input-type">
-                            <input type="text" class="input-type1-font14" maxlength="" placeholder="내용을 입력해 주세요." title="대체텍스트">
-                            </span>
-                        </div>
-                    `;
-                } else {
-                    newListItem.innerHTML = `
-                        <input type="file" name="" class="file"  width: 70%; />
-                        <div class="form-element__wrap">
-                            <div class="input-multi file-up">
-                                <span class="form-element__inner input-type">
-                                    <input type="text" placeholder="" title="파일첨부">
-                                </span>
-                                <button type="button" class="btn-border-gray">
-                                    <i class="icon-file"></i>
-                                    파일찾기
-                                </button>
-                                <button type="button" class="btn-dark-light file-remove">
-                                    <i class="ico-minus"></i>
-                                    삭제
-                                </button>
 
-                            </div>
-                        </div>
-                    `;
-                }
-    
-                if (fileListWrap[1] && fileListWrap[1].classList.contains('mo-file-list')) {
-                    m_newListItem.innerHTML = `
-                        <div class="input-wrap">
-                            <input type="file" name="" class="file" style="width: 20%;" />
-                            <div class="file-up">
-                                <span class="form-element__inner input-type">
-                                    <input type="text" placeholder="파일을 첨부해 주세요." title="파일첨부">
-                                </span>
-                                <button type="button" class="btn-delete file-remove">
-                                    <i class="ico-minus"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="input-wrap mt-16">
-                            <div class="input-label">대체 텍스트</div>
-                            <span class="form-element__inner input-type">
-                                <input type="text" class="input-type1-font14" maxlength="" placeholder="내용을 입력해 주세요." title="대체텍스트">
-                            </span>
-                        </div>
-                    `;
-                }
-    
-                // fileListWrap[0]에 newListItem을 위쪽에 추가
-                if (fileListWrap[0]) {
-                    if (fileListWrap[0].firstChild) {
-                        fileListWrap[0].insertBefore(newListItem, fileListWrap[0].firstChild);
-                    } else {
-                        fileListWrap[0].appendChild(newListItem);
-                    }
-                }
-    
-                // fileListWrap[1]에 m_newListItem을 위쪽에 추가
-                if (fileListWrap[1]) {
-                    if (fileListWrap[1].firstChild) {
-                        fileListWrap[1].insertBefore(m_newListItem, fileListWrap[1].firstChild);
-                    } else {
-                        fileListWrap[1].appendChild(m_newListItem);
-                    }
-                }
-    
-                // 새로 추가된 파일 입력란과 버튼에 이벤트 리스너 추가
-                const newFileInput = newListItem.querySelector('input[type="file"]');
-                const m_newFileInput = m_newListItem.querySelector('input[type="file"]');
-                addFileNameListener(newFileInput);
-                addFileNameListener(m_newFileInput);
-    
-                const newAddButton = newListItem.querySelector('.btn-add');
-                const m_newAddButton = m_newListItem.querySelector('.btn-add');
-                addFileAddListener(newAddButton);
-                addFileAddListener(m_newAddButton);
-    
-                const newRemoveButton = newListItem.querySelector('.file-remove');
-                const m_newRemoveButton = m_newListItem.querySelector('.file-remove');
-                addFileRemoveListener(newRemoveButton);
-                addFileRemoveListener(m_newRemoveButton);
-            });
-        }
-    };
-    
-    // 초기화 및 리스너 등록
-    const fileListWrap = document.querySelectorAll('.file-list');
+    // 기존 파일 입력란에 이벤트 리스너 추가
     const fileLists = document.querySelectorAll('.file-list li input[type=file]');
     fileLists.forEach(el => {
         addFileNameListener(el);
     });
-    
-    const fileAddButtons = document.querySelectorAll('.file-list li .btn-add, .mo-file-list li .btn-add');
+
+    // 파일 입력란 추가 기능
+    const addFileAddListener = (button) => {
+        button.addEventListener('click', () => {
+            const newListItem = document.createElement('li');
+            const m_newListItem = document.createElement('li');
+
+            console.log(fileListWrap[1].classList.value)
+            
+            if(fileListWrap[0].classList.value.includes('file-list-multi')) {
+                newListItem.innerHTML = `
+                    <div class="input-wrap">
+                        <input type="file" name="" class="file" style="width: 100px;"/>
+                        <div class="form-element__wrap">
+                        <div class="input-multi file-up">
+                            <span class="form-element__inner input-type" style="width: 272px; flex: none;">
+                                <input type="text" placeholder="파일을 선택해 주세요." title="파일첨부">
+                            </span>
+                            <button type="button" class="btn-border-gray">
+                                <i class="icon-file"></i>
+                                파일찾기
+                            </button>
+                            <button type="button" class="btn-dark-light file-remove">
+                                <i class="ico-minus"></i>
+                                삭제
+                            </button>
+                            <button type="button" class="btn-dark-light btn-add">
+                                <i class="ico-plus"></i>
+                                추가
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-element__wrap flex-row">
+                        <div class="input-label">대체 텍스트</div>
+                        <span class="form-element__inner input-type">
+                        <input type="text"class="input-type1-font14" maxlength="" placeholder="내용을 입력해 주세요." title="대체텍스트">
+                        </span>
+                    </div> 
+                `;
+            } else {
+                newListItem.innerHTML = `
+                <input type="file" name="" class="file" />
+                <div class="form-element__wrap">                                  
+                    <div class="input-multi file-up">
+                        <span class="form-element__inner input-type">
+                            <input type="text" placeholder="" title="파일첨부">
+                        </span>
+                        <button type="button" class="btn-border-gray">
+                            <i class="icon-file"></i>
+                            파일찾기
+                        </button>
+                        <button type="button" class="btn-dark-light file-remove">
+                            <i class="ico-minus"></i>
+                            삭제
+                        </button>
+                        <button type="button" class="btn-dark-light btn-add">
+                            <i class="ico-plus"></i>
+                            추가
+                        </button>
+                    </div>
+                </div>  
+            `;
+            }
+
+            if(fileListWrap[1].classList.value.includes('mo-file-list')) {
+                m_newListItem.innerHTML = `
+                    <div class="input-wrap">
+                        <input type="file" name="" class="file" style="width: 20%;" />
+                        <div class="file-up">
+                        <span class="form-element__inner input-type">
+                            <input type="text" placeholder="파일을 첨부해 주세요." title="파일첨부">
+                        </span>
+                        <button type="button" class="btn-delete file-remove">
+                            <i class="ico-minus"></i>
+                        </button>
+                        <button type="button" class="btn-add">
+                            <i class="ico-plus"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="input-wrap mt-16">
+                        <div class="input-label">대체 텍스트</div>
+                        <span class="form-element__inner input-type">
+                        <input type="text"class="input-type1-font14" maxlength="" placeholder="내용을 입력해 주세요." title="대체텍스트">
+                        </span>
+                    </div>
+                `;
+            } 
+            fileListWrap[0].appendChild(newListItem);
+            fileListWrap[1].appendChild(m_newListItem);
+
+            // 새로 추가된 파일 입력란과 버튼에 이벤트 리스너 추가
+            const newFileInput = newListItem.querySelector('input[type="file"]');
+            const m_newFileInput = m_newListItem.querySelector('input[type="file"]');
+            addFileNameListener(newFileInput);
+            addFileNameListener(m_newFileInput);
+
+            const newAddButton = newListItem.querySelector('.btn-add');
+            const m_newAddButton = m_newListItem.querySelector('.btn-add');
+            addFileAddListener(newAddButton);
+            addFileAddListener(m_newAddButton);
+
+            const newRemoveButton = newListItem.querySelector('.file-remove');
+            const m_newRemoveButton = m_newListItem.querySelector('.file-remove');
+            addFileRemoveListener(newRemoveButton);
+            addFileRemoveListener(m_newRemoveButton);
+        });
+    };
+
+    const fileAddButtons = document.querySelectorAll('.file-list li .btn-add');
     fileAddButtons.forEach(button => {
         addFileAddListener(button);
     });
 
+    // 파일 입력란 삭제 기능
+    const addFileRemoveListener = (button) => {
+        button.addEventListener('click', () => {
+            button.closest('li').remove();
+        });
+    };
+
     const fileRemoveButtons = document.querySelectorAll('.file-list li .file-remove');
     fileRemoveButtons.forEach(button => {
         addFileRemoveListener(button);
-    });
-
+    });   
+    
 
 });

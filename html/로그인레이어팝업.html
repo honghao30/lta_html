@@ -222,26 +222,77 @@
 
   <!-- 모달 -->
   <!-- 이양사무관리 시스템 로그인 -->
-  <section class="modal_new modal_overlay roll-type" id="layer_pop_01"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
-  <div class="modal_n_wrap roll-modal" style="width:500px">
-    <div class="modal-header">
-        <div class="tit">이양사무관리 시스템 로그인</div>
-    </div>
-    <div class="modal_n_body">
-      <div class="pop_cont">
-        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_02');return false">sdf 시스템 로그인</button>
+  <section class="modal_new modal_overlay roll-type modal_on" id="layer_pop_01"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+    <div class="modal_n_wrap roll-modal" style="width:480px">
+      <div class="modal-header">
+          <div class="tit">이양사무관리 시스템 로그인</div>
       </div>
-      
-      <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>
+      <div class="modal_n_body">
+        <!--  -->
+        <div class="pop_cont">
+          <div class="table_cont pc">
+            <table>
+              <colgroup>
+                <col style="width:30%">
+                <col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">아이디</th>
+                  <td>
+                    <div class="form-element__wrap horizon_type">
+                      <span class="form-element__inner input-type input_del">
+                        <input type="text" value="" class="input-type1-font14" placeholder="이름을 입력해 주세요." title="이름 입력">
+                        <button class="del"></button>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">비밀번호</th>
+                  <td>
+                    <div class="form-element__wrap horizon_type">
+                      <span class="form-element__inner input-type input_view">
+                        <input type="password" value="" class="input-type1-font14" placeholder="비밀번호를 다시 한 번 입력해 주세요." title="비밀번호 입력">
+                        <button class="view"></button>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="top_info_box">
+              <div class="left_cont">
+                <label class="input_type check">
+                  <input type="checkbox" name="q01">
+                  <span class="txt">아이디 저장</span>
+                </label>
+              </div>
+              <div class="right_cont">            
+                <span class="bar"><a href="#none">아이디 찾기</a></span>
+                <span><a href="#none">비밀번호 찾기</a></span>
+              </div>
+            </div>
+            <button class="btn btn_puple full">로그인</button>
+            <button class="btn btn_gpki full"><span>GPKI 인증 로그인</span></button>
+            <p class="txt">회원가입을 하셔야 이양사무관리시스템을<br>이용하실 수 있습니다.</p>
+            <button class="btn full">회원가입</button>
+            <p class="copy">ⓒMinistry of the Interior and Safety. All rights reserved.</p>
+          </div>
+          <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_02');return false">레이어2 열기</button>
+        </div>
+        <!--  -->
+        
+        <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
   <!-- //모달 -->
 
   <!-- 모달 -->
   <!-- 아이디·비밀번호 찾기 -->
   <section class="modal_new modal_overlay roll-type" id="layer_pop_02"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
-    <div class="modal_n_wrap roll-modal" style="width:500px">
+    <div class="modal_n_wrap roll-modal">
       <div class="modal-header">
           <div class="tit">아이디·비밀번호 찾기</div>
       </div>
@@ -254,7 +305,7 @@
       </div>
     </div>
   </section>
-    <!-- //모달 -->
+  <!-- //모달 -->
    
 
   <!-- footer -->
@@ -414,7 +465,7 @@
 
   <!-- layerPopup -->
   <!-- 하단 메인 팝업 영역 -->
-  <section class="modal_new modal_overlay modal_on mo" id="main_banner_pop"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+  <section class="modal_new modal_overlay mo" id="main_banner_pop"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
     
     <div class="modal_n_wrap">
       <div class="modal-header">

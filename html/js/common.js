@@ -317,6 +317,53 @@ $(document).ready(function() {
   });
 });
 
+// input del btn
+$(document).ready(function() {
+  // input에 내용이 있을 때 'on' 클래스 추가
+  $('.input_del input').on('input', function() {
+    if ($(this).val().length > 0) {
+      $(this).closest('.input_del').addClass('on');
+    } else {
+      $(this).closest('.input_del').removeClass('on');
+    }
+  });
+
+  // 삭제 버튼 클릭 시 input 내용 지우기
+  $('.input_del .del').on('click', function() {
+    $(this).siblings('input').val(''); // input 내용 지우기
+    $(this).closest('.input_del').removeClass('on'); // 'on' 클래스 제거
+  });
+});
+
+// input view
+$(document).ready(function() {
+  // input에 내용이 있을 때 'on' 클래스 추가, 없으면 제거
+  $('.input_view input').on('input', function() {
+    if ($(this).val().length > 0) {
+      $(this).closest('.input_view').addClass('on');
+    } else {
+      $(this).closest('.input_view').removeClass('on');
+    }
+  });
+  // 비밀번호 보기/숨기기 버튼 클릭 시
+  $('.input_view .view').on('click', function(e) {
+    e.preventDefault(); // 버튼의 기본 동작 방지
+    var $input = $(this).siblings('input'); // 형제 input 요소 선택
+
+    // 비밀번호 필드 타입이 'password'이면 'text'로 바꿔서 보여주기, 아니면 다시 'password'로 바꿈
+    if ($input.attr('type') === 'password') {
+      $input.attr('type', 'text');
+      $(this).addClass('active'); // 버튼에 active 클래스 추가 (눈 모양 바꾸기 등 시각 효과)
+    } else {
+      $input.attr('type', 'password');
+      $(this).removeClass('active'); // active 클래스 제거
+    }
+  });
+});
+
+
+
+
 
 
 
