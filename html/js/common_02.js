@@ -273,5 +273,12 @@ document.addEventListener("DOMContentLoaded", () => {
         addFileRemoveListener(button);
     });   
     
+    // 모바일 검색
+    const toggleButtons = document.querySelector('.btn-detail-mo-toggle');
+    toggleButtons && toggleButtons.addEventListener('click', () => {
+        toggleButtons.innerText = toggleButtons.innerText === '상세조회 열기' ? '상세조회 닫기' : '상세조회 열기';
+        document.querySelector('.mo-search-detail-content').classList.toggle('is-active');
+    });
+    
 
 });
