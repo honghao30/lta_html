@@ -175,12 +175,64 @@
 
         <div class="search_cont mo">
           <span class="search_box">
-            <span class="input_cont" onclick="searchLayer(this);">
-              <input type="text" class="ico_search" placeholder="검색어를 입력해 주세요." readonly>
-              <button class="btn_search"><span class="hidden">검색</span></button>
-            </span>
+            <div class="form-element-rows">
+              <div class="form-element__wrap">                                  
+                <div class="input-multi">
+                    <!-- 콤보박스 -->
+                    <div class="select_box" style="width: 100%;">
+                      <span class="select">전체</span>
+                      <div class="option">
+                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                          <ul>
+                            <li>선택함1</li>
+                            <li>선택함2</li>
+                            <li>선택함3</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>   
+                </div>
+              </div> 
+              <div class="button-area">
+                  <button class="btn_purple_search"><span class="hidden">검색</span></button> 
+              </div>
+            </div>
           </span>
+          <div class="search-detail-button">
+              <button type="button" class="btn-detail-mo-toggle">
+                  상세조회 열기
+              </button>
+          </div>          
         </div>        
+        <!-- 상세조회  -->
+        <div class="mo-search-detail-content">    
+            <div class="form-element-rows">
+              <div class="tit">부서선택</div>
+              <!-- 콤보박스 -->
+              <div class="select_box" >
+                  <span class="select">전체</span>
+                <div class="option">
+                  <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                    <ul>
+                      <li>선택함1</li>
+                      <li>선택함2</li>
+                      <li>선택함3</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>       
+            <div class="form-element-rows">
+              <div class="tit">부서명</div>
+              <!-- 콤보박스 -->
+              <div class="input-multi">
+                <span class="form-element__inner input-type picker-input">
+                    <input type="text" value="" class="input-type1-font14" placeholder="부서명을 입력하세요"  id="datepicker_end2"  title="">
+                </span>
+              </div>
+            </div>                          
+        </div>
+        <!-- //상세검색 -->  
 
       </div>
     </div>

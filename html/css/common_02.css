@@ -1763,6 +1763,7 @@ td:has(.text-type) {
     height: auto;
     flex-direction: column;
     gap: 16px;
+    position: relative;
 }
 .search_cont.mo .search_box .form-element-rows {
     display: flex;
@@ -1825,7 +1826,7 @@ td:has(.text-type) {
         gap: 4px;
     }
     .mo-search-detail-content .form-element-rows .tit {
-        min-width: 30px;
+        min-width: 60px;
         margin-right: 16px;
         color: #222;
         font-size: 18px;
@@ -1837,5 +1838,13 @@ td:has(.text-type) {
         flex:1;
     }
     .mo-search-detail-content  .select_box .select {border-radius: 12px;}
+    .mo .btn_search{
+        width:40px;
+        height:40px;
+        background:url(../img/common/ico_search.png) center right no-repeat;
+        position:absolute;
+        top:8px;
+        right:0;
+    }
 }
 
