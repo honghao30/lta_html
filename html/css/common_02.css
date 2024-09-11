@@ -691,7 +691,7 @@
     gap: 40px;
 }
 .law-wrap .law-tree-menu {
-    width: 224px;
+    width: 248px;
     height: 986px;
     display: flex;
     flex-direction: column;    
@@ -710,6 +710,14 @@
     height: 938px;
     overflow-y: scroll;    
 }
+.haschildren.one-depth .all {    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color:#222;    
+}
 .tree-menu-wrap .tree-menu {
     padding: 16px;
     transition: all 0.3s;
@@ -720,8 +728,8 @@
     display: block;
 }
 .two-depth-list {
-    margin-top: 18px;
-    padding-left: 28px;
+    margin-top: 16px;
+    padding-left: 24px;
     height: 0;
     overflow: hidden;
     transition: all 0.3s;
@@ -768,10 +776,12 @@
 .depthmenu03  {
     height: 0;
     overflow: hidden;
-    transition: all 0.3s;
+    transition: all 0.3s;    
+    margin-left: 28px;
 }
 .depthmenu03.is-active {
     height: auto;
+    margin-top: 8px;
 }
 .depthmenu03 li a {
     font-family: 'Pretendard';
@@ -779,11 +789,49 @@
     font-weight: 400;
     line-height: 15px;
     letter-spacing: -0.02em;    
-    color:#717B8A;
+    color:#AEB7C6;
 }
-.depthmenu03 li+li {
+.depthmenu03 li.is-active a {
+    color:#222;
+}
+.two-depth-button i {
+    border: 1px solid #E1E3E9;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 3px;
+    display: inline-block;
+    background: #fff;
+    padding: 0;
+}
+.two-depth-button i::before {
+    content: '';
+    width:10px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    background-color: #AEB7C6;
+    transform: translate(-50%, -50%);
+}  
+.two-depth-button i::after {
+    content: '';
+    width:1px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    background-color: #AEB7C6;
+    transform: translate(-50%, -50%);
+}
+.two-depth-button.is-active i::after {
+    display: none;
+}
+/* .depthmenu03 li+li {
     margin-top: 8px;
-}
+} */
 .tree-menu-wrap .tree-list .haschildren {
     color:#222;
     font-family: 'Pretendard';
@@ -795,7 +843,7 @@
     border: 0;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 2px;
 
 }
 .tree-menu-wrap .tree-list .haschildren button {
@@ -846,6 +894,16 @@
     display: none;
 }
 
+.two-depth-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Pretendard';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+}
 .two-depth-button i {
     border: 1px solid #E1E3E9;
     width: 20px;
@@ -901,6 +959,14 @@
     line-height: 16px;
     letter-spacing: -0.02em;
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
 }
 .tree-tab-head .tab-menu.is-active {
     background-color: #fff;
@@ -908,6 +974,11 @@
     border-top-right-radius: 12px;
     border: 1px solid #D8DDE9;
     border-bottom: 0;
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.02em;
 }
 .document-title-area {
     display: none;
@@ -1001,12 +1072,13 @@
     height: 36px;
     position: absolute;
     left: 70px;
-    top:0px;
+    top: 0px;
     background-color: #E1E3E9;
 }
 .select_box.view-option .option {
     top: 37px;
 }
+
 
 
 .text-red,
