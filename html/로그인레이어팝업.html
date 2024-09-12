@@ -215,6 +215,7 @@
         <div class="mt20"></div>
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_01');return false">이양사무관리 시스템 로그인</button>
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_02');return false">아이디·비밀번호 찾기</button>
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_03');return false">비밀번호 재설정</button>
 
       </div>
     </div>
@@ -229,7 +230,7 @@
       </div>
       <div class="modal_n_body">
         <div class="pop_cont">
-          <div class="table_cont pc">
+          <div class="table_cont">
             <table>
               <colgroup>
                 <col style="width:70px">
@@ -273,8 +274,8 @@
               <span><a href="#none" onclick="modalControl('o','#layer_pop_02');return false">비밀번호 찾기</a></span>
             </div>
           </div>
-          <button class="btn btn_puple full">로그인</button>
-          <button class="btn btn_gpki full"><span>GPKI 인증 로그인</span></button>
+          <button class="btn btn_puple full size_56">로그인</button>
+          <button class="btn btn_gpki full size_56"><span>GPKI 인증 로그인</span></button>
           <p class="txtbox">회원가입을 하셔야 이양사무관리시스템을<br>이용하실 수 있습니다.</p>
           <button class="btn full size_56">회원가입</button>
           <p class="copy">ⓒMinistry of the Interior and Safety. All rights reserved.</p>
@@ -287,25 +288,25 @@
 
   <!-- 모달 -->
   <!-- 아이디·비밀번호 찾기 -->
-  <section class="modal_new modal_overlay roll-type modal_on" id="layer_pop_02"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+  <section class="modal_new modal_overlay roll-type" id="layer_pop_02"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
     <div class="modal_n_wrap roll-modal layer_login">
       <div class="modal-header">
           <div class="tit">아이디·비밀번호 찾기</div>
       </div>
       <div class="modal_n_body">
         <div class="pop_cont">
-          <p class="txtbox pt0">회원가입을 하셔야 이양사무관리시스템을<br>이용하실 수 있습니다.</p>
+          <p class="txtbox pt0">회원 정보로 입력하신 아이디 또는 비밀번호를<br>찾을 수 있습니다.</p>
           <div class="tabs type01">
             <ul class="tab-menu">
-              <li id="fine_id"><a href="#">아이디 찾기</a></li>
-              <li id="fine_pw" class="active"><a href="#">비밀번호 찾기</a></li>
+              <li id="fine_id" class="active"><a href="#">아이디 찾기</a></li>
+              <li id="fine_pw"><a href="#">비밀번호 찾기</a></li>
             </ul>
             <div class="tab-content">
               <!-- 아이디 찾기 -->
-              <div class="tab">
+              <div class="tab active">
                 <!-- 아이디 찾기 전 -->
                 <div>
-                  <div class="table_cont pc">
+                  <div class="table_cont">
                     <table>
                       <colgroup>
                         <col style="width:70px">
@@ -337,7 +338,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="btn_area txt_align_right pc">
+                  <div class="btn_area txt_align_right">
                     <button class="btn btn_cancel" onclick="modalControl('c')"><span>취소</span></button>
                     <button class="btn btn_approval" onclick="modalControl('c')"><span>확인</span></button>
                   </div>
@@ -346,17 +347,17 @@
                 <!-- 아이디 찾기 후 -->
                 <div>
                   <p class="find_txtbox">고길동님의 아이디는<br><strong class="puple">rhrlfehd123</strong> 입니다.</p>
-                  <div class="btn_area txt_align_right pc">
+                  <div class="btn_area txt_align_right">
                     <button class="btn btn_approval" onclick="modalControl('c')"><span>확인</span></button>
                   </div>
                 </div>
               </div>
 
               <!-- 비밀번호 찾기 -->
-              <div class="tab active">
+              <div class="tab">
                 <!-- 코드 발송 전 -->
-                <div style="display: none;">
-                  <div class="table_cont pc">
+                <div>
+                  <div class="table_cont">
                     <table>
                       <colgroup>
                         <col style="width:70px">
@@ -401,14 +402,14 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="btn_area txt_align_right pc">
+                  <div class="btn_area txt_align_right">
                     <button class="btn btn_cancel" onclick="modalControl('c')"><span>취소</span></button>
                     <button class="btn btn_approval" onclick="modalControl('c')"><span>확인</span></button>
                   </div>
                 </div>
                 <!-- 코드 발송 후 -->
-                <div style="display: none;">
-                  <div class="table_cont pc">
+                <div>
+                  <div class="table_cont">
                     <table>
                       <colgroup>
                         <col style="width:70px">
@@ -460,7 +461,7 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="btn_area txt_align_right pc">
+                  <div class="btn_area txt_align_right">
                     <button class="btn btn_cancel" onclick="modalControl('c')"><span>취소</span></button>
                     <button class="btn btn_approval" onclick="modalControl('c')"><span>확인</span></button>
                   </div>
@@ -468,7 +469,7 @@
                 <!-- 비밀번호 변경 -->
                 <div>
                   <p class="find_txtbox pb0">새로운 비밀번호를 입력해 주세요.</p>
-                  <div class="table_cont pc">
+                  <div class="table_cont">
                     <table>
                       <colgroup>
                         <col style="width:70px">
@@ -500,12 +501,69 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="btn_area txt_align_right pc">
+                  <div class="btn_area txt_align_right">
                     <button class="btn btn_cancel" onclick="modalControl('c')"><span>취소</span></button>
                     <button class="btn btn_approval" onclick="modalControl('c')"><span>확인</span></button>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>
+      </div>
+    </div>
+  </section>
+  <!-- //모달 -->
+
+  <!-- 모달 -->
+  <!-- 비밀번호 재설정 -->
+  <section class="modal_new modal_overlay roll-type" id="layer_pop_03"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+    <div class="modal_n_wrap roll-modal layer_login">
+      <div class="modal-header">
+          <div class="tit">비밀번호 재설정</div>
+      </div>
+      <div class="modal_n_body">
+        <div class="pop_cont">
+          <p class="txtbox pt0">회비밀번호를 다시 설정하실 수 있습니다.</p>
+          <!-- 비밀번호 변경 -->
+          <div class="pw_change_cont">
+            <p class="find_txtbox pb0">새로운 비밀번호를 입력해 주세요.</p>
+            <div class="table_cont">
+              <table>
+                <colgroup>
+                  <col style="width:70px">
+                  <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row"><label for="pw">비밀번호</label></th>
+                    <td>
+                      <div class="form-element__wrap horizon_type">
+                        <span class="form-element__inner input-type input_view">
+                          <input type="password" value="" class="input-type1-font14" placeholder="특수문자, 영문, 숫자를 포함하여 8~20자" title="비밀번호 입력" id="pw">
+                          <button class="view"></button>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><label for="pw">비밀번호<br>재입력</label></th>
+                    <td>
+                      <div class="form-element__wrap horizon_type">
+                        <span class="form-element__inner input-type input_view">
+                          <input type="password" value="" class="input-type1-font14" placeholder="비밀번호를 다시 한 번 입력해 주세요." title="비밀번호 재입력" id="pw">
+                          <button class="view"></button>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="btn_area txt_align_right">
+              <button class="btn btn_cancel" onclick="modalControl('c')"><span>취소</span></button>
+              <button class="btn btn_approval" onclick="modalControl('c')"><span>확인</span></button>
             </div>
           </div>
         </div>

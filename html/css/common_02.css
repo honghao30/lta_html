@@ -1043,8 +1043,9 @@
 .mt-16 {margin-top: 16px;}
 .mt-32 {margin-top: 32px;}
 .mt-64 {margin-top: 64px;}
-
+.pdl-30 {padding-left: 30px}
 .float-r {float:right !important;}
+.wid80 {width: 80px;}
 
 .btn.ico_penci-bl span{
     background:url(../img/pc/ico/ico_pencil.png) no-repeat 0 center;
@@ -1951,9 +1952,6 @@ td:has(.text-type) {
 .process-step-list li.detail-board  {
     width: 144px;
     height: 81px;
-    border-radius: 16px;
-    border: 1px solid #fff;
-    box-shadow: 0px 4px 8px 0px #0D23971A;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -1963,8 +1961,7 @@ td:has(.text-type) {
     display: block;
     position: absolute;
     right: -34px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 28px;
     width: 24px;
     height: 24px;
     background: url('../img/pc/ico/ico_arrow_blue24.png') no-repeat;
@@ -1984,6 +1981,9 @@ td:has(.text-type) {
     height: 100%;
     flex-direction: column;
     overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid #fff;
+    box-shadow: 0px 4px 8px 0px #0D23971A;
 }
 .process-step-list li.detail-board dt {
     width: 100%;
@@ -2129,4 +2129,100 @@ td:has(.text-type) {
 }
 .table_cont table.table-list.iyangsamu-table tbody tr:hover td {
     background-color: #EDF3FF !important;
+}
+
+/* 이양 사무 검색 */
+.search-table {width: 100%;max-width: 977px;}
+.search-table .table-body-only {width: 100%;}
+.search_cont_detail.iyangsamu-search.on {
+    height: auto;
+    transition: all 0.3s;
+}
+.search_cont_detail .search-table .table-body-only tbody tr th {
+    background-color: #F3F5FD;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    padding: 12px 0;
+    color:#222;
+    border-bottom: 1px solid #C4C5F7;
+}
+.search_cont_detail .search-table .table-body-only tbody tr td {    
+    border-left: 0;    
+    vertical-align: middle;
+    border-bottom: 1px solid #C4C5F7;
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    padding: 12px 16px;
+    color:#222;
+}
+.search_cont_detail .search-table .table-body-only {
+    border-top: 1px solid #C4C5F7;
+}
+.search_cont_detail .search-table .table-body-only tbody tr td .form-element__wrap .form-element__inner {
+    background-color: #fff;
+}
+.form-element-rows {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search_cont_detail .search-table .table-body-only tbody tr td .input_type.check input:checked+.txt:before {
+    background: url(../img/pc/ico/input_check2_on.png) 50% no-repeat;
+}
+.search_cont_detail .search-table .table-body-only tbody tr td .select_box {
+    text-align: left;
+}
+.dv-bar {
+    position: relative;
+    width: 1px;
+    height: 14px;
+    background-color: #AEB7C6;
+}
+.search_cont_detail .search-table .table-body-only tbody tr td .cate-text {
+    margin-right: 26px;
+}
+.yiyang-list li {
+    border-bottom: 1px solid #D8DDE9;
+}
+.yiyang-list li:first-child {
+    padding-bottom: 12px;
+}
+.yiyang-list li:last-child {
+    padding-top: 12px;
+    border-bottom: 0;
+}
+.btn_reset_only-icon {
+    width: 46px;
+    height: 46px;
+    background-image: url(../img/pc/btn/btn_search_icon48.png);
+    background-position: center center;
+    background-color: transparent;
+    position: absolute;
+    right: 40px;
+    bottom: 24px;    
+    border: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.btn_search_only-icon {
+    width: 46px;
+    height: 46px;
+    background-image: url(../img/pc/btn/btn_reset_48.png);
+    background-position: center center;
+    position: absolute;
+    right: 40px;
+    bottom: 80px;    
+    border: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: transparent;
 }
