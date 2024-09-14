@@ -2314,3 +2314,36 @@ td:has(.text-type) {
     color:#222;
     margin: 0 16px;
 }
+
+/* // 탭 */
+.box-tab__wrap {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    border: 1px solid #D8DDE9;
+    overflow: hidden;
+}
+.box-tab__wrap a {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color:#494E56;
+    border-left: 1px solid #D8DDE9;
+    height: 56px;
+    width: 100%;
+}
+.box-tab__wrap a:first-child {
+    border-left: 0;
+}
+.box-tab__wrap a.is-active {
+    background-color: #706DF0;
+    color:#fff;
+}
