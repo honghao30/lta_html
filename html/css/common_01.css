@@ -924,6 +924,8 @@ textarea{
 
     .pw_change_cont .find_txtbox{border-top: 1px solid #D8DDE9;}
     .pw_change_cont .table_cont{border:0;}
+
+    
     
     /* 탭 */
     .tabs.type01 .tab-menu{display: table;table-layout: fixed;width:100%;border-radius: 12px 12px 0px 0px;overflow: hidden;}
@@ -937,6 +939,9 @@ textarea{
     .warning_area .tit strong{color: #222;font-family: Pretendard;font-size: 24px;font-style: normal;font-weight: 700;line-height: 32px;height:32px;letter-spacing: -0.48px;background:url(../img/pc/ico/ico_warning.png) no-repeat;padding-left:40px;display: block;}
     .warning_area .txt{margin-top:13px;color: #222;font-family: Pretendard;font-size: 18px;font-style: normal;font-weight: 400;line-height: 28px;letter-spacing: -0.36px;}
 
+    .user_info .rank{border-radius: 20px;background: #706DF0;padding: 8px 12px;color: #FFF;font-family: Pretendard;font-size: 18px;font-style: normal;font-weight: 500;line-height: 20px;letter-spacing: -0.28px;display:inline-block;vertical-align: middle;}
+    .user_info .user{color: #222;font-family: Pretendard;font-size: 24px;font-style: normal;font-weight: 400;line-height: 24px;letter-spacing: -0.36px;vertical-align: middle;}
+    .user_info .user strong{font-weight: 700;}
 
     /* common_02.css 추가 아니면 수정할부분 */
     /* common_02.css 추가 아니면 수정할부분 */
@@ -957,6 +962,11 @@ textarea{
       @media (max-width: 480px) {
         input[type=radio], input[type=checkbox]{width:24px; height:24px;}
         .inner{padding:0 20px;position:relative;}
+
+        /* btn */
+        .btn_cancel span{background:url(../img/mo/ico/ico_btn_cancel.png) no-repeat 0 center;background-size:24px auto;}
+        .btn_save span{background:url(../img/mo/ico/ico_btn_save.png) no-repeat 0 center;background-size:24px auto;}
+        .btn_approval span{background:url(../img/mo/ico/ico_btn_check.png) no-repeat 0 center;background-size:24px auto;color:#fff;}
 
         /* search_total */
         .search_total .txt{color: #494E56;font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: 15px;letter-spacing: -0.3px;}
@@ -1138,9 +1148,9 @@ textarea{
         .mypagelayer .content_wrap{padding:40px 20px;}
         .mypagelayer .content_wrap .select_box+.select_box{margin-top:8px;}
 
-        .mypagelayer .user_info .rank{border-radius: 12px;background: #706DF0;padding: 4px 8px;color: #FFF;font-family: Pretendard;font-size: 14px;font-style: normal;font-weight: 500;line-height: 14px;letter-spacing: -0.28px;display:inline-block;}
-        .mypagelayer .user_info .user{color: #222;font-family: Pretendard;font-size: 18px;font-style: normal;font-weight: 400;line-height: 18px;letter-spacing: -0.36px;}
-        .mypagelayer .user_info .user strong{font-weight: 700;}
+        .user_info .rank{border-radius: 12px;background: #706DF0;padding: 4px 8px;color: #FFF;font-family: Pretendard;font-size: 14px;font-style: normal;font-weight: 500;line-height: 14px;letter-spacing: -0.28px;display:inline-block;}
+        .user_info .user{color: #222;font-family: Pretendard;font-size: 18px;font-style: normal;font-weight: 400;line-height: 18px;letter-spacing: -0.36px;}
+        .user_info .user strong{font-weight: 700;}
         .mypagelayer .box{margin-top:24px;padding: 24px 20px;border-radius: 24px;background: #F4F7FB;}
         .mypagelayer .box .tit{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;font-weight: 500;line-height: 16px;letter-spacing: -0.32px;}
         .mypagelayer .box .tit span{padding-left:28px;height:20px;line-height:20px;display:inline-block;}
@@ -1277,7 +1287,7 @@ textarea{
         .join_agree li:last-child{padding-bottom:13px;border-bottom:1px solid #C4C5F7;}
         .input_del{position:relative;padding-right:20px;}
         .input_del.on .del{display:block;}
-        .input_del .del{display:none;position:absolute;top:50%;right: 0;transform: translate(-50%, -50%);background: url(../img/pc/btn_del.png) no-repeat center;width:20px;height:20px;border:none;}
+        .input_del .del{display:none;position:absolute;top:50%;right: 0;transform: translate(-50%, -50%);background: url(../img/mo/btn_del.png) no-repeat center;width:20px;height:20px;border:none;background-size:20px auto;}
         
         .input_code{position:relative;padding-right: 16px !important;}
         .input_del.input_code input{padding-right:40px !important;}
@@ -1287,11 +1297,10 @@ textarea{
         .input_view{position:relative;}
         .input_view.on .view{display:block;}
         .input_view input{padding-right:20px !important;}
-        .input_view .view{display:none;position:absolute;top:50%;right: 0;transform: translate(-50%, -50%);background: url(../img/pc/btn_view_close.png) no-repeat center;width:20px;height:20px;border:none;}
-        .input_view .view.active{background: url(../img/pc/btn_view_open.png) no-repeat center;}
+        .input_view .view{display:none;position:absolute;top:50%;right: 0;transform: translate(-50%, -50%);background: url(../img/mo/btn_view_close.png) no-repeat center;width:20px;height:20px;border:none;background-size:24px auto;}
+        .input_view .view.active{background: url(../img/mo/btn_view_open.png) no-repeat center;background-size:24px auto;}
 
         /* 레이어팝업 컨텐츠 */
-        /* .layer_login{width:480px !important;} */
         .layer_login .modal_n_body{border-bottom-left-radius: 12px;border-bottom-right-radius: 12px;padding:40px 20px !important;}
         .layer_login .table_cont{padding:32px 0;border-top:1px solid #D8DDE9;border-bottom:1px solid #D8DDE9;}
         .layer_login th{border:none;color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: -0.32px;vertical-align: middle;}
@@ -1327,9 +1336,9 @@ textarea{
         .tabs.type01 .table_cont{border:none;}
 
         /* 서비스 안내 */
-        .warning_area{padding:40px;border-radius: 24px;background: #F1F1FE;margin-bottom:64px;}
-        .warning_area .tit strong{color: #222;font-family: Pretendard;font-size: 18px;font-style: normal;font-weight: 700;line-height: 32px;letter-spacing: -0.48px;background:url(../img/pc/ico/ico_warning.png) no-repeat;padding-left:40px;display: block;}
-        .warning_area .txt{margin-top:13px;color: #222;font-family: Pretendard;font-size: 18px;font-style: normal;font-weight: 400;line-height: 28px;letter-spacing: -0.36px;}
+        .warning_area{padding:40px;border-radius: 24px;background: #F1F1FE;margin-bottom:32px;}
+        .warning_area .tit strong{color: #222;font-family: Pretendard;font-size: 18px;font-style: normal;font-weight: 700;line-height: 26px;letter-spacing: -0.48px;background:url(../img/pc/ico/ico_warning.png) no-repeat;padding:50px 0 0 0;display: block;word-break: keep-all;}
+        .warning_area .txt{margin-top:13px;color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;font-weight: 400;line-height: 24px;letter-spacing: -0.36px;word-break: keep-all;}
 
 
         /* common_02.css 추가 아니면 수정할부분 */
