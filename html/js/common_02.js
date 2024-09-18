@@ -301,7 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
             listElement.insertBefore(newListItem, listElement.firstChild);
         };
     
-        listElement.addEventListener('click', (e) => {
+        listElement && listElement.addEventListener('click', (e) => {
             if (e.target.closest('.btn-add')) {
                 handleAddClick(itemHTML);
             }
@@ -373,6 +373,10 @@ document.addEventListener("DOMContentLoaded", () => {
             </button>
     `;
     dynamicAddList('.dynamic_add-list2', yiYangPart);
+   
+    document.querySelector('.btn-tooltip') && document.querySelector('.btn-tooltip').addEventListener('click', () => {
+        document.querySelector('.btn-tooltip').nextElementSibling.classList.toggle('is-active');
+    })
     
 
 });
