@@ -1055,6 +1055,7 @@
 .mt-16 {margin-top: 16px;}
 .mt-32 {margin-top: 32px;}
 .mt-64 {margin-top: 64px;}
+.mt-80 {margin-top: 80px;}
 .pdl-30 {padding-left: 30px}
 .ml-5 {margin-left: 5px;}
 .ml-10 {margin-left: 10px;}
@@ -1308,6 +1309,7 @@
         word-break: break-word;
         line-height: 19px;
     }
+
     .modal_n_body .table_cont .table-body-only tbody td {
         word-break: break-word;
         white-space: normal;
@@ -2655,4 +2657,108 @@ td:has(.text-type) {
     line-height: 24px;
     letter-spacing: -0.02em;
     color:#717B8A;
+}
+
+.gray-box-full__wrap .gray-box-bottom .tit .description {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;   
+    color: #717B8A; 
+    margin-top: 8px;
+}
+.btn-back-arrow {
+    font-family: 'Pretendard';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #706DF0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.btn-back-arrow::before {
+    content: '';
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    background: url('../img/pc/ico/ico_arrow_blue24.png') no-repeat;
+    background-size: contain;
+    transform: rotate(-180deg);
+    vertical-align: middle;
+}
+
+/* 이양사무 등록 */
+.flex-row.flex-row.justify-between.flex-end {
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+.yiyang-add-wrap {
+    margin-top: 64px;
+    
+}
+.yiyang-add-wrap .yiyang-add-inner {
+    position: relative;    
+    padding-bottom: 80px;
+}
+.yiyang-add-wrap .yiyang-add-inner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom:0;
+    left: -100vw;
+    width: 300vw;
+    height: 16px;
+    background-color: #F4F7FB;
+    border-top: 1px solid #E1E3E9;
+}
+.yiyang-add-wrap .document-description {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color:#717B8A;
+    margin-top: 16px;
+}
+.yiyang-add-wrap .document-title {
+    color: #222;
+}
+
+.btn-text-only-toggle {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #706DF0;
+    margin-left: 24px;
+    position: relative;
+}
+.btn-text-only-toggle span::after {
+    content: '';
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    background: url('../img/pc/ico/ic_h16_arrow_purple_down.png') no-repeat;
+    vertical-align: middle;
+    margin-left: 4px;
+    transition: all 0.3s;
+}
+.btn-text-only-toggle.is-active span::after {
+    transform: rotate(-180deg);
+    transition: all 0.3s;
+}
+.table_cont .table-body-only tbody td.inner-table .inner-table-cont table tbody tr td:last-child {
+    border-right: 0 !important;
+}
+.yiyang-cont-box {
+    display: none;
+}
+.yiyang-cont-box.is-active {
+    display: block;
 }
