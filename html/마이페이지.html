@@ -214,8 +214,7 @@
         <h3 class="document-title">레이어 버튼들 (onclick 안에 아이디값을 넣어서 연결 ex : #layer_pop_01)</h3>
         <div class="mt20"></div>
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_01');return false">마이페이지 사용자/관리자</button>
-        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_02');return false">아이디·비밀번호 찾기</button>
-        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_03');return false">비밀번호 재설정</button>
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_02');return false">회원탈퇴</button>
 
       </div>
     </div>
@@ -223,8 +222,8 @@
 
   <!-- 모달 -->
   <!-- 마이페이지 -->
-  <section class="modal_new modal_overlay roll-type modal_on" id="layer_pop_01"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
-    <div class="modal_n_wrap roll-modal sdf">
+  <section class="modal_new modal_overlay roll-type keep modal_on" id="layer_pop_01"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+    <div class="modal_n_wrap roll-modal layer_mypage layer_radius">
       <div class="modal-header">
           <div class="tit">마이페이지</div>
       </div>
@@ -233,52 +232,576 @@
           <div class="tabs type01">
             <ul class="tab-menu">
               <li id="fine_id" class="active"><a href="#">마이페이지</a></li>
-              <li id="fine_pw"><a href="#">비밀번호 찾기</a></li>
+              <li id="fine_pw"><a href="#">회원정보 변경</a></li>
             </ul>
             <div class="tab-content">
               <!-- 마이페이지 -->
               <div class="tab active">
-                <div class="user_info">
-                  <span class="rank"><strong>7</strong>등급</span>
-                  <span class="user"><strong>김길동</strong>님 </span>
+                <div class="tab_cont">
+                  <div class="user_info">
+                    <span class="rank"><strong>7</strong>등급</span>
+                    <span class="user"><strong>김길동</strong>님 </span>
+                  </div>
+                  <!-- pc -->
+                  <div class="pc">
+                    <div class="table_cont list_type">
+                      <table class="table-body-only">
+                        <colgroup>
+                          <col width="160px">
+                          <col>
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">나의 이양사무</th>
+                            <td>
+                              <ul class="list">
+                                <li><a href="#none">사무승인 요청 <strong class="color">(24)</strong></a></li>
+                                <li><a href="#none">조사작성중 <strong class="color">(2)</strong></a></li>
+                                <li><a href="#none">이양건의 <strong class="color">(1)</strong></a></li>
+                                <li><a href="#none">의견수렴 <strong class="color">(2)</strong></a></li>
+                              </ul>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">나의 문의</th>
+                            <td>
+                              <ul class="list">
+                                <li><a href="#none">진행 상황 문의</a></li>
+                                <li><a href="#none">진행 문의</a></li>
+                                <li><a href="#none">이양건의 문의</a></li>
+                              </ul>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">나의 자료실</th>
+                            <td>
+                              <ul class="list">
+                                <li><a href="#none">최근 다운받은 자료 게시물 제목 1</a></li>
+                                <li><a href="#none">최근 다운받은 자료 게시물 제목 2</a></li>
+                                <li><a href="#none">최근 다운받은 자료 게시물 제목 3</a></li>
+                              </ul>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- mo -->
+                  <div class="mo">
+                    <div class="list_type">
+                      <div class="box">
+                        <strong class="tit">나의 이양사무</strong>
+                        <ul class="list">
+                          <li><a href="#none">사무승인 요청 <strong class="color">(24)</strong></a></li>
+                          <li><a href="#none">조사작성중 <strong class="color">(2)</strong></a></li>
+                          <li><a href="#none">이양건의 <strong class="color">(1)</strong></a></li>
+                          <li><a href="#none">의견수렴 <strong class="color">(2)</strong></a></li>
+                        </ul>
+                      </div>
+                      <div class="box">
+                        <strong class="tit">나의 문의</strong>
+                        <ul class="list">
+                          <li><a href="#none">진행 상황 문의</a></li>
+                          <li><a href="#none">진행 문의</a></li>
+                          <li><a href="#none">이양건의 문의</a></li>
+                        </ul>
+                      </div>
+                      <div class="box">
+                        <strong class="tit">나의 자료실</strong>
+                        <ul class="list">
+                          <li><a href="#none">최근 다운받은 자료 게시물 제목 1</a></li>
+                          <li><a href="#none">최근 다운받은 자료 게시물 제목 2</a></li>
+                          <li><a href="#none">최근 다운받은 자료 게시물 제목 3</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="table_cont pc">
-                  <table class="table-body-only">
-                    <colgroup>
-                      <col width="160px">
-                      <col>
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <th scope="row">나의 이양사무</th>
-                        <td>
-                          <span class="txt">ㄴㅇㄹ</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">나의 문의</th>
-                        <td>
-                          <span class="txt">ㄴㅇㄹ</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">나의 자료실</th>
-                        <td>
-                          <span class="txt">ㄴㅇㄹ</span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <!-- 사용자 일때 -->
+                <div class="btn_area txt_align_right border_none pt0">
+                  <button class="btn btn_approval btn_w_s" onclick="modalControl('c')"><span>확인</span></button>
                 </div>
-                <div class="btn_area txt_align_right">
-                  <button class="btn btn_cancel" onclick="modalControl('c')"><span>취소</span></button>
-                  <button class="btn btn_approval" onclick="modalControl('c')"><span>확인</span></button>
+                <!-- 관리자 일때 -->
+                <div class="btn_area txt_align_right border_none pt0 flex_type">
+                  <button class="btn btn_edit" onclick="modalControl('c')"><span>회원정보 변경</span></button>
+                  <button class="btn btn_approval btn_w_s" style="width:108px" onclick="modalControl('c')"><span>확인</span></button>
                 </div>
               </div>
               
-              <!-- 비밀번호 찾기 -->
+              <!-- 회원정보 변경 -->
               <div class="tab">
-                sdf22222222
+                <!-- type 회원정보 변경 -->
+                <!-- pc -->
+                <div class="pc">
+                  <div class="tab_cont">
+                    <div class="table_cont">
+                      <table class="table-body-only">
+                        <colgroup>
+                          <col width="160px">
+                          <col>
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">아이디</th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                tkafjd42
+                                <button type="button" class="btn-gra-sm"><span>GPKI 인증</span></button>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">비밀번호 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_view" style="width:400px">
+                                  <input type="password" value="" class="input-type1-font14" placeholder="특수문자, 영문, 숫자를 포함하여 8~20자" title="비밀번호 입력">
+                                  <button class="view"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">비밀번호 확인 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_view" style="width:400px">
+                                  <input type="password" value="" class="input-type1-font14" placeholder="비밀번호를 다시 한 번 입력해 주세요." title="비밀번호 입력">
+                                  <button class="view"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">이름 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="" class="input-type1-font14" placeholder="이름을 입력해 주세요." title="이름 입력">
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">기관명 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="" class="input-type1-font14" placeholder="기관명을 입력해 주세요." title="기관명 입력">
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">부서 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="" class="input-type1-font14" placeholder="부서를 입력해 주세요." title="부서 입력">
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">직급</th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="" class="input-type1-font14" placeholder="직급을 입력해 주세요." title="직급 입력">
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">이메일 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="" class="input-type1-font14" placeholder="이메일을 입력해 주세요." title="이메일 입력">
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">부서전화 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="" class="input-type1-font14" placeholder="부서전화를  입력해 주세요." title="부서전화 입력">
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="btn_area txt_align_right">
+                    <button class="btn btn_out" onclick="modalControl('o','#layer_pop_02');return false"><span>회원탈퇴</span></button>
+                    <button class="btn btn_cancel btn_w_s" onclick="modalControl('c')"><span>취소</span></button>
+                    <button class="btn btn_approval" onclick="modalControl('c')"><span>변경사항 저장</span></button>
+                  </div>
+                </div>
+                <!-- mo -->
+                <div class="mo">
+                  <div class="tab_cont">
+                    <div class="table_cont">
+                      <table class="table-body-only">
+                        <colgroup>
+                          <col width="160px">
+                          <col>
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">아이디sdf</th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                tkafjd42
+                                <button type="button" class="btn-gra-sm"><span>GPKI 인증</span></button>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">비밀번호 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_view" style="width:400px">
+                                  <input type="password" value="" class="input-type1-font14" placeholder="특수문자, 영문, 숫자를 포함하여 8~20자" title="비밀번호 입력">
+                                  <button class="view"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">비밀번호 확인 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_view" style="width:400px">
+                                  <input type="password" value="" class="input-type1-font14" placeholder="비밀번호를 다시 한 번 입력해 주세요." title="비밀번호 입력">
+                                  <button class="view"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">이름 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="" class="input-type1-font14" placeholder="이름을 입력해 주세요." title="이름 입력">
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">기관명 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="" class="input-type1-font14" placeholder="기관명을 입력해 주세요." title="기관명 입력">
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">부서 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="" class="input-type1-font14" placeholder="부서를 입력해 주세요." title="부서 입력">
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">직급</th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="" class="input-type1-font14" placeholder="직급을 입력해 주세요." title="직급 입력">
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">이메일 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="" class="input-type1-font14" placeholder="이메일을 입력해 주세요." title="이메일 입력">
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">부서전화 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="" class="input-type1-font14" placeholder="부서전화를  입력해 주세요." title="부서전화 입력">
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="btn_area txt_align_right">
+                    <button class="btn btn_out" onclick="modalControl('o','#layer_pop_02');return false"><span>회원탈퇴</span></button>
+                    <button class="btn btn_cancel btn_w_s" onclick="modalControl('c')"><span>취소</span></button>
+                    <button class="btn btn_approval" onclick="modalControl('c')"><span>변경사항 저장</span></button>
+                  </div>
+                </div>
+
+                <!-- pc -->
+                <div class="pc">
+                  <!-- type GPKI 인증 -->
+                  <div class="tab_cont">
+                    <div class="table_cont">
+                      <table class="table-body-only">
+                        <colgroup>
+                          <col width="160px">
+                          <col>
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">아이디</th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                tkafjd42
+                                <button type="button" class="btn-gra-sm"><span>GPKI 재인증</span></button>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">비밀번호 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_view" style="width:400px">
+                                  <input type="password" value="" class="input-type1-font14" placeholder="특수문자, 영문, 숫자를 포함하여 8~20자" title="비밀번호 입력">
+                                  <button class="view"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">비밀번호 확인 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_view" style="width:400px">
+                                  <input type="password" value="" class="input-type1-font14" placeholder="비밀번호를 다시 한 번 입력해 주세요." title="비밀번호 입력">
+                                  <button class="view"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">이름 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="고길동" class="input-type1-font14" placeholder="이름을 입력해 주세요." title="이름 입력" disabled>
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">기관명 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="외교부" class="input-type1-font14" placeholder="기관명을 입력해 주세요." title="기관명 입력" disabled>
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">부서 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="해외위험분석 부속실" class="input-type1-font14" placeholder="부서를 입력해 주세요." title="부서 입력" disabled>
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">직급</th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="행정주사" class="input-type1-font14" placeholder="직급을 입력해 주세요." title="직급 입력" disabled>
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">이메일 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="kimam@korea.go.kr" class="input-type1-font14" placeholder="이메일을 입력해 주세요." title="이메일 입력" disabled>
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">부서전화 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="010-1234-5678" class="input-type1-font14" placeholder="부서전화를  입력해 주세요." title="부서전화 입력">
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="btn_area txt_align_right">
+                    <button class="btn btn_out" onclick="modalControl('o','#layer_pop_02');return false"><span>회원탈퇴</span></button>
+                    <button class="btn btn_cancel btn_w_s" onclick="modalControl('c')"><span>취소</span></button>
+                    <button class="btn btn_approval" onclick="modalControl('c')"><span>변경사항 저장</span></button>
+                  </div>
+                </div>
+                <!-- mo -->
+                <div class="mo">
+                  <!-- type GPKI 인증 -->
+                  <div class="tab_cont">
+                    <div class="table_cont">
+                      <table class="table-body-only">
+                        <colgroup>
+                          <col width="160px">
+                          <col>
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <th scope="row">아이디sdf</th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                tkafjd42
+                                <button type="button" class="btn-gra-sm"><span>GPKI 재인증</span></button>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">비밀번호 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_view" style="width:400px">
+                                  <input type="password" value="" class="input-type1-font14" placeholder="특수문자, 영문, 숫자를 포함하여 8~20자" title="비밀번호 입력">
+                                  <button class="view"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">비밀번호 확인 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_view" style="width:400px">
+                                  <input type="password" value="" class="input-type1-font14" placeholder="비밀번호를 다시 한 번 입력해 주세요." title="비밀번호 입력">
+                                  <button class="view"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">이름 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="고길동" class="input-type1-font14" placeholder="이름을 입력해 주세요." title="이름 입력" disabled>
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">기관명 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="외교부" class="input-type1-font14" placeholder="기관명을 입력해 주세요." title="기관명 입력" disabled>
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">부서 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="해외위험분석 부속실" class="input-type1-font14" placeholder="부서를 입력해 주세요." title="부서 입력" disabled>
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">직급</th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="행정주사" class="input-type1-font14" placeholder="직급을 입력해 주세요." title="직급 입력" disabled>
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">이메일 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="kimam@korea.go.kr" class="input-type1-font14" placeholder="이메일을 입력해 주세요." title="이메일 입력" disabled>
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                          <tr>
+                            <th scope="row">부서전화 <i class="star">*</i></th>
+                            <td>
+                              <div class="form-element__wrap horizon_type">
+                                <span class="form-element__inner input-type input_del" style="width:400px">
+                                  <input type="text" value="010-1234-5678" class="input-type1-font14" placeholder="부서전화를  입력해 주세요." title="부서전화 입력">
+                                  <button class="del"></button>
+                                </span>
+                              </div>                            
+                            </td>               
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="btn_area txt_align_right">
+                    <button class="btn btn_out" onclick="modalControl('o','#layer_pop_02');return false"><span>회원탈퇴</span></button>
+                    <button class="btn btn_cancel btn_w_s" onclick="modalControl('c')"><span>취소</span></button>
+                    <button class="btn btn_approval" onclick="modalControl('c')"><span>변경사항 저장</span></button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -291,56 +814,23 @@
 
   <!-- 모달 -->
   <!-- 비밀번호 재설정 -->
-  <section class="modal_new modal_overlay roll-type" id="layer_pop_03"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
-    <div class="modal_n_wrap roll-modal layer_login">
+  <section class="modal_new modal_overlay roll-type" id="layer_pop_02"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+    <div class="modal_n_wrap roll-modal layer_message">
       <div class="modal-header">
-          <div class="tit">비밀번호 재설정</div>
+          <!-- <div class="tit">비밀번호 재설정</div> -->
       </div>
       <div class="modal_n_body">
         <div class="pop_cont">
-          <p class="txtbox pt0">회비밀번호를 다시 설정하실 수 있습니다.</p>
-          <!-- 비밀번호 변경 -->
-          <div class="pw_change_cont">
-            <p class="find_txtbox pb0">새로운 비밀번호를 입력해 주세요.</p>
-            <div class="table_cont">
-              <table>
-                <colgroup>
-                  <col style="width:70px">
-                  <col>
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <th scope="row"><label for="pw">비밀번호</label></th>
-                    <td>
-                      <div class="form-element__wrap horizon_type">
-                        <span class="form-element__inner input-type input_view">
-                          <input type="password" value="" class="input-type1-font14" placeholder="특수문자, 영문, 숫자를 포함하여 8~20자" title="비밀번호 입력" id="pw">
-                          <button class="view"></button>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><label for="pw">비밀번호<br>재입력</label></th>
-                    <td>
-                      <div class="form-element__wrap horizon_type">
-                        <span class="form-element__inner input-type input_view">
-                          <input type="password" value="" class="input-type1-font14" placeholder="비밀번호를 다시 한 번 입력해 주세요." title="비밀번호 재입력" id="pw">
-                          <button class="view"></button>
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="btn_area txt_align_right">
-              <button class="btn btn_cancel" onclick="modalControl('c')"><span>취소</span></button>
-              <button class="btn btn_approval" onclick="modalControl('c')"><span>확인</span></button>
-            </div>
-          </div>
+         <div class="txt_box">
+          <strong class="tit">회원 탈퇴를 진행하시겠습니까?</strong>
+          <p class="txt">회원 탈퇴를 누르시면 즉시 탈퇴가 완료되며,<br>탈퇴한 아이디로는 다시 가입이 불가능 합니다.</p>
+         </div>
+         <div class="btn_area txt_align_right">
+           <button class="btn btn_cancel btn_w_s" onclick="modalControl('c')"><span>취소</span></button>
+           <button class="btn btn_approval" onclick="modalControl('c')"><span>회원탈퇴</span></button>
+         </div>
         </div>
-        <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>
+        <!-- <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button> -->
       </div>
     </div>
   </section>

@@ -51,23 +51,41 @@ $(document).ready(function() {
 });
 
 // 모달 레이어
-function modalControl(type,id,size){ //type:열기(o),닫기(c) / id: 열 모달의 id / size: 모달 가로 사이즈
-	var $html = $("html");
-	if(type == "o"){ //모달 열기
-	  $html.addClass("modal-open");//모달오픈 시 뒤의 스크롤이 움직이는 것을 방지
-	  $(".modal_new").not(id).removeClass("modal_on");
-	  var $modalOn = $(id).addClass("modal_on").on("click", function(e){
-		if( $modalOn.hasClass("modal_overlay") && $(".modal_n_wrap").is(e.target) ){ //오버레이 클릭 시 닫기
-		  $modalOn.removeClass("modal_on");
-		  $html.removeClass("modal-open");
-		}
-	  });
-	} else if(type == "c"){ //모달 닫기
-	  $(".modal_new.modal_on").removeClass("modal_on");
-	  $html.removeClass("modal-open");
-	  // userInfoPop 모달창이 열리기 전에
-	}
+// 모달 레이어
+function modalControl(type, id, size) { // type: 열기(o), 닫기(c) / id: 열 모달의 id / size: 모달 가로 사이즈
+    var $html = $("html");
+    
+    if (type == "o") { // 모달 열기
+        $html.addClass("modal-open"); // 모달 열리면 스크롤 방지
+
+        // keep 클래스가 없는 모달들만 닫음
+        $(".modal_new").not(".keep").not(id).removeClass("modal_on");
+        
+        var $modalOn = $(id).addClass("modal_on");
+
+        // 모달에 modal_overlay 클래스가 있을 때만 오버레이 클릭 시 닫기
+        if ($modalOn.hasClass("modal_overlay")) {
+            $modalOn.on("click", function(e) {
+                // 클릭한 부분이 .modal_n_wrap 내부가 아니라면 (즉, 오버레이 클릭 시)
+                if (!$(e.target).closest('.modal_n_wrap').length) {
+                    $modalOn.removeClass("modal_on");
+                    if ($(".modal_new.modal_on").length === 0) {
+                        $html.removeClass("modal-open"); // 모든 모달이 닫히면 스크롤 해제
+                    }
+                }
+            });
+        }
+    } else if (type == "c") { // 모달 닫기
+        // 모든 모달을 닫음 (keep 클래스가 있어도 닫음)
+        $(".modal_new.modal_on").removeClass("modal_on");
+
+        if ($(".modal_new.modal_on").length === 0) {
+            $html.removeClass("modal-open"); // 모든 모달이 닫히면 스크롤 해제
+        }
+    }
 }
+
+
 
 // 상세검색 열기
 $(document).ready(function(){

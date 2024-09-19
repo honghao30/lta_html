@@ -2916,3 +2916,23 @@ td:has(.text-type) {
 #toggle-tbody.is-active {
     display: block;
 }
+
+.font-type20-400 {
+    font-family: Pretendard;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color:#222;
+}
+.font-type16-400 {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color:#717B8A;
+}
+.modal-header.mini-size {
+    height: 16px !important;
+}
