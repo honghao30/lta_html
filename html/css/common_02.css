@@ -1110,7 +1110,9 @@
 .select_box.view-option .option {
     top: 37px;
 }
-
+.select_box.view-option.wd168 .select::after {
+    left: 116px;
+}
 
 
 .text-red,
