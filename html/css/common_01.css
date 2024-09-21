@@ -205,7 +205,7 @@ em{ color:#ff5a63;}
 .btn_green{background-color:#48cfad !important;}
 
 .btn_input{height:38px; line-height:38px; padding:0 50px; font-size:16px; font-weight:400; background-color:#434a54;}
-.btn.full {width:100%; padding:0;}
+.btn.full {width:100% !important; padding:0;}
 .btn.btn_s{padding:0 10px; }
 .btn.btn_m{padding:0 20px; }
 .btn_con{position:relative; margin-top:40px; text-align: center;}
@@ -700,7 +700,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     /* select_box */
     .select_box{position:relative;display:inline-block;cursor: pointer;}
     .select_box.on .select{border-radius: 12px 12px 0 0;}
-    .select_box .select{display:inline-block;height: 50px;width:100%;line-height:50px;padding:0px 40px 0 16px;border-radius: 12px;border: 1px solid #E1E3E9;background:#fff url(../img/pc/ico/ico_select_arrow.png) no-repeat right 16px center !important;}
+    .select_box .select{height: 50px;line-height:50px;padding:0px 40px 0 16px;border-radius: 12px;border: 1px solid #E1E3E9;background:#fff url(../img/pc/ico/ico_select_arrow.png) no-repeat right 16px center !important;display: block;overflow: hidden;width: 100%;text-overflow: ellipsis;}
     .select_box.on .option{border-radius: 0 0 12px 12px;margin-top:-1px;}
     .select_box .option{display:none;overflow: hidden;position:absolute;top:50px;left:0;right:0;z-index:10;background:#fff;border-radius: 12px;border: 1px solid #E1E3E9;}
     .select_box .option .mCustomScrollbar{max-height:200px;}
@@ -1070,6 +1070,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         /* search_cont */
         .search_cont{background: #706DF0;padding:24px 20px;border-radius: 24px 24px 0px 0px;margin:0 -20px;}
         .search_cont .search_box{display:flex;align-items: center;height:50px;}
+        .search_cont .search_box input{padding-right:50px;}
         .search_cont .search_box .input_cont{position:relative;display:block;width:100%;}
         .searchlayer .search_cont .search_box .input_cont{position:relative;display:block;width:calc(100% - 40px);}
         .search_cont .search_box .input_cont .btn_search{position:absolute;top:0;right:0;width:50px;height:50px;background:url(../img/mo/ico/ico_search.png) no-repeat center center;background-size:24px auto;border:none;}
@@ -1077,8 +1078,8 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
 
         /* select_box */
         .select_box{position:relative;display:inline-block;cursor: pointer;}
-        .select_box.on .select{border-radius: 12px 12px 0 0;}
-        .select_box .select{display:inline-block;height: 50px;width:100%;line-height:50px;padding:0px 40px 0 16px;border-radius: 8px;border: 1px solid #E1E3E9;background:#fff url(../img/pc/ico/ico_select_arrow.png) no-repeat right 16px center !important;}
+        .select_box.on .select{border-radius: 12px 12px 0 0 !important;}
+        .select_box .select{display:inline-block;height: 50px;width:100%;line-height:50px;padding:0px 40px 0 16px;border-radius: 12px;border: 1px solid #E1E3E9;background:#fff url(../img/pc/ico/ico_select_arrow.png) no-repeat right 16px center !important;}
         .select_box.on .option{border-radius: 0 0 12px 12px;margin-top:-1px;}
         .select_box .option{display:none;overflow: hidden;position:absolute;top:50px;left:0;right:0;z-index:10;background:#fff;border-radius: 12px;border: 1px solid #E1E3E9;}
         .select_box .option ul li{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: -0.32px;margin:12px 0;padding:0 12px;}
@@ -1086,7 +1087,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .select_box .option ul li:hover,
         .info_cont .ico_login:hover,
         .info_cont .ico_join:hover{color: #706DF0;}
-        .select_box.type02.on .select{border-radius: 0 0 12px 12px;}
+        .select_box.type02.on .select{border-radius: 0 0 12px 12px !important;}
         .select_box.type02 .select{background:#fff url(../img/pc/ico/ico_select_arrow02.png) no-repeat right 16px center !important;height:32px;line-height:32px;}
         .select_box.type02 .option{position:absolute;top:initial;bottom:32px;margin-bottom:-1px;border-radius:12px 12px 0 0;}
 
@@ -1404,9 +1405,9 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .modal_n_body .btn_area {margin-top:0;}
 
         /* layer 메세지 */
-        .layer_message{width:480px !important;}
+        /* .layer_message{width:480px !important;} */
         .layer_message .modal-header{height:16px !important;}
-        .layer_message .btn_area{margin-top:32px;}
+        .layer_message .btn_area{border:none;}
         .layer_message .txt_box .tit{
           color: #222;
           font-family: Pretendard;
@@ -1429,7 +1430,6 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .layer_mypage.modal_n_wrap .btn_area .btn{width:initial;padding:8px 24px;}
         .layer_mypage .box{border-top:1px solid #222;border-bottom:1px solid #D8DDE9;padding:24px 0;}
         .layer_mypage .box+.box{border-top:none;}
-
         .layer_mypage .list_type .tit{
           color: #222;
           font-family: Pretendard;
@@ -1439,7 +1439,13 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
           line-height: 20px;
           letter-spacing: -0.4px;
         }
+        .layer_mypage .btn_area{padding:0;border:none;}
+        .layer_mypage .btn_flex{display:flex;}
+        .layer_message .btn_area .btn{width:initial !important;padding:8px 24px;}
+
+
         
+        .mt12{margin-top:12px !important;}
         .mt36{margin-top:36px !important;}
         .border_top_none{border-top:none !important;}
         .border_none{border:none !important;}
@@ -1448,7 +1454,10 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .flex_type{display:flex;}
         .flex_type button{flex:auto;}
 
-        .table_cont.bg_none tbody th{background:none;}
+        .table_cont.bg_none table{table-layout: fixed;}
+        .table_cont.bg_none tbody th{background:none !important;}
+
+
 
         /* .btn_w_s{padding:initial !important;} */
 

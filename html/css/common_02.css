@@ -1846,10 +1846,11 @@ td:has(.text-type) {
         flex-direction: column;
         gap: 16px;
         height: 0;
-        overflow: hidden;
+        /* overflow: hidden; */
         transition: all 0.3s;
     }
     .mo-search-detail-content.is-active {
+        display: block;
         height: auto;
         padding: 24px 20px;
         transition: all 0.3s;
@@ -2952,4 +2953,21 @@ td:has(.text-type) {
 }
 .modal-header.mini-size {
     height: 16px !important;
+}
+.office-info {
+    width: 150px;
+}
+.table_cont .table-body-only tbody td.inner-table .inner-table-cont table tbody tr td input[type='checkbox'],
+.table_cont .table-body-only tbody td.inner-table .inner-table-cont table tbody tr td .check {
+    margin-right: 0;
+}
+.table_cont .table-body-only tbody td.inner-table .inner-table-cont table tbody tr td .input_type .txt {
+    padding-left: 20px;
+}
+.table_cont .table-body-only tbody td.inner-table .inner-table-cont table tbody tr td.tit,
+.table_cont .table-body-only tbody td.inner-table .inner-table-cont table tbody tr td {
+    padding: 15px 3px;
+}
+.table_cont .table-body-only tbody td.inner-table .inner-table-cont table tbody tr.select td {
+    background-color: #fff4ed;
 }
