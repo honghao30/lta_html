@@ -267,7 +267,7 @@
                             </dd>
                         </dl>
                     </li>
-                    <li class="detail-board is-active">
+                    <li class="detail-board">
                       <dl>
                           <dt>이양 건의</dt>
                           <dd>
@@ -329,7 +329,7 @@
                           </dd>
                       </dl>
                     </li>
-                    <li class="detail-board last-child ml-56">
+                    <li class="detail-board last-child ml-56 is-active">
                       <dl>
                           <dt>이양 확정</dt>
                           <dd>
@@ -570,56 +570,33 @@
           <!-- PC -->
           <div class="top_info_box">
             <div class="left_cont flex-row">
-              <span class="total">총 <strong>11,994</strong>건 <strong>201-220</strong> 중</span>
-              <span class="dv-bar"></span>
-              <span class="radio-box ml-10">
-                    <label id="r01">
-                        <input type="radio" name="type1" value="type010" id="r01" >
-                        <span>이양건의</span>
-                    </label>
-                    <label id="r02">
-                        <input type="radio" name="type1" value="type011" id="r02">
-                        <span>과제등록</span>
-                    </label>
-                    <label id="r03">
-                        <input type="radio" name="type1" value="type011" id="r03">
-                        <span>과제 제외</span>
-                    </label>                    
-                </span>  
+                <span class="total">총 <strong>11,994</strong>건 <strong>201-220</strong> 중</span> 
             </div>
             <div class="right_cont">
-                <a href="#none" class="btn ico_select"><span>선택 과제 등록</span></a>
-                <a href="#none" class="btn ico_opinion"><span>선택 의견수렴 시작</span></a>
-                <a href="#none" class="btn ico_download"><span>엑셀 다운로드</span></a>
-              <a href="#none" class="btn ico_pencll-notice"><span>이양건의하기</span></a>
+                <a href="#none" class="btn ico_download"><span>엑셀 다운로드</span></a>              
             </div>
           </div>
 
           <div class="table_cont tb_cursor">
             <table class="table-list iyangsamu-table">
-                <colgroup>
-                        <col style="width:5%;">
+                <colgroup>                        
                         <col style="width:5%;">                        
                         <col style="width:7%;">
                         <col>    
+                        <col style="width:12%;">
                         <col style="width:10%;">
                         <col style="width:10%;">      
                         <col style="width:10%;">
                         <col style="width:10%;">
-                        <col style="width:10%;">                
-                        <col style="width:10%;">
+                        <col style="width:7%;">                
+                        <col style="width:8%;">
                 </colgroup>
                 <thead>
-                    <tr>
-                        <th>
-                            <label class="input_type check">
-                                <input type="checkbox" name="">
-                                <span class="txt"></span>
-                            </label>                     
-                        </th>
+                    <tr>                       
                         <th>번호</th>
                         <th>과제 ID</th>
                         <th>과제명</th>
+                        <th>단위사무명</th>    
                         <th>소관부처명</th>                    
                         <th>근거 법령
                             <button type="button" class="btn-refresh-16">
@@ -627,83 +604,74 @@
                         </th>
                         <th>이양방향</th>
                         <th>이양단계</th>
-                        <th>건의일자</th>                    
+                        <th>이양확정 연도</th>                    
                         <th>승인날짜</th>
                     </tr>
                 </thead>
                     <tbody>
                         <tr>
-                            <td>
-                                <label class="input_type check">
-                                    <input type="checkbox" name="">
-                                    <span class="txt"></span>
-                                </label>                                  
-                            </td>
                             <td>100</td>
                             <td>LY2024099</td>
                             <td><a href="#">
-                                농업진흥지역 해제 권한 
-                                <img src="./img/pc/ico/ic_h24_portal.png" class="profil-mini" alt="" />
-                            </a></td>                            
+                                농업진흥지역 해제 권한                                 
+                            </a></td>  
+                            <td>
+                                마리나업의 등록 외 8
+                            </td>                          
                             <td>농림축산부</td>
                             <td>농어촌정비법</td>
                             <td>국가→시도</td>
                             <td>과제 제외</td>
-                            <td>2024.08.14</td>                            
+                            <td>2024</td>                            
                             <td>2024.08.14</td>
                         </tr>
-                        <tr>                        
-                            <td>
-                                <label class="input_type check">
-                                    <input type="checkbox" name="">
-                                    <span class="txt"></span>
-                                </label>                                 
-                            </td>
+                        <tr> 
                             <td>100</td>
                             <td>LY2024099</td>
-                            <td><a href="#">전기공사업의 등록 등</a></td>                            
-                            <td>농림축산부</td>
+                            <td><a href="#">
+                                농업진흥지역 해제 권한
+                                
+                            </a></td>  
                             <td>
-                                농어촌정비법
-                                <button type="button" class="btn-refresh-16"><i></i></button>
-                            </td>
+                                마리나업의 등록 외 8
+                            </td>                          
+                            <td>농림축산부</td>
+                            <td>농어촌정비법</td>
                             <td>국가→시도</td>
                             <td>과제 제외</td>
-                            <td>2024.08.14</td>                            
+                            <td>2024</td>                            
                             <td>2024.08.14</td>
                         </tr>                            
                         <tr>
-                            <td>
-                                <label class="input_type check">
-                                    <input type="checkbox" name="">
-                                    <span class="txt"></span>
-                                </label>                                
-                            </td>
                             <td>100</td>
                             <td>LY2024099</td>
-                            <td><a href="#">전기공사업의 등록 등</a></td>                            
+                            <td><a href="#">
+                                농업진흥지역 해제 권한                                 
+                            </a></td>  
+                            <td>
+                                마리나업의 등록 외 8
+                            </td>                          
                             <td>농림축산부</td>
                             <td>농어촌정비법</td>
                             <td>국가→시도</td>
                             <td>과제 제외</td>
-                            <td>2024.08.14</td>                            
+                            <td>2024</td>                            
                             <td>2024.08.14</td>
                         </tr>   
                         <tr>
-                            <td>
-                                <label class="input_type check">
-                                    <input type="checkbox" name="">
-                                    <span class="txt"></span>
-                                </label>                                
-                            </td>
                             <td>100</td>
                             <td>LY2024099</td>
-                            <td><a href="#">전기공사업의 등록 등</a></td>                            
+                            <td><a href="#">
+                                농업진흥지역 해제 권한                                 
+                            </a></td>  
+                            <td>
+                                마리나업의 등록 외 8
+                            </td>                          
                             <td>농림축산부</td>
                             <td>농어촌정비법</td>
                             <td>국가→시도</td>
                             <td>과제 제외</td>
-                            <td>2024.08.14</td>                            
+                            <td>2024</td>                            
                             <td>2024.08.14</td>
                         </tr>                                                                         
                 </tbody>

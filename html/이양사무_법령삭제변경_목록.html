@@ -267,7 +267,7 @@
                             </dd>
                         </dl>
                     </li>
-                    <li class="detail-board is-active">
+                    <li class="detail-board">
                       <dl>
                           <dt>이양 건의</dt>
                           <dd>
@@ -275,7 +275,7 @@
                           </dd>
                       </dl>
                     </li>
-                    <li class="detail-board size-middle ht127 ml-56 ">
+                    <li class="detail-board size-middle ht127 ml-56 is-active">
                       <dl>
                           <dt>의견 수렴</dt>
                           <dd>
@@ -570,28 +570,11 @@
           <!-- PC -->
           <div class="top_info_box">
             <div class="left_cont flex-row">
-              <span class="total">총 <strong>11,994</strong>건 <strong>201-220</strong> 중</span>
-              <span class="dv-bar"></span>
-              <span class="radio-box ml-10">
-                    <label id="r01">
-                        <input type="radio" name="type1" value="type010" id="r01" >
-                        <span>이양건의</span>
-                    </label>
-                    <label id="r02">
-                        <input type="radio" name="type1" value="type011" id="r02">
-                        <span>과제등록</span>
-                    </label>
-                    <label id="r03">
-                        <input type="radio" name="type1" value="type011" id="r03">
-                        <span>과제 제외</span>
-                    </label>                    
-                </span>  
+                <span class="total">총 <strong>11,994</strong>건 <strong>201-220</strong> 중</span> 
             </div>
             <div class="right_cont">
-                <a href="#none" class="btn ico_select"><span>선택 과제 등록</span></a>
-                <a href="#none" class="btn ico_opinion"><span>선택 의견수렴 시작</span></a>
-                <a href="#none" class="btn ico_download"><span>엑셀 다운로드</span></a>
-              <a href="#none" class="btn ico_pencll-notice"><span>이양건의하기</span></a>
+                <a href="#none" class="btn ico_listen"><span>선택 의견수렴 종료</span></a>
+                <a href="#none" class="btn ico_download"><span>엑셀 다운로드</span></a>              
             </div>
           </div>
 
@@ -626,9 +609,11 @@
                             <i></i> :변경</button>
                         </th>
                         <th>이양방향</th>
+                        <th>
+                            이양건의<br>의견
+                        </th>
                         <th>이양단계</th>
-                        <th>건의일자</th>                    
-                        <th>승인날짜</th>
+                        <th>승인일자</th>                                            
                     </tr>
                 </thead>
                     <tbody>
@@ -643,13 +628,21 @@
                             <td>LY2024099</td>
                             <td><a href="#">
                                 농업진흥지역 해제 권한 
-                                <img src="./img/pc/ico/ic_h24_portal.png" class="profil-mini" alt="" />
+                                <img src="./img/pc/ico/ic_h24_portal.png" class="profil-mini" alt="">
                             </a></td>                            
                             <td>농림축산부</td>
                             <td>농어촌정비법</td>
                             <td>국가→시도</td>
-                            <td>과제 제외</td>
-                            <td>2024.08.14</td>                            
+                            <td>
+                                <div class="label-wrap">
+                                    <span class="lable type05">중앙3</span>                    
+                                    <span class="lable type06">수용3</span>                    
+                                    <span class="lable type07">광역3</span>                    
+                                    <span class="lable type08">곤란3</span>     
+                                    <span class="lable type09">기초3</span>               
+                                </div>                                
+                            </td>
+                            <td>의견 수렴완료</td>                            
                             <td>2024.08.14</td>
                         </tr>
                         <tr>                        
@@ -668,8 +661,13 @@
                                 <button type="button" class="btn-refresh-16"><i></i></button>
                             </td>
                             <td>국가→시도</td>
-                            <td>과제 제외</td>
-                            <td>2024.08.14</td>                            
+                            <td>
+                              <div class="label-wrap">
+                                <span class="lable type05">중앙3</span>                    
+                                <span class="lable type06">수용3</span>                                                    
+                            </div>                                
+                            </td>
+                            <td>의견 수렴완료</td>                              
                             <td>2024.08.14</td>
                         </tr>                            
                         <tr>
@@ -685,8 +683,11 @@
                             <td>농림축산부</td>
                             <td>농어촌정비법</td>
                             <td>국가→시도</td>
-                            <td>과제 제외</td>
-                            <td>2024.08.14</td>                            
+                            <td></td>
+                            <td>
+                                의견 수렴완료
+                                <button type="button" class="btn-border-gray size-sm mt-8">심의 이력관리</button>
+                            </td>                           
                             <td>2024.08.14</td>
                         </tr>   
                         <tr>
@@ -702,32 +703,31 @@
                             <td>농림축산부</td>
                             <td>농어촌정비법</td>
                             <td>국가→시도</td>
-                            <td>과제 제외</td>
-                            <td>2024.08.14</td>                            
+                            <td></td>
+                            <td>과제 제외</td>                            
                             <td>2024.08.14</td>
                         </tr>                                                                         
                 </tbody>
             </table>
-
-
-        <!-- paging -->
-        <div class="paging">
-          <a href="#none" class="first"></a>
-          <a href="#none" class="prev"></a>
-          <ol>
-            <li><a href="#none" class="on">1</a></li>
-            <li><a href="#none">2</a></li>
-            <li><a href="#none">3</a></li>
-            <li><a href="#none">4</a></li>
-            <li><a href="#none">5</a></li>
-          </ol>
-          <a href="#none" class="next"></a>
-          <a href="#none" class="last"></a>
         </div>
 
+                    <!-- paging -->
+                    <div class="paging">
+                        <a href="#none" class="first"></a>
+                        <a href="#none" class="prev"></a>
+                        <ol>
+                            <li><a href="#none" class="on">1</a></li>
+                            <li><a href="#none">2</a></li>
+                            <li><a href="#none">3</a></li>
+                            <li><a href="#none">4</a></li>
+                            <li><a href="#none">5</a></li>
+                        </ol>
+                        <a href="#none" class="next"></a>
+                        <a href="#none" class="last"></a>
+                    </div>
 
 
-        </div>
+
       </div>
     </div>
 
