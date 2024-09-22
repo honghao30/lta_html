@@ -369,6 +369,32 @@ document.addEventListener("DOMContentLoaded", () => {
             </button>                                                                                    
     `;
     dynamicAddList('.dynamic_add-list2', yiYangPart);
+
+
+    const yiyangDirection = `
+                            <div class="form-element__wrap" >                                  
+                                <div class="input-multi">
+                                    <span class="form-element__inner input-type" style="width: 188px;">
+                                        <input type="text" value="소관부처" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요."  title="내용을 입력하세요.">
+                                    </span>
+                                    →
+                                    <span class="form-element__inner input-type" style="width: 188px;">
+                                        <input type="text" value="소관부처" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요."  title="내용을 입력하세요.">
+                                    </span> 
+                                </div>
+                            </div>  
+                            <div class="yiyang-info">
+                                <span class="total">사무</span>
+                                <span class="dv-bar"></span>  
+                                <span class="total">1,2,6</span>                                             
+                            </div>
+                            <button type="button" class="btn-dark-light btn-delete">
+                                <i class="ico-minus"></i> 삭제
+                            </button>     
+    `;
+
+
+    dynamicAddList('.yiyang-direction-list', yiyangDirection);
    
     document.querySelector('.btn-tooltip') && document.querySelector('.btn-tooltip').addEventListener('click', () => {
         document.querySelector('.btn-tooltip').nextElementSibling.classList.toggle('is-active');
