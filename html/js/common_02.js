@@ -399,6 +399,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('.btn-tooltip') && document.querySelector('.btn-tooltip').addEventListener('click', () => {
         document.querySelector('.btn-tooltip').nextElementSibling.classList.toggle('is-active');
     })
-    
+
 
 });

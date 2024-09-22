@@ -204,6 +204,14 @@
     background: url(../img/pc/ico/ico_pencil.png) no-repeat 0 center;
     background-size: contain;
 }
+.ico_deliberation_end span {    
+    background: url(../img/pc/ico/ico_deliberation_end.png) no-repeat 0 center;
+    background-size: contain;
+}
+.ico_deliberation_end_org span {    
+    background: url(../img/pc/ico/ico_deliberation_end_orange.png) no-repeat 0 center;
+    background-size: contain;
+}
 .btn.ico_pencll-notice span {    
     background: url(../img/pc/ico/ico_pencll-notice.png) no-repeat 0 center;
     background-size: contain;
@@ -2286,6 +2294,9 @@ td:has(.text-type) {
     display: inline-block;
     vertical-align: middle;
 }
+.dv-bar.mg16 {
+    margin: 0 16px;
+}
 .search_cont_detail .search-table .table-body-only tbody tr td .cate-text {
     margin-right: 26px;
 }
@@ -2396,6 +2407,7 @@ td:has(.text-type) {
     background: url(../img/pc/ico/ico_arrow_blue24.png) no-repeat right center;
     background-size: contain;
 }
+
 .btn.ico_up_doc span {
     background: url(../img/pc/ico/Icon_up_doc.png) no-repeat 0 center;
     background-size: contain;
@@ -3090,10 +3102,12 @@ td:has(.text-type) {
 
 #office-tbody,
 #toggle-tbody,
+#toggle-tbody2,
 #law-tbody {
     display: none;
 }
 #toggle-tbody.is-active,
+#toggle-tbody2.is-active,
 #law-tbody.is-active,
 #office-tbody.is-active {
     display: table-row-group;
@@ -3220,4 +3234,29 @@ td:has(.text-type) {
 }
 .yiyang-direction-list li .yiyang-info {
     width: 160px;
+}
+
+/* 상태 */
+.box-info {
+    height: 28px;
+    display: inline-flex;
+    vertical-align: middle;
+    margin: 0 2px;
+    padding: 0px 12px;
+    border-radius: 16px;
+    font-family: 'Pretendard';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+}
+.box-info.type1 {
+    color:#FF8B4A;
+    border:1px solid #FF8B4A;
+    background: #FFF4ED;
+}
+.box-info.type2 {
+    color:#2FB363;
+    border:1px solid #2FB363;
+    background: rgba(47, 179, 99, 0.1);
 }
