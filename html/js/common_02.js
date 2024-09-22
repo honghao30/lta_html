@@ -143,12 +143,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 파일 입력란 삭제 기능
     const addFileRemoveListener = (button) => {
-        if (button) { // button 요소가 존재하는지 확인
-            button.addEventListener('click', () => {
+        if (button) {
+            button.addEventListener('click', (event) => {
+                event.stopPropagation(); 
+                console.log(button, button.closest('li'))
                 button.closest('li').remove();
             });
         }
     };
+    
 
     // 파일 입력란 추가 기능
     const addFileAddListener = (button) => {            
