@@ -21,6 +21,11 @@
 </head>
 <body>
 <div class="wrap">
+  <!-- 접근성 필수 -->
+  <ul class="skip">
+		<li><a href="#content">본문내용 바로가기</a></li>
+		<li><a href="#gnb">주메뉴 바로가기</a></li>
+	</ul>
   <!-- searchlayer 모바일 상세검색 -->
   <div class="searchlayer mo">
     <div class="search_cont">
@@ -174,7 +179,7 @@
             </div>
           </div>
           <div class="top_menu_cont">
-            <ul class="menu">
+            <ul class="menu" id="gnb">
               <li><a href="#none" class="on">법령</a></li>
               <li><a href="#none">조사</a></li>
               <li><a href="#none">사무</a></li>
@@ -207,7 +212,7 @@
   </div>
    
   <!-- container -->
-  <div class="container">
+  <div class="container" id="content">
     <!-- 검색영역 -->
     <div class="sc bg_top">
       <div class="inner">
