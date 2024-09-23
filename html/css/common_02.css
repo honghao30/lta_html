@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* //공통 */
 .ir-text {
     position: absolute;
     width: 1px;
@@ -192,6 +193,8 @@
     font-weight: 400;
     line-height: 20px;
 }
+
+/* 제목 */
 .document-title {
     font-family: 'Pretendard';
     font-size: 24px;
@@ -200,6 +203,8 @@
     letter-spacing: -0.02em;    
 }
 
+
+/* 버튼 */
 .btn.ico_pencil span {    
     background: url(../img/pc/ico/ico_pencil.png) no-repeat 0 center;
     background-size: contain;
@@ -411,6 +416,49 @@
     background: url(../img/pc/ico/ico_list.png) no-repeat 0 center;
     background-size: 15px auto;
 }
+.btn-border-gray {
+    border: 1px solid #D8DDE9;
+    background-color: #fff;
+    min-width: 103px;
+    height: 36px;
+    padding: 8px 12px;
+    gap: 4px;
+    border-radius: 8px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+}
+.btn-dark-light {
+    border: 1px solid #D8DDE9;
+    background-color: #D8DDE9;
+    color:#222;
+    min-width: 63px;
+    height: 36px;
+    padding: 8px 12px;
+    gap: 4px;
+    border-radius: 8px;
+    display: flex;
+    align-self: center;  
+}
+.btn-border-gray.size-sm {
+    height: 28px;
+    padding: 0px 12px;    
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+}
+
+.btn.ico_penci-bl span{
+    background:url(../img/pc/ico/ico_pencil.png) no-repeat 0 center;
+    background-size: 24px auto;
+    height: 57px;
+}
+
+
+
+
+/* 아이콘 */
 .icon-file {
     width:20px;
     height:20px;
@@ -450,62 +498,8 @@
     background: url('../img/pc/ico/icon_plus.png') no-repeat;
     background-size: contain;
 }
-.btn-border-gray {
-    border: 1px solid #D8DDE9;
-    background-color: #fff;
-    min-width: 103px;
-    height: 36px;
-    padding: 8px 12px;
-    gap: 4px;
-    border-radius: 8px;
-    display: flex;
-    align-self: center;
-    align-items: center;
-}
-.btn-dark-light {
-    border: 1px solid #D8DDE9;
-    background-color: #D8DDE9;
-    color:#222;
-    min-width: 63px;
-    height: 36px;
-    padding: 8px 12px;
-    gap: 4px;
-    border-radius: 8px;
-    display: flex;
-    align-self: center;  
-}
-.btn-border-gray.size-sm {
-    height: 28px;
-    padding: 0px 12px;    
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-}
-.file-list {
-    width: 100%;
-    max-width: 700px;
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-}
-.file-list li {
-    position: relative;
-}
-.file-list li .file {
-    position: absolute;
-    left:0;
-    top:0;
-    width: 525px;
-    opacity: 0;
-}
 
-.ui-datepicker-trigger {
-    width: 24px;
-}
-.ui-widget.ui-widget-content {
-    z-index: 20 !important;
-}
+
 /* //테이블 */
 
 .table_cont .table-body-only {
@@ -638,6 +632,21 @@
     text-align: left;
 }
 
+.table_cont table.table-list thead tr th {
+    height: 56px;
+}
+.table_cont table tbody tr td.text-l {
+    text-align: left;
+}
+.table_cont table tbody tr.highlight td {
+    background-color: #FFF4ED;
+}
+.table_cont table tbody tr.highlight td a {
+    color:#FF8B4A;
+    font-weight: 500;
+}
+
+
 /* 모달 */
 .modal_new.roll-type{
     display: flex;
@@ -683,19 +692,15 @@
     top: 22px;
     z-index: 10;
 }
-.table_cont table.table-list thead tr th {
-    height: 56px;
+.modal_n_wrap.roll-modal .btn_close.x-icon-purple {
+    background: url(../img/pc/ico/btn_close_x_purple.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    right: 40px;
 }
-.table_cont table tbody tr td.text-l {
-    text-align: left;
-}
-.table_cont table tbody tr.highlight td {
-    background-color: #FFF4ED;
-}
-.table_cont table tbody tr.highlight td a {
-    color:#FF8B4A;
-    font-weight: 500;
-}
+
+
 .pc-flex {
     display: flex;
 }
@@ -735,6 +740,8 @@
     padding: 12px 5px;
 }
 
+
+/* //트리메뉴 */
 .tree-menu-wrap {
     flex: 1;
     border: 1px solid #D8DDE9;
@@ -1024,6 +1031,7 @@
 
 
 
+/* 제목 등 공통요소 */
 .document-title-ft18 {
     font-family: 'Pretendard';
     font-size: 18px;
@@ -1080,7 +1088,7 @@
     margin-left: 3px;
     vertical-align: middle;
 }
-/* margin padding */
+/* margin padding common */
 .mt-0 {margin-top: 0px;}
 .mt-8 {margin-top: 8px;}
 .mt-16 {margin-top: 16px;}
@@ -1098,12 +1106,6 @@
 .wid80 {width: 80px;}
 .search-input-inner.deliberation {
     position: relative;
-}
-
-.btn.ico_penci-bl span{
-    background:url(../img/pc/ico/ico_pencil.png) no-repeat 0 center;
-    background-size: 24px auto;
-    height: 57px;
 }
 
 
@@ -3300,10 +3302,30 @@ td:has(.text-type) {
     height: 493px;
     overflow-y: scroll;
 }
-.modal_n_wrap.roll-modal .btn_close.x-icon-purple {
-    background: url(../img/pc/ico/btn_close_x_purple.png) no-repeat;
-    width: 32px;
-    height: 32px;
-    background-size: contain;
-    right: 40px;
+
+
+
+.file-list {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.file-list li {
+    position: relative;
+}
+.file-list li .file {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 525px;
+    opacity: 0;
+}
+
+.ui-datepicker-trigger {
+    width: 24px;
+}
+.ui-widget.ui-widget-content {
+    z-index: 20 !important;
 }
