@@ -380,7 +380,84 @@ $(document).ready(function() {
 });
 
 
+// 파일첨부
+$(document).ready(function () {
+  var $dropArea = $(".file-drop");
+  var $fileInput = $(".file-input");
 
+  // 파일 드래그 앤 드롭 이벤트 처리
+  $dropArea.on("dragover", function (e) {
+      e.preventDefault();
+      $(this).addClass("drag-over");
+  });
+
+  $dropArea.on("dragleave", function () {
+      $(this).removeClass("drag-over");
+  });
+
+  $dropArea.on("drop", function (e) {
+      e.preventDefault();
+      $(this).removeClass("drag-over");
+
+      var files = e.originalEvent.dataTransfer.files;
+      var $fileList = $(this).find(".file-list");
+      handleFiles(files, $fileList);
+  });
+
+  // 파일 선택 시 처리
+  $fileInput.on("change", function () {
+      var files = this.files;
+      var $fileList = $(this).closest(".file-drop").find(".file-list");
+      handleFiles(files, $fileList);
+  });
+
+  // 파일 처리 함수
+  function handleFiles(files, $fileList) {
+      for (var i = 0; i < files.length; i++) {
+          var file = files[i];
+          var listItem = $("<li class='file-item'></li>");
+          var fileNameSpan = $("<span class='file-info'>" + file.name + "</span>");
+          var fileSizeSpan = $("<span class='file-info'> (" + formatBytes(file.size) + ")</span>");
+          var deleteBtn = $("<span class='delete-btn'>&times;</span>");
+
+          listItem.append(fileNameSpan);
+          listItem.append(fileSizeSpan);
+          listItem.append(deleteBtn);
+
+          deleteBtn.on("click", function () {
+              $(this).parent().remove();
+          });
+
+          $fileList.append(listItem);
+      }
+  }
+
+  // 파일 크기 포맷팅 함수
+  function formatBytes(bytes, decimals = 2) {
+      if (bytes === 0) return '0 Bytes';
+      const k = 1024;
+      const dm = decimals < 0 ? 0 : decimals;
+      const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+      const i = Math.floor(Math.log(bytes) / Math.log(k));
+      return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
+  }
+});
+
+
+// 설문조사 상세 아코디언
+$(document).ready(function () {
+  $(".accordion button").click(function () {
+
+    // 클릭한 버튼의 부모인 li에서만 다음 sibling인 depth2를 빠르게 보이거나 감춤
+    $(this).parent().find(".accordion-detail").slideToggle(150);
+    // 클릭한 버튼의 부모인 li에 on 클래스를 토글
+    $(this).parent().toggleClass("on");
+
+    // 다른 depth1 항목들의 on 클래스 제거 및 각 항목의 depth2 감추기
+    // $(".accordion .on").not($(this).parent()).removeClass("on");
+    // $(".accordion .accordion-detail").not($(this).parent().find(".accordion-detail")).slideUp(300);
+  });
+});
 
 
 
