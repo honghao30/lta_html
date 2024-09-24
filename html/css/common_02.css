@@ -1,4 +1,10 @@
 @charset "utf-8";
+/* skip */
+.skip { position: relative; top: 0; left: 0; height:0;font-size:0;z-index: 999999;}
+.skip a {left: -3000%;position: absolute;font-size:12px}
+.skip a:hover, .skip a:focus, .skip a:active {background:#1d60a7;color: #fff;display: block;height: 30px;left: 0;line-height: 30px;text-align: center;top: 0;width: 100%;z-index: 999999;}
+p.skip{margin-bottom:30px;}
+
 .ir-text {
     position: absolute;
     width: 1px;

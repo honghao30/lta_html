@@ -459,6 +459,17 @@ $(document).ready(function () {
   });
 });
 
+// view_check 안에 input check 에 check 가 되면 view 를 보여주는 제이쿼리
+$(document).ready(function () {
+  $('.view_check input[type="checkbox"]').on('change', function () {
+    if ($(this).is(':checked')) {
+      $('.view').addClass('on'); // 체크되면 'on' 클래스 추가
+    } else {
+      $('.view').removeClass('on'); // 체크 해제되면 'on' 클래스 제거
+    }
+  });
+});
+
 
 
 
