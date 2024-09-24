@@ -316,18 +316,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
     const govPartSelectHtml = `
-        <div class="select_box" style="width: 408px;">
-            <span class="select">선택하세요</span>
-            <div class="option">
-                <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                    <ul>
-                        <li>선택함1</li>
-                        <li>선택함2</li>
-                        <li>선택함3</li>
-                    </ul>
-                </div>
-            </div>
-        </div>  
+        <select name="" id="" style="width: 408px;"  title="선택하세요">
+            <option value="선택함1">선택함1</option>
+            <option value="선택함2">선택함2</option>
+            <option value="선택함3">선택함3</option>
+        </select>
         <button type="button" class="btn-dark-light btn-delete">
             <i class="ico-minus"></i> 삭제
         </button>                                                  
@@ -338,35 +331,17 @@ document.addEventListener("DOMContentLoaded", () => {
     dynamicAddList('.dynamic_add-list', govPartSelectHtml);
     
     const yiYangPart = `
-            <!-- 콤보박스 -->
-            <div class="select_box" style="width: 188px;">
-                <span class="select">국가</span>
-                <div class="option">
-                <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                    <ul>
-                    <li>선택함1</li>
-                    <li>선택함2</li>
-                    <li>선택함3</li>
-                    </ul>
-                </div>              
-                </div>
-            </div>
+            <select name="" id="" style="width: 188px;" title="선택하세요">
+                <option value="선택함1">선택함1</option>
+                <option value="선택함2">선택함2</option>
+                <option value="선택함3">선택함3</option>
+            </select>
             →
-            <!-- //콤보박스 -->      
-            <!-- 콤보박스 -->
-            <div class="select_box" style="width: 188px;">
-                <span class="select">시군구</span>
-                <div class="option">
-                <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                    <ul>
-                    <li>선택함1</li>
-                    <li>선택함2</li>
-                    <li>선택함3</li>
-                    </ul>
-                </div>              
-                </div>
-            </div>
-            <!-- //콤보박스 -->  
+            <select name="" id="" style="width: 188px;">
+                <option value="선택함1">선택함1</option>
+                <option value="선택함2">선택함2</option>
+                <option value="선택함3">선택함3</option>
+            </select>
             <button type="button" class="btn-dark-light btn-delete">
                 <i class="ico-minus"></i> 삭제
             </button>                                                                                    
