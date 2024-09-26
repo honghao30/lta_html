@@ -344,7 +344,10 @@ document.addEventListener("DOMContentLoaded", () => {
             </select>
             <button type="button" class="btn-dark-light btn-delete">
                 <i class="ico-minus"></i> 삭제
-            </button>                                                                                    
+            </button>      
+            <button type="button" class="btn-dark-light btn-add">
+                <i class="ico-plus"></i> 추가
+            </button>                                                                              
     `;
     dynamicAddList('.dynamic_add-list2', yiYangPart);
 
