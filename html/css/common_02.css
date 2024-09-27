@@ -2244,7 +2244,8 @@ td:has(.text-type) {
     vertical-align: top;
     margin-left: 2px;
 }
-.table_cont table.table-list.iyangsamu-table tbody tr:hover td {
+.table_cont table.table-list.iyangsamu-table tbody tr:hover td,
+.table_cont table.table-list.iyangsamu-table tbody tr.is-select td {
     background-color: #EDF3FF !important;
 }
 
