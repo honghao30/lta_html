@@ -381,5 +381,43 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector('.btn-tooltip').nextElementSibling.classList.toggle('is-active');
     })
 
+   
+    const checkboxListFn = (container) => {
+        const checkContainer = document.querySelector(container);
+        if (!checkContainer) {            
+            return;
+        }
+    
+        const allCheck = checkContainer.querySelector('.all-check input[type="checkbox"]');
+        const checkList = checkContainer.querySelectorAll('td .check-item input[type="checkbox"]');
+    
+        if (!allCheck || !checkList.length) {            
+            return;
+        }
+    
+        allCheck.addEventListener('change', () => {
+            const isChecked = allCheck.checked;
+            checkList.forEach(checkListItem => {
+                checkListItem.checked = isChecked;
+            });
+        });
+    
+        checkList.forEach(checkListItem => {
+            checkListItem.addEventListener('change', () => {
+                const checkedLists = checkContainer.querySelectorAll('td .check-item input[type="checkbox"]:checked');
+                const checkListLength = checkList.length;
+                const checkedLength = checkedLists.length;
+    
+                allCheck.checked = (checkListLength === checkedLength);
+                allCheck.indeterminate = (checkedLength > 0 && checkedLength < checkListLength);                
+            });
+        });
+    };
+    
 
+    checkboxListFn('.law-list')
+    checkboxListFn('.law-list2')
+    checkboxListFn('.iyangsamu-table')
+    
+    
 });

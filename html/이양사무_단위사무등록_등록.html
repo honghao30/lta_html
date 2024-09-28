@@ -250,7 +250,7 @@
           <!-- //이양사무 탭 -->
            <div class="flex-row justify-between">
                 <a href="#" class="btn-back-arrow">이전</a>
-                <h2 class="title">의견 수렴</h2>           
+                <h2 class="title">단위사무 등록</h2>           
                 <a href="#" class="btn-next-arrow">다음</a>               
            </div>
           
@@ -270,65 +270,134 @@
           <div class="font-type16-400 mt-64">
             ※이양사무 정보는 및 건의 내용은 상단의 [이양사무 건의] 메뉴에서 확인할 수 있습니다.
           </div>
-
-          <div class="table_cont mt-16">
+          <div class="table_cont mt-32">
             <table class="table-body-only">
                 <colgroup>                    
                     <col width="160" />
                     <col />
                     <col width="160" />
-                    <col />
+                    <col />                   
                 </colgroup>
                 <tbody>
+                    <tr>    
+                        <th scope="row">
+                            과제 ID
+                        </th>                    
+                        <td colspan="3">
+                            <div class="form-element__wrap">                                  
+                                <div class="input-multi">
+                                <span class="form-element__inner input-type">
+                                    <input type="text" value="2024-0000-0000" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요."  title="내용을 입력하세요."  disabled>
+                                </span>
+                                </div>
+                            </div>   
+                        </td>                                                     
+                    </tr> 
+                    <tr>
+                        <th scope="row">
+                            과제명
+                        </th>     
+                        <td>
+                            <div class="form-element__wrap">                                  
+                                <div class="input-multi">
+                                <span class="form-element__inner input-type">
+                                    <input type="text" value="과제명" class="input-type1-font14" maxlength="50" placeholder="과제명을 입력하세요."  title="과제명을 입력하세요."  disabled>
+                                </span>
+                                </div>
+                            </div>                               
+                        </td>
+                        <th scope="row">
+                        분야
+                        </th>     
+                        <td>
+                            <div class="form-element__wrap">                                  
+                                <div class="input-multi">
+                                <span class="form-element__inner input-type">
+                                    <input type="text" value="분야" class="input-type1-font14" maxlength="50" placeholder="분야을 입력하세요."  title="분야을 입력하세요."  disabled>
+                                </span>
+                                </div>
+                            </div>                               
+                        </td>                        
+                    </tr>        
+                    <tr>    
+                      <th scope="row">
+                          소관부처
+                      </th>                    
+                      <td colspan="3">
+                          <ul class="form-el-list-wrap dynamic_add-list">
+                              <li class="input-wrap flex-row">
+                                  <!-- 콤보박스 -->
+                                  <div class="select_box" style="width: 408px;">
+                                    <span class="select">선택하세요</span>
+                                    <div class="option">
+                                      <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                        <ul>
+                                          <li>선택함1</li>
+                                          <li>선택함2</li>
+                                          <li>선택함3</li>
+                                        </ul>
+                                      </div>              
+                                    </div>
+                                  </div>
+                                  <!-- //콤보박스 -->                                  
+                                  <button type="button" class="btn-dark-light btn-add">
+                                    <i class="ico-plus"></i>
+                                    추가
+                                  </button>
+                              </li>
+                          </ul>
+                      </td>                                                 
+                  </tr>       
                     <tr>    
                         <th scope="row">
                             이양방향
                         </th>                    
                         <td colspan="3">
-                            <ul class="form-el-list-wrap dynamic_add-list2">
-                                <li class="input-wrap flex-row">
-                                    <!-- 콤보박스 -->
-                                    <div class="select_box" style="width: 188px;">
-                                      <span class="select">국가</span>
-                                      <div class="option">
-                                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                          <ul>
-                                            <li>선택함1</li>
-                                            <li>선택함2</li>
-                                            <li>선택함3</li>
-                                          </ul>
-                                        </div>              
-                                      </div>
+                          <ul class="form-el-list-wrap dynamic_add-list2">
+                              <li class="input-wrap flex-row">
+                                  <!-- 콤보박스 -->
+                                  <div class="select_box" style="width: 188px;">
+                                    <span class="select">국가</span>
+                                    <div class="option">
+                                      <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                        <ul>
+                                          <li>선택함1</li>
+                                          <li>선택함2</li>
+                                          <li>선택함3</li>
+                                        </ul>
+                                      </div>              
                                     </div>
-                                    →
-                                    <!-- //콤보박스 -->      
-                                    <!-- 콤보박스 -->
-                                    <div class="select_box" style="width: 188px;">
-                                      <span class="select">시군구</span>
-                                      <div class="option">
-                                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                          <ul>
-                                            <li>선택함1</li>
-                                            <li>선택함2</li>
-                                            <li>선택함3</li>
-                                          </ul>
-                                        </div>              
-                                      </div>
+                                  </div>
+                                  →
+                                  <!-- //콤보박스 -->      
+                                  <!-- 콤보박스 -->
+                                  <div class="select_box" style="width: 188px;">
+                                    <span class="select">시군구</span>
+                                    <div class="option">
+                                      <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                        <ul>
+                                          <li>선택함1</li>
+                                          <li>선택함2</li>
+                                          <li>선택함3</li>
+                                        </ul>
+                                      </div>              
                                     </div>
-                                    <!-- //콤보박스 -->                                                                      
-                                    <button type="button" class="btn-dark-light btn-add">
-                                      <i class="ico-plus"></i>
-                                      추가
-                                    </button>
-                                </li>
-                            </ul>
+                                  </div>
+                                  <!-- //콤보박스 -->                                                                      
+                                  <button type="button" class="btn-dark-light btn-add">
+                                    <i class="ico-plus"></i>
+                                    추가
+                                  </button>
+                              </li>
+                          </ul>
                         </td>                                                 
                     </tr>                                                                                                                                                                                                             
                 </tbody>
             </table>
-          </div>
-          <!-- 이양방향 -->
-        <div class="table_cont">
+        </div>          
+
+
+        <div class="table_cont mt-32">
             <table class="table-body-only">
                 <colgroup>                    
                     <col width="" />
@@ -354,7 +423,7 @@
                                     법령 추가
                                 </button>
                             </div>                            
-                            <div class="inner-table-cont mt-16">
+                            <div class="inner-table-cont mt-16 law-list2">
                                 <table>
                                     <colgroup>                                      
                                         <col width="3%">
@@ -375,7 +444,7 @@
                                     <tbody>
                                         <tr>
                                             <td class="tit" rowspan="2">
-                                                <label class="input_type check">
+                                                <label class="input_type check all-check">
                                                     <input type="checkbox" name="">
                                                     <span class="txt"></span>
                                                 </label>
@@ -395,7 +464,7 @@
                                         </tr>
                                         <tr>
                                             <td rowspan="2">
-                                                <label class="input_type check">
+                                                <label class="input_type check check-item">
                                                     <input type="checkbox" name="">
                                                     <span class="txt"></span>
                                                 </label>                                          
@@ -422,7 +491,7 @@
                                         </tr>                                      
                                         <tr>
                                             <td rowspan="2">
-                                                <label class="input_type check">
+                                                <label class="input_type check check-item">
                                                     <input type="checkbox" name="">
                                                     <span class="txt"></span>
                                                 </label>                                          
@@ -484,7 +553,7 @@
                             ※단위사무와 부수사무는 법령 기준으로 반영됩니다.<br>
 ※본 과제에 맞지 않는 사무가 있다면 법령 또는 단위사무를 삭제해 주세요. 두 항목이 연동되어 있어 하나만 삭제해도 함께 삭제 됩니다.
                           </div>                
-                          <div class="inner-table-cont mt-16">
+                          <div class="inner-table-cont mt-16 law-list">
                               <table>
                                   <colgroup>                                      
                                       <col width="3%">
@@ -508,7 +577,10 @@
                                   <tbody>
                                       <tr>
                                           <td class="tit">
-                                              선택
+                                            <label class="input_type check all-check">
+                                              <input type="checkbox" name="">
+                                              <span class="txt"></span>
+                                          </label>                                                  
                                           </td>                                            
                                           <td class="tit">번호</td>
                                           <td class="tit">사무구분</td>
@@ -523,11 +595,11 @@
                                           <td class="tit">위탁사무<br>여부</td>
                                           <td class="tit">수탁기관</td>
                                           <td class="tit">법조항</td>
-                                          <td class="tit">이양방향</td>                                          
+                                          <td class="tit">이양방향 /<br> 소관부처</td>                                          
                                       </tr>
                                       <tr>
                                           <td>
-                                              <label class="input_type check">
+                                              <label class="input_type check check-item">
                                                   <input type="checkbox" name="">
                                                   <span class="txt"></span>
                                               </label>                                          
@@ -565,11 +637,25 @@
                                                   </div>
                                               </div> 
                                               <!-- //콤보박스 -->  
+                                              <!-- 콤보박스 -->
+                                              <div class="select_box view-option wd168 mt-8"  style="width: 168px">
+                                                  <span class="select">전체</span>
+                                                  <div class="option">
+                                                      <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                                      <ul>
+                                                          <li>선택함1</li>
+                                                          <li>선택함2</li>
+                                                          <li>선택함3</li>
+                                                      </ul>
+                                                      </div>
+                                                  </div>
+                                              </div> 
+                                              <!-- //콤보박스 -->                                                 
                                           </td>
                                       </tr>      
                                       <tr>
                                         <td>
-                                            <label class="input_type check">
+                                            <label class="input_type check check-item">
                                                 <input type="checkbox" name="">
                                                 <span class="txt"></span>
                                             </label>                                          
@@ -607,6 +693,21 @@
                                                 </div>
                                             </div> 
                                             <!-- //콤보박스 -->  
+
+                                            <!-- 콤보박스 -->
+                                            <div class="select_box view-option wd168 mt-8"  style="width: 168px">
+                                                <span class="select">전체</span>
+                                                <div class="option">
+                                                    <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                                    <ul>
+                                                        <li>선택함1</li>
+                                                        <li>선택함2</li>
+                                                        <li>선택함3</li>
+                                                    </ul>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <!-- //콤보박스 -->                                               
                                         </td>
                                     </tr>                                                                                                                                                                                   
                                   </tbody>
@@ -618,7 +719,53 @@
           </table>
       </div>    
 
-
+        <div class="table_cont mt-32">
+          <table class="table-body-only">
+              <colgroup>                    
+                  <col width="" />
+              </colgroup>
+              <thead>
+                  <tr>
+                      <th>
+                        근거 법령 개정안 <span class="red-color">*</span>
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>                        
+                      <td class="inner-table">
+                          <div class="info-text">현행 법조문은 근거법령이 추가되면 자동으로 반영됩니다.</div>
+                          <div class="inner-table-cont mt-16">
+                            <table>
+                                <colgroup>
+                                    <col width="50%">
+                                    <col width="50%">
+                                </colgroup>
+                                <tbody>
+                                  <tr>
+                                      <td class="tit">현행</td>
+                                      <td class="tit">개정안</td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="2">문화유산의 보존 및 활용에 관한 법률 4장 국가지정문화유산 3절 보존·관리 및 활용 3조 허가사항</td>                                          
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                        ① 국가지정문화유산에 대하여 다음 각 호의 어느 하나에 해당하는 행위를 하려는 자는 대통령령으로 정하는 바에 따라 국가유산청장의 허가를 받아야 하며, 허가사항을 변경하려는 경우에도 국가유산청장의 허가를 받아야 한다. 다만, 국가지정문화유산 보호구역에 안내판 및 경고판을 설치하는 행위 등 대통령령으로 정하는 경미한 행위에 대해서는 특별자치시장, 특별자치도지사, 시장ㆍ군수 또는 구청장의 허가(변경허가를 포함한다)를 받아야 한다. <개정 2014. 1. 28., 2015. 3. 27., 2017. 11. 28., 2019. 11. 26., 2020. 12. 22., 2021. 5. 18., 2023. 3. 21., 2023. 8. 8., 2024. 2. 13.>                                          
+                                      </td>
+                                      <td>
+                                        <textarea name="" id="" value="" style="width: 100%;height: 100%;"></textarea>
+                                      </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                      </td>                        
+                  </tr>                                                                                                                                                                                
+              </tbody>
+          </table>
+        </div>
+        
         <div class="button__wrap flex-end mt-64">
           <button type="button" class="btn-gray-default">
               <i class="ico-remove"></i> 닫기

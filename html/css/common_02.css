@@ -3314,3 +3314,105 @@ td:has(.text-type) {
     background-size: contain;
     right: 40px;
 }
+
+/* 파일 첨부 */
+.fileup__wrap {
+    width: 100%;
+    border: 1px dashed #CDD1DB;
+    margin-top: 8px;
+    background-color: #f7f8fa;
+}
+.fileup__wrap .fileup-title ul {
+    display: flex;
+    align-items: center;
+    height:40px;
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #717B8A;
+    border-bottom: 1px solid #CDD1DB;
+}
+.fileup__wrap .file-name-list  li:nth-child(1),
+.fileup__wrap .fileup-title li:nth-child(1) {
+    flex: 1;
+    padding: 0 12px;
+}
+.fileup__wrap .file-name-list  li:nth-child(2),
+.fileup__wrap .file-name-list  li:nth-child(3),
+.fileup__wrap .fileup-title li:nth-child(2),
+.fileup__wrap .fileup-title li:nth-child(3) {
+    width: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fileup__wrap .file-name-list li {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.06em;
+    text-align: center;
+    color: #222;
+}
+.fileup__wrap .file-name-list li:nth-child(1) {
+    text-align: left;
+}
+.fileup__wrap .file-name-list li:nth-child(1) img {
+    vertical-align: middle;
+}
+.fileup__wrap .file-name-list li .btn-remove-x {
+    color: #FF5858;
+    background-color: transparent;
+    border:0;
+    margin-left: 35px;
+}
+.fileup-cont {
+    width: 100%;
+    max-height: 140px;
+    overflow-y: scroll;
+}
+.file-name-list ul {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 40px;
+    border-bottom: 1px solid #CDD1DB;
+}
+.fileup-drag-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    font-family: Noto Sans KR;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.06em;
+    color:#717B8A;
+    gap: 5px;
+}
+.fileup-drag-area .ico-plus-box {
+    width:20px;
+    height:20px;
+    background: url('../img/pc/ico/pc_ic_h20_plus2.png') no-repeat;
+}
+.fileup-bottom-area {
+    border-top: 1px dashed #CDD1DB;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 10px;
+    height: 52px;
+}
+.fileup-bottom-area .file-size  {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.06em;
+    color:#222;
+}
