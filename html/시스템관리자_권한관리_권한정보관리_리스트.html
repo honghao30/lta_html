@@ -159,8 +159,36 @@
 
         <div class="table_cont form-table pc">
             <table class="table-body-only table-fixed">
+                <colgroup>
+                  <col style="width:160px;">
+                  <col>             
+                </colgroup>
+                <tbody>
+                  <tr>
+                      <th scope="row">권한 ID</th>
+                      <td>
+                          ROLE_SUPER_ADMIN                  
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">권한명</th>
+                      <td>
+                          일반 관리자                
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">등급</th>
+                      <td>
+                          2등급
+                      </td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table_cont mo">
+          <table class="table-body-only no-line-type table-fixed flex-wrap">
               <colgroup>
-                <col style="width:160px;">
+                <col style="width:30%;">
                 <col>             
               </colgroup>
               <tbody>
@@ -183,8 +211,8 @@
                     </td>
                 </tr>
               </tbody>
-            </table>
-          </div>
+          </table>
+      </div>        
         <div class="table_cont form-table pc">
             <table class="table-body-only table-fixed">
                 <colgroup>                
@@ -193,7 +221,47 @@
                 <thead>
                     <tr>
                         <th>
-                            <div class="flex-row justify-end">
+                            <div class="flex-row justify-end role-option">
+                                <div>ROLE 구분</div>
+                                <div>
+                                      <!-- 콤보박스 -->
+                                      <div class="select_box view-option"  style="width: 120px">
+                                        <span class="select">전체</span>
+                                        <div class="option">
+                                            <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                            <ul>
+                                                <li>선택함1</li>
+                                                <li>선택함2</li>
+                                                <li>선택함3</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <!-- //콤보박스 -->                                    
+                                </div>
+                                <div>등록여부</div>
+                                <div>
+                                      <!-- 콤보박스 -->
+                                      <div class="select_box view-option"  style="width: 120px">
+                                        <span class="select">전체</span>
+                                        <div class="option">
+                                            <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                            <ul>
+                                                <li>선택함1</li>
+                                                <li>선택함2</li>
+                                                <li>선택함3</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <!-- //콤보박스 -->                                    
+                                </div>
+                                <div>권한등급</div>
+                                <div>
+                                    <button type="button" class="btn btn-search">
+                                      <span>조회</span>
+                                    </button>
+                                </div>
 
                             </div>
                         </th>
@@ -201,6 +269,70 @@
                 </thead>
             </table>
         </div>
+        <div class="table_cont form-table mo bg-gray">
+          <table class="table-body-only table-fixed">
+              <colgroup>                
+                  <col style="width: 30%;">             
+                  <col>    
+              </colgroup>
+              <tbody>
+                <tr>
+                    <th sorted="row">
+                      ROLE<br> 구분
+                    </th>
+                    <td>
+                        <!-- 콤보박스 -->
+                        <div class="select_box"  style="width: 100%">
+                          <span class="select">전체</span>
+                          <div class="option">
+                              <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                <ul>
+                                    <li>선택함1</li>
+                                    <li>선택함2</li>
+                                    <li>선택함3</li>
+                                </ul>
+                              </div>
+                          </div>
+                      </div> 
+                      <!-- //콤보박스 -->     
+                    </td>
+                </tr>
+                <tr>
+                  <th sorted="row">
+                    등록여부
+                  </th>
+                  <td>
+                      <!-- 콤보박스 -->
+                      <div class="select_box"  style="width: 100%">
+                        <span class="select">전체</span>
+                        <div class="option">
+                            <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                              <ul>
+                                  <li>선택함1</li>
+                                  <li>선택함2</li>
+                                  <li>선택함3</li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- //콤보박스 -->     
+                  </td>
+              </tr>
+              <tr>
+                <th sorted="row">
+                  권한등급
+                </th>
+                <td>
+                    <div class="flex-row justify-end">
+                      <button type="button" class="btn btn-search-puple">
+                        <span>조회</span>
+                      </button>
+                    </div>
+                </td>
+            </tr>
+              </tbody>
+          </table>
+      </div>
 
         <div class="top_info_box pc-flex mt-64">
           <div class="left_cont">
@@ -226,11 +358,11 @@
           </div>
         </div>        
 
-        <div class="top_info_box mo">
+        <div class="top_info_box mo mt-32">
           <span class="total"><strong>10 / 10</strong>건</span>
         </div>
         <!-- table -->
-        <div class="table_cont scroll-type">
+        <div class="table_cont scroll-type  iyangsamu-table">
           <table class="table-list">
             <colgroup>              
                 <col style="width: 150px;">
@@ -244,7 +376,10 @@
             <thead>
                 <tr>                
                     <th>
-
+                      <label class="input_type check all-check">
+                          <input type="checkbox" name="">
+                          <span class="txt"></span>
+                      </label>  
                     </th>
                     <th>ROUL명</th>
                     <th>연관메뉴명</th>
@@ -257,64 +392,97 @@
                 <tbody>
                     <tr>
                         <td>
-                            ROLE_MASTER_ADMIN
+                          <label class="input_type check check-item">
+                              <input type="checkbox" name="">
+                              <span class="txt"></span>
+                          </label>    
                         </td>
-                        <td></td>
-                        <td>1</td>
-                        <td>System</td>
-                        <td></td>                                     
-                        <td></td>
-                        <td>사용</td>
-                        <td><a href="#" class="link-underline">권한정보</a></td>
-                    </tr>
+                        <td>
+                          법령 메뉴
+                        </td>
+                        <td>법령</td>
+                        <td>메뉴</td>
+                        <td>법령 메뉴에 대한 접근 권한 롤</td>
+                        <td>SYSTEM</td>                                     
+                        <td>
+                            <!-- 콤보박스 -->
+                            <div class="select_box view-option"  style="width: 120px">
+                                <span class="select">전체</span>
+                                <div class="option">
+                                    <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                    <ul>
+                                        <li>선택함1</li>
+                                        <li>선택함2</li>
+                                        <li>선택함3</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- //콤보박스 -->                            
+                        </td>
+                    </tr>    
+                    <tr>
+                      <td>
+                        <label class="input_type check check-item">
+                            <input type="checkbox" name="">
+                            <span class="txt"></span>
+                        </label>    
+                      </td>
+                      <td>
+                        법령 메뉴
+                      </td>
+                      <td>법령</td>
+                      <td>메뉴</td>
+                      <td>법령 메뉴에 대한 접근 권한 롤</td>
+                      <td>SYSTEM</td>                                     
+                      <td>
+                          <!-- 콤보박스 -->
+                          <div class="select_box view-option"  style="width: 120px">
+                              <span class="select">전체</span>
+                              <div class="option">
+                                  <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                  <ul>
+                                      <li>선택함1</li>
+                                      <li>선택함2</li>
+                                      <li>선택함3</li>
+                                  </ul>
+                                  </div>
+                              </div>
+                          </div> 
+                          <!-- //콤보박스 -->                            
+                      </td>
+                  </tr> 
                     <tr>
                         <td>
-                            ROLE_MASTER_ADMIN
+                          <label class="input_type check check-item">
+                              <input type="checkbox" name="">
+                              <span class="txt"></span>
+                          </label>    
                         </td>
-                        <td></td>
-                        <td>1</td>
-                        <td>System</td>                        
-                        <td></td>
-                        <td></td>
-                        <td>사용</td>
-                        <td><a href="#" class="link-underline">권한정보</a></td>
-                    </tr>
-                    <tr>
                         <td>
-                            ROLE_MASTER_ADMIN
+                          법령 메뉴
                         </td>
-                        <td></td>
-                        <td>1</td>
-                        <td>System</td>
-                        <td></td>                                     
-                        <td></td>
-                        <td>사용</td>
-                        <td><a href="#" class="link-underline">권한정보</a></td>
-                    </tr>
-                    <tr>
+                        <td>법령</td>
+                        <td>메뉴</td>
+                        <td>법령 메뉴에 대한 접근 권한 롤</td>
+                        <td>SYSTEM</td>                                     
                         <td>
-                            ROLE_MASTER_ADMIN
+                            <!-- 콤보박스 -->
+                            <div class="select_box view-option"  style="width: 120px">
+                                <span class="select">전체</span>
+                                <div class="option">
+                                    <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                    <ul>
+                                        <li>선택함1</li>
+                                        <li>선택함2</li>
+                                        <li>선택함3</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- //콤보박스 -->                            
                         </td>
-                        <td></td>
-                        <td>1</td>
-                        <td>System</td>
-                        <td></td>                                     
-                        <td></td>
-                        <td>사용</td>
-                        <td><a href="#" class="link-underline">권한정보</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            ROLE_MASTER_ADMIN
-                        </td>
-                        <td></td>
-                        <td>1</td>
-                        <td>System</td>
-                        <td></td>             
-                        <td></td>
-                        <td>사용</td>
-                        <td><a href="#" class="link-underline">권한정보</a></td>
-                    </tr>                                                                                                                                                                                                                                               
+                    </tr>                                                                                                                                                                                                                                             
                 </tbody>
           </table>
         </div>

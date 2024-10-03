@@ -3429,3 +3429,32 @@ td:has(.text-type) {
     text-decoration: underline;
     color: #FF8B4A;
 }
+
+.role-option {
+    font-weight: 400;
+    color: #222;
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    padding-right: 20px;
+}
+.btn.btn-search span {
+    background: url('../img/pc/ico/ico_h20_search.png') no-repeat;    
+    background-size: 20px 20px;
+}
+.btn.btn-search-puple {
+    background: #706DF0 url('../img/pc/ico/ico_h24_search_white.png') no-repeat 12px center;
+    background-size: 20px 20px;
+    color: #FFF;
+}
+.bg-gray {
+    background-color: #F4F7FB;
+}
+.mo.bg-gray.table_cont .table-body-only tbody td {
+    padding-right: 20px;
+}
+.mo.bg-gray.table_cont .table-body-only tbody th {
+    padding-left: 20px;
+}
