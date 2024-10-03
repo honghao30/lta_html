@@ -211,61 +211,224 @@
     <!-- 검색영역 -->
     <div class="content_wrap">
       <div class="inner">
-        <!-- 이양사무관리 시스템 로그인 -->
         <div class="layer_login">
-          <!-- <div class="modal-header">
-              <div class="tit">이양사무관리 시스템 로그인</div>
-          </div> -->
-          <div class="pop_cont">
-            <div class="table_cont">
-              <table>
-                <colgroup>
-                  <col style="width:70px">
-                  <col>
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <th scope="row"><label for="id">아이디</label></th>
-                    <td>
-                      <div class="form-element__wrap horizon_type">
-                        <span class="form-element__inner input-type input_del">
-                          <input type="text" value="" class="input-type1-font14" placeholder="아이디를 입력해 주세요." title="아이디 입력" id="id">
-                          <button class="del"></button>
-                        </span>
+          <div class="modal_n_body">
+            <div class="pop_cont">
+              <p class="txtbox pt0">회원 정보로 입력하신 아이디 또는 비밀번호를<br>찾을 수 있습니다.</p>
+              <div class="tabs type01">
+                <ul class="tab-menu">
+                  <li id="fine_id" class="active"><a href="#">아이디 찾기</a></li>
+                  <li id="fine_pw"><a href="#">비밀번호 찾기</a></li>
+                </ul>
+                <div class="tab-content">
+                  <!-- 아이디 찾기 -->
+                  <div class="tab active">
+                    <!-- 아이디 찾기 전 -->
+                    <div>
+                      <div class="table_cont">
+                        <table>
+                          <colgroup>
+                            <col style="width:70px">
+                            <col>
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row"><label for="tab01_name">이름</label></th>
+                              <td>
+                                <div class="form-element__wrap horizon_type">
+                                  <span class="form-element__inner input-type input_del">
+                                    <input type="text" value="" class="input-type1-font14" placeholder="이름를 입력해 주세요." title="이름 입력" id="tab01_name">
+                                    <button class="del"></button>
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><label for="tab01_email">이메일</label></th>
+                              <td>
+                                <div class="form-element__wrap horizon_type">
+                                  <span class="form-element__inner input-type input_del">
+                                    <input type="text" value="" class="input-type1-font14" placeholder="이메일 주소를 입력해 주세요." title="이메일 입력" id="tab01_email">
+                                    <button class="del"></button>
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><label for="pw">비밀번호</label></th>
-                    <td>
-                      <div class="form-element__wrap horizon_type">
-                        <span class="form-element__inner input-type input_view">
-                          <input type="password" value="" class="input-type1-font14" placeholder="특수문자, 영문, 숫자를 포함하여 8~20자" title="비밀번호 입력" id="pw">
-                          <button class="view"></button>
-                        </span>
+                      <div class="btn_area txt_align_right">
+                        <button class="btn btn_cancel" onclick="modalControl('c')"><span>취소</span></button>
+                        <button class="btn btn_approval" onclick="modalControl('c')"><span>확인</span></button>
                       </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="check_info_box lrBox">
-              <div class="left_cont">
-                <label class="input_type check">
-                  <input type="checkbox" name="q01">
-                  <span class="txt">아이디 저장</span>
-                </label>
+                    </div>
+    
+                    <!-- 아이디 찾기 후 -->
+                    <div>
+                      <p class="find_txtbox">고길동님의 아이디는<br><strong class="puple">rhrlfehd123</strong> 입니다.</p>
+                      <div class="btn_area txt_align_right">
+                        <button class="btn btn_approval" onclick="modalControl('c')"><span>확인</span></button>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- 비밀번호 찾기 -->
+                  <div class="tab">
+                    <!-- 코드 발송 전 -->
+                    <div>
+                      <div class="table_cont">
+                        <table>
+                          <colgroup>
+                            <col style="width:70px">
+                            <col>
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row"><label for="tab02_name">이름</label></th>
+                              <td>
+                                <div class="form-element__wrap horizon_type">
+                                  <span class="form-element__inner input-type input_del">
+                                    <input type="text" value="" class="input-type1-font14" placeholder="이름를 입력해 주세요." title="이름 입력" id="tab02_name">
+                                    <button class="del"></button>
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><label for="tab02_id">아이디</label></th>
+                              <td>
+                                <div class="form-element__wrap horizon_type">
+                                  <span class="form-element__inner input-type input_del">
+                                    <input type="text" value="" class="input-type1-font14" placeholder="아이디을 입력해 주세요." title="아이디 입력" id="tab02_id">
+                                    <button class="del"></button>
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><label for="tab02_email">이메일</label></th>
+                              <td>
+                                <div class="form-element__wrap horizon_type">
+                                  <span class="form-element__inner input-type input_del">
+                                    <input type="text" value="" class="input-type1-font14" placeholder="이메일 주소를 입력해 주세요." title="이메일 입력" id="tab02_email">
+                                    <button class="del"></button>
+                                  </span>
+                                  <!-- 비활성화 시 disabled 클래스 추가 -->
+                                  <button type="button" class="btn-gra-sm"><span>코드발송</span></button>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="btn_area txt_align_right">
+                        <button class="btn btn_cancel" onclick="modalControl('c')"><span>취소</span></button>
+                        <button class="btn btn_approval" onclick="modalControl('c')"><span>확인</span></button>
+                      </div>
+                    </div>
+                    <!-- 코드 발송 후 -->
+                    <div>
+                      <div class="table_cont">
+                        <table>
+                          <colgroup>
+                            <col style="width:70px">
+                            <col>
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row"><label for="tab02_name">이름</label></th>
+                              <td>
+                                <div class="form-element__wrap horizon_type">
+                                  <span class="form-element__inner input-type input_del">
+                                    <input type="text" value="" class="input-type1-font14" placeholder="이름를 입력해 주세요." title="이름 입력" id="tab02_name">
+                                    <button class="del"></button>
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><label for="tab02_id">아이디</label></th>
+                              <td>
+                                <div class="form-element__wrap horizon_type">
+                                  <span class="form-element__inner input-type input_del">
+                                    <input type="text" value="" class="input-type1-font14" placeholder="아이디을 입력해 주세요." title="아이디 입력" id="tab02_id">
+                                    <button class="del"></button>
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row" class="align_top"><label for="tab02_email">이메일</label></th>
+                              <td>
+                                <div class="form-element__wrap horizon_type">
+                                  <span class="form-element__inner input-type input_del">
+                                    <input type="text" value="" class="input-type1-font14" placeholder="이메일 주소를 입력해 주세요." title="이메일 입력" id="tab02_email">
+                                    <button class="del"></button>
+                                  </span>
+                                  <!-- 비활성화 시 disabled 클래스 추가 -->
+                                  <button type="button" class="btn-gra-sm disabled"><span>코드발송</span></button>
+                                </div>
+                                <div class="form-element__wrap horizon_type mt10">
+                                  <span class="form-element__inner input-type input_del input_code">
+                                    <input type="text" value="" class="input-type1-font14" placeholder="코드를 입력해 주세요." title="코드 입력">
+                                    <button class="del"></button>
+                                    <span class="time">09:55</span>
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="btn_area txt_align_right">
+                        <button class="btn btn_cancel" onclick="modalControl('c')"><span>취소</span></button>
+                        <button class="btn btn_approval" onclick="modalControl('c')"><span>확인</span></button>
+                      </div>
+                    </div>
+                    <!-- 비밀번호 변경 -->
+                    <div>
+                      <p class="find_txtbox pb0">새로운 비밀번호를 입력해 주세요.</p>
+                      <div class="table_cont">
+                        <table>
+                          <colgroup>
+                            <col style="width:70px">
+                            <col>
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <th scope="row"><label for="pw">비밀번호</label></th>
+                              <td>
+                                <div class="form-element__wrap horizon_type">
+                                  <span class="form-element__inner input-type input_view">
+                                    <input type="password" value="" class="input-type1-font14" placeholder="특수문자, 영문, 숫자를 포함하여 8~20자" title="비밀번호 입력" id="pw">
+                                    <button class="view"></button>
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><label for="pw">비밀번호<br>재입력</label></th>
+                              <td>
+                                <div class="form-element__wrap horizon_type">
+                                  <span class="form-element__inner input-type input_view">
+                                    <input type="password" value="" class="input-type1-font14" placeholder="비밀번호를 다시 한 번 입력해 주세요." title="비밀번호 재입력" id="pw">
+                                    <button class="view"></button>
+                                  </span>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="btn_area txt_align_right">
+                        <button class="btn btn_cancel" onclick="modalControl('c')"><span>취소</span></button>
+                        <button class="btn btn_approval" onclick="modalControl('c')"><span>확인</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="right_cont">            
-                <span class="bar"><a href="#none" onclick="modalControl('o','#layer_pop_02');return false">아이디 찾기</a></span>
-                <span><a href="#none" onclick="modalControl('o','#layer_pop_02');return false">비밀번호 찾기</a></span>
-              </div>
             </div>
-            <button class="btn btn_puple full size_56">로그인</button>
-            <button class="btn btn_gpki full size_56"><span>GPKI 인증 로그인</span></button>
-            <p class="txtbox">회원가입을 하셔야 이양사무관리시스템을<br>이용하실 수 있습니다.</p>
-            <button class="btn full size_56">회원가입</button>
-            <p class="copy">ⓒMinistry of the Interior and Safety. All rights reserved.</p>
           </div>
         </div>
       </div>

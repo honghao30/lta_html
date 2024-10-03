@@ -266,6 +266,61 @@ function mypageClose() {
   $('body').removeClass('leftmode');
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+// 모바일 상세검색 레이어 gnbLayer01
+function gnbLayer01() {
+  // .gnbLayer01 요소에 left: 0; 스타일 적용
+  $('.gnbLayer01').css('left', '0');
+  // body에 leftmode 클래스 추가
+  $('body').addClass('leftmode');
+}
+function gnbLayer01Close() {
+  // .gnbLayer01 요소의 left 값을 -100%로 초기화하여 숨기기
+  $('.gnbLayer01').css('left', '-100%');
+  // body에서 leftmode 클래스 제거
+  $('body').removeClass('leftmode');
+}
+// 모바일 상세검색 레이어 gnbLayer02
+function gnbLayer02() {
+  // .gnbLayer02 요소에 left: 0; 스타일 적용
+  $('.gnbLayer02').css('left', '0');
+  // body에 leftmode 클래스 추가
+  $('body').addClass('leftmode');
+}
+function gnbLayer02Close() {
+  // .gnbLayer02 요소의 left 값을 -100%로 초기화하여 숨기기
+  $('.gnbLayer02').css('left', '-100%');
+  // body에서 leftmode 클래스 제거
+  $('body').removeClass('leftmode');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 검색결과 x 버튼 누를때
 $(document).ready(function() {
   // .btn_del 버튼 클릭 시 해당 li 삭제

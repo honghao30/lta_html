@@ -228,134 +228,91 @@
       <!-- 검색영역 -->
       <div class="sc bg_top">
         <div class="inner">
-          <div class="location">
-            <ul>
-              <li><a href="#none">홈</a></li>
-              <li><a href="#none">건의/문의등록</a></li>
-            </ul>
+          <div class="search_area">
+            <span class="search_box">
+              <span class="input_cont">
+                <input type="text" class="ico_search" placeholder="검색어를 입력해 주세요.">
+                <button class="btn_search"><span class="hidden">검색</span></button>
+              </span>
+            </span>
+            <div class="search_txt">
+              <strong>‘농업’</strong>(으)로 <strong>0</strong>개 내용이 검색되었습니다.
+            </div>
           </div>
-          <div class="pc">
-            <a href="#none" class="btn ico_print"><span>프린트</span></a>
-          </div>
-           <div class="flex-row justify-between">                
-                <h2 class="title">건의/문의등록</h2>                                        
-           </div>
-          
         </div>
       </div>
 
       <div class="content_wrap">
         <div class="inner">
-          <!-- pc -->
-          <div class="pc">
-            <div class="table_cont">
-              <table class="table-body-only">
-                <colgroup>                    
-                  <col width="160">
-                  <col>
-                </colgroup>
-                <tbody>
-                  <tr>    
-                    <th scope="row">제목 <span class="red-color">*</span></th>
-                    <td>
-                      <div class="form-element__wrap">                                  
-                        <div class="input-multi">
-                          <span class="form-element__inner input-type">
-                              <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="제목을 입력하세요" title="제목을 입력하세요">
-                          </span>
-                          <span class="input-text-count">
-                              <strong class="current">0</strong> / <strong>50자</strong>
-                          </span>
-                        </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">상세내용</th>
-                    <td>
-                      <div class="edit-wrap mt0">
-                        에디터 영역
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2" style="height:82px;">
-                      <div class="view_check">
-                        <label class="input_type check">
-                          <input type="checkbox" name="q01">
-                          <span class="txt">이메일로 답변 받기</span>
-                        </label>
-                        <div class="view" style="width:400px;">
-                          <span class="input_cont">
-                            <input type="text" placeholder="이메일을 입력해 주세요.">
-                          </span>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="tabs yiyang-tabs mt-32">
+            <ul class="tab-menu">
+              <li class="active"><a href="#">전체</a></li>
+              <li><a href="#">법령</a></li>
+              <li><a href="#">사무</a></li>
+              <li><a href="#">이양사무</a></li>
+            </ul>
+            
+            <div class="tab-content">
+              <div class="tab active">
+                <!-- tab1 -->
+                <div class="flex-row justify-between mt-80">
+                  <div class="font-type24-700">법령</div>
+                </div>
+                <div class="nodata_area">
+                  <p class="tit"><strong>검색 결과가 없습니다.</strong></p>
+                  <ul class="list">
+                    <li>입력하신 검색어가 올바른지 확인해 주세요.</li>
+                    <li>철자, 맞춤범, 띄어쓰기가 정확할수록 원하는 검색 결과를 얻으실 수 있습니다.</li>
+                  </ul>
+                </div>
+                <div class="flex-row justify-between mt-80">
+                  <div class="font-type24-700">사무</div>
+                </div>
+                <div class="nodata_area">
+                  <p class="tit"><strong>검색 결과가 없습니다.</strong></p>
+                  <ul class="list">
+                    <li>입력하신 검색어가 올바른지 확인해 주세요.</li>
+                    <li>철자, 맞춤범, 띄어쓰기가 정확할수록 원하는 검색 결과를 얻으실 수 있습니다.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab">
+                <div class="flex-row justify-between mt-80">
+                  <div class="font-type24-700">법령</div>
+                </div>
+                <div class="nodata_area">
+                  <p class="tit"><strong>검색 결과가 없습니다.</strong></p>
+                  <ul class="list">
+                    <li>입력하신 검색어가 올바른지 확인해 주세요.</li>
+                    <li>철자, 맞춤범, 띄어쓰기가 정확할수록 원하는 검색 결과를 얻으실 수 있습니다.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab">
+                <div class="flex-row justify-between mt-80">
+                  <div class="font-type24-700">사무</div>
+                </div>
+                <div class="nodata_area">
+                  <p class="tit"><strong>검색 결과가 없습니다.</strong></p>
+                  <ul class="list">
+                    <li>입력하신 검색어가 올바른지 확인해 주세요.</li>
+                    <li>철자, 맞춤범, 띄어쓰기가 정확할수록 원하는 검색 결과를 얻으실 수 있습니다.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab">
+                <div class="flex-row justify-between mt-80">
+                  <div class="font-type24-700">이양사무</div>
+                </div>
+                <div class="nodata_area">
+                  <p class="tit"><strong>검색 결과가 없습니다.</strong></p>
+                  <ul class="list">
+                    <li>입력하신 검색어가 올바른지 확인해 주세요.</li>
+                    <li>철자, 맞춤범, 띄어쓰기가 정확할수록 원하는 검색 결과를 얻으실 수 있습니다.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-          <!-- mo -->
-          <div class="mo">
-            <div class="table_cont bg_none">
-              <table class="table-body-only">
-                <colgroup>                    
-                  <col width="60">
-                  <col>
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <th scope="row">제목 <span class="red-color">*</span></th>
-                    <td>
-                      <div class="form-element__wrap">     
-                        <div class="input-multi has-text-count">
-                          <span class="form-element__inner input-type">
-                            <input type="text" class="input-type1-font14" placeholder="제목을 입력해주세요." title="제목">
-                          </span>
-                          <span class="input-text-count">
-                            <span class="current">0</span> / <span>50자</span>
-                          </span>
-                        </div>
-                      </div>
-                    </td>    
-                  </tr>
-                  <tr> 
-                    <td scope="row" colspan="2" class="full-width">
-                      상세내용
-                      <div class="edit-wrap">
-                        에디터 영역
-                      </div>
-                    </td> 
-                  </tr>
-                  <tr>
-                    <td colspan="2" style="height:82px;">
-                      <div class="view_check">
-                        <label class="input_type check">
-                          <input type="checkbox" name="q01">
-                          <span class="txt">이메일로 답변 받기</span>
-                        </label>
-                        <div class="view mt10" style="width:100%;">
-                          <span class="input_cont">
-                            <input type="text" placeholder="이메일을 입력해 주세요.">
-                          </span>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="button__wrap flex-end pc-flex mt-32">
-              <button type="button" class="btn-gray-default">
-                  <i class="ico-remove"></i> 취소
-              </button>
-              <button type="button" class="btn-primary-default">
-                  <i></i> 등록
-              </button>                              
-          </div>
         </div>
       </div>
     </div>
@@ -483,8 +440,8 @@
 
     <div class="footer mo foot_btn_wrap">
       <div class="foot_btn_area">        
-        <a href="#none" class="btn btn_cancel"><span>취소</span></a>
-        <a href="#none" class="btn btn_approval "><span>등록</span></a>
+        <a href="#none" class="btn btn_approval"><span>등록</span></a>
+        <a href="#none" class="btn btn_list"><span>목록</span></a>
       </div>
     </div>
   </div>

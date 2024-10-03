@@ -209,86 +209,55 @@
   <!-- container -->
   <div class="container" id="content">
     <!-- 검색영역 -->
-    <div class="sc bg_top">
+    <div class="content_wrap">
       <div class="inner">
-        <div class="location">
-          <ul>
-            <li><a href="#none">홈</a></li>
-            <li><a href="#none">회원가입</a></li>
-          </ul>
-        </div>
-        <h2 class="title">회원가입</h2>
-      </div>
-    </div>
-    <div class="content_wrap join_step_wrap">
-      <div class="inner">
-        <div class="join_step step01">
-          <ul class="hidden pc">
-            <li>약관동의 및 본인 확인</li>
-            <li>회원정보 입력 및 인증</li>
-            <li>가입 완료</li>
-          </ul>
-          <ul class="mo">
-            <li class="on">약관동의<br>및<br>본인 확인</li>
-            <li>회원정보<br>입력<br>및 인증</li>
-            <li>가입 완료</li>
-          </ul>
-        </div>
-        <div class="join_agree">
-          <ul>
-            <li>
-              <div class="top_info_box">
-                  <div class="left_cont">
-                    <label class="input_type check">
-                      <input type="checkbox" name="q01">
-                      <span class="txt"><strong>전체동의</strong></span>
-                    </label>
-                  </div>
+        <!-- 비밀번호 재설정 -->
+        <div class="layer_login">
+          <div class="modal_n_body">
+            <div class="pop_cont">
+              <p class="txtbox pt0">비밀번호를 다시 설정하실 수 있습니다.</p>
+              <!-- 비밀번호 변경 -->
+              <div class="pw_change_cont">
+                <p class="find_txtbox pb0">새로운 비밀번호를 입력해 주세요.</p>
+                <div class="table_cont">
+                  <table>
+                    <colgroup>
+                      <col style="width:70px">
+                      <col>
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><label for="pw">비밀번호</label></th>
+                        <td>
+                          <div class="form-element__wrap horizon_type">
+                            <span class="form-element__inner input-type input_view">
+                              <input type="password" value="" class="input-type1-font14" placeholder="특수문자, 영문, 숫자를 포함하여 8~20자" title="비밀번호 입력" id="pw">
+                              <button class="view"></button>
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><label for="pw">비밀번호<br>재입력</label></th>
+                        <td>
+                          <div class="form-element__wrap horizon_type">
+                            <span class="form-element__inner input-type input_view">
+                              <input type="password" value="" class="input-type1-font14" placeholder="비밀번호를 다시 한 번 입력해 주세요." title="비밀번호 재입력" id="pw">
+                              <button class="view"></button>
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="btn_area txt_align_right">
+                  <button class="btn btn_cancel" onclick="modalControl('c')"><span>취소</span></button>
+                  <button class="btn btn_approval" onclick="modalControl('c')"><span>확인</span></button>
+                </div>
               </div>
-            </li>
-            <li>
-              <div class="top_info_box">
-                  <div class="left_cont">
-                    <label class="input_type check">
-                      <input type="checkbox" name="q01">
-                      <span class="txt">이용약관</span>
-                    </label>
-                  </div>
-                  <div class="right_cont">            
-                    <a href="#none" class="btn">상세보기</a>
-                  </div>
-              </div>
-            </li>
-            <li>
-              <div class="top_info_box">
-                  <div class="left_cont">
-                    <label class="input_type check">
-                      <input type="checkbox" name="q01">
-                      <span class="txt">개인정보 수집 및 이용에 대한 안내</span>
-                    </label>
-                  </div>
-                  <div class="right_cont">            
-                    <a href="#none" class="btn">상세보기</a>
-                  </div>
-              </div>
-            </li>
-            <li>
-              <div class="top_info_box">
-                  <div class="left_cont">
-                    <label class="input_type check">
-                      <input type="checkbox" name="q01">
-                      <span class="txt">개인정보 제3자 동의</span>
-                    </label>
-                  </div>
-                  <div class="right_cont">            
-                    <a href="#none" class="btn">상세보기</a>
-                  </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="btn_area txt_align_center pc">
-          <button class="btn btn_puple">다음</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -438,16 +407,231 @@
     </div>
   </div>
 
-  <div class="footer mo foot_btn_wrap">
+  <!-- <div class="footer mo foot_btn_wrap">
     <div class="foot_btn_area">
-      <a href="#none" class="btn btn_add_mo"><span>등록</span></a>
+      <a href="#none" class="btn ico_check_01"><span>변경된<br>사무 확인</span></a>
+      <a href="#none" class="btn ico_check_04"><span>선택<br>승인요청</span></a>
+      <a href="#none" class="btn ico_check_05"><span>선택승인</span></a>
     </div>
-  </div>
+  </div> -->
 
   <!-- btn_top -->
   <button id="top" class="mo"><span class="hidden">위로 이동</span></button>
 
   <!-- layerPopup -->
+  <!-- 하단 메인 팝업 영역 -->
+  <section class="modal_new modal_overlay mo" id="main_banner_pop"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+    
+    <div class="modal_n_wrap">
+      <div class="modal-header">
+        <div class="tit">
+          <label class="input_type check">
+            <input type="checkbox" name="q01">
+            <span class="txt">오늘은 그만 보기</span>
+          </label>
+        </div>
+      </div>
+      <div class="modal_n_body">
+        <div class="pop_cont">
+          <div class="swiper_wrap mo">
+            <div class="swiper mySwiper type03" id="mo_banner_swiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper_wrap">
+                    <div class="swiper mySwiper type01" id="mo_banner_swiper_cont1">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                      </div>
+                      <div class="sw_bts">
+                        <div class="swiper-button-next"><img src="img/mo/swiper/btn_sw_right.png" alt=""></div>
+                        <div class="swiper-button-prev"><img src="img/mo/swiper/btn_sw_left.png" alt=""></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-autoplay-button">
+                          <img src="img/mo/swiper/btn_sw_pause.png" alt="" class="pause">
+                          <img src="img/mo/swiper/btn_sw_play.png" alt="" class="play">
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      var mo_banner_swiper_cont1 = new Swiper("#mo_banner_swiper_cont1", {
+                        slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
+                        slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                        loop: true,
+                        autoplay: {
+                          delay: 3000,
+                          disableOnInteraction: false,
+                        },
+                        navigation: {
+                          nextEl: "#mo_banner_swiper_cont1 .swiper-button-next",
+                          prevEl: "#mo_banner_swiper_cont1 .swiper-button-prev",
+                        },
+                        pagination: {
+                          el: "#mo_banner_swiper_cont1 .swiper-pagination",
+                          type: "fraction",
+                          clickable: true,
+                        }
+                      });
+                      // mo_banner_swiper_cont1의 일시정지 및 재생 제어
+                      $("#mo_banner_swiper_cont1 .swiper-autoplay-button .pause").on("click", function() {
+                        mo_banner_swiper_cont1.autoplay.stop();
+                        $(this).hide();
+                        $("#mo_banner_swiper_cont1 .swiper-autoplay-button .play").show();
+                      });
+                      $("#mo_banner_swiper_cont1 .swiper-autoplay-button .play").on("click", function() {
+                        mo_banner_swiper_cont1.autoplay.start();
+                        $(this).hide();
+                        $("#mo_banner_swiper_cont1 .swiper-autoplay-button .pause").show();
+                      });
+                    </script>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper_wrap">
+                    <div class="swiper mySwiper type01" id="mo_banner_swiper_cont2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                      </div>
+                      <div class="sw_bts">
+                        <div class="swiper-button-next"><img src="img/mo/swiper/btn_sw_right.png" alt=""></div>
+                        <div class="swiper-button-prev"><img src="img/mo/swiper/btn_sw_left.png" alt=""></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-autoplay-button">
+                          <img src="img/mo/swiper/btn_sw_pause.png" alt="" class="pause">
+                          <img src="img/mo/swiper/btn_sw_play.png" alt="" class="play">
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      var mo_banner_swiper_cont2 = new Swiper("#mo_banner_swiper_cont2", {
+                        slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
+                        slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                        loop: true,
+                        autoplay: {
+                          delay: 3000,
+                          disableOnInteraction: false,
+                        },
+                        navigation: {
+                          nextEl: "#mo_banner_swiper_cont2 .swiper-button-next",
+                          prevEl: "#mo_banner_swiper_cont2 .swiper-button-prev",
+                        },
+                        pagination: {
+                          el: "#mo_banner_swiper_cont2 .swiper-pagination",
+                          type: "fraction",
+                          clickable: true,
+                        }
+                      });
+                      // mo_banner_swiper_cont2의 일시정지 및 재생 제어
+                      $("#mo_banner_swiper_cont2 .swiper-autoplay-button .pause").on("click", function() {
+                        mo_banner_swiper_cont2.autoplay.stop();
+                        $(this).hide();
+                        $("#mo_banner_swiper_cont2 .swiper-autoplay-button .play").show();
+                      });
+                      $("#mo_banner_swiper_cont2 .swiper-autoplay-button .play").on("click", function() {
+                        mo_banner_swiper_cont2.autoplay.start();
+                        $(this).hide();
+                        $("#mo_banner_swiper_cont2 .swiper-autoplay-button .pause").show();
+                      });
+                    </script>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper_wrap">
+                    <div class="swiper mySwiper type01" id="mo_banner_swiper_cont3">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                      </div>
+                      <div class="sw_bts">
+                        <div class="swiper-button-next"><img src="img/mo/swiper/btn_sw_right.png" alt=""></div>
+                        <div class="swiper-button-prev"><img src="img/mo/swiper/btn_sw_left.png" alt=""></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-autoplay-button">
+                          <img src="img/mo/swiper/btn_sw_pause.png" alt="" class="pause">
+                          <img src="img/mo/swiper/btn_sw_play.png" alt="" class="play">
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      var mo_banner_swiper_cont3 = new Swiper("#mo_banner_swiper_cont3", {
+                        slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
+                        slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                        loop: true,
+                        autoplay: {
+                          delay: 3000,
+                          disableOnInteraction: false,
+                        },
+                        navigation: {
+                          nextEl: "#mo_banner_swiper_cont3 .swiper-button-next",
+                          prevEl: "#mo_banner_swiper_cont3 .swiper-button-prev",
+                        },
+                        pagination: {
+                          el: "#mo_banner_swiper_cont3 .swiper-pagination",
+                          type: "fraction",
+                          clickable: true,
+                        }
+                      });
+                      // mo_banner_swiper_cont3의 일시정지 및 재생 제어
+                      $("#mo_banner_swiper_cont3 .swiper-autoplay-button .pause").on("click", function() {
+                        mo_banner_swiper_cont3.autoplay.stop();
+                        $(this).hide();
+                        $("#mo_banner_swiper_cont3 .swiper-autoplay-button .play").show();
+                      });
+                      $("#mo_banner_swiper_cont3 .swiper-autoplay-button .play").on("click", function() {
+                        mo_banner_swiper_cont3.autoplay.start();
+                        $(this).hide();
+                        $("#mo_banner_swiper_cont3 .swiper-autoplay-button .pause").show();
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <script>
+              var mo_banner_swiper1 = new Swiper("#mo_banner_swiper1", {
+                slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
+                slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                loop: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                // navigation: {
+                //   nextEl: ".swiper-button-next",
+                //   prevEl: ".swiper-button-prev",
+                // }
+              });
+            </script>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+      <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- <div class="modal_n_wrap">
+      <div class="modal_n_body">
+        <div class="pop_cont">
+          테스트
+        </div>
+        <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>
+      </div>
+    </div> -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+  </section>
+  <!-- //하단 메인 팝업 영역 -->
 </div>
 </body>
 </html>
