@@ -1081,6 +1081,9 @@ p.skip{margin-bottom:30px;}
 .flex-row.justify-center {
     justify-content: center;
 }
+.justify-end {
+    justify-content: flex-end;
+}
 .inline-flex {
     display: inline-flex !important;
     margin-left: 3px;
@@ -1142,7 +1145,9 @@ p.skip{margin-bottom:30px;}
     left: 116px;
 }
 
-
+.full-width {
+    width: 100%;
+}
 .text-red,
 .red-color {
     color:#FF5858;
@@ -1911,6 +1916,9 @@ td:has(.text-type) {
         font-weight: 400;
         line-height: 18px;
         letter-spacing: -0.02em;
+    }
+    .mo-search-detail-content .form-element-rows .tit.fit-content {
+        min-width: fit-content;
     }
     .mo-search-detail-content .form-element-rows .select_box {
         flex:1;
@@ -3415,4 +3423,9 @@ td:has(.text-type) {
     line-height: 16px;
     letter-spacing: -0.06em;
     color:#222;
+}
+
+.link-underline {
+    text-decoration: underline;
+    color: #FF8B4A;
 }
