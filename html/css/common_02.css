@@ -348,6 +348,9 @@ p.skip{margin-bottom:30px;}
     line-height: 18px;
     letter-spacing: -0.02em;
 }
+.btn-primary-default:disabled {
+    opacity: 0.4;
+}
 .btn-primary-default.wd-108 {
     width: 108px;
 }
@@ -2357,6 +2360,10 @@ td:has(.text-type) {
     overflow: hidden;
     background-color: transparent;
 }
+.btn_search_only-icon.btn-law-reset {
+    right: 80px;
+    bottom: 36px;
+}
 
 .popup_new.type-window .modal_n_wrap {
     width: 1280px;
@@ -2483,7 +2490,9 @@ td:has(.text-type) {
     color:#222;
     margin: 0 16px;
 }
-
+.btn_approval:disabled {
+    opacity: 0.4;
+}
 /* // 탭 */
 .box-tab__wrap {
     margin-top: 32px;

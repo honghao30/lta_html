@@ -552,7 +552,7 @@
                       </table>
                     </div>
                     <div class="button__wrap flex-end mt-16">
-                      <button type="button" class="btn-gra-sm" onclick="modalControl('o','#main_layer_pop');return false">근거법령 전체보기</button>
+                      <button type="button" class="btn-gra-sm" onclick="modalControl('o','#main_layer_pop');return false">개정이력보기</button>
                     </div>
                     <div class="inner-table-cont mt-16">
                       <table>
@@ -561,10 +561,6 @@
                               <col width="" />
                           </colgroup>
                           <tbody>
-                            <tr>
-                                <td class="tit">조문제목</td>
-                                <td class="tit text-l" colspan="2">농업진흥지역등의 변경 및 해제</td>
-                            </tr>
                               <tr>
                                   <td>조문내용</td>
                                   <td class="text-l">
@@ -968,7 +964,7 @@
           <div class="document-title-h16">
               법령분류
           </div>
-          <button type="button" class="btn-gra-sm" onclick="modalControl('o','#main_layer_pop');return false">근거법령 전체보기</button>
+          <button type="button" class="btn-gra-sm" onclick="modalControl('o','#main_layer_pop');return false">개정이력보기</button>
       </div>
       <div class="table_cont rount-type-sm mo mt-8">
         <table class="table-body-only">
@@ -1014,7 +1010,7 @@
             <button type="button" class="btn-gray-default">
                 <i class="ico-remove"></i> 취소
             </button>
-            <button type="button" class="btn-primary-default">
+            <button type="button" class="btn-primary-default" disabled>
                 <i></i> 승인
             </button>         
             <button type="button" class="btn-line-return">
@@ -1275,7 +1271,7 @@
       <!-- <a href="#none" class="btn ico_check_01"><span>변경된<br>사무 확인</span></a> -->
       <a href="#none" class="btn btn_cancel"><span>취소</span></a>
       <a href="#none" class="btn btn btn_save"><span>저장</span></a>
-      <a href="#none" class="btn btn_approval"><span>승인요청</span></a>
+      <a href="#none" class="btn btn_approval disabled"><span>승인요청</span></a>
     </div>
   </div>
 </div>

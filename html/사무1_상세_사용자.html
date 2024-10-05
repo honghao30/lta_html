@@ -174,20 +174,12 @@
                 <tbody>
                     <tr>
                         <th scope="row">사무 ID</th>
-                        <td>
+                        <td colspan="3">
                             <div class="form-element__wrap">                                
                                 <span class="form-element__inner input-type">
                                     <input type="text" value="" class="input-type1-font14" placeholder="사무 ID" title="사무 ID" disabled>
                                 </span>
                             </div>                            
-                        </td>
-                        <th scope="row">사무 검토 상태</th>
-                        <td>
-                            <div class="form-element__wrap">                                
-                              <span class="form-element__inner input-type">
-                                  <input type="text" value="승인완료" class="input-type1-font14" placeholder="사무 검토 상태" title="사무 검토 상태" disabled>
-                              </span>
-                          </div>                          
                         </td>                    
                     </tr>
                     <tr>
@@ -437,11 +429,11 @@
                   </td>                 
               </tr>
               <tr>
-                <th scope="row">사무 검토 상태</th>
+                <th scope="row">개정이력보기</th>
                 <td>
                     <div class="form-element__wrap">                                
                       <span class="form-element__inner input-type">
-                          <input type="text" value="승인완료" class="input-type1-font14" placeholder="사무 검토 상태" title="사무 검토 상태" disabled>
+                          <input type="text" value="승인완료" class="input-type1-font14" placeholder="개정이력보기" title="개정이력보기" disabled>
                       </span>
                   </div>                          
                 </td>    
@@ -801,7 +793,7 @@
                           </table>
                         </div>
                         <div class="button__wrap flex-end mt-16">
-                          <button type="button" class="btn-gra-sm" onclick="modalControl('o','#main_layer_pop');return false">근거법령 전체보기</button>
+                          <button type="button" class="btn-gra-sm" onclick="modalControl('o','#main_layer_pop');return false">개정이력보기</button>
                         </div>
                         <div class="inner-table-cont mt-16">
                           <table>
@@ -810,10 +802,6 @@
                                   <col width="" />
                               </colgroup>
                               <tbody>
-                                <tr>
-                                    <td class="tit">조문제목</td>
-                                    <td class="tit text-l" colspan="2">농업진흥지역등의 변경 및 해제</td>
-                                </tr>
                                   <tr>
                                       <td>조문내용</td>
                                       <td class="text-l">
@@ -893,7 +881,7 @@
             <div class="document-title-h16">
                 법령분류
             </div>
-            <button type="button" class="btn-gra-sm" onclick="modalControl('o','#main_layer_pop');return false">근거법령 전체보기</button>
+            <button type="button" class="btn-gra-sm" onclick="modalControl('o','#main_layer_pop');return false">개정이력보기</button>
         </div>
         <div class="table_cont rount-type-sm mo mt-8">
           <table class="table-body-only">
@@ -1179,7 +1167,10 @@
                           </tbody>
                       </table>
                   </div>
-                  <div class="history-option">
+                  <div class="flex-row justify-end mt-16">
+                    <a href="#none" class="btn ico_download"><span>엑셀 다운로드</span></a>
+                  </div>                      
+                  <!-- <div class="history-option">
                     <div class="radio-box">
                       <label id="r001">
                           <input type="radio" name="type6" value="type060" id="r001">
@@ -1194,7 +1185,7 @@
                         <span>반려</span>
                     </label>                      
                   </div>                     
-                  </div>
+                  </div> -->
                   <div class="form-element__wrap txtarea_wrap mt-32">  
                       <div class="document-title-ft18">변경 내용</div>                    
                       <span class="form-element__inner text-area mt-16">
