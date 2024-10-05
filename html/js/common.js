@@ -526,6 +526,33 @@ $(document).ready(function () {
 });
 
 
+// // 모바일 GNB 메뉴
+// $(document).ready(function() {
+//   $('.depth01 li').on('click', function() {
+//     // 모든 .depth01에서 클래스 'on' 제거
+//     $('.depth01').removeClass('on');
+    
+//     // 클릭한 li의 인덱스를 가져옴
+//     var index = $(this).index();
+    
+//     // 동일한 인덱스를 가진 .depth02에 'on' 클래스 추가
+//     $('.depth02').removeClass('on'); // 모든 .depth02에서 'on' 제거
+//     $('.depth02').eq(index).addClass('on');
+//   });
+
+//   $('.gnbLayer01 .btn_layer_close').on('click', function() {
+//     // 모든 'on' 클래스 제거
+//     $('.list_box .on').removeClass('on');
+    
+//     // 클래스 depth01에만 'on' 추가
+//     $('.depth01').addClass('on');
+//   });
+// });
+
+
+
+
+
 
 
 
