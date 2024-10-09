@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
     
-        const menuAll = container.querySelector('.all-tree');
+        const menuAll = container.querySelectorAll('.all-tree');
         const oneDepth = container.querySelector('.two-depth-list')
         const twoDepthMenuButtons = container.querySelectorAll('.two-depth-button');
         const treeDepthMenuList = container.querySelectorAll('.tree-depth-list');
@@ -69,8 +69,40 @@ document.addEventListener("DOMContentLoaded", () => {
     
     treeMenu('#coverment');
     treeMenu('#law-list');
-    
 
+    // 메뉴 관리 전체메뉴
+    const treeMenuFn = (containerId) => {
+        if (!containerId) return;
+    
+        const container = document.querySelector(containerId);
+        if (!container) return;        
+    
+        const menuOnes = container.querySelectorAll('.one-depth button');
+        menuOnes.forEach(menu => {
+            menu.addEventListener('click', () => {
+                menu.classList.toggle('is-active');
+                const twoDepthList = menu.closest('li').querySelector('.two-depth-list');
+                if (twoDepthList) {
+                    twoDepthList.classList.toggle('is-active');
+                }
+            });
+    
+            const menuTwoDepth = menu.closest('li').querySelectorAll('.two-depth-button');
+            menuTwoDepth.forEach(twoMenu => {
+                twoMenu.addEventListener('click', () => {
+                    twoMenu.classList.toggle('is-active');
+                    const treeDepthList = twoMenu.closest('li').querySelector('.tree-depth-list');
+                    if (treeDepthList) {
+                        treeDepthList.classList.toggle('is-active');
+                    }
+                });
+            });
+        });     
+    }
+    
+    treeMenuFn('#menuManage');
+    treeMenuFn('#menuManage2');
+    
     // 탭
     // 탭메뉴
     function tabMenus(tabGroupSelector) {

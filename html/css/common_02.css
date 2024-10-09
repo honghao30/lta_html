@@ -320,6 +320,15 @@ p.skip{margin-bottom:30px;}
     background: url('../img/pc/ico/ico_btn_save.png') no-repeat;
     background-size: contain;
 }
+.btn-gray-default i.ico-reset::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../img/pc/ico/ic_refresh.png') no-repeat;
+    background-size: 100% auto;
+}
+
 .btn-gray-default i.ico-modify::before {
     content: '';
     display: block;
@@ -724,7 +733,9 @@ p.skip{margin-bottom:30px;}
     width: 50%;
     align-items: center;
 }
-
+.modal_n_wrap.wid480 {
+    width: 480px;
+}
 /* 법령 */
 .law-wrap {
     display: flex;
@@ -1100,12 +1111,14 @@ p.skip{margin-bottom:30px;}
 .mt-32 {margin-top: 32px;}
 .mt-64 {margin-top: 64px;}
 .mt-80 {margin-top: 80px;}
+.pdl-20 {padding-left: 20px !important;}
 .pdl-30 {padding-left: 30px}
 .ml-5 {margin-left: 5px;}
 .ml-8 {margin-left: 8px;}
 .ml-10 {margin-left: 10px !important;}
 .ml-15 {margin-left: 15px !important;}
 .mr-16 {margin-right: 16px;}
+.mb-20 {margin-bottom: 24px;}
 .float-r {float:right !important;}
 .wid80 {width: 80px;}
 .search-input-inner.deliberation {
@@ -3466,4 +3479,44 @@ td:has(.text-type) {
 }
 .mo.bg-gray.table_cont .table-body-only tbody th {
     padding-left: 20px;
+}
+
+.description-list {
+    color: #717B8A;
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    margin-top: 8px;
+}
+
+.modal-msg .tree-menu-wrap,
+.law-wrap.menu-management .law-tree-menu {
+    height: auto;
+}
+.law-wrap.menu-management .law-tree-menu .tree-menu-wrap .two-depth-list.is-active {
+    margin-bottom: 20px;
+}
+.modal-msg  .tree-menu-wrap,
+.law-wrap.menu-management .law-tree-menu .tree-menu-wrap {
+    border: 1px solid #D8DDE9;
+}
+.modal-msg .two-depth-list.is-active {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+.menu-management {
+    display: flex;
+    flex-direction: column;
+}
+.law-wrap.menu-management .law-tree-menu {
+    display: block !important;
+    width: 100%;
+    
+}
+.law-wrap.menu-management .law-tree-menu .tree-menu-wrap {
+    height: auto;
+}
 }
