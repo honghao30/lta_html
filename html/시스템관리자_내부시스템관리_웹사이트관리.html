@@ -201,19 +201,19 @@
                     <tr>
                         <th scope="row">파비콘<span class="red-color">*</span></th>
                         <td>
-                            <ul class="file-list" style="max-width: 100%;">
-                                <li>
-                                    <input type="file" name="" class="file" style="width: 100%;">
-                                    <div class="form-element__wrap">                                  
-                                        <div class="input-muldti file-up">
-                                            <span class="form-element__inner input-type">
-                                                <input type="text" placeholder="" title="파일첨부">
-                                            </span>
-                                            <button type="button" class="btn-gra-sm">파비콘이미지 파일 선택</button>
-                                        </div>
-                                    </div>  
-                                </li>
-                            </ul>                 
+                          <ul class="file-list"  style="max-width: 100%;">
+                            <li>
+                                <input type="file" name="" class="file" style="width: 100%;">
+                                <div class="form-element__wrap">                                  
+                                    <div class="input-multi file-up">
+                                        <span class="form-element__inner input-type">
+                                            <input type="text" placeholder="" title="파일첨부">
+                                        </span>
+                                        <button type="button" class="btn-gra-sm">파비콘이미지 파일 선택</button>
+                                    </div>
+                                </div>  
+                            </li>
+                        </ul>               
                         </td>
                     </tr> 
     
@@ -233,12 +233,106 @@
             </table>
         </div>
 
-            <div class="button__wrap flex-end mt-64 pc">                        
-                <a href="#" class="btn-gray-default">
-                    <i class="ico-modify"></i> 수정
-                </a> 
-            </div>
-      
+          <div class="button__wrap flex-end mt-64 pc">                        
+              <a href="#" class="btn-gray-default">
+                  <i class="ico-modify"></i> 수정
+              </a> 
+          </div>
+          <div class="table_cont mo">
+            <table class="table-body-only no-line-type flex-wrap">
+              <colgroup>
+                <col width="30%" />
+                <col width="" />
+              </colgroup>
+                <tbody>
+                  <tr>
+                      <th scope="row">웹사이트명(한글) <span class="red-color">*</span></th>
+                      <td>
+                          <div class="form-element__wrap">
+                              <div class="input-multi">
+                              <span class="form-element__inner input-type">
+                                  <input type="text" value="웹사이트명(한글)" class="input-type1-font14" maxlength="" placeholder="웹사이트명(한글)을 입력하세요" title="웹사이트명(한글)을 입력하세요">
+                              </span>
+                              </div>
+                          </div>                  
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">사이트명(영문) <span class="red-color">*</span></th>
+                      <td>
+                              <div class="form-element__wrap">
+                                  <div class="input-multi">
+                                  <span class="form-element__inner input-type">
+                                      <input type="text" value="사이트명(영문)" class="input-type1-font14" maxlength="" placeholder="사이트명(영문)을 입력하세요" title="사이트명(영문)을 입력하세요">
+                                  </span>
+                                  </div>
+                              </div>                    
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">도메인<span class="red-color">*</span></th>
+                      <td>
+                              <div class="form-element__wrap">
+                                  <div class="input-multi">
+                                  <span class="form-element__inner input-type">
+                                      <input type="text" value="도메인" class="input-type1-font14" maxlength="" placeholder="메인을 입력하세요" title="메인을 입력하세요">
+                                  </span>
+                                  </div>
+                              </div>                    
+                      </td>
+                  </tr>                        
+                  <tr>
+                      <th scope="row">사이트명 로고<span class="red-color">*</span></th>
+                      <td>
+                          <ul class="file-list"  style="max-width: 100%;">
+                              <li>
+                                  <input type="file" name="" class="file" style="width: 100%;">
+                                  <div class="form-element__wrap">                                  
+                                      <div class="input-multi file-up">
+                                          <span class="form-element__inner input-type">
+                                              <input type="text" placeholder="" title="파일첨부">
+                                          </span>                                          
+                                      </div>
+                                      <button type="button" class="btn-gra-sm mt-8">로고이미지 파일 선택</button>
+                                  </div>  
+                              </li>
+                          </ul>
+                      </td>
+                  </tr>                              
+                  <tr>
+                      <th scope="row">파비콘<span class="red-color">*</span></th>
+                      <td>
+                          <ul class="file-list" style="max-width: 100%;">
+                              <li>
+                                  <input type="file" name="" class="file" style="width: 100%;">
+                                  <div class="form-element__wrap">                                  
+                                      <div class="input-muldti file-up">
+                                          <span class="form-element__inner input-type">
+                                              <input type="text" placeholder="" title="파일첨부">
+                                          </span>                                          
+                                      </div>
+                                      <button type="button" class="btn-gra-sm mt-8">파비콘이미지 파일 선택</button>
+                                  </div>  
+                              </li>
+                          </ul>                 
+                      </td>
+                  </tr> 
+
+                  <tr>
+                      <th scope="row">페이지 설명</th>
+                      <td>
+                              <div class="form-element__wrap">
+                                  <div class="input-multi">
+                                  <span class="form-element__inner input-type">
+                                      <input type="text" value="설명" class="input-type1-font14" maxlength="" placeholder="페이지 설명을 입력하세요" title="페이지 설명을 입력하세요">
+                                  </span>
+                                  </div>
+                              </div>                    
+                      </td>
+                  </tr>            
+              </tbody>
+            </table>
+          </div>
 
       </div>
     </div>
@@ -367,9 +461,7 @@
 
   <div class="footer mo foot_btn_wrap">
     <div class="foot_btn_area">        
-        <a href="#none" class="btn btn_delete"><span>삭제</span></a>
-        <a href="#none" class="btn btn_approval"><span>등록</span></a>
-        <a href="#none" class="btn btn_list"><span>조회</span></a>
+      <a href="#none" class="btn btn btn_modify"><span>수정</span></a>
     </div>
   </div>  
 </div>

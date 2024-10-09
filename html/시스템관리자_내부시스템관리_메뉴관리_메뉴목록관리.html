@@ -438,21 +438,105 @@
                     </table>
                   </div>
 
-                    <div class="button__wrap flex-end mt-64 pc">
-                        <a href="#" class="btn-gray-default">
-                            <i class="ico-reset"></i> 초기화
-                        </a>                          
-                        <a href="#" class="btn-gray-default">
-                            <i class="ico-delete"></i> 삭제
-                        </a>                         
-                        <a href="#" class="btn-gray-default">
-                            <i class="ico-modify"></i> 수정
-                        </a> 
-                        <a href="#" class="btn-primary-default">
-                            <i></i> 저장
-                        </a>
-                    </div>
-
+                <div class="button__wrap flex-end mt-64 pc">
+                    <a href="#" class="btn-gray-default">
+                        <i class="ico-reset"></i> 초기화
+                    </a>                          
+                    <a href="#" class="btn-gray-default">
+                        <i class="ico-delete"></i> 삭제
+                    </a>                         
+                    <a href="#" class="btn-gray-default">
+                        <i class="ico-modify"></i> 수정
+                    </a> 
+                    <a href="#" class="btn-primary-default">
+                        <i></i> 저장
+                    </a>
+                </div>
+                <div class="table_cont mo">
+                    <table class="table-body-only no-line-type flex-wrap">
+                      <colgroup>
+                        <col width="30%" />
+                        <col width="" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                            <th scope="row">메뉴 No. <span class="red-color">*</span></th>
+                            <td>
+                                <div class="form-element__wrap">
+                                    <div class="input-multi">
+                                    <span class="form-element__inner input-type">
+                                        <input type="text" value="메뉴 No" class="input-type1-font14" maxlength="" placeholder="메뉴 No을 입력하세요" title="메뉴 No을 입력하세요">
+                                    </span>
+                                    </div>
+                                </div>                  
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">메뉴명<span class="red-color">*</span></th>
+                            <td>
+                                    <div class="form-element__wrap">
+                                        <div class="input-multi">
+                                        <span class="form-element__inner input-type">
+                                            <input type="text" value="메뉴명" class="input-type1-font14" maxlength="" placeholder="메뉴명을 입력하세요" title="메뉴명을 입력하세요">
+                                        </span>
+                                        </div>
+                                    </div>                    
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">메뉴 순서<span class="red-color">*</span></th>
+                            <td>
+                                    <div class="form-element__wrap">
+                                        <div class="input-multi">
+                                        <span class="form-element__inner input-type">
+                                            <input type="text" value="1" class="input-type1-font14" maxlength="" placeholder="메뉴 순서을 입력하세요" title="메뉴 순서  을 입력하세요">
+                                        </span>
+                                        </div>
+                                    </div>                    
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <th scope="row">상위 메뉴 No.<span class="red-color">*</span></th>
+                            <td>
+                                    <div class="form-element__wrap">
+                                        <div class="input-multi">
+                                            <span class="form-element__inner input-type"  style="width: 80%;flex: none;">
+                                                <input type="text" value="메뉴명" class="input-type1-font14" maxlength="" placeholder="상위 메뉴 No.를 입력하세요" title="상위 메뉴 No.를 입력하세요">
+                                            </span>                                            
+                                        </div>
+                                        <button type="button" class="btn-gra-sm mt-8" onclick="modalControl('o','#layer_pop_01');return false">상위메뉴 선택</button>
+                                    </div>                    
+                            </td>
+                        </tr>                              
+                        <tr>
+                            <th scope="row">파일명<span class="red-color">*</span></th>
+                            <td>
+                                    <div class="form-element__wrap">
+                                        <div class="input-multi">
+                                        <span class="form-element__inner input-type" style="width: 80%;flex: none;">
+                                            <input type="text" value="파일명" class="input-type1-font14" maxlength=""  disabled placeholder="파일명을 입력하세요" title="파일명을 입력하세요">
+                                        </span>                                        
+                                        </div>
+                                        <button type="button" class="btn-gra-sm  mt-8" onclick="modalControl('o','#layer_pop_02');return false">프로그램파일 선택</button>
+                                    </div>                    
+                            </td>
+                        </tr> 
+        
+                        <tr>
+                            <th scope="row">페이지 설명</th>
+                            <td>
+                                    <div class="form-element__wrap">
+                                        <div class="input-multi">
+                                        <span class="form-element__inner input-type">
+                                            <input type="text" value="설명" class="input-type1-font14" maxlength="" placeholder="페이지 설명을 입력하세요" title="페이지 설명을 입력하세요">
+                                        </span>
+                                        </div>
+                                    </div>                    
+                            </td>
+                        </tr>            
+                    </tbody>
+                    </table>
+                </div>
 
             </div>
         </div>
@@ -877,8 +961,9 @@
 
   <div class="footer mo foot_btn_wrap">
     <div class="foot_btn_area">        
-      <a href="#none" class="btn btn_approval"><span>등록</span></a>
-      <a href="#none" class="btn btn_list"><span>조회</span></a>
+        <a href="#none" class="btn btn_delete"><span>삭제</span></a>
+      <a href="#none" class="btn btn_modify"><span>수정</span></a>
+      <a href="#none" class="btn btn_save"><span>저장</span></a>
     </div>
   </div>  
 </div>

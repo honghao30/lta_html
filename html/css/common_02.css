@@ -429,6 +429,10 @@ p.skip{margin-bottom:30px;}
     background: url(../img/pc/ico/ico_list.png) no-repeat 0 center;
     background-size: 15px auto;
 }
+.btn_modify span {
+    background: url(../img/pc/ico/ic_h24_edit_gray.png) no-repeat 0 center;
+    background-size: 20px auto; 
+}
 .icon-file {
     width:20px;
     height:20px;
