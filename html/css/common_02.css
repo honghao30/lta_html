@@ -1125,6 +1125,7 @@ p.skip{margin-bottom:30px;}
 .mb-20 {margin-bottom: 24px;}
 .float-r {float:right !important;}
 .wid80 {width: 80px;}
+.wd-90 {width: 90px !important; flex: initial !important;}
 .search-input-inner.deliberation {
     position: relative;
 }
@@ -3523,4 +3524,8 @@ td:has(.text-type) {
 .law-wrap.menu-management .law-tree-menu .tree-menu-wrap {
     height: auto;
 }
+}
+
+.form-element__wrap.ip-manage .form-element__inner {
+    padding: 0 8px;
 }
