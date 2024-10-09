@@ -266,18 +266,6 @@ function mypageClose() {
   $('body').removeClass('leftmode');
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 // 모바일 상세검색 레이어 gnbLayer01
 function gnbLayer01() {
   // .gnbLayer01 요소에 left: 0; 스타일 적용
@@ -304,22 +292,6 @@ function gnbLayer02Close() {
   // body에서 leftmode 클래스 제거
   $('body').removeClass('leftmode');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // 검색결과 x 버튼 누를때
 $(document).ready(function() {
@@ -434,7 +406,6 @@ $(document).ready(function() {
   });
 });
 
-
 // 파일첨부
 $(document).ready(function () {
   var $dropArea = $(".file-drop");
@@ -525,32 +496,68 @@ $(document).ready(function () {
   });
 });
 
+// 피씨 GNB 메뉴
+$(document).ready(function() {
+  // .menu_layer 클릭 시
+  $('.menu_layer').on('click', function() {
+    // 모든 .menu_layer에서 'on' 클래스 제거
+    $('.menu_layer').removeClass('on');
+    // 클릭한 항목에 'on' 클래스 추가
+    $(this).addClass('on');
+  });
 
-// // 모바일 GNB 메뉴
-// $(document).ready(function() {
-//   $('.depth01 li').on('click', function() {
-//     // 모든 .depth01에서 클래스 'on' 제거
-//     $('.depth01').removeClass('on');
-    
-//     // 클릭한 li의 인덱스를 가져옴
-//     var index = $(this).index();
-    
-//     // 동일한 인덱스를 가진 .depth02에 'on' 클래스 추가
-//     $('.depth02').removeClass('on'); // 모든 .depth02에서 'on' 제거
-//     $('.depth02').eq(index).addClass('on');
-//   });
+  // .btn_layer_close 클릭 시 모든 .menu_layer에서 'on' 클래스 제거
+  $('.btn_layer_close').on('click', function() {
+    $('.menu_layer').removeClass('on');
+  });
+});
 
-//   $('.gnbLayer01 .btn_layer_close').on('click', function() {
-//     // 모든 'on' 클래스 제거
-//     $('.list_box .on').removeClass('on');
-    
-//     // 클래스 depth01에만 'on' 추가
-//     $('.depth01').addClass('on');
-//   });
-// });
+// 피씨 GNB 메뉴 메뉴 열렸을떄 동작
+$(document).ready(function() {
+  // 클릭 핸들러
+  function handleClick(depthClass, nextClass) {
+    $(depthClass + ' > a').click(function(e) {
+      // 클릭한 항목 안에 ul이 있는지 확인
+      if ($(this).siblings('ul').length > 0) {
+        e.preventDefault(); // ul이 있을 때만 a 태그의 기본 동작을 막음
+        // 모든 해당 depth에서 'on' 클래스 제거
+        $(depthClass).removeClass('on');
+        // 클릭한 항목에 'on' 클래스 추가
+        $(this).parent().addClass('on');
+        // list_box > ul의 클래스를 변경
+        $('.list_box > ul').removeClass('on_depth01 on_depth02 on_depth03').addClass(nextClass);
+      }
+      // ul이 없으면 기본 동작이 가능하므로 e.preventDefault()를 호출하지 않음
+    });
+  }
 
+  // depth 클릭 핸들러 설정
+  handleClick('.depth01', 'on_depth02');
+  handleClick('.depth02', 'on_depth03');
 
+  // depth03 클릭 시
+  $('.depth03 > a').click(function(e) {
+    // 클릭한 항목 안에 ul이 있는지 확인
+    if ($(this).siblings('ul').length > 0) {
+      e.preventDefault(); // ul이 있을 때만 a 태그의 기본 동작을 막음
+      // 모든 depth03에서 'on' 클래스 제거
+      $('.depth03').removeClass('on');
+      // 클릭한 depth03에 'on' 클래스 추가
+      $(this).parent().addClass('on');
+      // list_box > ul의 클래스를 on_depth03으로 변경
+      $('.list_box > ul').removeClass('on_depth01 on_depth02').addClass('on_depth03');
+    }
+    // ul이 없으면 기본 동작이 가능하므로 e.preventDefault()를 호출하지 않음
+  });
 
+  // btn_layer_close 버튼 클릭 시 초기화
+  $('.btn_layer_close').click(function() {
+    // 모든 depth 메뉴에서 'on' 클래스 제거
+    $('.depth01, .depth02, .depth03').removeClass('on');
+    // list_box > ul의 클래스를 on_depth01으로 초기화
+    $('.list_box > ul').removeClass('on_depth02 on_depth03').addClass('on_depth01');
+  });
+});
 
 
 
