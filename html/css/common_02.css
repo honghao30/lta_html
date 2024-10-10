@@ -1619,6 +1619,7 @@ p.skip{margin-bottom:30px;}
 /* 모바일 테이블 여백제거 */
 .mo.table_cont .table-body-only tbody th {
     padding: 0;
+    word-break: keep-all;
 }
 .mo.table_cont .table-body-only tbody th.full-width,
 .mo.table_cont .table-body-only tbody td.full-width {
