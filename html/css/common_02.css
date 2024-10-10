@@ -3530,3 +3530,13 @@ td:has(.text-type) {
 .form-element__wrap.ip-manage .form-element__inner {
     padding: 0 8px;
 }
+
+.document-discription {
+    margin-top: 12px;
+    color: #717B8A;
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+}
