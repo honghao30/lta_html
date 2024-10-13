@@ -987,6 +987,7 @@ p.skip{margin-bottom:30px;}
     font-weight: 400;
     line-height: 15px;
     letter-spacing: -0.02em;
+    border: 0 !important;
 }
 .two-depth-button i {
     border: 1px solid #E1E3E9;
@@ -1064,6 +1065,12 @@ p.skip{margin-bottom:30px;}
     line-height: 16px;
     letter-spacing: -0.02em;
 }
+
+.multi-menu-tree .two-depth-button {
+    margin-right: 4px;
+}
+
+
 .document-title-area {
     display: none;
 }

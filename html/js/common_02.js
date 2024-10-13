@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
     
-        const menuAll = container.querySelectorAll('.all-tree');
+        const menuAll = container.querySelector('.all-tree');
         const oneDepth = container.querySelector('.two-depth-list')
         const twoDepthMenuButtons = container.querySelectorAll('.two-depth-button');
         const treeDepthMenuList = container.querySelectorAll('.tree-depth-list');
