@@ -21,6 +21,11 @@ p.skip{margin-bottom:30px;}
     align-items: center;
     gap: 16px;
 }
+.radio-box.flex-row {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.radio-box.flex-row label+label{margin-left:0px;}
 .radio-box label+label{margin-left:10px;}
 .radio-box label {
     display: flex;
@@ -49,7 +54,8 @@ p.skip{margin-bottom:30px;}
 .radio-box input[type="radio"]:checked {
     background-color: #F4F7FB;    
     border: 1px solid #D8DDE9;
-}.radio-box input[type="radio"]:checked+span::before {
+}
+.radio-box input[type="radio"]:checked+span::before {
     content: '';
     display: block;
     background-color: #706DF0;
@@ -66,6 +72,28 @@ p.skip{margin-bottom:30px;}
     background-color: var(--color-basic2);
     box-shadow: 0 0 0 2px #e8e8e8 inset;
     cursor: not-allowed;
+}
+.check_box__wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.check_box__wrap label {
+    width: calc((100% / 3) - 26px);
+}
+@media (max-width: 768px) {
+    .check_box__wrap {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .check_box__wrap label {
+        width: 100%;
+    }
+    .modal-msg .radio-box label {
+        white-space: nowrap;
+    }
 }
 /* // INPUT */
 .form-element__wrap {

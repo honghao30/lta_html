@@ -214,13 +214,22 @@
         <h3 class="document-title">레이어 버튼들 (onclick 안에 아이디값을 넣어서 연결 ex : #layer_pop_01)</h3>
         <div class="mt20"></div>
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_01');return false">중복 로그인 설정</button>
-        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_02');return false">GPKI 인증 설정</button>        
-        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_03');return false">금칙어사용설정</button>  
-        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_04');return false">접근 IP 사용자 수 설정</button>  
-        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_05');return false">로그인 제한 설정</button>  
-        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_06');return false">해외IP 접근 제한 설정</button>  
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_04');return false">접근 IP 사용자 수 설정</button>         
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_07');return false">접속 IP 제한 설정</button>  
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_08');return false">접속 유지 시간 설정</button>  
+
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_02');return false">GPKI 인증 설정</button>        
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_06');return false">해외IP 접근 제한 설정</button> 
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_09');return false">비밀번호 오류 설정</button>  
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_05');return false">로그인 제한 설정</button>  
+
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_03');return false">금칙어사용설정</button>  
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_10');return false">비밀번호 규칙 설정</button>  
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_11');return false">대국민포털 본인인증 방법 설정</button>  
+         
+        
+        
+
       </div>
     </div>
   </div>
@@ -238,7 +247,7 @@
                 <div class="table_cont">
                     <table class="table-body-only">
                         <colgroup>                    
-                            <col width="150">
+                            <col width="20%">
                             <col>
                         </colgroup>
                         <tbody>
@@ -290,7 +299,7 @@
                     <div class="table_cont">
                         <table class="table-body-only">
                             <colgroup>                    
-                                <col width="150">
+                                <col width="20%">
                                 <col>
                             </colgroup>
                             <tbody>
@@ -343,7 +352,7 @@
                     <div class="table_cont">
                         <table class="table-body-only">
                             <colgroup>                    
-                                <col width="150">
+                                <col width="20%">
                                 <col>
                             </colgroup>
                             <tbody>
@@ -395,7 +404,7 @@
                     <div class="table_cont">
                         <table class="table-body-only">
                             <colgroup>                    
-                                <col width="150">
+                                <col width="20%">
                                 <col>
                             </colgroup>
                             <tbody>
@@ -460,12 +469,12 @@
                     <div class="table_cont">
                         <table class="table-body-only">
                             <colgroup>                    
-                                <col width="150">
+                                <col width="20%">
                                 <col>
                             </colgroup>
                             <tbody>
                                 <tr>   
-                                    <th>로그인 제한 설정 <span class="red-color">*</span> </th>                     
+                                    <th>로그인 제한<br> 설정 <span class="red-color">*</span> </th>                     
                                     <td>
                                         <div class="radio-box">
                                             <label id="r0">
@@ -480,7 +489,7 @@
                                     </td>                        
                                 </tr>       
                                 <tr>   
-                                    <th>로그인 제한 시간  <span class="red-color">*</span> </th>                     
+                                    <th>로그인 제한<br> 시간  <span class="red-color">*</span> </th>                     
                                     <td>
                                         <div class="form-element__wrap">
                                             <div class="input-multi">
@@ -525,7 +534,7 @@
                         <div class="table_cont">
                             <table class="table-body-only">
                                 <colgroup>                    
-                                    <col width="150">
+                                    <col width="20%">
                                     <col>
                                 </colgroup>
                                 <tbody>
@@ -577,7 +586,7 @@
                         <div class="table_cont">
                             <table class="table-body-only">
                                 <colgroup>                    
-                                    <col width="150">
+                                    <col width="20%">
                                     <col>
                                 </colgroup>
                                 <tbody>
@@ -630,7 +639,7 @@
                   <div class="table_cont">
                       <table class="table-body-only">
                           <colgroup>                    
-                              <col width="150">
+                              <col width="20%">
                               <col>
                           </colgroup>
                           <tbody>
@@ -683,7 +692,216 @@
       </div>
   </div>
   </section>
-
+  <!-- 비밀번호 오류 설정 -->
+  <section class="modal_new modal_overlay roll-type" id="layer_pop_09"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+    <div class="modal_n_wrap roll-modal">
+        <div class="modal-header">
+            <div class="tit">비밀번호 오류 설정</div>        
+        </div>
+        <div class="modal_n_body">
+            <div class="pop_cont">
+                <div class="modal-msg">                
+                    <div class="table_cont">
+                        <table class="table-body-only">
+                            <colgroup>                    
+                                <col width="20%">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>   
+                                    <th>비밀번호 오류<br> 
+                                      설정<span class="red-color">*</span> </th>                     
+                                    <td>
+                                        <div class="radio-box">
+                                            <label id="r0">
+                                                <input type="radio" name="type8" value="type0a20" checked id="r0">
+                                                <span>사용</span>
+                                            </label>
+                                            <label id="rb">
+                                                <input type="radio" name="type8" value="type0a21" id="rb">
+                                                <span>사용하지 않음</span>
+                                            </label>
+                                        </div>           
+                                    </td>                        
+                                </tr>       
+                                <tr>   
+                                    <th>비밀번호 오류 <br>
+                                      횟수 <span class="red-color">*</span> </th>                     
+                                    <td>
+                                        <div class="form-element__wrap">
+                                            <div class="input-multi">
+                                                <span class="form-element__inner input-type" style="max-width: 100px;">
+                                                    <input type="text" value="5" class="input-type1-font14" maxlength="" placeholder="접속 유지 시간를 입력하세요" title="접속 유지 시간를 입력하세요" >
+                                                </span> 분
+                                            </div>
+                                        </div>                                             
+                                        <p class="document-discription">접속유지시간은 분 단위로 입력하세요.</p>
+                                    </td>                        
+                                </tr>                                   
+                                <tr>   
+                                    <th>설명</th>                     
+                                    <td>
+                                      설정한 횟수로 비밀번호 입력 오류 시 사용자 계정을 잠급니다. 비밀번호를 재설정한 후 이용 가능합니다.<br>
+                                      로그인 제한 설정이 사용으로 설정된 경우 설정 시간으로 로그인이 제한됩니다.
+                                    </td>                        
+                                </tr>                                                                                                                                                                                                    
+                            </tbody>
+                        </table>
+                    </div>                                
+                </div>
+                <div class="button__wrap flex-end mt-32">        
+                    <button type="button" class="btn-primary-default">
+                        <i></i> 저장
+                    </button>  
+                </div>
+            </div>    
+        <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>   
+        </div>
+    </div>
+  </section>
+  <!-- 비밀번호 규칙 설정 -->
+  <section class="modal_new modal_overlay roll-type" id="layer_pop_10"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+    <div class="modal_n_wrap roll-modal">
+        <div class="modal-header">
+            <div class="tit">비밀번호 규칙 설정</div>        
+        </div>
+        <div class="modal_n_body">
+            <div class="pop_cont">
+                <div class="modal-msg">                
+                    <div class="table_cont">
+                        <table class="table-body-only">
+                            <colgroup>                    
+                                <col width="20%">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>   
+                                    <th>비밀번호 규칙<br> 
+                                      설정<span class="red-color">*</span> </th>                     
+                                    <td>
+                                      <div class="radio-box flex-row">
+                                          <label id="r01">
+                                              <input type="radio" name="type80" value="type0c20" checked id="r01">
+                                              <span>영문대소문자+숫자+특수문자 조합</span>
+                                          </label>
+                                          <label id="rb2">
+                                              <input type="radio" name="type80" value="type0c21" id="rb2">
+                                              <span>영문대소문자+숫자</span>
+                                          </label>
+                                          <label id="rb3">
+                                              <input type="radio" name="type80" value="type0c21" id="rb3">
+                                              <span>영문대소문자, 영문대소문자+숫자, 숫자 8자리 이상</span>
+                                          </label>                                        
+                                      </div>                                         
+                                    </td>                        
+                                </tr>       
+                                <tr>   
+                                    <th>비밀번호 입력 수 <span class="red-color">*</span> </th>                     
+                                    <td>
+                                      <div class="radio-box">
+                                          <label id="r0">
+                                              <input type="radio" name="type8" value="type0a20" checked id="r0">
+                                              <span>8자리 이상</span>
+                                          </label>
+                                          <label id="rb">
+                                              <input type="radio" name="type8" value="type0a21" id="rb">
+                                              <span>12자리 이상</span>
+                                          </label>
+                                          <label id="rb">
+                                              <input type="radio" name="type8" value="type0a21" id="rb">
+                                              <span>16자리 이상</span>
+                                          </label>                                        
+                                      </div>  
+                                    </td>                        
+                                </tr>                                   
+                                <tr>   
+                                    <th>설명</th>                     
+                                    <td>
+                                      비밀번호 생성 규칙을 설정합니다.
+                                    </td>                        
+                                </tr>                                                                                                                                                                                                    
+                            </tbody>
+                        </table>
+                    </div>                                
+                </div>
+                <div class="button__wrap flex-end mt-32">        
+                    <button type="button" class="btn-primary-default">
+                        <i></i> 저장
+                    </button>  
+                </div>
+            </div>    
+        <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>   
+        </div>
+    </div>
+  </section>
+  <!-- 대국민포털 본인인증 방법 설정 -->
+  <section class="modal_new modal_overlay roll-type" id="layer_pop_11"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+    <div class="modal_n_wrap roll-modal">
+        <div class="modal-header">
+            <div class="tit">대국민포털 본인인증 방법 설정</div>        
+        </div>
+        <div class="modal_n_body">
+            <div class="pop_cont">
+                <div class="modal-msg">                
+                    <div class="table_cont">
+                        <table class="table-body-only">
+                            <colgroup>                    
+                                <col width="20%">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>   
+                                    <th>본인인증<br> 
+                                      설정<span class="red-color">*</span> </th>                     
+                                    <td>
+                                      <div class="check_box__wrap">
+                                          <label class="input_type check">
+                                            <input type="checkbox" name="">
+                                            <span class="txt">간편인증/모바일신분증</span>
+                                          </label>    
+                                          <label class="input_type check">
+                                            <input type="checkbox" name="">
+                                            <span class="txt">아이핀</span>
+                                          </label>   
+                                          <label class="input_type check">
+                                            <input type="checkbox" name="">
+                                            <span class="txt">금융인증서</span>
+                                          </label>       
+                                          <label class="input_type check">
+                                            <input type="checkbox" name="">
+                                            <span class="txt">공동인증서 (구 공인인증서)</span>
+                                          </label>       
+                                          <label class="input_type check">
+                                            <input type="checkbox" name="">
+                                            <span class="txt">휴대전화</span>
+                                          </label>       
+                                          <label class="input_type check">
+                                            <input type="checkbox" name="">
+                                            <span class="txt">외국인등록번호</span>
+                                          </label>                                                                                                                                                                                                                     
+                                      </div>                                         
+                                    </td>                        
+                                </tr>                           
+                                <tr>   
+                                    <th>설명</th>                     
+                                    <td>
+                                      대국민포털 비회원 로그인 본인 인증 방법을 선택합니다.
+                                    </td>                        
+                                </tr>                                                                                                                                                                                                    
+                            </tbody>
+                        </table>
+                    </div>                                
+                </div>
+                <div class="button__wrap flex-end mt-32">        
+                    <button type="button" class="btn-primary-default">
+                        <i></i> 저장
+                    </button>  
+                </div>
+            </div>    
+        <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>   
+        </div>
+    </div>
+  </section>
   <!-- footer -->
   <div class="footer">
     <div class="inner">
