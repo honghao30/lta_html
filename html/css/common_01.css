@@ -781,7 +781,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
 
     .search_cont_detail.on{height:100px;padding: 24px 155px 24px 40px;transition: height .1s;opacity: 1;overflow:visible;}
     .search_cont_detail{opacity:0; background: #E7EAFA;padding: 24px 180px 24px 40px;position:relative;height:0;transition: height .1s;overflow:hidden;}
-    .search_cont_detail .cont{display: flex;gap: 10px;}
+    .search_cont_detail .cont{display: flex;gap: 10px;padding-right:60px;position:relative;}
     .search_cont_detail .cont .select_box{width:100%;}
     .search_cont_detail .cont input[type="text"]{margin:0 5px;}
     .search_cont_detail .btn_close{background:url(../img/pc/btn/btn_puple_close.png) no-repeat center;width:32px;height:32px;position:absolute;top:24px;right:40px;border:none;}

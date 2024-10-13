@@ -218,6 +218,7 @@
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_03');return false">기작성기록알림</button>  
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_04');return false">이력작성</button>  
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_05');return false">근거법령검색</button>  
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_06');return false">단위사무 등록 요청</button>  
 
       </div>
     </div>
@@ -370,7 +371,7 @@
                 <div class="font-type20-400">알림</div>
                 <div class="font-type16-400 mt-16">
                     과제등록은 이양건의 과제만 가능합니다.<br>
-이양건의 과제만 선택하여 주세요.
+                    이양건의 과제만 선택하여 주세요.
                 </div>
             </div>
             <div class="button__wrap flex-end mt-32">
@@ -386,6 +387,8 @@
     </div>
   </section>
   <!-- //모달 -->
+  
+  <!-- 모달 -->
   <!-- 기작성기록알림 -->
   <section class="modal_new modal_overlay roll-type" id="layer_pop_03"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
     <div class="modal_n_wrap roll-modal layer_login">
@@ -413,6 +416,8 @@
     </div>
   </section>
   <!-- //모달 -->
+
+  <!-- 모달 -->
   <!-- 이력작성 -->
   <section class="modal_new modal_overlay roll-type" id="layer_pop_04"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
     <div class="modal_n_wrap roll-modal ">
@@ -519,6 +524,9 @@
       </div>
     </div>
   </section>
+  <!-- //모달 -->
+
+  <!-- 모달 -->
   <!-- 근거법령검색 -->
   <section class="modal_new modal_overlay roll-type" id="layer_pop_05"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
     <div class="modal_n_wrap roll-modal wd1280 mt-24">
@@ -955,6 +963,37 @@
       </div>
     </div>
   </section>
+  <!-- //모달 -->
+  
+  <!-- 모달 -->
+  <!-- 단위사무 등록 요청 -->
+  <section class="modal_new modal_overlay roll-type" id="layer_pop_06"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+    <div class="modal_n_wrap roll-modal layer_login">
+      <div class="modal-header mini-size"></div>
+      <div class="modal_n_body">
+        <div class="pop_cont">
+            <div class="modal-msg">
+                <div class="font-type20-400">단위사무 등록 요청</div>
+                <div class="font-type16-400 mt-16">
+                  단위사무가 등록되지 않았습니다.<br>
+                  단위사무를 등록하시겠습니까?
+                </div>
+            </div>
+            <div class="button__wrap flex-end mt-32">
+                <button type="button" class="btn-gray-default"  onclick="modalControl('c')" >
+                  나중에 하기
+                </button>               
+                <button type="button" class="btn-primary-default">
+                    <i></i> 단위사무 등록
+                </button>  
+            </div>
+        </div>       
+      </div>
+    </div>
+  </section>
+  <!-- //모달 -->
+
+
   <!-- footer -->
   <div class="footer">
     <div class="inner">
