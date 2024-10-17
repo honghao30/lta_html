@@ -450,6 +450,60 @@ document.addEventListener("DOMContentLoaded", () => {
     checkboxListFn('.law-list')
     checkboxListFn('.law-list2')
     checkboxListFn('.iyangsamu-table')
-    
-    
+        
+    // pc navi
+    const gnbMenus = document.querySelectorAll('.pc .menu .menu_layer');
+    const closeMenu = document.querySelectorAll('.btn_layer_close');
+
+    // 메뉴 클릭 시 동작 정의
+    function menuItemClick(event) {
+        gnbMenus.forEach(menu => {
+            const nextEl = menu.nextElementSibling;
+            if (nextEl) {
+                event.preventDefault();
+            }
+            // 모든 메뉴에서 'on' 클래스 제거
+            menu.classList.remove('on');
+        });
+        
+        // 클릭한 메뉴에 'on' 클래스 추가
+        event.currentTarget.classList.add('on'); 
+    }
+
+    // 메뉴 닫기 버튼 클릭 시 모든 메뉴에서 'on' 클래스 제거
+    closeMenu.forEach(closeTrigger => {
+        closeTrigger.addEventListener('click', () => {
+            gnbMenus.forEach(menu => {
+                menu.classList.remove('on');
+            });
+        });
+    });
+
+    // 각 메뉴에 클릭 이벤트 리스너 추가
+    gnbMenus.forEach(menuItem => {
+        menuItem.addEventListener('click', menuItemClick);    
+    });
+
+    // 활성화된 메뉴에 대한 2뎁스 처리
+    const gnbActiveItems = document.querySelector('.pc .menu .menu_layer.on');    
+
+    if (gnbActiveItems) {
+        const gnbTwoDepthMenus = gnbActiveItems.querySelectorAll('.list_box .depth01 > a');
+        
+        // 2뎁스 메뉴에 클릭 이벤트 리스너 추가
+        gnbTwoDepthMenus.forEach(menu => {
+            menu.addEventListener('click', (event) => {
+                event.preventDefault(); // 기본 동작 막기
+                console.log('2뎁스 메뉴 클릭:', menu.textContent);
+
+                // 모든 depth01에서 'on' 클래스 제거
+                gnbTwoDepthMenus.forEach(depthMenu => depthMenu.parentElement.classList.remove('on'));
+                
+                // 클릭한 메뉴에 'on' 클래스 추가
+                menu.parentElement.classList.add('on');
+            });
+        });
+    }
+
+
 });
