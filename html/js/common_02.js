@@ -454,56 +454,89 @@ document.addEventListener("DOMContentLoaded", () => {
     // pc navi
     const gnbMenus = document.querySelectorAll('.pc .menu .menu_layer');
     const closeMenu = document.querySelectorAll('.btn_layer_close');
-
+    
     // 메뉴 클릭 시 동작 정의
     function menuItemClick(event) {
         gnbMenus.forEach(menu => {
-            const nextEl = menu.nextElementSibling;
-            if (nextEl) {
-                event.preventDefault();
-            }
-            // 모든 메뉴에서 'on' 클래스 제거
+            // 모든 메뉴에서 'on' 클래스와 'is-active' 클래스 제거
             menu.classList.remove('on');
+            menu.parentElement.classList.remove('is-active');
         });
-        
-        // 클릭한 메뉴에 'on' 클래스 추가
+    
+        // 클릭한 메뉴에 'on' 및 'is-active' 클래스 추가
         event.currentTarget.classList.add('on'); 
+        event.currentTarget.parentElement.classList.add('is-active');
+    
+        // 활성화된 메뉴에 대한 2뎁스 처리
+        const gnbActiveItems = event.currentTarget.parentElement; // 현재 활성화된 메뉴
+        const gnbTwoDepthMenus = gnbActiveItems.querySelectorAll('.list_box .depth01 > a');
+        
+        if (gnbTwoDepthMenus.length > 0) {
+            gnbTwoDepthMenus.forEach(menu => {
+                menu.addEventListener('click', (event) => {
+                    if(menu.nextElementSibling && menu.nextElementSibling.tagName === 'UL') {
+                        event.preventDefault(); // ul이 있는 경우 기본 동작 막기
+                    }
+    
+                    // 모든 depth01에서 'on' 클래스 제거
+                    gnbTwoDepthMenus.forEach(depthMenu => depthMenu.parentElement.classList.remove('on'));
+    
+                    // 클릭한 메뉴에 'on' 클래스 추가
+                    menu.parentElement.classList.add('on');
+                    menu.closest('ul').classList.remove('on_depth01');
+                    menu.closest('ul').classList.add('on_depth02');
+                    
+                    // 2뎁스가 열렸을 때 3뎁스 메뉴 처리
+                    const gnbDepth02 = menu.nextElementSibling; // depth01 하위 ul
+                    if (gnbDepth02 && gnbDepth02.tagName === 'UL') {
+                        const gnbDepthTwoMenus = gnbDepth02.querySelectorAll('li > a');
+                        gnbDepthTwoMenus.forEach(subMenu => {
+                            subMenu.addEventListener('click', (event) => {
+                                if (subMenu.nextElementSibling && subMenu.nextElementSibling.tagName === 'UL') {
+                                    event.preventDefault(); // 3뎁스 하위 메뉴가 있을 경우
+                                }
+    
+                                // 모든 depth02에서 'on' 클래스 제거
+                                gnbDepthTwoMenus.forEach(depthMenu => depthMenu.parentElement.classList.remove('on'));
+    
+                                // 클릭한 메뉴에 'on' 클래스 추가
+                                subMenu.parentElement.classList.add('on');
+                                subMenu.closest('.on_depth02').classList.add('on_depth03');
+                                subMenu.closest('.on_depth02').classList.remove('on_depth02');
+                            });
+                        });
+                    }
+                });
+            });
+        }
     }
-
+    
     // 메뉴 닫기 버튼 클릭 시 모든 메뉴에서 'on' 클래스 제거
     closeMenu.forEach(closeTrigger => {
         closeTrigger.addEventListener('click', () => {
             gnbMenus.forEach(menu => {
-                menu.classList.remove('on');
+                // menu.classList.remove('on');
+                // menu.parentElement.classList.remove('is-active');
+                
+                // list_box를 찾을 때 menu.closest가 null인 경우 처리
+                const listBox = menu.closest('.layer_gnb');
+                console.log(menu)
+                if (listBox) {
+                    // list_box 안의 모든 요소 중 'on' 클래스를 가진 요소에서 'on' 클래스 제거
+                    listBox.querySelectorAll('.on').forEach(selector => {
+                        selector.classList.remove('on');
+                    });
+                }
             });
         });
     });
-
+    
+    
     // 각 메뉴에 클릭 이벤트 리스너 추가
     gnbMenus.forEach(menuItem => {
-        menuItem.addEventListener('click', menuItemClick);    
+        menuItem.addEventListener('click', menuItemClick);
     });
-
-    // 활성화된 메뉴에 대한 2뎁스 처리
-    const gnbActiveItems = document.querySelector('.pc .menu .menu_layer.on');    
-
-    if (gnbActiveItems) {
-        const gnbTwoDepthMenus = gnbActiveItems.querySelectorAll('.list_box .depth01 > a');
-        
-        // 2뎁스 메뉴에 클릭 이벤트 리스너 추가
-        gnbTwoDepthMenus.forEach(menu => {
-            menu.addEventListener('click', (event) => {
-                event.preventDefault(); // 기본 동작 막기
-                console.log('2뎁스 메뉴 클릭:', menu.textContent);
-
-                // 모든 depth01에서 'on' 클래스 제거
-                gnbTwoDepthMenus.forEach(depthMenu => depthMenu.parentElement.classList.remove('on'));
-                
-                // 클릭한 메뉴에 'on' 클래스 추가
-                menu.parentElement.classList.add('on');
-            });
-        });
-    }
-
+    
+    
 
 });
