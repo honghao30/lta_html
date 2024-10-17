@@ -636,6 +636,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
 .file-add-wrap .file-tit-cont:after {content: '';display: block;clear: both;}
 .file-add-wrap .file-tit-cont .tit {float: left;}
 .file-add-wrap .file-tit-cont .size {float: right;}
+.file-add-wrap .file-tit-cont .size span {padding:0 10px;}
 .file-add-wrap .drag-cont {padding: 40px;text-align: center;border-top: 1px dashed #CDD1DB;margin-top: -1px;}
 .file-add-wrap .file-btn-cont {padding: 10px;border-top: 1px dashed #CDD1DB;}
 .border-top {border-top: 1px solid #E1E3E9 !important;padding-top: 16px;}
@@ -662,7 +663,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     .layer_gnb .location li {}
     .layer_gnb .location li a{padding:0 !important;}
 
-    .menu_layer.on{display:block;}
+    /* .menu_layer.on{display:block;} */
     .layer_gnb .btn_layer_close{position:absolute;top:32px;right:64px;padding:0 !important;}
     .layer_gnb .btn_layer_close strong{      
       display: inline-block;
@@ -761,15 +762,15 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     .btn_log .time{margin-top:4px;display:block;color: #FF5858;font-family: Pretendard;font-size: 12px;font-style: normal;font-weight: 400;}
     
     /* location */
-    .header_cont .location ul li a.location{padding:32px 0 20px;position:relative;}
-    .header_cont .location ul li a.location ul li a{color: #717B8A;font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;letter-spacing: -0.3px;line-height:20px;display:inline-block;vertical-align:middle;}
-    .header_cont .location ul li a.location ul:after{content:'';display:block;clear:both;}
-    .header_cont .location ul li a.location li{display:inline-block;float:left;}
-    .header_cont .location ul li a.location li:after{content:'';padding:0 8px;background: url(../img/pc/ico/ico_location_arrow.png) no-repeat center;width:20px;height:20px;display:inline-block;vertical-align:middle;}
-    .header_cont .location ul li a.location li:first-child{padding-left:20px;background: url(../img/pc/ico/ico_location_logo.png) no-repeat 0 center;}
-    .header_cont .location ul li a.location li:last-child span,
-    .header_cont .location ul li a.location li:last-child a{color: #222;font-weight: 500;}
-    .header_cont .location ul li a.location li:last-child:after{display:none;}
+    .bg_top .location{padding:32px 0 20px;position:relative;}
+    .bg_top .location ul li a{color: #717B8A;font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;letter-spacing: -0.3px;line-height:20px;display:inline-block;vertical-align:middle;}
+    .bg_top .location ul:after{content:'';display:block;clear:both;}
+    .bg_top .location li{display:inline-block;float:left;}
+    .bg_top .location li:after{content:'';padding:0 8px;background: url(../img/pc/ico/ico_location_arrow.png) no-repeat center;width:20px;height:20px;display:inline-block;vertical-align:middle;}
+    .bg_top .location li:first-child{padding-left:20px;background: url(../img/pc/ico/ico_location_logo.png) no-repeat 0 center;}
+    .bg_top .location li:last-child span,
+    .bg_top .location li:last-child a{color: #222;font-weight: 500;}
+    .bg_top .location li:last-child:after{display:none;}
 
     /* search_cont */
     .search_cont{background: #706DF0;padding:24px 40px;border-radius: 24px 24px 0px 0px;}
@@ -795,6 +796,11 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     .top_info_box .total{color: #494E56;font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: 15px;letter-spacing: -0.3px;margin-right:16px;}
     .top_info_box .btn+.btn{margin-left:8px;}
 
+    .top_info_box .select_box.view-option{margin:0 5px;}
+    .top_info_box .select_box.view-option .select{width:70px;padding:0 25px 0 10px;background-position: center right 5px !important;}
+    .top_info_box .select_box.view-option .select::after{left:initial;right:25px;}
+    .top_info_box .btn+.btn{margin-left:0;}
+
     .inner{position:relative;}
     .inner .ico_print{position:absolute;top:32px;right:0;}
 
@@ -803,7 +809,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     /* select_box */
     .select_box{position:relative;display:inline-block;cursor: pointer;}
     .select_box.on .select{border-radius: 12px 12px 0 0;}
-    .select_box .select{height: 50px;line-height:50px;padding:0px 40px 0 16px;border-radius: 12px;border: 1px solid #E1E3E9;background:#fff url(../img/pc/ico/ico_select_arrow.png) no-repeat right 16px center !important;display: block;overflow: hidden;width: 100%;text-overflow: ellipsis;}
+    .select_box .select{height: 50px;line-height:50px;padding:0 50px 0 0;border-radius: 12px;border: 1px solid #E1E3E9;background:#fff url(../img/pc/ico/ico_select_arrow.png) no-repeat right 16px center !important;display: block;overflow: hidden;width: 100%;text-overflow: ellipsis;}
     .select_box.on .option{border-radius: 0 0 12px 12px;margin-top:-1px;}
     .select_box .option{display:none;overflow: hidden;position:absolute;top:50px;left:0;right:0;z-index:10;background:#fff;border-radius: 12px;border: 1px solid #E1E3E9;}
     .select_box .option .mCustomScrollbar{max-height:200px;}
@@ -1138,6 +1144,22 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     .nodata_area .list li{position:relative;padding-left:10px;color: #222;font-family: "Noto Sans CJK KR";font-size: 16px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: -0.32px;}
     .nodata_area .list li:after{position:absolute;left:0;top:50%;margin-top:-2px;content:'';width:4px;height:4px;border-radius: 50%;background: #717B8A;}
     .nodata_area .list li+li{margin-top:16px;}
+
+    .text_volume{
+      color: #222;
+      font-family: Pretendard;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: -0.32px;
+      text-align:right;
+      margin-top:16px;
+    }
+    .text_volume span{color:#FF8B4A;}
+
+    .modal_new .btn-primary-default,
+    .modal_new .btn-gray-default{height:48px;min-width: 120px;width: auto;}
     
 
     /* common_02.css 추가 아니면 수정할부분 */
@@ -1146,6 +1168,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     /* common_02.css 추가 아니면 수정할부분 */
     /* common_02.css 추가 아니면 수정할부분 */
     .table_cont .table-body-only tbody th{text-align: left;}
+    .search_cont_detail .btn_search_only-icon.btn-law-reset{right: 0;bottom: 2px;}
     /* common_02.css 추가 아니면 수정할부분 */
     /* common_02.css 추가 아니면 수정할부분 */
     /* common_02.css 추가 아니면 수정할부분 */
@@ -1161,6 +1184,11 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
 
         input[type=radio], input[type=checkbox]{width:24px; height:24px;}
         .inner{padding:0 20px;position:relative;}
+
+        .top_info_box .select_box.view-option{margin:0 5px;}
+        .top_info_box .select_box.view-option .select{width:70px;padding:0 25px 0 10px;background-position: center right 5px !important;}
+        .top_info_box .select_box.view-option .select::after{left:initial;right:25px;}
+        .top_info_box .btn+.btn{margin-left:0;}
 
         /* btn */
         .btn_out span{background:url(../img/mo/ico/ico_btn_out.png) no-repeat 0 center;background-size:24px auto;}

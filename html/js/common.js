@@ -545,7 +545,7 @@ $(document).ready(function() {
       // 클릭한 depth03에 'on' 클래스 추가
       $(this).parent().addClass('on');
       // list_box > ul의 클래스를 on_depth03으로 변경
-      $('.list_box > ul').removeClass('on_depth01 on_depth02').addClass('on_depth03');
+      $('menu_layer.on .list_box > ul').removeClass('on_depth01 on_depth02').addClass('on_depth03');
     }
     // ul이 없으면 기본 동작이 가능하므로 e.preventDefault()를 호출하지 않음
   });
@@ -558,14 +558,6 @@ $(document).ready(function() {
     $('.list_box > ul').removeClass('on_depth02 on_depth03').addClass('on_depth01');
   });
 });
-
-
-
-
-
-
-
-
 
 
 

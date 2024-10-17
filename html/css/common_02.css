@@ -298,9 +298,9 @@ p.skip{margin-bottom:30px;}
     border-radius: 12px;
     color:#494E56;
     font-family: 'Pretendard';
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 16px;
     letter-spacing: -0.02em;
 }
 .btn-gray-default i {
@@ -503,6 +503,7 @@ p.skip{margin-bottom:30px;}
 .btn-border-gray {
     border: 1px solid #D8DDE9;
     background-color: #fff;
+    color:#222;
     min-width: 103px;
     height: 36px;
     padding: 8px 12px;
@@ -583,6 +584,7 @@ p.skip{margin-bottom:30px;}
     padding:0 12px;
     border: 0;
     border-bottom: 1px solid #D8DDE9;
+    word-break: break-all;
 }
 .table_cont .table-body-only tbody td {
     padding: 15px 16px;
@@ -721,6 +723,9 @@ p.skip{margin-bottom:30px;}
     width: 100%;
     padding: 40px;
     background-color: #fff;
+    
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 .modal_n_wrap.roll-modal .btn_close {
     width: 19px;
@@ -757,12 +762,12 @@ p.skip{margin-bottom:30px;}
 .top_info_box.pc-flex .left_cont {
     display: flex;
     justify-content: flex-start;
-    width: 50%;
+    width: 40%;
 }
 .top_info_box.pc-flex .right_cont {    
     display: flex;
     justify-content: flex-end;
-    width: 50%;
+    width: 60%;
     align-items: center;
 }
 .modal_n_wrap.wid480 {

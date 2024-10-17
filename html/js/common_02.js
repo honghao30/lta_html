@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (fileListWrap[0].classList.value.includes('file-list-multi')) {
                     newListItem.innerHTML = `
                         <div class="input-wrap">
-                            <input type="file" name="" class="file" style="width: 382px;"/>
+                            <input type="file" name="file_1" class="file" style="width: 382px;"/>
                             <div class="form-element__wrap">
                                 <div class="input-multi file-up">
                                     <span class="form-element__inner input-type" style="width: 272px; flex: none;">
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     `;
                 } else {
                     newListItem.innerHTML = `
-                        <input type="file" name="" class="file"  width: 70%; />
+                        <input type="file" name="file_1" class="file"  width: 70%; multiple />
                         <div class="form-element__wrap">
                             <div class="input-multi file-up">
                                 <span class="form-element__inner input-type">
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (fileListWrap[1] && fileListWrap[1].classList.contains('mo-file-list')) {
                     m_newListItem.innerHTML = `
                         <div class="input-wrap">
-                            <input type="file" name="" class="file" style="width: 20%;" />
+                            <input type="file" name="file_1" class="file" style="width: 20%;" />
                             <div class="file-up">
                                 <span class="form-element__inner input-type">
                                     <input type="text" placeholder="파일을 첨부해 주세요." title="파일첨부">
