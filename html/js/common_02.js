@@ -470,11 +470,36 @@ document.addEventListener("DOMContentLoaded", () => {
         // 활성화된 메뉴에 대한 2뎁스 처리
         const gnbActiveItems = event.currentTarget.parentElement; // 현재 활성화된 메뉴
         const gnbTwoDepthMenus = gnbActiveItems.querySelectorAll('.list_box .depth01 > a');
-        
+    
+        const locationOne = gnbActiveItems.querySelector('.location li:nth-child(1) a');
+        const locationTwo = gnbActiveItems.querySelector('.location li:nth-child(2) a');
+        const locationThree = gnbActiveItems.querySelector('.location li:nth-child(3) a');
+    
+        if (locationTwo) {
+            locationTwo.addEventListener('click', () => {
+                const depth03 = document.querySelector('.on_depth03');
+                const depth02 = document.querySelector('.on_depth02');
+                if (depth03 && depth02) {
+                    depth02.classList.add('on_depth02');
+                    depth03.classList.remove('on_depth03');
+                }
+            });
+        }
+    
+        if (locationOne) {
+            locationOne.addEventListener('click', () => {
+                const depth02 = document.querySelector('.on_depth02');
+                if (depth02) {
+                    depth02.classList.add('on_depth01');
+                    depth02.classList.remove('on_depth02');
+                }
+            });
+        }
+    
         if (gnbTwoDepthMenus.length > 0) {
             gnbTwoDepthMenus.forEach(menu => {
                 menu.addEventListener('click', (event) => {
-                    if(menu.nextElementSibling && menu.nextElementSibling.tagName === 'UL') {
+                    if (menu.nextElementSibling && menu.nextElementSibling.tagName === 'UL') {
                         event.preventDefault(); // ul이 있는 경우 기본 동작 막기
                     }
     
@@ -485,7 +510,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     menu.parentElement.classList.add('on');
                     menu.closest('ul').classList.remove('on_depth01');
                     menu.closest('ul').classList.add('on_depth02');
-                    
+    
                     // 2뎁스가 열렸을 때 3뎁스 메뉴 처리
                     const gnbDepth02 = menu.nextElementSibling; // depth01 하위 ul
                     if (gnbDepth02 && gnbDepth02.tagName === 'UL') {
@@ -501,8 +526,11 @@ document.addEventListener("DOMContentLoaded", () => {
     
                                 // 클릭한 메뉴에 'on' 클래스 추가
                                 subMenu.parentElement.classList.add('on');
-                                subMenu.closest('.on_depth02').classList.add('on_depth03');
-                                subMenu.closest('.on_depth02').classList.remove('on_depth02');
+                                const depth02 = subMenu.closest('.on_depth02');
+                                if (depth02) {
+                                    depth02.classList.add('on_depth03');
+                                    depth02.classList.remove('on_depth02');
+                                }
                             });
                         });
                     }
@@ -519,33 +547,34 @@ document.addEventListener("DOMContentLoaded", () => {
                 // list_box를 찾을 때 menu.closest가 null인 경우 처리
                 const listBox = menu.closest('.menu li.is-active');
                 if (listBox) {
-                    if(listBox.querySelector('.list_box > ul').classList.contains('on_depth02')) {
-                        listBox.querySelector('.list_box > ul').classList.remove('on_depth02');
-                        listBox.querySelector('.list_box > ul').classList.add('on_depth01');
+                    const listBoxUl = listBox.querySelector('.list_box > ul');
+                    if (listBoxUl) {
+                        if (listBoxUl.classList.contains('on_depth02')) {
+                            listBoxUl.classList.remove('on_depth02');
+                            listBoxUl.classList.add('on_depth01');
+                        }
+                        if (listBoxUl.classList.contains('on_depth03')) {
+                            listBoxUl.classList.remove('on_depth03');
+                            listBoxUl.classList.add('on_depth01');
+                        }
                     }
-                    if(listBox.querySelector('.list_box > ul').classList.contains('on_depth03')) {
-                        listBox.querySelector('.list_box > ul').classList.remove('on_depth03');
-                        listBox.querySelector('.list_box > ul').classList.add('on_depth01');
-                    }
-                    
+    
                     // list_box 안의 모든 요소 중 'on' 클래스를 가진 요소에서 'on' 클래스 제거
                     listBox.querySelectorAll('.on').forEach(selector => {
                         selector.classList.remove('on');
-                        
                     });
                 }
                 menu.classList.remove('on');
                 menu.parentElement.classList.remove('is-active');
-                
             });
         });
     });
-    
     
     // 각 메뉴에 클릭 이벤트 리스너 추가
     gnbMenus.forEach(menuItem => {
         menuItem.addEventListener('click', menuItemClick);
     });
+    
     
     
 
