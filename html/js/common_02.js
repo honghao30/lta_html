@@ -479,9 +479,9 @@ document.addEventListener("DOMContentLoaded", () => {
             locationTwo.addEventListener('click', () => {
                 const depth03 = document.querySelector('.on_depth03');
                 const depth02 = document.querySelector('.on_depth02');
-                if (depth03 && depth02) {
-                    depth02.classList.add('on_depth02');
-                    depth03.classList.remove('on_depth03');
+                if (depth03 || depth02) {
+                    depth02 && depth02.classList.add('on_depth02');
+                    depth03 && depth03.classList.remove('on_depth03');
                 }
             });
         }
