@@ -515,20 +515,27 @@ document.addEventListener("DOMContentLoaded", () => {
     closeMenu.forEach(closeTrigger => {
         closeTrigger.addEventListener('click', () => {
             gnbMenus.forEach(menu => {
-                // menu.classList.remove('on');
-                // menu.parentElement.classList.remove('is-active');
                 
                 // list_box를 찾을 때 menu.closest가 null인 경우 처리
                 const listBox = menu.closest('.menu li.is-active');
                 if (listBox) {
-                    listBox.querySelector('.list_box > ul').classList.add('on_depth01');
-                    console.log(menu,  listBox.querySelector('.list_box > ul'))
+                    if(listBox.querySelector('.list_box > ul').classList.contains('on_depth02')) {
+                        listBox.querySelector('.list_box > ul').classList.remove('on_depth02');
+                        listBox.querySelector('.list_box > ul').classList.add('on_depth01');
+                    }
+                    if(listBox.querySelector('.list_box > ul').classList.contains('on_depth03')) {
+                        listBox.querySelector('.list_box > ul').classList.remove('on_depth03');
+                        listBox.querySelector('.list_box > ul').classList.add('on_depth01');
+                    }
+                    
                     // list_box 안의 모든 요소 중 'on' 클래스를 가진 요소에서 'on' 클래스 제거
                     listBox.querySelectorAll('.on').forEach(selector => {
                         selector.classList.remove('on');
                         
                     });
                 }
+                menu.classList.remove('on');
+                menu.parentElement.classList.remove('is-active');
                 
             });
         });
