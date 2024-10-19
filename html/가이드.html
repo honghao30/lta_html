@@ -172,7 +172,7 @@
 
 
   <!-- 가이드 제목 -->
-  <div class="guide_tit mt50">파일첨부</div>
+  <div class="guide_tit mt50">아코디언</div>
   <div class="inner mt30">
     <div class="accordion">
       <button>응답자 보기</button>
@@ -185,6 +185,14 @@
       </div>
     </div>
   </div>
+
+  <button id="loginButton">카카오 로그인</button>
+
+<script>
+  document.getElementById('loginButton').addEventListener('click', function() {
+    window.location.href = "https://kauth.kakao.com/oauth/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code";
+  });
+</script>
 </div>
   
 </body>

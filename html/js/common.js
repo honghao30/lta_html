@@ -90,7 +90,7 @@ function modalControl(type, id, size) { // type: 열기(o), 닫기(c) / id: 열 
 // 상세검색 열기
 $(document).ready(function(){
   // search_cont_detail 안의 btn_search 버튼 클릭 시 on 클래스 추가
-  $('.btn_search').on('click', function() {
+  $('.btn_search_detail').on('click', function() {
     $('.search_cont_detail').addClass('on');
   });
 
@@ -497,22 +497,22 @@ $(document).ready(function () {
 });
 
 // 피씨 GNB 메뉴
-// $(document).ready(function() {
-//   // .menu_layer 클릭 시
-//   $('.menu_layer').on('click', function() {
-//     // 모든 .menu_layer에서 'on' 클래스 제거
-//     $('.menu_layer').removeClass('on');
-//     // 클릭한 항목에 'on' 클래스 추가
-//     $(this).addClass('on');
-//   });
+$(document).ready(function() {
+  // .menu_layer 클릭 시
+  $('.menu_layer').on('click', function() {
+    // 모든 .menu_layer에서 'on' 클래스 제거
+    $('.menu_layer').removeClass('on');
+    // 클릭한 항목에 'on' 클래스 추가
+    $(this).addClass('on');
+  });
 
-//   // .btn_layer_close 클릭 시 모든 .menu_layer에서 'on' 클래스 제거
-//   $('.btn_layer_close').on('click', function() {
-//     $('.menu_layer').removeClass('on');
-//   });
-// });
+  // .btn_layer_close 클릭 시 모든 .menu_layer에서 'on' 클래스 제거
+  $('.btn_layer_close').on('click', function() {
+    $('.menu_layer').removeClass('on');
+  });
+});
 
-// // 피씨 GNB 메뉴 메뉴 열렸을떄 동작
+// 피씨 GNB 메뉴 메뉴 열렸을떄 동작
 // $(document).ready(function() {
 //   // 클릭 핸들러
 //   function handleClick(depthClass, nextClass) {
