@@ -1471,7 +1471,7 @@ p.skip{margin-bottom:30px;}
     }
     table tbody td {
         font-size: 14px;
-        line-height: 14px;
+        line-height: 18px;
         padding: 9px 8px;
     }
 
@@ -1558,14 +1558,15 @@ p.skip{margin-bottom:30px;}
     .table-body-only.confirm-table tbody td {
         border: 0;
         height: 52px;
-        padding: 4px 16px;
+        padding: 4px 16px !important;
     }
     .table-body-only.confirm-table tbody th.last, 
     .table-body-only.confirm-table tbody td.last {
-        padding-bottom: 25px;
+        padding-bottom: 25px !important;
     }
     .table-body-only.confirm-table tbody th.title-cell {
         border-top: 1px solid #D8DDE9;
+        padding: 24px 16px 20px 16px !important;
     }
     .table_cont .table-body-only.no-line-type tbody th,
     .table_cont .table-body-only.no-line-type tbody td {
@@ -1658,7 +1659,7 @@ p.skip{margin-bottom:30px;}
 
 /* 모바일 테이블 여백제거 */
 .mo.table_cont .table-body-only tbody th {
-    padding: 0;
+    padding: 0 16px 0 0;
     word-break: keep-all;
 }
 .mo.table_cont .table-body-only tbody th.full-width,

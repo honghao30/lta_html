@@ -631,50 +631,168 @@
         </div>         
 
         <div class="table_cont pc">
-            <table class="table-body-only confirm-table">
-                <colgroup>
-                  <col width="160" />
-                  <col width="90" />
+          <table class="table-body-only confirm-table">
+              <colgroup>
+                <col width="160" />
+                <col width="90" />
+                <col width="" />
+                <col width="90" />
+                <col width="" />
+                <col width="90" />
+                <col width="" />
+                <col width="100" />
+              </colgroup>
+              <tbody>             
+                  <tr>
+                      <th class="title-cell">승인요청자</th>
+                      <th>소속</th>
+                      <td>
+                        <div class="form-element__wrap">                                
+                            <span class="form-element__inner input-type">
+                                <input type="text" value="소속" class="input-type1-font14" placeholder="소속" title="소속" disabled>
+                            </span>
+                        </div>                             
+                      </td>
+                      <th>이름</th>
+                      <td>
+                        <div class="form-element__wrap">                                
+                            <span class="form-element__inner input-type">
+                                <input type="text" value="이름" class="input-type1-font14" placeholder="이름" title="이름" disabled>
+                            </span>
+                        </div>                            
+                      </td>
+                      <th>요청날짜</th>
+                      <td>
+                        <div class="form-element__wrap">                                
+                            <span class="form-element__inner input-type">
+                                <input type="text" value="2024.07.15" class="input-type1-font14" placeholder="요청날짜" title="요청날짜" disabled>
+                            </span>
+                        </div>                           
+                      </td>
+                      <td>
+                        <button type="button" class="btn-gra-sm">정보 보기</button>
+                      </td>                                                
+                  </tr>
+                  <tr>
+                      <th class="title-cell">승인자</th>
+                      <th>소속</th>
+                      <td>
+                        <div class="form-element__wrap">                                
+                            <span class="form-element__inner input-type">
+                                <input type="text" value="소속" class="input-type1-font14" placeholder="소속" title="소속" disabled>
+                            </span>
+                        </div>                             
+                      </td>
+                      <th>이름</th>
+                      <td>
+                        <div class="form-element__wrap">                                
+                            <span class="form-element__inner input-type">
+                                <input type="text" value="이름" class="input-type1-font14" placeholder="이름" title="이름" disabled>
+                            </span>
+                        </div>                            
+                      </td>
+                      <th>승인날짜</th>
+                      <td>
+                        <div class="form-element__wrap">                                
+                            <span class="form-element__inner input-type">
+                                <input type="text" value="2024.07.15" class="input-type1-font14" placeholder="승인날짜" title="승인날짜" disabled>
+                            </span>
+                        </div>                           
+                      </td>
+                      <td>
+                        <button type="button" class="btn-gra-sm">정보 보기</button>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+
+        <div class="table_cont mo">
+          <table class="table-body-only confirm-table">
+              <colgroup>                  
+                  <col width="110" />
                   <col width="" />
-                  <col width="90" />
-                  <col width="" />
-                  <col width="90" />
-                  <col width="" />
-                  <col width="100" />
-                </colgroup>
-                <tbody>             
-                    <tr>
-                        <th class="title-cell">승인요청자</th>
-                        <th>소속</th>
-                        <td>
-                          <div class="form-element__wrap">                                
-                              <span class="form-element__inner input-type">
-                                  <input type="text" value="소속" class="input-type1-font14" placeholder="소속" title="소속" disabled>
-                              </span>
-                          </div>                             
-                        </td>
-                        <th>이름</th>
-                        <td>
-                          <div class="form-element__wrap">                                
-                              <span class="form-element__inner input-type">
-                                  <input type="text" value="이름" class="input-type1-font14" placeholder="이름" title="이름" disabled>
-                              </span>
-                          </div>                            
-                        </td>
-                        <th>요청날짜</th>
-                        <td>
-                          <div class="form-element__wrap">                                
-                              <span class="form-element__inner input-type">
-                                  <input type="text" value="2024.07.15" class="input-type1-font14" placeholder="요청날짜" title="요청날짜" disabled>
-                              </span>
-                          </div>                           
-                        </td>
-                        <td>
-                          <button type="button" class="btn-gra-sm">정보 보기</button>
-                        </td>                                                
-                    </tr>                 
-                </tbody>
-            </table>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th class="title-cell" colspan="2">승인요청자</th>
+                </tr>
+                <tr>
+                  <th>소속</th>
+                  <td>
+                    <div class="form-element__wrap">                                
+                        <span class="form-element__inner input-type">
+                            <input type="text" value="소속" class="input-type1-font14" placeholder="소속" title="소속 ">
+                        </span>
+                    </div>                             
+                  </td>
+                </tr>
+                <tr>
+                  <th>이름</th>
+                  <td>
+                    <div class="form-element__wrap">                                
+                        <span class="form-element__inner input-type">
+                            <input type="text" value="이름" class="input-type1-font14" placeholder="이름" title="이름 ">
+                        </span>
+                    </div>                            
+                  </td>
+                </tr>  
+                <tr>
+                  <th>요청날짜</th>
+                  <td>
+                    <div class="form-element__wrap">                                
+                        <span class="form-element__inner input-type">
+                            <input type="text" value="2024.07.15" class="input-type1-font14" placeholder="요청날짜" title="요청날짜 ">
+                        </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="txt_right last">
+                    <button type="button" class="btn-gra-sm">정보 보기</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="title-cell" colspan="2">승인자</th>
+                </tr>
+                <tr>
+                  <th>소속</th>
+                  <td>
+                    <div class="form-element__wrap">                                
+                        <span class="form-element__inner input-type">
+                            <input type="text" value="소속" class="input-type1-font14" placeholder="소속" title="소속 ">
+                        </span>
+                    </div>                             
+                  </td>
+                </tr>
+                <tr>
+                  <th>이름</th>
+                  <td>
+                    <div class="form-element__wrap">                                
+                        <span class="form-element__inner input-type">
+                            <input type="text" value="이름" class="input-type1-font14" placeholder="이름" title="이름 ">
+                        </span>
+                    </div>                            
+                  </td>
+                </tr>  
+                <tr>
+                  <th>승인날짜</th>
+                  <td>
+                    <div class="form-element__wrap">                                
+                        <span class="form-element__inner input-type">
+                            <input type="text" value="2024.07.15" class="input-type1-font14" placeholder="요청날짜" title="요청날짜 ">
+                        </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="txt_right last">
+                    <button type="button" class="btn-gra-sm" >정보 보기</button>
+                    <button type="button" class="btn-gra-sm disabled" disabled>정보 보기</button>
+                  </td>
+                </tr>
+              </tbody>
+          </table>
         </div>
         <!-- 결재승인정보 -->
 
@@ -1315,8 +1433,8 @@
   <div class="footer mo foot_btn_wrap">
     <div class="foot_btn_area">
       <!-- <a href="#none" class="btn ico_check_01"><span>변경된<br>사무 확인</span></a> -->
-      <a href="#none" class="btn btn_cancel bg-gray"><span>취소</span></a>            
       <a href="#none" class="btn btn_cancel_approval"><span>승인취소</span></a>
+      <a href="#none" class="btn btn_primary-default"><span>확인</span></a>
     </div>
   </div>
 </div>
