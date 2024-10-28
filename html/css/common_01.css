@@ -1,13 +1,13 @@
 @charset "utf-8";
 
 /* 임시로 넣어둠 지울것 *//* 임시로 넣어둠 지울것 *//* 임시로 넣어둠 지울것 *//* 임시로 넣어둠 지울것 */
-table tbody th{
+/* table tbody th{
   font-weight: bold !important;
 }
 table tbody td{
   font-weight: bold !important;
   font-size: 15px !important;
-}
+} */
 /* 임시로 넣어둠 지울것 *//* 임시로 넣어둠 지울것 *//* 임시로 넣어둠 지울것 *//* 임시로 넣어둠 지울것 */
 
 
@@ -443,6 +443,7 @@ body{min-width:1100px}
 #laybox-canvas > div{height: 800px;overflow: auto;}
 
 /* table */
+.table_cont{overflow-x:auto;}
 .table_fixed{table-layout:fixed}
 .table_ver{margin:10px 0 0; border-top:1px solid #ccc}
 .table_ver thead th{text-align:center; padding:15px 0;color:#000; background:#f7f7f7;  border-bottom:solid 1px #e8e8e8; font-weight:400;}
@@ -811,6 +812,8 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     .top_info_box .select_box.view-option .select{min-width:70px;padding:0 25px 0 10px;background-position: center right 5px !important;}
     .top_info_box .select_box.view-option .select::after{left:initial;right:25px;}
 
+    .top_info_box .top_select_box{padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid #D8DDE9;}
+
     .inner{position:relative;}
     .inner .ico_print{position:absolute;top:32px;right:0;}
 
@@ -959,6 +962,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     .join_agree{margin:64px 0;padding:40px;border-radius: 24px;background: #F1F1FE;}
     .join_agree .top_info_box{margin-top:0 !important;margin-bottom:0;}
     .join_agree .top_info_box label.check{margin:5px 0;}
+    .join_agree .input_type.check input+.txt{position:relative;}
     .join_agree li+li{margin-top:16px;padding-top:16px;border-top:1px solid #C4C5F7;}
     .join_agree li:last-child{padding-bottom:16px;border-bottom:1px solid #C4C5F7;}
     
@@ -1200,6 +1204,8 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .top_info_box .select_box.view-option .select::after{left:initial;right:25px;}
         .top_info_box .btn+.btn{margin-left:2px;}
 
+        .top_info_box .top_select_box{padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid #D8DDE9;}
+
         .btn-detail-mo{
           width: 100%;
           height: 32px;
@@ -1369,7 +1375,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
 
         .top_info_box {margin-bottom: 16px;}
         .top_info_box .total{display:block;color: #494E56;font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: 15px;letter-spacing: -0.3px;}
-        .top_info_box .btn_cont{margin:-4px;}
+        .top_info_box .btn_cont{margin:-4px -4px 32px -4px;}
         .top_info_box .btn_cont>span{width:50%;float:left;padding:4px;}
         .top_info_box .btn_cont>span>a{width:100%;}
         .top_info_box .btn_cont:after{content:'';display:block;clear:both;}
@@ -1404,6 +1410,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .searchlayer .btn_layer_close{width:24px;height:24px;background:url(../img/mo/ico/btn_layer_close.png) no-repeat center;background-size:24px auto;margin-left: 10px;position: absolute;top: 50%;right: 0px;transform: translate(-80%, -50%);}
         .searchlayer .content_wrap{padding:40px 20px;}
         .searchlayer .content_wrap .select_box+.select_box{margin-top:8px;}
+        .searchlayer .content_wrap .selectbox+.selectbox{margin-top:8px;}
 
         /* mypagelayer */
         .mypagelayer .mypage_box .tit{color: #222;font-family: Pretendard;font-size: 18px;font-style: normal;font-weight: 500;line-height: 18px;letter-spacing: -0.36px;}
@@ -1861,8 +1868,9 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         /* common_02.css 추가 아니면 수정할부분 */
         /* common_02.css 추가 아니면 수정할부분 */
 
-        /* main */
-       
+        /* 초기화 버튼 */
+        .btn_reset_area{border-top:1px solid #D8DDE9;margin-top:16px;padding-top:16px;text-align:right;}
+        .btn_reset span{padding-left:25px;background:url(../img/mo/ico/ico_reset.png) no-repeat 0 center;}       
       }
 
 
