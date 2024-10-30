@@ -3597,3 +3597,27 @@ td:has(.text-type) {
     line-height: 28px;
     letter-spacing: -0.02em;
 }
+
+.search-list-items {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #C4C5F7;
+    gap: 0 !important;
+}
+.form-element-rows {
+    padding: 12px 0;
+    border-bottom: 1px solid #C4C5F7; 
+}
+.search-list-items .bar {
+    width: 1px;
+    height: 16px;
+    color:#AEB7C6;
+}
+.search-list-items .tit {
+    color:#222;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+}
