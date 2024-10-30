@@ -742,7 +742,8 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     .info_cont .info_menu li a:hover,
     .header_cont .menu li a:hover{color: #706DF0;}
 
-    .logo a{background:url(../img/pc/logo.png) no-repeat left 0;height:35px;line-height:35px;display:block;padding-left:43px;color: #222;font-size: 18px;font-style: normal;font-weight: 500;}
+    .logo a{height:35px;line-height:35px;display:block;color: #222;font-size: 18px;font-style: normal;font-weight: 500;}
+    .logo img{display:inline-block;vertical-align: middle;padding-right:5px;}
     .header_cont .info_cont{position: absolute;top: 50%;right:0;transform: translate(0, -50%);}
     .header_cont .info_cont .info_menu.default{line-height:0;}
     .header_cont .info_cont .info_menu.default li{float:none;display:inline-block;padding:0;vertical-align: middle;}
@@ -792,7 +793,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     input[type="text"],
     input[type="password"]{border-radius: 12px;border: 1px solid #E1E3E9;line-height:50px;height:50px;font-size:16px;}
 
-    .search_cont_detail.on{height:100px;padding: 24px 155px 24px 40px;transition: height .1s;opacity: 1;overflow:visible;}
+    .search_cont_detail.on{height:100%;padding: 24px 155px 24px 40px;transition: height .1s;opacity: 1;overflow:visible;}
     .search_cont_detail{opacity:0; background: #E7EAFA;position:relative;height:0;transition: height .1s;overflow:hidden;}
     .search_cont_detail .cont{display: flex;gap: 10px;padding-right:60px;position:relative;}
     .search_cont_detail .cont .select_box{width:100%;}
@@ -1287,7 +1288,8 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         /* header_cont */
         .header_top_cont{height:64px;line-height:64px;}
         .header_top_cont .logo{display:inline-block;}
-        .header_top_cont .logo a{background:url(../img/mo/logo.png) no-repeat left 0;background-size:30px auto;height:30px;line-height:30px;display:block;padding-left:35px;color: #222;font-size: 16px;font-style: normal;font-weight: 500;}
+        .header_top_cont .logo a{height:30px;line-height:30px;display:block;color: #222;font-size: 16px;font-style: normal;font-weight: 500;}
+        .header_top_cont .logo img{width:30px;vertical-align: middle;padding-right:5px;}
         .header_top_cont .right_cont{position:absolute;top:0;right:20px;}
         .header_top_cont .right_cont button{margin-left:16px;border:0;}
         .header_top_cont .btn_search{background:url(../img/mo/btn_search.png) no-repeat center !important;background-size:24px auto !important;width:24px !important;height:24px !important;position:initial !important;}
