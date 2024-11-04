@@ -3637,3 +3637,7 @@ td:has(.text-type) {
     line-height: 16px;
     letter-spacing: -0.02em;
 }
+
+.table_cont.scroll-type.iyangsamu-table{
+    overflow: visible;
+}

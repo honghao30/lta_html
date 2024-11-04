@@ -239,7 +239,7 @@
                                     <span class="form-element__inner input-type"  style="width: 80%;flex: none;">
                                         <input type="text" value="메뉴명" class="input-type1-font14" maxlength="" disabled placeholder="메뉴명을 입력하세요" title="메뉴명을 입력하세요">
                                     </span>
-                                    <button type="button" class="btn-gra-sm">상위메뉴 선택</button>
+                                    <button type="button" class="btn-gra-sm"  onclick="modalControl('o','#layer_pop_01');return false">상위메뉴 선택</button>
                                 </div>
                             </div>                    
                     </td>
@@ -252,7 +252,7 @@
                                 <span class="form-element__inner input-type" style="width: 80%;flex: none;">
                                     <input type="text" value="파일명" class="input-type1-font14" maxlength=""  disabled placeholder="파일명을 입력하세요" title="파일명을 입력하세요">
                                 </span>
-                                <button type="button" class="btn-gra-sm">프로그램파일 선택</button>
+                                <button type="button" class="btn-gra-sm"  onclick="modalControl('o','#layer_pop_02');return false">프로그램파일 선택</button>
                                 </div>
                             </div>                    
                     </td>
@@ -359,6 +359,307 @@
 
         </div>
       </div>
+
+        <!-- 모달 -->
+        <section class="modal_new modal_overlay roll-type" id="layer_pop_01"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+          <div class="modal_n_wrap roll-modal wid480">
+              <div class="modal-header">
+                  <div class="tit">상위메뉴 선택</div>        
+              </div>
+            <div class="modal_n_body">
+              <div class="pop_cont">
+                  <div class="modal-msg">  
+                      <div class="tree-menu-wrap">
+                          <div class="tree-menu  is-active">
+                              <ul class="tree-list" id="menuManage2">
+                                  <li>
+                                      <div class="haschildren one-depth">
+                                          <button type="button" class="all-tree is-active"><span class="ir-text">ROOT</span></button> <a href="#">전체</a>
+                                      </div>
+                                      <ul class="two-depth-list is-active">
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>로그인</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li class="is-active">
+                                                      <div class="haschildren"> <a href="#"><i ></i> 내부포털 로그인</a></div>
+                                                      <ul class="tree-depth-list">
+                                                          <li class="is-active"><a href="#">하위메뉴</a></li>
+                                                          <li><a href="#">하위메뉴</a></li>
+                                                      </ul>                                                    
+                                                  </li>
+                                                  <li><a href="#">대국민포털 로그인</a></li>
+                                              </ul>
+                                          </li>
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>로그인정책관리</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">로그인 IP 제한</a></li>                                            
+                                              </ul>
+                                          </li>     
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>법령</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>   
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>사무</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>     
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>조사</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>    
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>이양사무</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>               
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>통계</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>     
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>시스템관리</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>마이페이지</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>  
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>마이페이지</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">기타페이지</a></li>                                            
+                                              </ul>
+                                          </li>                                                                                                                                                                                                                                                                                                                                                
+                                      </ul>
+                                  </li>
+                                  <li>
+                                      <div class="haschildren one-depth">
+                                          <button type="button" class="all-tree"><span class="ir-text">ROOT</span></button> <a href="#">대국민포털 홈</a>
+                                      </div>
+                                      <ul class="two-depth-list">
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>로그인</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li class="is-active"><a href="#">내부포털 로그인</a></li>
+                                                  <li><a href="#">대국민포털 로그인</a></li>
+                                              </ul>
+                                          </li>
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>로그인정책관리</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">로그인 IP 제한</a></li>                                            
+                                              </ul>
+                                          </li>     
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>법령</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>   
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>사무</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>     
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>조사</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>    
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>이양사무</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>               
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>통계</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>     
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>시스템관리</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>마이페이지</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>  
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>마이페이지</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">기타페이지</a></li>                                            
+                                              </ul>
+                                          </li>                                                                                                                                                                                                                                                                                                                                                
+                                      </ul>
+                                  </li>          
+                                  <li>
+                                      <div class="haschildren one-depth">
+                                          <button type="button" class="all-tree"><span class="ir-text">ROOT</span></button> <a href="#">대국민포털 관리자</a>
+                                      </div>
+                                      <ul class="two-depth-list">
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>로그인</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li class="is-active"><a href="#">내부포털 로그인</a></li>
+                                                  <li><a href="#">대국민포털 로그인</a></li>
+                                              </ul>
+                                          </li>
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>로그인정책관리</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">로그인 IP 제한</a></li>                                            
+                                              </ul>
+                                          </li>     
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>법령</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>   
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>사무</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>     
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>조사</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>    
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>이양사무</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>               
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>통계</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>     
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>시스템관리</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>마이페이지</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">하위 메뉴</a></li>                                            
+                                              </ul>
+                                          </li>  
+                                          <li>
+                                              <div class="haschildren"> <a href="#none" class="two-depth-button"><i ></i>마이페이지</a></div>
+                                              <ul class="tree-depth-list">
+                                                  <li><a href="#">기타페이지</a></li>                                            
+                                              </ul>
+                                          </li>                                                                                                                                                                                                                                                                                                                                                
+                                      </ul>
+                                  </li>                                                  
+                              </ul>
+                          </div>
+                      </div>
+                      
+
+                  </div>
+              </div>  
+            </div>
+            <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button> 
+          </div>
+        </section>
+
+        <section class="modal_new modal_overlay roll-type" id="layer_pop_02"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+          <div class="modal_n_wrap roll-modal ">
+              <div class="modal-header">
+                  <div class="tit">프로그램파일 선택</div>        
+              </div>
+            <div class="modal_n_body">
+              <div class="pop_cont">
+                  <div class="modal-msg">  
+                      <div class="table_cont tb_cursor">
+                          <table class="table-list iyangsamu-table">
+                              <colgroup>
+                                      <col style="width:50%;">
+                                      <col style="width:50%;">                                                                                                                                        
+                              </colgroup>
+                              <thead>
+                                  <tr>
+                                      <th>프로그램파일명</th>
+                                      <th>프로그램명</th>                                                          
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>SelectLoginLogList</td>
+                                      <td>접속로그관리</td>                                                                                        
+                                  </tr>
+                                  <tr>
+                                      <td>SelectLoginLogList</td>
+                                      <td>접속로그관리</td>                                                                                         
+                                  </tr>     
+                                  <tr>
+                                      <td>SelectLoginLogList</td>
+                                      <td>접속로그관리</td>                                                                                           
+                                  </tr>
+                                  <tr>
+                                      <td>SelectLoginLogList</td>
+                                      <td>접속로그관리</td>                                                                                             
+                                  </tr> 
+                                  <tr>
+                                      <td>SelectLoginLogList</td>
+                                      <td>접속로그관리</td>                                                                                            
+                                  </tr>                                                                               
+                              </tbody>
+                          </table>
+                      </div>     
+                      
+                      <!-- paging -->
+                      <div class="paging">
+                          <a href="#none" class="first"></a>
+                          <a href="#none" class="prev"></a>
+                          <ol>
+                          <li><a href="#none" class="on">1</a></li>
+                          <li><a href="#none">2</a></li>
+                          <li><a href="#none">3</a></li>
+                          <li><a href="#none">4</a></li>
+                          <li><a href="#none">5</a></li>
+                          </ol>
+                          <a href="#none" class="next"></a>
+                          <a href="#none" class="last"></a>
+                      </div>
+                  </div>
+              </div>  
+            </div>
+            <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button> 
+          </div>
+        </section>  
+
     </div>
 
     <!-- footer -->
