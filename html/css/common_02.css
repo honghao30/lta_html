@@ -2017,6 +2017,9 @@ td:has(.text-type) {
     margin-right: 56px;
     background-color: #fff;
 }
+.process-step-list .process-step.ht-120 {
+    height: 120px;
+}
 .ml-56 {margin-left: 56px !important}
 .process-step-list .process-step li {
     border-bottom: 1px solid #D8DDE9;
