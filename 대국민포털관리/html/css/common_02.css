@@ -121,8 +121,8 @@ p.skip{margin-bottom:30px;}
     letter-spacing: -0.02em;
     color: #222;
 }
-.input-text-count {
-    min-width: 65px;
+.form-element__wrap .input-multi .input-text-count {
+    width: 65px;
     font-family: 'Pretendard';
     font-size: 16px;
     font-weight: 400;
@@ -131,7 +131,7 @@ p.skip{margin-bottom:30px;}
     color: #222;
     text-align: right;
 }
-.input-text-count .current {
+.form-element__wrap .input-multi .input-text-count .current {
     color: #FF8B4A;
 }
 .form-element__wrap .error-msg {
@@ -1166,9 +1166,6 @@ p.skip{margin-bottom:30px;}
 .float-r {float:right !important;}
 .wid80 {width: 80px;}
 .wd-90 {width: 90px !important; flex: initial !important;}
-.wd-100p {
-    width: 100%;
-}
 .search-input-inner.deliberation {
     position: relative;
 }
@@ -1649,9 +1646,6 @@ p.skip{margin-bottom:30px;}
 /* flex-wrap */
 .flex-wrap {
     flex-wrap: wrap;
-}
-.flex-column {
-    flex-direction: column;
 }
 
 /* 모바일 input text count */
@@ -3626,15 +3620,4 @@ td:has(.text-type) {
     font-weight: 400;
     line-height: 16px;
     letter-spacing: -0.02em;
-}
-/* sns 공유하기 */
-.sns-top {
-    position: absolute;
-    right: 0;
-    bottom: 32px;
-    display: flex;
-    gap: 12px;
-}
-.sns-top img {
-    width: 40px;
 }

@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tabMenus('.law-tree-menu');
 
     const checkFormValLength = () => {
-        const formEls = document.querySelectorAll('.has-text-count input[type="text"], .has-text-count textarea');
+        const formEls = document.querySelectorAll('.has-text-count input[type="text"]');
     
         formEls.forEach(el => {
             const countVal = parseInt(el.value.length);

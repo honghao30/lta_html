@@ -1166,6 +1166,7 @@ p.skip{margin-bottom:30px;}
 .float-r {float:right !important;}
 .wid80 {width: 80px;}
 .wd-90 {width: 90px !important; flex: initial !important;}
+.input-type.wd-160 {width: 160px;flex: none !important;}
 .search-input-inner.deliberation {
     position: relative;
 }
@@ -1593,6 +1594,11 @@ p.skip{margin-bottom:30px;}
 }
 
 .float-r {float:right !important;}
+
+.btn_search_detail.bg-purple {
+    background-color: #706DF0;
+    color: #fff;
+}
 
 /* 작성버튼 */
 .btn.ico_penci-bl span{
@@ -3100,6 +3106,11 @@ td:has(.text-type) {
 }
 .table_cont .table-body-only tbody td.inner-table .inner-table-cont table tbody tr td:last-child {
     border-right: 0 !important;
+}
+
+.table_cont .table-body-only tbody td.inner-table .inner-table-cont table tbody tr td.text-l {
+    text-align: left;
+    padding-left: 16px;
 }
 .yiyang-cont-box {
     display: none;
