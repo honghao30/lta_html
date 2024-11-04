@@ -2190,7 +2190,7 @@ td:has(.text-type) {
 }
 .process-step-list li.detail-board.size-middle.ht127 {height: 127px;}
 .process-step-list li.detail-board.size-middle.ht175 {height: 177px;}
-.process-step-list li.detail-board.size-middle.ht160 {height: 160px;}
+
 .process-step-list li.detail-board.size-middle dt {
     width: 100%;
     font-size: 18px;
