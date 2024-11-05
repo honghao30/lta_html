@@ -3641,3 +3641,34 @@ td:has(.text-type) {
 .table_cont.scroll-type.iyangsamu-table{
     overflow: visible;
 }
+
+
+/* //탭메뉴 */
+.tabmenu-link-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 12px;
+    height: 56px;
+    margin: 12px 0 0;
+}
+.tabmenu-link-wrap a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;    
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: #222;
+    border: 2px solid transparent;   
+    border-radius: 12px;
+}
+.tabmenu-link-wrap a.is-active {
+    border: 2px solid #706DF0;
+    color: #706DF0;
+    font-weight: 700;
+}
