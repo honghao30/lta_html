@@ -571,6 +571,11 @@ p.skip{margin-bottom:30px;}
 .table_cont table.table-list tbody tr:hover td {
     background: #FF8B4A1A;
 }
+
+.table_cont table.table-list tbody tr td.border-top {
+    border-top: 1px solid #222 !important;
+}
+
 .table_cont .table-body-only tbody th {
     background: #F9F9FB;
     height: 72px;
@@ -750,6 +755,10 @@ p.skip{margin-bottom:30px;}
 .table_cont table tbody tr.highlight td a {
     color:#FF8B4A;
     font-weight: 500;
+}
+.table_cont table tbody tr.selected td {
+    background-color: #FFF4ED;
+    color: #222;
 }
 .pc-flex {
     display: flex;
@@ -3621,4 +3630,13 @@ td:has(.text-type) {
     font-weight: 400;
     line-height: 16px;
     letter-spacing: -0.02em;
+}
+
+.static-wrap {
+    margin-top: 64px;
+    background-color: #F4F7FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
 }
