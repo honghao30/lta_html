@@ -362,6 +362,26 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
     dynamicAddList('.dynamic_add-list', govPartSelectHtml);
     
+    const govPartSelectHtml2 = `
+        <select name="" id="" style="width: 408px;"  title="선택하세요">
+            <option value="선택함1">선택함1</option>
+            <option value="선택함2">선택함2</option>
+            <option value="선택함3">선택함3</option>
+        </select>
+        <div class="yiyang-info">
+            <span class="total">사무</span>
+            <span class="dv-bar ml-5"></span>  
+            <span class="total ml-5">1,2,6</span>                                             
+        </div>
+        <button type="button" class="btn-dark-light btn-delete">
+            <i class="ico-minus"></i> 삭제
+        </button>                                                  
+        <button type="button" class="btn-dark-light btn-add">
+            <i class="ico-plus"></i> 추가
+        </button>
+    `;
+    dynamicAddList('.dynamic_add-list7', govPartSelectHtml2);
+
     const yiYangPart = `
             <select name="" id="" style="width: 188px;" title="선택하세요">
                 <option value="선택함1">선택함1</option>
@@ -374,6 +394,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 <option value="선택함2">선택함2</option>
                 <option value="선택함3">선택함3</option>
             </select>
+            <div class="bar">&nbsp;</div>
+            <label class="input_type check mr-0">
+                <input type="checkbox" name="q01">
+                <span class="txt"></span>
+            </label>
+            <div class="view on" style="width:280px;">
+                <span class="input_cont">
+                <input type="text" style="padding-left: 10px;" placeholder="내용 추가 (30자 이내)">
+                </span>
+            </div>               
             <button type="button" class="btn-dark-light btn-delete">
                 <i class="ico-minus"></i> 삭제
             </button>      

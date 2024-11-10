@@ -234,7 +234,8 @@
               <li><a href="#none">이양사무</a></li>
             </ul>
           </div>
-          <div class="pc">
+          <div class="pc">            
+            <a href="#none" class="btn ico_file_download"><span>파일 다운로드</span></a>
             <a href="#none" class="btn ico_print"><span>프린트</span></a>
           </div>
 
@@ -263,13 +264,13 @@
 
           <div class="gray-box-full__wrap pad20">              
             <div class="tit">
-                중앙부처, 지방자치단체의 이양과제 의견수렴 후 심의 전 요청 보고서를 작성합니다.<br>
-이 요청 보고서는 심의 단계에서의 의사결정을 지원하고, 투명성과 책임성 확보, 정책을 반영하고 추진력을 강화하기 위한 목적을 가집니다.                   
-              </div>
+              단위사무는 사무이양과정에서 단순한 행정적 절차가 아니라, 효율적이고 책임 있는 행정 운영을 위한 핵심 요소로 관리됩니다.             
+            </div>
           </div>
 
           <div class="font-type16-400 mt-64">
-            ※이양사무 정보는 및 건의 내용은 상단의 [이양사무 건의] 메뉴에서 확인할 수 있습니다.
+            ※ 「 이양사무 건의 」 메뉴에서 건의 내용을 확인할 수 있으며, 「이양 과제 의견수렴」 메뉴에서는 <br>
+            중앙부처, 광역자체단체, 기초자치단체, 지방시대위원회, 시도지사협의회, 시군구청장협의회에서 등록한 의견을 확인할 수 
           </div>
           <div class="table_cont mt-16">
             <table class="table-body-only">
@@ -280,7 +281,8 @@
                     <tr>
                         <th>
                             <div class="flex-row justify-between">
-                                <div>승인자 정보</div>
+                                <div>등록자 정보</div>
+                                <div class="mr-16"><a href="#" class="btn-dark-light">정보 보기</a></div>
                             </div>
                         </th>
                     </tr>
@@ -289,12 +291,12 @@
                     <tr>                        
                         <td>
                             <div class="td-inner-wrap">
-                                <div class="cate-tit">승인구분</div>
+                                <!-- <div class="cate-tit">승인구분</div>
                                 <div class="form-element__wrap">                                
                                     <span class="form-element__inner input-type">
                                         <input type="text" value="의견수렴으로 전환" class="input-type1-font14" placeholder="승인구분 입력하세요" title="승인구분 입력하세요" disabled="">
                                     </span>
-                                </div>
+                                </div> -->
                                 <div class="cate-tit ml-10">기관/부서명</div>
                                 <div class="form-element__wrap">                                
                                     <span class="form-element__inner input-type disabled">
@@ -304,7 +306,7 @@
                                 <div class="cate-tit ml-10">이름</div>
                                 <div class="form-element__wrap">                                
                                     <span class="form-element__inner input-type">
-                                        <input type="text" value="홍길동" class="input-type1-font14" placeholder="이름을 입력하세요" title="이름을 입력하세요" disabled="">
+                                        <input type="text" value="홍**" class="input-type1-font14" placeholder="이름을 입력하세요" title="이름을 입력하세요" disabled="">
                                     </span>
                                 </div>          
                                 <div class="cate-tit ml-10">부서번호</div>
@@ -334,79 +336,99 @@
                     <col />
                 </colgroup>
                 <tbody>
-                    <tr>    
-                        <th scope="row">
-                            이양방향
-                        </th>                    
-                        <td colspan="3">
-                            <ul class="form-el-list-wrap dynamic_add-list2">
-                                <li class="input-wrap flex-row">
-                                    <!-- 콤보박스 -->
-                                    <div class="select_box disabled" style="width: 188px;">
-                                      <span class="select">국가</span>
-                                      <div class="option">
-                                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                          <ul>
-                                            <li>선택함1</li>
-                                            <li>선택함2</li>
-                                            <li>선택함3</li>
-                                          </ul>
-                                        </div>              
-                                      </div>
-                                    </div>
-                                    →
-                                    <!-- //콤보박스 -->      
-                                    <!-- 콤보박스 -->
-                                    <div class="select_box" style="width: 188px;">
-                                      <span class="select disabled">시군구</span>
-                                      <div class="option">
-                                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                          <ul>
-                                            <li>선택함1</li>
-                                            <li>선택함2</li>
-                                            <li>선택함3</li>
-                                          </ul>
-                                        </div>              
-                                      </div>
-                                    </div>
-                                    <!-- //콤보박스 -->                                                                      
-                                    <span class="ml-10">사무</span> <span class="dv-bar"></span> <strong>1,2,3</strong>
-                                </li>
-                                <li class="input-wrap flex-row">
-                                    <!-- 콤보박스 -->
-                                    <div class="select_box disabled" style="width: 188px;">
-                                      <span class="select">국가</span>
-                                      <div class="option">
-                                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                          <ul>
-                                            <li>선택함1</li>
-                                            <li>선택함2</li>
-                                            <li>선택함3</li>
-                                          </ul>
-                                        </div>              
-                                      </div>
-                                    </div>
-                                    →
-                                    <!-- //콤보박스 -->      
-                                    <!-- 콤보박스 -->
-                                    <div class="select_box  disabled" style="width: 188px;">
-                                      <span class="select">시군구</span>
-                                      <div class="option">
-                                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                          <ul>
-                                            <li>선택함1</li>
-                                            <li>선택함2</li>
-                                            <li>선택함3</li>
-                                          </ul>
-                                        </div>              
-                                      </div>
-                                    </div>
-                                    <!-- //콤보박스 -->                                                                      
-                                    <span class="ml-10">사무</span> <span class="dv-bar"></span> <strong>1,2,3</strong>
-                                </li>                                
-                            </ul>
-                        </td>                                                 
-                    </tr>                                                                                                                                                                                                             
+                  <tr>    
+                    <th scope="row">
+                        소관부처
+                    </th>                    
+                    <td colspan="3">
+                      <ul class="form-el-list-wrap dynamic_add-list7">
+                        <li class="input-wrap flex-row">
+                              <select name="" id="" style="width: 408px;" title="선택하세요">
+                                  <option value="선택함1">선택함1</option>
+                                  <option value="선택함2">선택함2</option>
+                                  <option value="선택함3">선택함3</option>
+                              </select>
+                              <div class="yiyang-info">
+                                  <span class="total">사무</span>
+                                  <span class="dv-bar ml-5"></span>  
+                                  <span class="total ml-5">1,2,6</span>                                             
+                              </div>
+                          </li>
+                          <li class="input-wrap flex-row">
+                              <!-- 콤보박스 -->
+                              <select name="" id="" style="width: 408px;">
+                                <option value="선택함1">선택함1</option>
+                                <option value="선택함2">선택함2</option>
+                                <option value="선택함3">선택함3</option>
+                              </select>                                
+                              <div class="yiyang-info">
+                                <span class="total">사무</span>
+                                <span class="dv-bar ml-5"></span>  
+                                <span class="total ml-5">1,2,6</span>                                             
+                            </div>
+                          </li>
+                      </ul>
+                    </td>                                                 
+                </tr>       
+                <tr>    
+                    <th scope="row">
+                        이양방향
+                    </th>                    
+                    <td colspan="3">
+                      <ul class="form-el-list-wrap dynamic_add-list2">
+                          <li class="input-wrap flex-row">
+                                <select name="" id="" style="width: 188px;" title="선택하세요">
+                                    <option value="선택함1">선택함1</option>
+                                    <option value="선택함2">선택함2</option>
+                                    <option value="선택함3">선택함3</option>
+                                </select>
+                                →
+                                <select name="" id="" style="width: 188px;">
+                                    <option value="선택함1">선택함1</option>
+                                    <option value="선택함2">선택함2</option>
+                                    <option value="선택함3">선택함3</option>
+                                </select>
+                                <div class="bar">&nbsp;</div>
+                                <label class="input_type check mr-0">
+                                    <input type="checkbox" name="q01">
+                                    <span class="txt"></span>
+                                </label>
+                                <div class="view on" style="width:280px;">
+                                    <span class="input_cont">
+                                    <input type="text" style="padding-left: 10px;" placeholder="내용 추가 (30자 이내)">
+                                    </span>
+                                </div>                                                                                           
+                            </li>
+                            <li class="input-wrap flex-row">
+                              <!-- 콤보박스 -->
+                              <select name="" id="" style="width: 188px;">
+                                <option value="선택함1">선택함1</option>
+                                <option value="선택함2">선택함2</option>
+                                <option value="선택함3">선택함3</option>
+                              </select>
+                              →
+                              <!-- //콤보박스 -->      
+                              <!-- 콤보박스 -->
+                              <select name="" id="" style="width: 188px;">
+                                <option value="선택함1">선택함1</option>
+                                <option value="선택함2">선택함2</option>
+                                <option value="선택함3">선택함3</option>
+                              </select>
+                              <!-- //콤보박스 -->         
+                              <div class="bar">&nbsp;</div>
+                              <label class="input_type check mr-0">
+                                  <input type="checkbox" name="q01" checked>
+                                  <span class="txt"></span>
+                              </label>
+                              <div class="view on" style="width:280px;">
+                                  <span class="input_cont">
+                                  <input type="text" style="padding-left: 10px;" placeholder="내용 추가 (30자 이내)">
+                                  </span>
+                              </div>                                                                                                     
+                          </li>                                   
+                        </ul>
+                    </td>                                                 
+                </tr>                                                                                                                                                                                                             
                 </tbody>
             </table>
         </div>
@@ -420,7 +442,7 @@
                     <tr>
                         <th>
                         근거법령 <span class="dv-bar"></span>
-                        총 <span class="total"><strong>36</strong>건</span>
+                        <span class="total">총 <strong>36</strong>건</span>
                         </th>
                     </tr>
                 </thead>
@@ -430,98 +452,22 @@
                             <div class="inner-table-cont mt-16">
                                 <table>
                                     <colgroup>                                                                                  
-                                        <col width="5%">
-                                        <col width="9%">
-                                        <col width="9%">
                                         <col>
-                                        
-                                        <col width="3%">
-                                        <col width="9%">
-                                        <col width="3%">
-                                        <col width="9%">        
-                                        <col width="3%">
-                                        <col width="9%">                                                                                                                                                                                                                            
-                                        <col width="5%">
-                                        <col width="5%">
+                                        <col width="15%">
                                     </colgroup>
                                     <tbody>
                                         <tr>                                           
-                                            <td class="tit" rowspan="2">번호</td>
-                                            <td class="tit" rowspan="2">소관부처</td>
-                                            <td class="tit" rowspan="2">법 분야</td>
-                                            <td class="tit" rowspan="2">법령명</td>                                        
-                                            <td colspan="8">법령분류</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">장</td>
-                                            <td colspan="2">절</td>
-                                            <td colspan="2">조</td>
-                                            <td>항</td>                                      
-                                            <td>호</td>
+                                            <td class="tit">법령</td>
+                                            <td class="tit">소관부처</td>                                            
                                         </tr>
                                         <tr>                                           
-                                            <td>1</td>
-                                            <td>해양수산부</td>
-                                            <td>(법분야 정보 노출)</td>         
-                                            <td>수중레저활동의 안전 및 활성화 등에 관한 법률</td>
-                                            <td>4</td>
-                                            <td>수중레저사업</td>
-                                            <td>-</td> 
-                                            <td>-</td>
-                                            <td>10</td>
-                                            <td>수중레저사업의
-                                            등록 기준 등</td>
-                                            <td>1</td>                                                                                                                                                      
-                                            <td>-</td>
-                                        </tr>   
-                                        <tr>
-                                            <td colspan="2">조문상세</td>                                        
-                                            <td colspan="10" class="text-l">
-                                                ① 해양수산부장관은 안전관리규정에 따라 수중레저사업장 내 수중레저기구, 수중레저장비 및 수중레저시설물 등(이하 “수중레저기구등”이라 한다)에 대한 안전점검을 실시하여야 한다.
-                                            </td>
-                                        </tr>                                      
-                                        <tr>                                           
-                                            <td>2</td>
-                                            <td>해양수산부</td>
-                                            <td>(법분야 정보 노출)</td>         
-                                            <td>수중레저활동의 안전 및 활성화 등에 관한 법률</td>
-                                            <td>4</td>
-                                            <td>수중레저사업</td>
-                                            <td>-</td> 
-                                            <td>-</td>
-                                            <td>10</td>
-                                            <td>수중레저사업의
-                                            등록 기준 등</td>
-                                            <td>1</td>                                                                                                                                                      
-                                            <td>-</td>
-                                        </tr>    
-                                        <tr>
-                                            <td colspan="2">조문상세</td>                                        
-                                            <td colspan="10" class="text-l">
-                                                ① 해양수산부장관은 안전관리규정에 따라 수중레저사업장 내 수중레저기구, 수중레저장비 및 수중레저시설물 등(이하 “수중레저기구등”이라 한다)에 대한 안전점검을 실시하여야 한다.
-                                            </td>
-                                        </tr>  
-                                        <tr>                                             
-                                            <td>2</td>
-                                            <td>해양수산부</td>
-                                            <td>(법분야 정보 노출)</td>         
-                                            <td>수중레저활동의 안전 및 활성화 등에 관한 법률</td>
-                                            <td>4</td>
-                                            <td>수중레저사업</td>
-                                            <td>-</td> 
-                                            <td>-</td>
-                                            <td>10</td>
-                                            <td>수중레저사업의
-                                            등록 기준 등</td>
-                                            <td>1</td>                                                                                                                                                      
-                                            <td>-</td>
-                                        </tr>    
-                                        <tr>
-                                            <td colspan="2">조문상세</td>                                        
-                                            <td colspan="10" class="text-l">
-                                                ① 해양수산부장관은 안전관리규정에 따라 수중레저사업장 내 수중레저기구, 수중레저장비 및 수중레저시설물 등(이하 “수중레저기구등”이라 한다)에 대한 안전점검을 실시하여야 한다.
-                                            </td>
-                                        </tr>                                                                                                                                                
+                                          <td class="text-l">
+                                            <strong>도시재생 활성화 및 지원에 관한 특별법</strong>
+                                            <p class="mt-16">제3장 조시재생전략계획 등 제20조(도시재생 활성화 계획의 확정 및 승인 등)<br>
+                                                ⑤ 제1항부터 제4항까지의 규정에도 불구하고 대통령령으로 정하는 경미한 사항을 변경하는 경우에는 관계 행정기관 장과의 협의, 지방위원회 심의, 공청회, 지방의회의 의견청취 절차 및 특별위원회의 심의를 거치지 아니할 수 있다. <신설 2019. 8. 27.></p>
+                                          </td>
+                                          <td>해양수산부</td>
+                                        </tr>                                                                                                                                         
                                     </tbody>
                                 </table>
                             </div>                            
@@ -539,12 +485,12 @@
                 <thead>
                     <tr>
                         <th>
-                        사무 <span class="dv-bar"></span>
-                        총 <span class="total"><strong>36</strong>건</span>
+                          사무 <span class="dv-bar"></span>
+                          <span class="total">총<strong>36</strong>건</span>
                             <span class="dv-bar"></span>
-                            단위사무(35) 건
+                            단위사무 <strong>(35)</strong> 건
                             <span class="dv-bar"></span>
-                            부수사무 (35) 건                            
+                            부수사무 <strong>(35)</strong> 건                            
                         </th>
                     </tr>
                 </thead>
@@ -592,7 +538,7 @@
                                             <td class="tit">위탁사무<br>여부</td>
                                             <td class="tit">수탁기관</td>
                                             <td class="tit">법조항</td>
-                                            <td class="tit">이양방향</td>                                          
+                                            <td class="tit">소관부처 / 이양방향</td>                                          
                                         </tr>
                                         <tr>
                                             <td>1</td>
@@ -615,7 +561,7 @@
                                             <td>제10조<br>
                                                 제1항</td>
                                             <td>
-                                                1.국가,시·도
+                                              행정안전부 / <br>국가,시·도
                                             </td>
                                         </tr>                                        
                                         <tr>
@@ -639,57 +585,9 @@
                                             <td>제10조<br>
                                                 제1항</td>
                                             <td>
-                                                1.국가,시·도
+                                                행정안전부 / <br>국가,시·도
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>단위사무</td>
-                                            <td>
-                                                <a href="#">수중레저기구 등에 대한 안전점검</a>
-                                            </td>         
-                                            <td>해양수산부장관</td>
-
-                                            <td>국가</td>
-                                            <td>수중레저사업</td>
-                                            <td>-</td>  
-                                            <td>-</td> 
-                                            <td>X</td>
-                                            <td>-</td>
-
-                                            <td>-</td>
-                                            <td>X</td>
-                                            <td>-</td>
-                                            <td>제10조<br>
-                                                제1항</td>
-                                            <td>
-                                                1.국가,시·도
-                                            </td>
-                                        </tr>
-                                        <tr class="select">
-                                            <td>4</td>
-                                            <td>단위사무</td>
-                                            <td>
-                                                <a href="#">수중레저기구 등에 대한 안전점검</a>
-                                            </td>         
-                                            <td>해양수산부장관</td>
-
-                                            <td>국가</td>
-                                            <td>수중레저사업</td>
-                                            <td>-</td>  
-                                            <td>-</td> 
-                                            <td>X</td>
-                                            <td>-</td>
-
-                                            <td>-</td>
-                                            <td>X</td>
-                                            <td>-</td>
-                                            <td>제10조<br>
-                                                제1항</td>
-                                            <td>
-                                                1.국가,시·도
-                                            </td>
-                                        </tr>                                        
+                                        </tr>                               
                                     </tbody>
                                 </table>
                             </div>                            
@@ -698,7 +596,52 @@
                 </tbody>
             </table>
         </div>    
-
+        <div class="table_cont mt-32">
+          <table class="table-body-only">
+              <colgroup>                    
+                  <col width="" />
+              </colgroup>
+              <thead>
+                  <tr>
+                      <th>
+                        근거 법령 개정안 
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>                        
+                      <td class="inner-table">
+                          <div class="info-text">현행 법조문은 근거법령이 추가되면 자동으로 반영됩니다.</div>
+                          <div class="inner-table-cont mt-16">
+                            <table>
+                                <colgroup>
+                                    <col width="50%">
+                                    <col width="50%">
+                                </colgroup>
+                                <tbody>
+                                  <tr>
+                                      <td class="tit">현행</td>
+                                      <td class="tit">개정안</td>
+                                  </tr>
+                                  <tr>
+                                      <td colspan="2">문화유산의 보존 및 활용에 관한 법률 4장 국가지정문화유산 3절 보존·관리 및 활용 3조 허가사항</td>                                          
+                                  </tr>
+                                  <tr>
+                                      <td class="text-l vertical-t">
+                                        ① 국가지정문화유산에 대하여 다음 각 호의 어느 하나에 해당하는 행위를 하려는 자는 대통령령으로 정하는 바에 따라 국가유산청장의 허가를 받아야 하며, 허가사항을 변경하려는 경우에도 국가유산청장의 허가를 받아야 한다. 다만, 국가지정문화유산 보호구역에 안내판 및 경고판을 설치하는 행위 등 대통령령으로 정하는 경미한 행위에 대해서는 특별자치시장, 특별자치도지사, 시장ㆍ군수 또는 구청장의 허가(변경허가를 포함한다)를 받아야 한다. <개정 2014. 1. 28., 2015. 3. 27., 2017. 11. 28., 2019. 11. 26., 2020. 12. 22., 2021. 5. 18., 2023. 3. 21., 2023. 8. 8., 2024. 2. 13.>                                          
+                                      </td>
+                                      <td class="text-l vertical-t">
+                                        국가지정문화유산에 대하여 다음 각 호의 어느 하나에 해당하는 행위를 하려는 자는 대통령령으로 정하는 바에 따라 국가유산청장의 허가를 받아야 하며, 허가사항을 변경하려는 경우에도 국가유산청장의 허가를 받아야 한다.
+                                      </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                      </td>                        
+                  </tr>                                                                                                                                                                                
+              </tbody>
+          </table>
+        </div>
         <div class="button__wrap flex-end mt-64">
             <button type="button" class="btn-gray-default">
                 <i class="ico-save"></i> 수정

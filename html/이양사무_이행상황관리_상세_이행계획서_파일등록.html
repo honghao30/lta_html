@@ -253,7 +253,7 @@
             <ul class="tab-menu">
                 <li class="active"><a href="#">이양계획서</a></li>
                 <li><a href="#">비용평가조사서</a></li>
-                <li><a href="#">이행 현황</a></li>                
+                <li><a href="#">법령개정(제도개선) 현황</a></li>                
             </ul>
             
             <div class="tab-content">
@@ -261,158 +261,314 @@
                     <!-- tab1 -->
                     <div class="flex-row justify-between mt-80">
                         <div class="font-type24-700">이양계획서 등록</div>
-                        <button type="button" class="btn-border-gray">
+                        <button type="button" class="btn-border-gray is-toggle-button">
                             <i class="icon-remove-x"></i>
-                            파일첨부 취소
+                            파일첨부
                         </button>                        
                     </div>
-                    <div class="table_cont mt-16">
-                        <table class="table-body-only">
-                            <colgroup>                    
-                                <col width="160">
-                                <col>
-                            </colgroup>
-                            <tbody>
-                                <tr>    
-                                    <th scope="row">
-                                        제목 <span class="red-color">*</span>
-                                    </th>                    
-                                    <td>
-                                        <div class="form-element__wrap">                                  
-                                            <div class="input-multi">
-                                                <span class="form-element__inner input-type input_del">
-                                                    <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="제목을 입력하여 주세요."  title="제목을 입력하여 주세요.">
-                                                    <button class="del"></button>
-                                                </span>
-                                            </div>
-                                        </div> 
-                                    </td> 
-                                </tr>    
-                                <tr>    
-                                    <th scope="row">
-                                        내용
-                                    </th>                    
-                                    <td>
-                                        <div class="edit-cont">
-                                            <textarea name="" id="" value="" style="width: 100%;height:152px;" placeholder="내용을 입력해 주세요." title="내용을 입력해 주세요."></textarea>
-                                        </div>
-                                    </td> 
-                                </tr>   
-                                <tr>          
-                                    <th scope="row">
-                                        파일첨부 <span class="red-color">*</span>
-                                    </th>                                                   
-                                    <td>
-                                        <div class="info-text">참조 자료와 관련된 파일을 첨부하여 주세요.</div>
-                                        <div class="info-text color-important">
-                                            ※파일 용량 제한 : 100MB<br>
-                                            ※업로드 가능한 파일 : xls, xlsx, hwp, hwpx, pdf, jpeg, jpg, png
-                                        </div>
-                                        <ul class="file-list yiyang-file" style="max-width: 532px;">                                    
-                                            <li>
-                                                    <div class="input-wrap">
-                                                    <input type="file" name="" class="file" style="width: 363px;" />
-                                                    <div class="form-element__wrap">
-                                                        <div class="input-multi file-up">
-                                                        <span class="form-element__inner input-type" style="width: 252px; flex: none;">
-                                                            <input type="text" placeholder="파일을 선택해 주세요." title="파일첨부">
-                                                        </span>
-                                                        <button type="button" class="btn-border-gray">
-                                                            <i class="icon-file"></i>
-                                                            파일찾기
-                                                        </button>
-                                                        <button type="button" class="btn-dark-light btn-delete">
-                                                            <i class="ico-minus"></i>
-                                                            삭제
-                                                        </button>
-                                                        <button type="button" class="btn-dark-light btn-add">
-                                                            <i class="ico-plus"></i>
-                                                            추가
-                                                        </button>
-                                                        </div>
-                                                    </div>
-                                                    </div>                                
-                                            </li>
-                                        </ul>                  
-                                    </td>                        
-                                </tr>                                                                                                                                                                                                                                               
-                            </tbody>
-                        </table>
-                    </div>        
-                    <div class="button__wrap flex-end pc-flex mt-32">
-                        <button type="button" class="btn-gray-default">
-                            <i class="ico-remove"></i> 취소
-                        </button>
-                        <button type="button" class="btn-primary-default wd-108">
-                            <i></i> 등록
-                        </button>                              
-                    </div>                                      
+                    <div class="is-toggle-area">
+                      <div class="table_cont mt-16">
+                          <table class="table-body-only">
+                              <colgroup>                    
+                                  <col width="160">
+                                  <col>
+                              </colgroup>
+                              <tbody>
+                                  <tr>    
+                                      <th scope="row">
+                                          제목 <span class="red-color">*</span>
+                                      </th>                    
+                                      <td>
+                                          <div class="form-element__wrap">                                  
+                                              <div class="input-multi">
+                                                  <span class="form-element__inner input-type input_del">
+                                                      <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="제목을 입력하여 주세요."  title="제목을 입력하여 주세요.">
+                                                      <button class="del"></button>
+                                                  </span>
+                                              </div>
+                                          </div> 
+                                      </td> 
+                                  </tr>    
+                                  <tr>    
+                                      <th scope="row">
+                                          내용
+                                      </th>                    
+                                      <td>
+                                          <div class="edit-cont">
+                                              <textarea name="" id="" value="" style="width: 100%;height:152px;" placeholder="내용을 입력해 주세요." title="내용을 입력해 주세요."></textarea>
+                                          </div>
+                                      </td> 
+                                  </tr>   
+                                  <tr>          
+                                      <th scope="row">
+                                          파일첨부 <span class="red-color">*</span>
+                                      </th>                                                   
+                                      <td>
+                                          <div class="info-text">참조 자료와 관련된 파일을 첨부하여 주세요.</div>
+                                          <div class="info-text color-important">
+                                              ※파일 용량 제한 : 100MB<br>
+                                              ※업로드 가능한 파일 : xls, xlsx, hwp, hwpx, pdf, jpeg, jpg, png
+                                          </div>
+                                          <ul class="file-list yiyang-file" style="max-width: 532px;">                                    
+                                              <li>
+                                                      <div class="input-wrap">
+                                                      <input type="file" name="" class="file" style="width: 363px;" />
+                                                      <div class="form-element__wrap">
+                                                          <div class="input-multi file-up">
+                                                          <span class="form-element__inner input-type" style="width: 252px; flex: none;">
+                                                              <input type="text" placeholder="파일을 선택해 주세요." title="파일첨부">
+                                                          </span>
+                                                          <button type="button" class="btn-border-gray">
+                                                              <i class="icon-file"></i>
+                                                              파일찾기
+                                                          </button>
+                                                          <button type="button" class="btn-dark-light btn-delete">
+                                                              <i class="ico-minus"></i>
+                                                              삭제
+                                                          </button>
+                                                          <button type="button" class="btn-dark-light btn-add">
+                                                              <i class="ico-plus"></i>
+                                                              추가
+                                                          </button>
+                                                          </div>
+                                                      </div>
+                                                      </div>                                
+                                              </li>
+                                          </ul>                  
+                                      </td>                        
+                                  </tr>                                                                                                                                                                                                                                               
+                              </tbody>
+                          </table>
+                      </div>        
+                      <div class="button__wrap flex-end pc-flex mt-32">
+                          <button type="button" class="btn-gray-default">
+                              <i class="ico-remove"></i> 취소
+                          </button>
+                          <button type="button" class="btn-primary-default wd-108">
+                              <i></i> 등록
+                          </button>                              
+                      </div> 
+                    </div>       
                     <div class="top_info_box mt-64">
-                        <div class="left_cont">
-                            <span class="total">총 <strong>45</strong>개</span>
-                        </div>
-                    </div>
-                    <div class="table_cont scroll-type tb_cursor">
-                        <table class="table-list">
-                            <colgroup>              
-                                <col style="width:70px;">
-                                <col style="width:250px">                                                         
-                                <col style="width:200px;">
-                                <col>       
-                                <col style="width:250px;">
-                                <col style="width:70px;">
-                            </colgroup>
-                            <thead>
-                                <tr>                
-                                    <th>번호</th>
-                                    <th>제목</th>
-                                    <th>내용</th>
-                                    <th>파일명</th>
-                                    <th>등록자 정보</th>
-                                    <th>날짜</th>
-                                </tr>
-                            </thead>
-                            <tbody>                                
-                                <tr>
-                                    <td colspan="6">
-                                        <div class="no-content-results">
-                                            <i></i>
-                                            <div class="msg">
-                                                등록된 파일이 없습니다. 파일을 등록하여 주세요.
-                                            </div>
-                                        </div>
-                                    </td>                                    
-                                </tr>
-                                <tr>
-                                    <td>
-                                        1
-                                    </td>
-                                    <td>
-                                        안전 및 활성화
-                                    </td>     
-                                    <td>
-                                        -
-                                    </td>          
-                                    <td>
-                                        수중레저활동의 안전 및 활성화 과제 이양계획서.hwpx (30k)
-                                    </td>    
-                                    <td>
-                                        행정안전부 자치분권지원과 주무관 홍길동
-                                    </td> 
-                                    <td>2024.08.14</td>                                                                                                                                                                          
-                                </tr>                                
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="button__wrap flex-end pc-flex mt-64">
-                        <a href="#" class="btn-gray-default">
-                            <i class="ico-list"></i> 목록
-                        </a>                          
-                    </div>                    
+                      <div class="left_cont">
+                          <span class="total">총 <strong>45</strong>개</span>
+                      </div>
+                  </div>
+                  <div class="table_cont scroll-type tb_cursor">
+                      <table class="table-list">
+                          <colgroup>              
+                              <col style="width:70px;">
+                              <col style="width:250px">                                                         
+                              <col style="width:200px;">
+                              <col>       
+                              <col style="width:250px;">
+                              <col style="width:70px;">
+                          </colgroup>
+                          <thead>
+                              <tr>                
+                                  <th>번호</th>
+                                  <th>제목</th>
+                                  <th>내용</th>
+                                  <th>파일명</th>
+                                  <th>등록자 정보</th>
+                                  <th>날짜</th>
+                              </tr>
+                          </thead>
+                          <tbody>                                
+                              <tr>
+                                  <td colspan="6">
+                                      <div class="no-content-results">
+                                          <i></i>
+                                          <div class="msg">
+                                              등록된 파일이 없습니다. 파일을 등록하여 주세요.
+                                          </div>
+                                      </div>
+                                  </td>                                    
+                              </tr>
+                              <tr>
+                                  <td>
+                                      1
+                                  </td>
+                                  <td>
+                                      안전 및 활성화
+                                  </td>     
+                                  <td>
+                                      -
+                                  </td>          
+                                  <td>
+                                      수중레저활동의 안전 및 활성화 과제 이양계획서.hwpx (30k)
+                                  </td>    
+                                  <td>
+                                      행정안전부 자치분권지원과 주무관 홍길동
+                                  </td> 
+                                  <td>2024.08.14</td>                                                                                                                                                                          
+                              </tr>                                
+                          </tbody>
+                      </table>
+                  </div>
+                  <div class="button__wrap flex-end pc-flex mt-64">
+                      <a href="#" class="btn-gray-default">
+                          <i class="ico-list"></i> 목록
+                      </a>                          
+                  </div>                                 
                     <!-- //tab1 -->
                 </div>
                 <div class="tab">
+                  <div class="flex-row justify-between mt-80">
+                    <div class="font-type24-700">비용평가 조사서 등록</div>
+                    <button type="button" class="btn-border-gray is-toggle-button">
+                        <i class="icon-remove-x"></i>
+                        파일첨부
+                    </button>                        
+                </div>
+                <div class="is-toggle-area">
+                  <div class="table_cont mt-16">
+                      <table class="table-body-only">
+                          <colgroup>                    
+                              <col width="160">
+                              <col>
+                          </colgroup>
+                          <tbody>
+                              <tr>    
+                                  <th scope="row">
+                                      제목 <span class="red-color">*</span>
+                                  </th>                    
+                                  <td>
+                                      <div class="form-element__wrap">                                  
+                                          <div class="input-multi">
+                                              <span class="form-element__inner input-type input_del">
+                                                  <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="제목을 입력하여 주세요."  title="제목을 입력하여 주세요.">
+                                                  <button class="del"></button>
+                                              </span>
+                                          </div>
+                                      </div> 
+                                  </td> 
+                              </tr>    
+                              <tr>    
+                                  <th scope="row">
+                                      내용
+                                  </th>                    
+                                  <td>
+                                      <div class="edit-cont">
+                                          <textarea name="" id="" value="" style="width: 100%;height:152px;" placeholder="내용을 입력해 주세요." title="내용을 입력해 주세요."></textarea>
+                                      </div>
+                                  </td> 
+                              </tr>   
+                              <tr>          
+                                  <th scope="row">
+                                      파일첨부 <span class="red-color">*</span>
+                                  </th>                                                   
+                                  <td>
+                                      <div class="info-text">참조 자료와 관련된 파일을 첨부하여 주세요.</div>
+                                      <div class="info-text color-important">
+                                          ※파일 용량 제한 : 100MB<br>
+                                          ※업로드 가능한 파일 : xls, xlsx, hwp, hwpx, pdf, jpeg, jpg, png
+                                      </div>
+                                      <ul class="file-list yiyang-file" style="max-width: 532px;">                                    
+                                          <li>
+                                                  <div class="input-wrap">
+                                                  <input type="file" name="" class="file" style="width: 363px;" />
+                                                  <div class="form-element__wrap">
+                                                      <div class="input-multi file-up">
+                                                      <span class="form-element__inner input-type" style="width: 252px; flex: none;">
+                                                          <input type="text" placeholder="파일을 선택해 주세요." title="파일첨부">
+                                                      </span>
+                                                      <button type="button" class="btn-border-gray">
+                                                          <i class="icon-file"></i>
+                                                          파일찾기
+                                                      </button>
+                                                      <button type="button" class="btn-dark-light btn-delete">
+                                                          <i class="ico-minus"></i>
+                                                          삭제
+                                                      </button>
+                                                      <button type="button" class="btn-dark-light btn-add">
+                                                          <i class="ico-plus"></i>
+                                                          추가
+                                                      </button>
+                                                      </div>
+                                                  </div>
+                                                  </div>                                
+                                          </li>
+                                      </ul>                  
+                                  </td>                        
+                              </tr>                                                                                                                                                                                                                                               
+                          </tbody>
+                      </table>
+                  </div>        
+                  <div class="button__wrap flex-end pc-flex mt-32">
+                      <button type="button" class="btn-gray-default">
+                          <i class="ico-remove"></i> 취소
+                      </button>
+                      <button type="button" class="btn-primary-default wd-108">
+                          <i></i> 등록
+                      </button>                              
+                  </div>  
+                </div>
+                  <div class="top_info_box mt-64">
+                    <div class="left_cont">
+                        <span class="total">총 <strong>45</strong>개</span>
+                    </div>
+                  </div>
+                <div class="table_cont scroll-type tb_cursor">
+                    <table class="table-list">
+                        <colgroup>              
+                            <col style="width:70px;">
+                            <col style="width:250px">                                                         
+                            <col style="width:200px;">
+                            <col>       
+                            <col style="width:250px;">
+                            <col style="width:70px;">
+                        </colgroup>
+                        <thead>
+                            <tr>                
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>내용</th>
+                                <th>파일명</th>
+                                <th>등록자 정보</th>
+                                <th>날짜</th>
+                            </tr>
+                        </thead>
+                        <tbody>                                
+                            <tr>
+                                <td colspan="6">
+                                    <div class="no-content-results">
+                                        <i></i>
+                                        <div class="msg">
+                                            등록된 파일이 없습니다. 파일을 등록하여 주세요.
+                                        </div>
+                                    </div>
+                                </td>                                    
+                            </tr>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    안전 및 활성화
+                                </td>     
+                                <td>
+                                    -
+                                </td>          
+                                <td>
+                                    수중레저활동의 안전 및 활성화 과제 이양계획서.hwpx (30k)
+                                </td>    
+                                <td>
+                                    행정안전부 자치분권지원과 주무관 홍길동
+                                </td> 
+                                <td>2024.08.14</td>                                                                                                                                                                          
+                            </tr>                                
+                        </tbody>
+                    </table>
+                </div>
+                <div class="button__wrap flex-end pc-flex mt-64">
+                    <a href="#" class="btn-gray-default">
+                        <i class="ico-list"></i> 목록
+                    </a>                          
+                </div>                   
 
+                </div>                   
+                <!-- //tab1 -->
                 </div>
                 <div class="tab">
                     <!-- tab3 -->
@@ -536,7 +692,23 @@
                 </div>                                                 
             </div>
         </div>
+        <!-- 파일 첨부 토글 -->
+        <script>
+            const togglebuttons = document.querySelectorAll('.is-toggle-button');
 
+            togglebuttons.forEach(button => {
+              button.addEventListener('click', () => {
+                const toggleContent = button.parentElement.nextElementSibling;
+                toggleContent.classList.toggle('is-active');
+                
+                if (button.innerHTML.includes("취소")) {
+                  button.innerHTML = `<i class="icon-remove-x"></i> 파일첨부`;
+                } else {
+                  button.innerHTML = `<i class="icon-remove-x"></i> 파일첨부 취소`;
+                }
+              });
+            });
+        </script>
 
 
           <!-- //PC -->

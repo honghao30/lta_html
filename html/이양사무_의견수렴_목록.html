@@ -392,33 +392,34 @@
                   </colgroup>
                   <tbody>
                     <tr>
-                        <th scope="row">이양단계</th>
-                        <td class="text-l">                            
-                            <label class="input_type check check-item">
-                                <input type="checkbox" name="">
-                                <span class="txt">의견등록 중</span>
-                            </label>
-                            <label class="input_type check check-item">
+                    <th scope="row">의견제출기관</th>
+                    <td colspan="3" class="text-l"> 
+                        <label class="input_type check check-item">
+                          <input type="checkbox" name="">
+                          <span class="txt">중앙부처</span>
+                        </label>
+                        <label class="input_type check check-item">
+                        <input type="checkbox" name="">
+                            <span class="txt">광역자치단체</span>
+                        </label>
+                        <label class="input_type check check-item">
                             <input type="checkbox" name="">
-                                <span class="txt">의견 수렴 완료</span>
-                            </label>                           
-                        </td>                      
-                        <th scope="row">행정기관</th>
-                        <td class="text-l">                            
-                            <label class="input_type check check-item">
-                                <input type="checkbox" name="q12">
-                                <span class="txt">중앙부처</span>
-                            </label>
-                            <label class="input_type check check-item">
-                            <input type="checkbox" name="q22">
-                                <span class="txt">광역자치단체</span>
-                            </label>
-                            <label class="input_type check check-item">
-                                <input type="checkbox" name="q23">
-                                <span class="txt">기초자치단체</span>
-                            </label>                            
-                        </td>
-                    </tr>   
+                            <span class="txt">기초자치단체</span>
+                        </label> 
+                        <label class="input_type check check-item">
+                            <input type="checkbox" name="">
+                            <span class="txt">지방시대위원회</span>
+                        </label>
+                        <label class="input_type check check-item">
+                            <input type="checkbox" name="">
+                            <span class="txt">시도지사협의회</span>
+                        </label>   
+                        <label class="input_type check check-item">
+                          <input type="checkbox" name="">
+                          <span class="txt">시군구청장협의회</span>
+                        </label>                                                                   
+                    </td>
+                    </tr> 
                     <tr>
                         <th scope="row">이양방향</th>
                         <td colspan="3" class="text-l">   
@@ -459,24 +460,37 @@
                     </tr>                     
                     <tr>
                         <th scope="row">기간 선택</th>
-                        <td colspan="3" class="text-l">   
-                            <div class="form-element-rows">
-                                <div class="form-element__wrap" style="width: 168px;">                                  
+                        <td colspan="3" class="text-l">
+                          <div class="flex-row">
+                            <div class="radio-box">
+                                <label id="r0a3">
+                                    <input type="radio" name="type0a20" value="type0a20" checked id="ra03">
+                                    <span>의견등록시작일</span>
+                                </label>
+                                <label id="rb04">
+                                    <input type="radio" name="type0a21" value="type0a21" id="rb04">
+                                    <span>의견등록종료일</span>
+                                </label>
+                            </div>  
+                            <div class="dv-bar"> </div>                         
+                              <div class="form-element-rows">
+                                  <div class="form-element__wrap" style="width: 168px;">                                  
+                                      <div class="input-multi">
+                                        <span class="form-element__inner input-type picker-input">
+                                            <input type="text" value="" class="input-type1-font14" placeholder="" id="datepicker_start" title="">
+                                        </span>
+                                      </div>
+                                  </div>           
+                                  <div class="dash">~</div>                                       
+                                  <div class="form-element__wrap"  style="width: 168px;">                                  
                                     <div class="input-multi">
                                       <span class="form-element__inner input-type picker-input">
-                                          <input type="text" value="" class="input-type1-font14" placeholder="" id="datepicker_start" title="">
+                                          <input type="text" value="" class="input-type1-font14"  placeholder=""  id="datepicker_end"  title="">
                                       </span>
                                     </div>
-                                </div>           
-                                <div class="dash">~</div>                                       
-                                <div class="form-element__wrap"  style="width: 168px;">                                  
-                                  <div class="input-multi">
-                                    <span class="form-element__inner input-type picker-input">
-                                        <input type="text" value="" class="input-type1-font14"  placeholder=""  id="datepicker_end"  title="">
-                                    </span>
-                                  </div>
-                                </div>                              
-                            </div>                                                                          
+                                  </div>                              
+                              </div>  
+                            </div>                                                                           
                         </td>
                     </tr>                                        
                     <tr>
@@ -501,20 +515,11 @@
                             근거법령<br>
                             (법령+조문)</th>
                         <td>
-                            <!-- select_box -->
-                            <div class="select_box" style="width: 100%;">
-                                <span class="select">선택하세요</span>
-                                <div class="option">
-                                <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                    <ul>
-                                    <li>선택함1</li>
-                                    <li>선택함2</li>
-                                    <li>선택함3</li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-                            <!-- select_box -->                          
+                          <div class="form-element__wrap">                                
+                            <span class="form-element__inner input-type">
+                            <input type="text" class="input-type1-font14" placeholder="검색어를 입력해 주세요." title="검색어를 입력해 주세요">
+                            </span>
+                        </div>                          
                         </td>                      
                     </tr>  
 
@@ -528,7 +533,16 @@
                             </div>                           
                         </td>
                     </tr>                    
-
+                    <tr>
+                      <th scope="row">사무명</th>
+                      <td colspan="3">
+                          <div class="form-element__wrap">                                
+                              <span class="form-element__inner input-type">
+                              <input type="text" class="input-type1-font14" placeholder="사무명을 입력해 주세요." title="사무명을 입력해 주세요">
+                              </span>
+                          </div>                           
+                      </td>
+                  </tr>   
                   </tbody>
               </table>
           </div>          
@@ -549,16 +563,20 @@
             <div class="left_cont flex-row">
               <span class="total">총 <strong>11,994</strong>건 <strong>201-220</strong> 중</span>
               <span class="dv-bar"></span>
-              <span class="ml-10">
-                    <label class="input_type check check-item">
-                        <input type="checkbox" checked name="q01">
-                        <span class="txt">의견등록 중</span>
-                    </label>                  
-                    <label class="input_type check check-item">
-                        <input type="checkbox" checked name="q01">
-                        <span class="txt">의견 수렴 완료</span>
-                    </label>                                      
-                </span>  
+              <span class="radio-box">
+                  <label id="ra08">
+                    <input type="radio" name="type0a30" value="type0a40" checked id="ra08">
+                    <span>전체</span>
+                  </label>
+                  <label id="ra09" class="ml-0">
+                      <input type="radio" name="type0a30" value="type0a40" id="ra09">
+                      <span>의견등록 중</span>
+                  </label>
+                  <label id="ra10" class="ml-0">
+                      <input type="radio" name="type0a32" value="type0a41" id="ra10">
+                      <span>의견 수렴 완료</span>
+                  </label>
+              </span>  
             </div>
             <div class="right_cont">
                 <a href="#none" class="btn ico_listen"><span>선택 의견수렴 종료</span></a>                

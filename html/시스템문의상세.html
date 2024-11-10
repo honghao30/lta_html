@@ -224,22 +224,22 @@
     </div>
 
     <!-- container -->
-    <div class="container">
+    <div class="container" id="content">
       <!-- 검색영역 -->
       <div class="sc bg_top">
         <div class="inner">
           <div class="location">
             <ul>
               <li><a href="#none">홈</a></li>
-              <li><a href="#none">이양사무</a></li>
+              <li><a href="#none">시스템문의</a></li>
+              <li><a href="#none">문의등록</a></li>
             </ul>
           </div>
           <div class="pc">
             <a href="#none" class="btn ico_print"><span>프린트</span></a>
           </div>
-
            <div class="flex-row justify-between">                
-                <h2 class="title">이양상황관리</h2>                                        
+                <h2 class="title">시스템문의 상세</h2>                                        
            </div>
           
         </div>
@@ -247,86 +247,218 @@
 
       <div class="content_wrap">
         <div class="inner">
-          <!-- PC -->
-
-          <div class="tabs yiyang-tabs mt-32">
-            <ul class="tab-menu">
-                <li class="active"><a href="#">이양계획서</a></li>
-                <li><a href="#">비용평가조사서</a></li>
-                <li><a href="#">법령개정(제도개선) 현황</a></li>            
-            </ul>
-            
-            <div class="tab-content">
-                <div class="tab active">
-                    <!-- tab1 -->
-                    <div class="flex-row justify-between mt-80">
-                        <div class="font-type24-700">이양계획서</div>
-                        <button type="button" class="btn-border-gray">
-                            <i class="icon-file"></i>
-                            파일첨부
-                        </button>                        
-                    </div>
-                    <div class="top_info_box mt-16">
-                        <div class="left_cont">
-                            <span class="total">총 <strong>45</strong>개</span>
+          <!-- pc -->
+          <div class="pc">
+            <div class="table_cont">
+              <table class="table-body-only">
+                <colgroup>                    
+                  <col width="160">
+                  <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">작성자</th>
+                        <td>
+                            홍길동
+                        </td>                  
+                    </tr>         
+                    <tr>
+                        <th scope="row">작성일</th>
+                        <td>
+                            yyyy-mm-dd
+                        </td>                  
+                    </tr>                                      
+                    <tr>
+                        <th scope="row">대상선택</th>
+                        <td>
+                            <select name="" id="" class="selectbox" style="width: 150px;">
+                                <option value="선택함1">전체</option>
+                                <option value="선택함2">선택함2</option>
+                                <option value="선택함3">선택함3</option>
+                            </select>                        
+                            <!-- //콤보박스 -->                          
+                        </td>                  
+                    </tr>    
+                    <tr>
+                        <th scope="row">공개여부</th>
+                        <td>
+                            <div class="radio-box mt-16">
+                                <label id="r0a3">
+                                    <input type="radio" name="type8" value="type0a20" checked id="ra03">
+                                    <span>공개</span>
+                                </label>
+                                <label id="rb04">
+                                    <input type="radio" name="type8" value="type0a21" id="rb04">
+                                    <span>비공개</span>
+                                </label>
+                            </div>                          
+                        </td>                  
+                    </tr>                                      
+                  <tr>    
+                    <th scope="row">제목 <span class="red-color">*</span></th>
+                    <td>
+                      <div class="form-element__wrap">                                  
+                        <div class="input-multi">
+                          <span class="form-element__inner input-type">
+                              <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="제목을 입력하세요" title="제목을 입력하세요">
+                          </span>
+                          <span class="input-text-count">
+                              <strong class="current">0</strong> / <strong>50자</strong>
+                          </span>
                         </div>
                     </div>
-                    <div class="table_cont scroll-type tb_cursor">
-                        <table class="table-list">
-                            <colgroup>              
-                                <col style="width:48px;">
-                                <col style="width: 254px">
-                                <col>                                
-                                <col style="width:254px;">
-                                <col style="width:254px;">
-                                <col style="width:70px;">
-                            </colgroup>
-                            <thead>
-                                <tr>                
-                                    <th>번호</th>
-                                    <th>제목</th>
-                                    <th>내용</th>
-                                    <th>파일명</th>
-                                    <th>등록자 정보</th>
-                                    <th>날짜</th>
-                                </tr>
-                            </thead>
-                            <tbody>                                
-                                <tr>
-                                    <td colspan="6">
-                                        <div class="no-content-results">
-                                            <i></i>
-                                            <div class="msg">
-                                                등록된 파일이 없습니다. 파일을 등록하여 주세요.
-                                            </div>
-                                        </div>
-                                    </td>                                    
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="button__wrap flex-end pc-flex mt-64">
-                        <a href="#" class="btn-gray-default">
-                            <i class="ico-list"></i> 목록
-                        </a>                          
-                    </div>                    
-                    <!-- //tab1 -->
-                </div>
-                <div class="tab">
-
-                </div>
-                <div class="tab">
-
-                </div>       
-                <div class="tab">
-
-                </div>                                             
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">상세내용</th>
+                    <td>
+                      <div class="edit-wrap mt0">
+                        에디터 영역
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="height:82px;">
+                      <div class="view_check">
+                        <label class="input_type check">
+                          <input type="checkbox" name="q01" checked>
+                          <span class="txt">이메일로 답변 받기</span>
+                        </label>
+                        <div class="view view on" style="width:400px;">
+                          <span class="input_cont">
+                            <input type="text" placeholder="이메일을 입력해 주세요.">
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">답변일</th>
+                    <td>
+                        yyyy-mm-dd
+                    </td>                  
+                </tr>    
+                  <tr>
+                    <th scope="row">답변내용</th>
+                    <td>
+                      <div class="edit-wrap mt0" style="min-height: 200px;height: fit-content;">
+                        에디터 영역
+                      </div>
+                    </td>
+                  </tr>                  
+                </tbody>
+              </table>
             </div>
+          </div>
+          <!-- mo -->
+          <div class="mo">
+            <div class="table_cont bg_none">
+              <table class="table-body-only">
+                <colgroup>                    
+                  <col width="60">
+                  <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">작성자</th>
+                        <td>
+                            홍길동
+                        </td>                  
+                    </tr>         
+                    <tr>
+                        <th scope="row">작성일</th>
+                        <td>
+                            yyyy-mm-dd
+                        </td>                  
+                    </tr>                                      
+                    <tr>
+                        <th scope="row">대상<br>선택</th>
+                        <td>
+                            <select name="" id="" class="selectbox" style="width: 150px;">
+                                <option value="선택함1">전체</option>
+                                <option value="선택함2">선택함2</option>
+                                <option value="선택함3">선택함3</option>
+                            </select>                        
+                            <!-- //콤보박스 -->                          
+                        </td>                  
+                    </tr>    
+                    <tr>
+                        <th scope="row">공개<br>여부</th>
+                        <td>
+                            <div class="radio-box mt-16">
+                                <label id="r0a3">
+                                    <input type="radio" name="type8" value="type0a20" checked id="ra03">
+                                    <span>공개</span>
+                                </label>
+                                <label id="rb04">
+                                    <input type="radio" name="type8" value="type0a21" id="rb04">
+                                    <span>비공개</span>
+                                </label>
+                            </div>                          
+                        </td>                  
+                    </tr>                     
+                  <tr>
+                    <th scope="row">제목 <span class="red-color">*</span></th>
+                    <td>
+                      <div class="form-element__wrap">     
+                        <div class="input-multi has-text-count">
+                          <span class="form-element__inner input-type">
+                            <input type="text" class="input-type1-font14" placeholder="제목을 입력해주세요." title="제목">
+                          </span>
+                          <span class="input-text-count">
+                            <span class="current">0</span> / <span>50자</span>
+                          </span>
+                        </div>
+                      </div>
+                    </td>    
+                  </tr>
+                  <tr> 
+                    <td scope="row" colspan="2" class="full-width">
+                      상세내용
+                      <div class="edit-wrap" style="min-height: 100px;height: fit-content;">
+                        에디터 영역
+                      </div>
+                    </td> 
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="height:82px;">
+                      <div class="view_check">
+                        <label class="input_type check">
+                          <input type="checkbox" name="q01">
+                          <span class="txt">이메일로 답변 받기</span>
+                        </label>
+                        <div class="view on mt10" style="width:100%;">
+                          <span class="input_cont">
+                            <input type="text" placeholder="이메일을 입력해 주세요.">
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">답변일</th>
+                    <td>
+                        yyyy-mm-dd
+                    </td>                  
+                </tr>    
+                  <tr>
+                    <th scope="row">답변내용</th>
+                    <td>
+                      <div class="edit-wrap mt0" style="min-height: 200px;height: fit-content;">
+                        에디터 영역
+                      </div>
+                    </td>
+                  </tr> 
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="button__wrap flex-end mt-64 pc">
+            <a href="#" class="btn-gray-default">
+              <i class="ico-list"></i> 목록
+            </a>
+          </div>
         </div>
-
-
-
-          <!-- //PC -->
       </div>
     </div>
 
@@ -452,11 +584,10 @@
     </div>
 
     <div class="footer mo foot_btn_wrap">
-      <div class="foot_btn_area">        
-        <a href="#none" class="btn btn_approval"><span>등록</span></a>
-        <a href="#none" class="btn btn_list"><span>목록</span></a>
+        <div class="foot_btn_area">
+          <a href="#none" class="btn btn_list"><span>목록</span></a>
+        </div>
       </div>
-    </div>
   </div>
 </body>
 

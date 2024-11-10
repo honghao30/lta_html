@@ -300,6 +300,11 @@
                     </div>
                 </div>
                 <!-- 승인자정보 -->
+                <div class="button__wrap justify-end mt-16">
+                    <button type="button" class="btn-dark-light">                                        
+                        정보보기
+                    </button>                                 
+                </div>      
                 <div class="table_cont mt-16">
                     <table class="table-body-only">
                         <colgroup>                    
@@ -456,13 +461,22 @@
                                     <thead>
                                         <tr>
                                             <th class="total-count">
-                                                의견수렴 현황
-                                                <div class="dv-bar ml-15"></div>                                    
-                                                <span class="total ml-15">총 <em>9</em> 건</span>
-                                                <div class="dv-bar ml-10"></div>  
-                                                <span class="total ml-10">수용 / 동의 <em>9</em> 건</span>
-                                                <div class="dv-bar ml-10"></div>  
-                                                <span class="total ml-10">수용곤란 / 부동의 <em>9</em> 건</span>
+                                                <div class="flex-row justify-between">
+                                                    <div>
+                                                        의견수렴 현황
+                                                        <div class="dv-bar ml-15"></div>                                    
+                                                        <span class="total ml-15">총 <em>9</em> 건</span>
+                                                        <div class="dv-bar ml-10"></div>  
+                                                        <span class="total ml-10">수용 / 동의 <em>9</em> 건</span>
+                                                        <div class="dv-bar ml-10"></div>  
+                                                        <span class="total ml-10">수용곤란 / 부동의 <em>9</em> 건</span>
+                                                    </div>
+                                                    <div class="mr-16">
+                                                        <button type="button" class="btn-dark-light" onclick="window.open('이양사무_의견수렴_의견등록목록_팝업.html', '_blank', 'width=600,height=500')">                                        
+                                                            펼쳐보기
+                                                        </button>  
+                                                    </div>
+                                                </div>
                                             </th>
                                         </tr>
                                     </thead>
@@ -1306,8 +1320,7 @@
             </div>
             <div class="right_cont">            
                 <a href="#none" class="btn ico_pencll-notice"><span>수정</span></a>
-                <a href="#none" class="btn ico_new_window"><span>페이지 따로보기</span></a>          
-                <a href="#none" class="btn-text-only-toggle"><span>펼쳐보기</span></a>       
+                <a href="#none" class="btn ico_new_window"><span>페이지 따로보기</span></a>                              
             </div>
           </div>    
           <div class="yiyang-cont-box">
@@ -1391,44 +1404,106 @@
                                 소관부처
                             </th>                    
                             <td colspan="5">
-                                <div class="form-element__wrap" style="width: 375px;">                                  
-                                    <div class="input-multi">
-                                    <span class="form-element__inner input-type">
-                                        <input type="text" value="소관부처" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요."  title="내용을 입력하세요."  disabled>
-                                    </span>
+                              <ul class="form-el-list-wrap dynamic_add-list7">
+                                <li class="input-wrap flex-row">
+                                      <select name="" id="" style="width: 408px;" title="선택하세요">
+                                          <option value="선택함1">선택함1</option>
+                                          <option value="선택함2">선택함2</option>
+                                          <option value="선택함3">선택함3</option>
+                                      </select>
+                                      <div class="yiyang-info">
+                                          <span class="total">사무</span>
+                                          <span class="dv-bar ml-5"></span>  
+                                          <span class="total ml-5">1,2,6</span>                                             
+                                      </div>
+                                      <button type="button" class="btn-dark-light btn-delete">
+                                          <i class="ico-minus"></i> 삭제
+                                      </button>                                                  
+                                      <button type="button" class="btn-dark-light btn-add">
+                                          <i class="ico-plus"></i> 추가
+                                      </button>
+                                  </li>
+                                  <li class="input-wrap flex-row">
+                                      <!-- 콤보박스 -->
+                                      <select name="" id="" style="width: 408px;">
+                                        <option value="선택함1">선택함1</option>
+                                        <option value="선택함2">선택함2</option>
+                                        <option value="선택함3">선택함3</option>
+                                      </select>                                
+                                      <div class="yiyang-info">
+                                        <span class="total">사무</span>
+                                        <span class="dv-bar ml-5"></span>  
+                                        <span class="total ml-5">1,2,6</span>                                             
                                     </div>
-                                </div>  
+                                  </li>
+                              </ul>
                             </td>                                                 
                         </tr>       
                         <tr>    
                             <th scope="row">
                                 이양방향
                             </th>                    
-                            <td colspan="3">
-                                <div class="form-element__wrap" >                                  
-                                    <div class="input-multi">
-                                        <span class="form-element__inner input-type" style="width: 188px;">
-                                            <input type="text" value="소관부처" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요."  title="내용을 입력하세요."  disabled>
-                                        </span>
+                            <td colspan="5">
+                              <ul class="form-el-list-wrap dynamic_add-list2">
+                                  <li class="input-wrap flex-row">
+                                        <select name="" id="" style="width: 188px;" title="선택하세요">
+                                            <option value="선택함1">선택함1</option>
+                                            <option value="선택함2">선택함2</option>
+                                            <option value="선택함3">선택함3</option>
+                                        </select>
                                         →
-                                        <span class="form-element__inner input-type" style="width: 188px;">
-                                            <input type="text" value="소관부처" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요."  title="내용을 입력하세요."  disabled>
-                                        </span>                                        
-                                    </div>
-                                </div>   
-                                <div class="form-element__wrap mt-8" >                                  
-                                    <div class="input-multi">
-                                        <span class="form-element__inner input-type" style="width: 188px;">
-                                            <input type="text" value="소관부처" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요."  title="내용을 입력하세요."  disabled>
-                                        </span>
-                                        →
-                                        <span class="form-element__inner input-type" style="width: 188px;">
-                                            <input type="text" value="소관부처" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요."  title="내용을 입력하세요."  disabled>
-                                        </span>                                        
-                                    </div>
-                                </div>                              
+                                        <select name="" id="" style="width: 188px;">
+                                            <option value="선택함1">선택함1</option>
+                                            <option value="선택함2">선택함2</option>
+                                            <option value="선택함3">선택함3</option>
+                                        </select>
+                                        <div class="bar">&nbsp;</div>
+                                        <label class="input_type check mr-0">
+                                            <input type="checkbox" name="q01">
+                                            <span class="txt"></span>
+                                        </label>
+                                        <div class="view on" style="width:280px;">
+                                            <span class="input_cont">
+                                            <input type="text" style="padding-left: 10px;" placeholder="내용 추가 (30자 이내)">
+                                            </span>
+                                        </div>               
+                                        <button type="button" class="btn-dark-light btn-delete">
+                                            <i class="ico-minus"></i> 삭제
+                                        </button>      
+                                        <button type="button" class="btn-dark-light btn-add">
+                                            <i class="ico-plus"></i> 추가
+                                        </button>                                                                              
+                                    </li>
+                                    <li class="input-wrap flex-row">
+                                      <!-- 콤보박스 -->
+                                      <select name="" id="" style="width: 188px;">
+                                        <option value="선택함1">선택함1</option>
+                                        <option value="선택함2">선택함2</option>
+                                        <option value="선택함3">선택함3</option>
+                                      </select>
+                                      →
+                                      <!-- //콤보박스 -->      
+                                      <!-- 콤보박스 -->
+                                      <select name="" id="" style="width: 188px;">
+                                        <option value="선택함1">선택함1</option>
+                                        <option value="선택함2">선택함2</option>
+                                        <option value="선택함3">선택함3</option>
+                                      </select>
+                                      <!-- //콤보박스 -->         
+                                      <div class="bar">&nbsp;</div>
+                                      <label class="input_type check mr-0">
+                                          <input type="checkbox" name="q01" checked>
+                                          <span class="txt"></span>
+                                      </label>
+                                      <div class="view on" style="width:280px;">
+                                          <span class="input_cont">
+                                          <input type="text" style="padding-left: 10px;" placeholder="내용 추가 (30자 이내)">
+                                          </span>
+                                      </div>                                                                                                     
+                                  </li>                                   
+                                </ul>
                             </td>                                                 
-                        </tr>                                                                                                                                                                                                             
+                        </tr>                                                                                                                                                                                                               
                     </tbody>
                 </table>
             </div>
@@ -1441,7 +1516,7 @@
                         <tr>
                             <th>
                             근거법령 <span class="dv-bar"></span>
-                            총 <span class="total"><strong>36</strong>건</span>
+                            <span class="total">총 <strong>36</strong>건</span>
                             </th>
                         </tr>
                     </thead>
@@ -1450,78 +1525,25 @@
                             <td class="inner-table">
                                 <div class="inner-table-cont mt-16">
                                 <table>
-                                    <colgroup>                                      
-                                        <col width="5%">
-                                        <col width="9%">
-                                        <col width="9%">
-                                        <col>
-                                        
-                                        <col width="3%">
-                                        <col width="9%">
-                                        <col width="3%">
-                                        <col width="9%">        
-                                        <col width="3%">
-                                        <col width="9%">                                                                                                                                                                                                                            
-                                        <col width="5%">
-                                        <col width="5%">
+                                    <colgroup> 
+                                        <col>                                        
+                                        <col width="15%">
                                     </colgroup>
                                     <tbody>
                                         <tr>
-                                            <td class="tit" rowspan="2">번호</td>
-                                            <td class="tit" rowspan="2">소관부처</td>
-                                            <td class="tit" rowspan="2">법 분야</td>
-                                            <td class="tit" rowspan="2">법령명</td>                                        
-                                            <td colspan="8">법령분류</td>
+                                            <td class="tit">법령</td>
+                                            <td></td>
                                         </tr>
-                                        <tr>
-                                            <td colspan="2">장</td>
-                                            <td colspan="2">절</td>
-                                            <td colspan="2">조</td>
-                                            <td>항</td>                                      
-                                            <td>호</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
+                                        <tr>       
+                                            <td class="text-l">
+                                                <strong>수중레저활동의 안전 및 활성화 등에 관한 법률</strong>
+                                                <p class="mt-16">
+                                                    제3장 조시재생전략계획 등 제20조(도시재생 활성화 계획의 확정 및 승인 등)<br>
+⑤ 제1항부터 제4항까지의 규정에도 불구하고<br> 대통령령으로 정하는 경미한 사항을 변경하는 경우에는 관계 행정기관 장과의 협의, 지방위원회 심의, 공청회, 지방의회의 의견청취 절차 및 특별위원회의 심의를 거치지 아니할 수 있다. <신설 2019. 8. 27.>
+                                                </p>
+                                            </td>                                                                                                                                                    
                                             <td>해양수산부</td>
-                                            <td>(법분야 정보 노출)</td>         
-                                            <td>수중레저활동의 안전 및 활성화 등에 관한 법률</td>
-                                            <td>4</td>
-                                            <td>수중레저사업</td>
-                                            <td>-</td> 
-                                            <td>-</td>
-                                            <td>10</td>
-                                            <td>수중레저사업의
-                                            등록 기준 등</td>
-                                            <td>1</td>                                                                                                                                                      
-                                            <td>-</td>
                                         </tr>   
-                                        <tr>
-                                            <td colspan="2">조문상세</td>                                        
-                                            <td colspan="10" class="text-l">
-                                                ① 해양수산부장관은 안전관리규정에 따라 수중레저사업장 내 수중레저기구, 수중레저장비 및 수중레저시설물 등(이하 “수중레저기구등”이라 한다)에 대한 안전점검을 실시하여야 한다.
-                                            </td>
-                                        </tr>                                      
-                                        <tr>
-                                            <td>2</td>
-                                            <td>해양수산부</td>
-                                            <td>(법분야 정보 노출)</td>         
-                                            <td>수중레저활동의 안전 및 활성화 등에 관한 법률</td>
-                                            <td>4</td>
-                                            <td>수중레저사업</td>
-                                            <td>-</td> 
-                                            <td>-</td>
-                                            <td>10</td>
-                                            <td>수중레저사업의
-                                            등록 기준 등</td>
-                                            <td>1</td>                                                                                                                                                      
-                                            <td>-</td>
-                                        </tr>    
-                                        <tr>
-                                            <td colspan="2">조문상세</td>                                        
-                                            <td colspan="10" class="text-l">
-                                                ① 해양수산부장관은 안전관리규정에 따라 수중레저사업장 내 수중레저기구, 수중레저장비 및 수중레저시설물 등(이하 “수중레저기구등”이라 한다)에 대한 안전점검을 실시하여야 한다.
-                                            </td>
-                                        </tr>                                                                                                          
                                     </tbody>
                                 </table>
                                 </div>                            
@@ -1530,15 +1552,78 @@
                     </tbody>
                 </table>
             </div>
+            <div class="table_cont mt-32">
+                <table class="table-body-only">
+                    <colgroup>                    
+                        <col width="" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>
+                                근거 법령 개정안 <span class="red-color">*</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>                        
+                            <td class="inner-table">
+                                <div class="info-text">현행 법조문은 근거법령이 추가되면 자동으로 반영됩니다.</div>
+                                <div class="inner-table-cont mt-16">
+                                    <table>
+                                            <colgroup>
+                                                <col width="50%">
+                                                <col width="50%">
+                                            </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td class="tit">현행</td>
+                                                <td class="tit">개정안</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">문화유산의 보존 및 활용에 관한 법률 4장 국가지정문화유산 3절 보존·관리 및 활용 3조 허가사항</td>                                          
+                                            </tr>
+                                            <tr>
+                                                <td class="text-l">
+                                                    ① 국가지정문화유산에 대하여 다음 각 호의 어느 하나에 해당하는 행위를 하려는 자는 대통령령으로 정하는 바에 따라 국가유산청장의 허가를 받아야 하며, 허가사항을 변경하려는 경우에도 국가유산청장의 허가를 받아야 한다. 다만, 국가지정문화유산 보호구역에 안내판 및 경고판을 설치하는 행위 등 대통령령으로 정하는 경미한 행위에 대해서는 특별자치시장, 특별자치도지사, 시장ㆍ군수 또는 구청장의 허가(변경허가를 포함한다)를 받아야 한다. <개정 2014. 1. 28., 2015. 3. 27., 2017. 11. 28., 2019. 11. 26., 2020. 12. 22., 2021. 5. 18., 2023. 3. 21., 2023. 8. 8., 2024. 2. 13.>                                          
+                                                </td>
+                                                <td class="text-l">
+                                                    ① 국가지정문화유산에 대하여 다음 각 호의 어느 하나에 해당하는 행위를 하려는 자는 대통령령으로 정하는 바에 따라 국가유산청장의 허가를 받아야 하며, 허가사항을 변경하려는 경우에도 국가유산청장의 허가를 받아야 한다. 다만, 국가지정문화유산 보호구역에 안내판 및 경고판을 설치하는 행위 등 대통령령으로 정하는 경미한 행위에 대해서는 특별자치시장, 특별자치도지사, 시장ㆍ군수 또는 구청장의 허가(변경허가를 포함한다)를 받아야 한다. <개정 2014. 1. 28., 2015. 3. 27., 2017. 11. 28., 2019. 11. 26., 2020. 12. 22., 2021. 5. 18., 2023. 3. 21., 2023. 8. 8., 2024. 2. 13.>                                          
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>                        
+                        </tr>                                                                                                                                                                                
+                    </tbody>
+                </table>
+              </div>            
           </div>     
        
-          <script>
-            const toggleLawButton = document.querySelector('.btn-text-only-toggle');
+          <div class="button__wrap mt-16">
+            <button type="button" class="btn-full-width"><span>펼치기</span></button>
+         </div>
 
-            toggleLawButton && toggleLawButton.addEventListener('click', function() {
-                toggleLawButton.classList.toggle('is-active');
+
+
+          <script>
+            // const toggleLawButton = document.querySelector('.btn-toggle');            
+
+            // toggleLawButton && toggleLawButton.addEventListener('click', function() {
+            //     toggleLawButton.classList.toggle('is-active');
+            //     document.querySelector('.yiyang-cont-box').classList.toggle('is-active');
+            // });
+
+            const toggleLawButton2 = document.querySelector('.btn-full-width');
+            toggleLawButton2 && toggleLawButton2.addEventListener('click', function() {
+                toggleLawButton2.classList.toggle('is-active');
+
+                // 텍스트 변경 부분 수정
+                toggleLawButton2.querySelector('span').innerText = 
+                    toggleLawButton2.querySelector('span').innerText === '펼치기' ? '접기' : '펼치기';
+
                 document.querySelector('.yiyang-cont-box').classList.toggle('is-active');
-            });
+            });          
           </script>
 
           <!-- //PC -->
