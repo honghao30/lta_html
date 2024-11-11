@@ -577,6 +577,7 @@ p.skip{margin-bottom:30px;}
 
 .table_cont .table-body-only {
     border-top: 1px solid #222;
+    table-layout: fixed;
 }
 .table_cont table.table-list thead tr th,
 .table_cont table.table-list tbody tr td {
@@ -617,6 +618,7 @@ p.skip{margin-bottom:30px;}
     padding-left: 12px;
     cursor: default;
     border-bottom: 1px solid #D8DDE9;
+    overflow:auto;
 }
 .table_cont .table-body-only tbody td .txt{
     color: #222;

@@ -444,7 +444,7 @@ body{min-width:1100px}
 
 /* table */
 .table_cont{overflow-x:auto;}
-.table_cont.form-table{overflow-x:initial;}
+/* .table_cont.form-table{overflow-x:initial;} */
 .table_fixed{table-layout:fixed}
 .table_ver{margin:10px 0 0; border-top:1px solid #ccc}
 .table_ver thead th{text-align:center; padding:15px 0;color:#000; background:#f7f7f7;  border-bottom:solid 1px #e8e8e8; font-weight:400;}
@@ -726,8 +726,8 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     .layer_gnb .link_cont span:after{content:'';position:absolute;top:50%;right:0;margin-top:-15px;width:24px;height:24px;background: url(../img/mo/ico/ico_propose_arrow.png) no-repeat left center;background-size:24px auto;}
     .layer_gnb .ico_propose span{background: url(../img/mo/ico/ico_propose.png) no-repeat left center;background-size:64px auto;line-height:64px;height:64px;}
 
-    .wrap{overflow:hidden;min-width:1200px;}
-    .inner{max-width:1200px;min-width:1200px;margin:0 auto;}
+    .wrap{overflow:hidden;min-width:1240px;}
+    .inner{max-width:1240px;min-width:1240px;margin:0 auto;padding:0 20px;}
     .pc{display:block;}
     .mo{display:none !important;}
     .header_cont{height:100px;display: flex;align-items: center;flex-direction: row;position:relative;}
@@ -826,7 +826,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     .top_info_box .top_select_box{padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid #D8DDE9;}
 
     .inner{position:relative;}
-    .inner .ico_print{position:absolute;top:32px;right:0;}
+    .inner .ico_print{position:absolute;top:32px;right:20px;}
 
     .content_wrap{padding:80px 0;}
 
@@ -1890,6 +1890,10 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         /* 초기화 버튼 */
         .btn_reset_area{border-top:1px solid #D8DDE9;margin-top:16px;padding-top:16px;text-align:right;}
         .btn_reset span{padding-left:25px;background:url(../img/mo/ico/ico_reset.png) no-repeat 0 center;}       
+
+        .file-list li .file {
+          width:auto !important;
+        }
       }
 
 
