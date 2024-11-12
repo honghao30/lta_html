@@ -144,18 +144,16 @@
       <div class="content_wrap">
         <div class="inner">
           <!-- PC -->
-          <div class="table_cont form-table pc">
+          <div class="table_cont form-table">
             <table class="table-body-only table-fixed">
               <colgroup>
-                <col style="width:160px;">
-                <col>
                 <col style="width:160px;">
                 <col>
               </colgroup>
               <tbody>
                 <tr>
                     <th scope="row">제목</th>
-                    <td colspan="3">
+                    <td>
                       <div class="form-element__wrap">                                  
                           <div class="input-multi">
                             <span class="form-element__inner input-type">
@@ -170,7 +168,7 @@
                 </tr>
                 <tr>
                     <th scope="row">상세내용</th>
-                    <td colspan="3">
+                    <td>
                       <div class="form-element__wrap mt-16">                                
                           <span class="form-element__inner text-area">
                             <textarea class="input-type1-font14" placeholder="내용을 입력해주세요" title="게시판 소개"></textarea>
@@ -180,7 +178,7 @@
                 </tr>
                 <tr>
                     <th scope="row">첨부파일</th>
-                    <td colspan="3">
+                    <td>
                         <ul class="file-list">
                             <li>
                               <input type="file" name="" class="file" style="width: 600px;" />
@@ -205,7 +203,7 @@
                 </tr>
                 <tr>
                   <th scope="row">분류</th>
-                  <td colspan="3">
+                  <td>
                     <div class="select_box" style="width: 120px">
                         <span class="select">10시</span>
                         <div class="option">
@@ -250,21 +248,23 @@
                         </div>
                         <!-- //콤보박스 -->                                                            
                       </div>
-                    </td>
-                    <th scope="row">노출여부</th>
-                    <td>
-                      <div class="radio-box">
-                        <label id="r01">
-                          <input type="radio" name="type1" value="type020" id="r01" checked>
-                          <span>노출</span>
-                        </label>
-                        <label id="r02">
-                          <input type="radio" name="type1" value="type021" id="r02">
-                          <span>미노출</span>
-                        </label>
-                      </div>                               
-                    </td>                       
-                </tr>                                                                                                                                         
+                    </td>                     
+                </tr>
+                <tr>
+                  <th scope="row">노출여부</th>
+                  <td>
+                    <div class="radio-box">
+                      <label id="r01">
+                        <input type="radio" name="type1" value="type020" id="r01" checked>
+                        <span>노출</span>
+                      </label>
+                      <label id="r02">
+                        <input type="radio" name="type1" value="type021" id="r02">
+                        <span>미노출</span>
+                      </label>
+                    </div>                               
+                  </td>  
+                </tr>
               </tbody>
             </table>
           </div>
@@ -277,7 +277,9 @@
             </a>
           </div>
 
-          <div class="table_cont mo">
+          <!-- 모바일 테이블 검수용로 잠시 display:none 처리 -->
+          <!-- 모바일 테이블 검수용로 잠시 display:none 처리 -->
+          <div class="table_cont mo" style="display: none;">
             <table class="table-body-only no-line-type table-fixed">
               <colgroup>
                 <col width="30%" />
@@ -398,7 +400,9 @@
                 </tr>         
               </tbody>
             </table>
-           </div>
+          </div>
+          <!-- 모바일 테이블 검수용로 잠시 display:none 처리 -->
+          <!-- 모바일 테이블 검수용로 잠시 display:none 처리 -->
 
 
         </div>

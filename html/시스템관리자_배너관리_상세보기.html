@@ -206,22 +206,20 @@
 
       <div class="content_wrap">
         <div class="inner">
-          <div class="table_cont form-table pc">
+          <div class="table_cont form-table">
             <table class="table-body-only table-fixed">
               <colgroup>
-                <col style="width:160px;">
-                <col>
                 <col style="width:160px;">
                 <col>
               </colgroup>
               <tbody>
                 <tr>
                   <th scope="row">노출위치</th>
-                  <td colspan="3">메인</td>
+                  <td>
                 </tr>
                 <tr>
                   <th scope="row">제목</th>
-                  <td colspan="3">
+                  <td>
                     <div class="form-element__wrap">
                       <div class="input-multi has-text-count">
                         <span class="form-element__inner input-type">
@@ -236,7 +234,7 @@
                 </tr>
                 <tr>
                   <th scope="row">랜딩URL</th>
-                  <td colspan="3">
+                  <td>
                     <div class="form-element__wrap">
                       <div class="input-multi">
                         <span class="form-element__inner input-type">
@@ -248,7 +246,7 @@
                 </tr>
                 <tr>
                   <th scope="row">배너 이미지 파일</th>
-                  <td colspan="3">
+                  <td>
                     <div class="info-text color-important">배너 이미지 사이즈(크기) : 000x000</div>
                     <ul class="file-list file-list-multi" style="max-width: 100%;">
                       <li>
@@ -282,7 +280,7 @@
                 </tr>
                 <tr>
                   <th scope="row">배너 내용</th>
-                  <td colspan="3">
+                  <td>
                     <div class="form-element__wrap">                                
                       <span class="form-element__inner text-area">
                         <textarea placeholder="배너 내용" title="배너 내용">배너 내용</textarea>
@@ -293,7 +291,7 @@
                 </tr>
                 <tr>
                   <th scope="row">노출 기간</th>
-                  <td colspan="3">
+                  <td>
                     <div class="radio-box">
                       <label id="r0">
                         <input type="radio" name="type8" value="type0a20" checked id="r0">
@@ -428,6 +426,8 @@
                       <!-- //콤보박스 -->
                     </div>
                   </td>
+                </tr>
+                <tr>
                   <th scope="row">노출 상태</th>
                   <td>
                     <div class="radio-box">
@@ -446,7 +446,9 @@
             </table>
           </div>
 
-          <div class="table_cont mo">
+          <!-- 모바일 테이블 검수용로 잠시 display:none 처리 -->
+          <!-- 모바일 테이블 검수용로 잠시 display:none 처리 -->
+          <div class="table_cont mo" style="display: none;">
             <table class="table-body-only no-line-type flex-wrap">
               <colgroup>
                 <col width="30%" />
@@ -636,6 +638,8 @@
               </tbody>
             </table>
           </div>
+          <!-- 모바일 테이블 검수용로 잠시 display:none 처리 -->
+          <!-- 모바일 테이블 검수용로 잠시 display:none 처리 -->
 
           <div class="button__wrap flex-end mt-64 pc">
             <a href="#" class="btn-gray-default">

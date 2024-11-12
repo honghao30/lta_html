@@ -541,6 +541,20 @@ p.skip{margin-bottom:30px;}
     display: flex;
     align-self: center;  
 }
+.is-toggle-button-wrap  {
+    position: relative;
+}
+.is-toggle-button-wrap .btn-dark-light::after {
+    content: '';
+    display: block;
+    width:10px;
+    height:20px;
+    background: url('../img/pc/ico/ico_arrow_donw.png') no-repeat center center;
+    background-size: 10px auto;    
+}
+.is-toggle-button-wrap .btn-dark-light.is-active::after {
+    transform: rotate(180deg);
+}
 .btn-border-gray.size-sm {
     height: 28px;
     padding: 0px 12px;    
@@ -707,7 +721,21 @@ p.skip{margin-bottom:30px;}
 .table_cont table.table-list tbody tr td.text-l {
     text-align: left;
 }
-
+.cate-tit {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+.form-element__inner.input-type {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+}
 /* 모달 */
 .modal_new.roll-type{
     display: flex;
@@ -1175,7 +1203,6 @@ p.skip{margin-bottom:30px;}
 .mt-80 {margin-top: 80px;}
 .pdl-20 {padding-left: 20px !important;}
 .pdl-30 {padding-left: 30px}
-.pdl-40 {padding-left: 40px}
 .ml-5 {margin-left: 5px;}
 .ml-8 {margin-left: 8px;}
 .ml-10 {margin-left: 10px !important;}
@@ -1195,6 +1222,7 @@ p.skip{margin-bottom:30px;}
 .search-input-inner.deliberation {
     position: relative;
 }
+.position {position: relative}
 
 .btn.ico_penci-bl span{
     background:url(../img/pc/ico/ico_pencil.png) no-repeat 0 center;
@@ -1459,11 +1487,6 @@ linear-gradient(0deg, rgba(112, 109, 240, 0.1), rgba(112, 109, 240, 0.1));
 .modal_n_wrap.roll-modal.wd1280 {
     width: 1280px;
 }
-
-.inner-table-cont table tbody tr td.left-line {
-    border-left: 1px solid #D8DDE9 !important;
-    border-bottom: 0  !important;
-}
 @media (max-width: 768px) {
     .document-title-area {
         display: flex;
@@ -1495,7 +1518,6 @@ linear-gradient(0deg, rgba(112, 109, 240, 0.1), rgba(112, 109, 240, 0.1));
         word-break: break-word;
         line-height: 19px;
     }
-    .table_cont .table-body-only tbody td.inner-table 
 
     .modal_n_body .table_cont .table-body-only tbody td {
         word-break: break-word;
@@ -1709,20 +1731,7 @@ linear-gradient(0deg, rgba(112, 109, 240, 0.1), rgba(112, 109, 240, 0.1));
     padding: 16px;
     color: rgba(34, 34, 34, 0.6);
 }
-.btn-gray-light{
-    margin: 2px 0;
-    background: #E1E3E9;
-    border-radius: 12px;
-    padding: 5px 8px;
-    border:0;
-    font-family: 'Pretendard';
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 13px;
-    letter-spacing: -0.02em;
-    text-align: center;
-    height: auto;
-}
+
 /* flex-wrap */
 .flex-wrap {
     flex-wrap: wrap;
@@ -2001,24 +2010,6 @@ td:has(.text-type) {
 .search_cont.mo .search_box .button-area {
     width: 56px;
 }
-.govment-part-dv {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    border-left: 1px solid #AEB7C6;
-    padding-left: 16px;
-}
-.govment-part-dv .gov-option {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 8px;
-    max-width: 520px;
-}
-
-.govment-part-dv .gov-option .input_type {width: 150px;text-align: left;}
-
 @media screen and (max-width: 768px) {
     .mo-flex {
         display: flex;
@@ -2334,7 +2325,6 @@ td:has(.text-type) {
     align-items: center;
     gap: 2px;
     margin: 0 auto;
-    color: #717B8A;
 }
 .btn-refresh-16 i {
     display: inline-block;
@@ -3007,8 +2997,6 @@ td:has(.text-type) {
 }
 .table_cont .table-body-only tbody td.sub-tit {
     background-color: #F9F9FB;
-    padding: 10px 16px;
-    height: 50px;
 }
 
 .tooltip-wrap {
@@ -3720,7 +3708,7 @@ td:has(.text-type) {
     border-bottom: 1px solid #C4C5F7; 
 }
 .form-element-rows.border-none {
-    padding: 0px 0;
+    padding: 8px 0;
     border-bottom: 0;
 }
 .search-list-items .bar {
@@ -3829,4 +3817,11 @@ td:has(.text-type) {
 .modal_n_body.list-table-ht500 {
     min-height: 450px;
     overflow-y: auto;
+}
+.toggle-dsplay-wrap {
+    position: absolute;
+    right: 19px;
+    top: 206px;
+    z-index: 15;
+    box-shadow: 0px 8px 32px 0px #00000026;
 }
