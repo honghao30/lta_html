@@ -213,9 +213,9 @@
       <div class="inner">
         <h3 class="document-title">레이어 버튼들 (onclick 안에 아이디값을 넣어서 연결 ex : #layer_pop_01)</h3>
         <div class="mt20"></div>
-        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_01');return false">이양사무_의견수렴_Popup_의견수렴시작</button>
-        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_02');return false">이양사무_의견수렴_Popup_의견수정</button>        
-
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_01');return false">PC_5이양사무_3의견수렴_Popup_1의견수렴시작</button>
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_02');return false">PC_5이양사무_3의견수렴_Popup_2의견수정</button>        
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_03');return false">PC_5이양사무_3의견수렴_Popup_3전문위심의요청</button> 
       </div>
     </div>
   </div>
@@ -278,7 +278,34 @@
   </section>
   <!-- //모달 -->
 
-
+  <!-- PC_5이양사무_3의견수렴_Popup_3전문위심의요청 -->
+  <section class="modal_new modal_overlay roll-type" id="layer_pop_03"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+    <div class="modal_n_wrap roll-modal layer_login">
+      <div class="modal-header mini-size"></div>
+      <div class="modal_n_body">
+        <div class="pop_cont">
+            <div class="modal-msg">
+                <div class="font-type20-400">전문위 심의 요청</div>
+                <div class="font-type16-400 mt-16">
+                  전문위 심의 요청 후 단위사무 등록 및 전문위 심의 단계로 
+                  전환됩니다.<br>
+                  전문위 심의 단계로 전환되더라도 의견 등록 재개는 가능합니다.
+                  전문위 심의를 진행하시겠습니까?
+                </div>
+            </div>
+            <div class="button__wrap flex-end mt-32">
+                <button type="button" class="btn-gray-default"  onclick="modalControl('c')" >
+                    <i class="ico-remove"></i> 취소
+                </button>               
+                <button type="button" class="btn-primary-default">
+                    <i></i> 확인
+                </button>  
+            </div>
+        </div>       
+      </div>
+    </div>
+  </section>
+  <!-- //모달 -->
 
   <!-- footer -->
   <div class="footer">
