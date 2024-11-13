@@ -1213,6 +1213,7 @@ p.skip{margin-bottom:30px;}
 .float-r {float:right !important;}
 .wid80 {width: 80px;}
 .wid600 {width: 600px;}
+.wd-auto {width: auto}
 .wid-100p {width: 100% !important;}
 .vertical-t {vertical-align: top  !important;;}
 .wd-90 {width: 90px !important; flex: initial !important;}
@@ -2988,7 +2989,7 @@ td:has(.text-type) {
     gap: 10px;
 }
 .table_cont .table-body-only tbody td .upload-file-list li .txt {
-    color:#FF8B4A;
+    color:#FF8B4A !important;
 }
 
 .td-inner-wrap.flex-between {
