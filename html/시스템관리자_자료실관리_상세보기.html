@@ -147,15 +147,15 @@
           <div class="table_cont form-table">
             <table class="table-body-only table-fixed">
               <colgroup>
-                <col style="width:160px;">
+                <col style="width:30%;">
                 <col>
-              </colgroup>
+              </colgroup>          
               <tbody>
                 <tr>
                     <th scope="row">제목</th>
                     <td>
                       <div class="form-element__wrap">                                  
-                          <div class="input-multi">
+                          <div class="input-multi mo-flex-col">
                             <span class="form-element__inner input-type">
                                 <input type="text" value="농지법" class="input-type1-font14" maxlength="50" placeholder="제목" disabled  title="제목">
                             </span>
@@ -178,8 +178,8 @@
                     <th scope="row">첨부파일</th>
                     <td>
                         <ul class="file-list">
-                            <li>
-                              <input type="file" name="" class="file" style="width: 600px;" />
+                            <li class="flex-col">
+                              <input type="file" name="" class="file" style="width: 100%;max-width: 600px;" />
                               <div class="form-element__wrap">                                  
                                   <div class="input-multi file-up">
                                       <span class="form-element__inner input-type">
@@ -206,25 +206,19 @@
                 <tr>
                   <th scope="row">분류</th>
                   <td>
-                    <div class="select_box" style="width: 120px">
-                        <span class="select">10시</span>
-                        <div class="option">
-                          <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                            <ul>
-                              <li>선택함1</li>
-                              <li>선택함2</li>
-                              <li>선택함3</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- //콤보박스 -->                          
+                        <!-- 콤보박스 -->
+                        <select name="" id="" class="selectbox" style="width: 150px;">
+                          <option value="선택함1">전체</option>
+                          <option value="선택함2">선택함2</option>
+                          <option value="선택함3">선택함3</option>
+                        </select>
+                        <!-- //콤보박스 -->                              
                   </td>                  
                 </tr>
                 <tr>
                     <th scope="row">노출 대상</th>
                     <td>
-                      <div class="flex-row">
+                      <div class="flex-row flex-col">
                         <div class="radio-box">
                             <label id="r0a3">
                                 <input type="radio" name="type8" value="type0a20" checked id="ra03">
@@ -235,20 +229,15 @@
                                 <span>지정</span>
                             </label>
                         </div> 
-                        <!-- 콤보박스 -->
-                        <div class="select_box">
-                          <span class="select">10등급</span>
-                          <div class="option">
-                            <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                              <ul>
-                                <li>선택함1</li>
-                                <li>선택함2</li>
-                                <li>선택함3</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- //콤보박스 -->                                                            
+                        <div class="">
+                            <!-- 콤보박스 -->
+                            <select name="" id="" class="selectbox" style="width: 150px;">
+                              <option value="선택함1">전체</option>
+                              <option value="선택함2">선택함2</option>
+                              <option value="선택함3">선택함3</option>
+                            </select>
+                            <!-- //콤보박스 -->    
+                         </div>                                                        
                       </div>
                     </td>
                 </tr>

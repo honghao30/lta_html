@@ -1675,6 +1675,13 @@ linear-gradient(0deg, rgba(112, 109, 240, 0.1), rgba(112, 109, 240, 0.1));
         border-radius: 12px;
         border: 1px solid #D8DDE9;
     }
+    .input-multi.mo-flex-col {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    .input-multi.mo-flex-col  .form-element__inner.input-type {
+        flex: auto;
+    }
 }
 
 .float-r {float:right !important;}
