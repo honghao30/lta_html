@@ -1213,6 +1213,7 @@ p.skip{margin-bottom:30px;}
 .float-r {float:right !important;}
 .wid80 {width: 80px;}
 .wid600 {width: 600px;}
+.bar_line {width: 1px;height: 20px;background-color: #fff;display: inline-flex;vertical-align: middle;margin: 0 10px;}
 .wd-auto {width: auto}
 .wid-100p {width: 100% !important;}
 .vertical-t {vertical-align: top  !important;;}
@@ -3832,4 +3833,41 @@ td:has(.text-type) {
     top: 206px;
     z-index: 15;
     box-shadow: 0px 8px 32px 0px #00000026;
+}
+
+
+.gray-box-full__wrap.no-line-type {
+    padding: 20px 40px
+}
+.gray-box-full__wrap.no-line-type .gray-box-top {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.year-select-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.year-select-box .gray-box {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 10px;
+    background-color: #F9F9FB;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #222;
+    padding: 8px 16px;
+}
+.year-select-box .gray-box select {
+    border: 1px solid #E1E3E9;
+    height: 40px;
+    font-family: 'Pretendard';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color:#222;
 }
