@@ -800,7 +800,9 @@ p.skip{margin-bottom:30px;}
 .pc-flex {
     display: flex;
 }
-
+.mo-flex {
+    display: none;
+}
 .top_info_box.pc-flex {
     align-items: center;
     justify-content: space-between;
@@ -1506,6 +1508,9 @@ linear-gradient(0deg, rgba(112, 109, 240, 0.1), rgba(112, 109, 240, 0.1));
     }
     .pc-flex {
         display: none;
+    }
+    .mo-flex {
+        display: flex;
     }
     .scroll-type {
         overflow-x: scroll;

@@ -532,8 +532,8 @@ $(document).ready(function() {
   }
 
   // depth 클릭 핸들러 설정
-  handleClick('.depth01', 'on_depth02');
-  handleClick('.depth02', 'on_depth03');
+  // handleClick('.depth01', 'on_depth02');
+  // handleClick('.depth02', 'on_depth03');
 
   // depth03 클릭 시
   $('.depth03 > a').click(function(e) {

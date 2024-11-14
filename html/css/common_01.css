@@ -1273,7 +1273,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .swiper.type03 .swiper.type01 .swiper-wrapper{padding-bottom:0;}
 
         /* header_wrap */
-        .header_wrap{height:115px;}
+        .header_wrap{height:64px;}
         .header_wrap .header{position: fixed;background: #fff;top: 0;left: 0;right: 0;z-index:10;}
 
         /* swiper */
@@ -1306,14 +1306,24 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .header_top_cont .btn_login{background:url(../img/mo/btn_login.png) no-repeat center;background-size:24px auto;width:24px;height:24px;}
         .header_top_cont .btn_logout{background:url(../img/mo/btn_logout.png) no-repeat center;background-size:24px auto;width:24px;height:24px;}
         .header_top_cont .btn_menu{background:url(../img/mo/btn_menu.png) no-repeat center;background-size:24px auto;width:24px;height:24px;}
-        .header_cont .top_menu_cont{width: 100%;padding: 16px 0;position: relative;}
+        .header_cont .top_menu_cont{width: 100%;padding: 16px 0;position: relative; display: flex;align-items: center; justify-content: center;
+          overflow-x: scroll;
+          -ms-overflow-style:none;
+          scrollbar-width:none;
+        }
 
 
-        .global-navy_wrap {width: 100%;height: 60px; display: flex;align-items: center; justify-content: center;border-top: 1px solid #E5E5E5;}
-        .global-navy_wrap .menu{width: 100%;height: 60px; display: flex;align-items: center; justify-content: center;}
-        .global-navy_wrap .menu li{display:inline-block;}
+        .global-navy_wrap {width: 100%;height: 48px; display: flex;align-items: center; justify-content: flex-start;border-top: 1px solid #E5E5E5;
+          overflow-x: scroll;
+          -ms-overflow-style:none;
+          scrollbar-width:none;}
+        .global-navy_wrap::-webkit-scrollbar {
+            display:none /* Chrome , Safari , Opera */
+          }
+        .global-navy_wrap .menu{width: fit-content;height: 48px; display: flex;align-items: center;flex-wrap: nowrap;gap: 20px; padding: 0 20px;}
+        .global-navy_wrap .menu li{display:inline-flex;}
         .global-navy_wrap .menu li+li{margin-left:2px;}
-        .global-navy_wrap .menu li a{color: #222;font-size: 20px;font-style: normal;font-weight: 700;letter-spacing: -0.4px;padding:8px 16px;}
+        .global-navy_wrap .menu li a{font-size: 16px;font-weight: 400;line-height: 16px;color:#717B8A;white-space: nowrap;}
         .global-navy_wrap .menu li a.on{color: #706DF0;border-radius: 8px;background: rgba(112, 109, 240, 0.10);}
         
         /* location */
