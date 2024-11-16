@@ -1178,6 +1178,7 @@ p.skip{margin-bottom:30px;}
 .float-r {float:right !important;}
 .wid80 {width: 80px;}
 .wd-90 {width: 90px !important; flex: initial !important;}
+.ht-120 {height: 120px  !important;;}
 .search-input-inner.deliberation {
     position: relative;
 }
@@ -1353,6 +1354,7 @@ p.skip{margin-bottom:30px;}
     padding: 0 0px 7px 0;
 }
 .chart-wrap .chart-area {
+    margin-top: 20px;
     height:400px;
     background-color: #fff;
     display: none;
