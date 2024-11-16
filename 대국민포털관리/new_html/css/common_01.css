@@ -742,8 +742,8 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     .info_cont .info_menu li a:hover,
     .header_cont .menu li a:hover{color: #706DF0;}
 
-    .logo a{height:35px;line-height:35px;display:block;color: #222;font-size: 18px;font-style: normal;font-weight: 500;}
-    .logo img{display:inline-block;vertical-align: middle;padding-right:5px;}
+    .logo a{display:block;color: #222;font-size: 18px;font-style: normal;font-weight: 500;}
+    .logo img{display:inline-block;vertical-align: middle;padding-right:5px;max-width: 193px;}
     .header_cont .info_cont{position: absolute;top: 50%;right:0;transform: translate(0, -50%);}
     .header_cont .info_cont .info_menu.default{line-height:0;}
     .header_cont .info_cont .info_menu.default li{float:none;display:inline-block;padding:0;vertical-align: middle;}
@@ -751,6 +751,15 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     .header_cont .info_cont .info_menu.default li+li a:before{width: 1px;height: 100%;background: #EFF0F3;content: '';position: absolute;top: 50%;left: 20px;transform: translate(-50%, -50%);}
     .header_cont .info_cont .info_menu.default li a:hover{color:#706DF0;}
     .header_cont .info_cont .info_menu.default li a{padding:30px 0 0 0;color: #717B8A;text-align: center;font-family: Pretendard;font-size: 16px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: -0.32px;}
+    .header_cont  .top_menu_cont { flex: 1; display: flex; align-items: center; justify-content: center;}
+
+    .header_cont  .top_menu_cont .menu li {position: relative;}
+    .header_cont  .top_menu_cont .menu li::before {content: '';display: inline-block;width: 1px;height: 16px;background-color: #E1E3E9;position: absolute;left:0;top: 50%;transform: translateY(-50%);}
+    .header_cont  .top_menu_cont .menu li:first-child::before {display: none;}
+    .header_cont  .top_menu_cont .menu li a {font-size: 20px;font-weight: 500;line-height: 20px;letter-spacing: -0.02em;min-width: 160px;display: block;  text-align: center;  padding: 8px 0;}
+    .header_cont  .top_menu_cont .menu li a.on {font-weight: 700;background: #706DF01A;}
+    .header_cont  .top_menu_cont .menu li+li {margin-left:1px;}
+
 
     .header_cont .info_cont .info_menu{display:inline-block;vertical-align:middle;line-height:46px;}
     .header_cont .info_cont .info_menu:after{content:'';display:block;clear:both;}

@@ -571,7 +571,10 @@ p.skip{margin-bottom:30px;}
 .table_cont table.table-list tbody tr:hover td {
     background: #FF8B4A1A;
 }
-
+.table_cont table.table-list tbody tr td a.secret {
+    display: flex;
+    align-items: center;
+}
 .table_cont table.table-list tbody tr td.border-top {
     border-top: 1px solid #222 !important;
 }
@@ -2009,12 +2012,14 @@ td:has(.text-type) {
 /* 이양사무 */
 .process-step-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
 }
 .process-step-list .process-step {
     display: flex;
     flex-direction: column;
-    width: 168px;
+    
+    padding: 0 24px;
     border: 1px solid #D8DDE9;
     border-radius: 12px;
     margin-right: 56px;
@@ -2124,7 +2129,10 @@ td:has(.text-type) {
     flex-direction: column;
     position: relative;
 }
-.process-step-list li.detail-board::after {
+.process-step-list li.detail-board.wd-200 {
+    width: 200px;
+}
+/* .process-step-list li.detail-board::after {
     content: '';
     display: block;
     position: absolute;
@@ -2135,7 +2143,7 @@ td:has(.text-type) {
     background: url('../img/pc/ico/ico_arrow_blue24.png') no-repeat;
     background-size: 100% auto;
 
-}
+} */
 .process-step-list li.detail-board.last-child {
     background:none;
     margin-right: 0;
@@ -2904,7 +2912,7 @@ td:has(.text-type) {
     gap: 10px;
 }
 .table_cont .table-body-only tbody td .upload-file-list li .txt {
-    color:#FF8B4A;
+    color:#FF8B4A !important;
 }
 
 .td-inner-wrap.flex-between {
