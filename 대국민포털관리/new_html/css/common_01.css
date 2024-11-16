@@ -1285,7 +1285,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .swiper.type03 .swiper.type01 .swiper-wrapper{padding-bottom:0;}
 
         /* header_wrap */
-        .header_wrap{height:115px;}
+        .header_wrap{height:64px;}
         .header_wrap .header{position: fixed;background: #fff;top: 0;left: 0;right: 0;z-index:10;}
 
         /* swiper */

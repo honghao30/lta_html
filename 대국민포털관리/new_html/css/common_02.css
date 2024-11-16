@@ -3654,11 +3654,23 @@ td:has(.text-type) {
 .picker-input168 {
     width: 168px;
 }
+.col-wid160 {
+    width: 160px;
+}
 @media (max-width: 768px) {
     .flex-row.mo-flex-col {
         flex-direction: column;
         align-items: flex-start;
     }
+    .input-multi.mo-flex-col {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .input-multi.mo-flex-col .form-element__inner.input-type {
+        flex: none;
+    }
+
     .flex-row.mo-flex-col .data-pick-wrap .dash,
     .flex-row.mo-flex-col .dv-bar {
         display: none;
@@ -3676,5 +3688,8 @@ td:has(.text-type) {
     .static-wrap {
         height: 400px;
         margin-top: 32px;
+    }
+    .col-wid160 {
+        width: 20%;
     }
 }
