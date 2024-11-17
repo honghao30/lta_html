@@ -1302,7 +1302,19 @@ p.skip{margin-bottom:30px;}
     border-left: 0;
     margin-left:0px;
 }
-
+.ico-gray-light {
+    margin-top: 3px;
+    display: inline-block;
+    background-color: #E1E3E9;
+    padding: 2px 8px;
+    border-radius: 10px;
+    color: #222;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
 /* //회원검색 */
 .search_cont.membership-search .ico_search {
     max-width: 263px;
@@ -2347,13 +2359,27 @@ td:has(.text-type) {
     background: url('../img/pc/ico/ic_refresh.png') no-repeat;
     background-size: 100% auto;
 }
+i.btn-refresh-16 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('../img/pc/ico/ic_refresh.png') no-repeat;
+    background-size: 100% auto;
+    vertical-align: middle;
+}
 .label-wrap {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap;
+    justify-content: center; */
     gap: 2px;
-    width: 102px;
+    /* width: 102px; */
     margin: 0 auto;
+}
+.label-wrap > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 .label-wrap.wd-full {
     width: 80%;
@@ -3209,7 +3235,10 @@ td:has(.text-type) {
 .table_cont .table-body-only tbody td.inner-table .inner-table-cont table tbody tr td:last-child {
     border-right: 0 !important;
 }
-
+.table_cont .table-body-only tbody td.inner-table .inner-table-cont table tbody tr td.left-line {
+    border-bottom: 0 !important;
+    border-left: 1px solid #D8DDE9 !important;
+}
 .table_cont .table-body-only tbody td.inner-table .inner-table-cont table tbody tr td.text-l {
     text-align: left;
     padding-left: 16px;
