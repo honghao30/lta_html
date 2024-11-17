@@ -1364,6 +1364,9 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .search_cont .search_box .input_cont .btn_search{position:absolute;top:0;right:0;width:50px;height:50px;background:url(../img/mo/ico/ico_search.png) no-repeat center center;background-size:24px auto;border:none;}
         input[type="text"]{border-radius: 12px;border: 1px solid #E1E3E9;line-height:50px;height:50px;font-size:16px;}
 
+        .search_cont_detail.on{height:100%;padding: 24px 155px 24px 40px;transition: height .1s;opacity: 1;overflow:visible;}
+        .search_cont_detail{opacity:0; background: #E7EAFA;position:relative;height:0;transition: height .1s;overflow:hidden;}
+
         /* select_box */
         .select_box{position:relative;display:inline-block;cursor: pointer;}
         .select_box.on .select{border-radius: 12px 12px 0 0 !important;}

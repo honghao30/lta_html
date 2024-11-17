@@ -573,22 +573,20 @@
     <div class="content_wrap">
       <div class="inner">
             <div class="table_cont form-table">
-                <table class="table-body-only">
+                <table class="table-body-only table-fixed">
                     <caption>
                       <span class="ir-text">제목, 상세내용, 첨부파일, 노출 기간, 상단설정,노출여부, 이벤트 여부로 구성된 공지사항 상세 화면</span>
                     </caption>
                     <colgroup>
-                        <col style="width:160px;">
-                        <col>
-                        <col style="width:160px;">
-                        <col>                        
+                        <col class="col-wid160">
+                        <col>                     
                     </colgroup>
                     <tbody>
                         <tr>
                             <th scope="row">제목</th>
-                            <td colspan="3">
+                            <td>
                               <div class="form-element__wrap">                                  
-                                  <div class="input-multi">
+                                  <div class="input-multi mo-flex-col">
                                     <span class="form-element__inner input-type">
                                         <input type="text" value="농지법" class="input-type1-font14" maxlength="50" placeholder="제목" disabled  title="제목">
                                     </span>
@@ -601,7 +599,7 @@
                         </tr>
                         <tr>
                             <th scope="row">상세내용</th>
-                            <td colspan="3">
+                            <td>
                                 <div class="edit-wrap">
                                   에디터 영역
                                 </div>
@@ -609,7 +607,7 @@
                         </tr>
                         <tr>
                             <th scope="row">첨부파일</th>
-                            <td colspan="3">
+                            <td>
                               <div class="fileup__wrap">
                                   <div class="fileup-title">
                                       <ul>
@@ -649,87 +647,85 @@
                           </td>  
                         </tr>      
                         <tr>
-                            <th scope="row">노출 기간</th>
-                            <td colspan="3">
-                                <div class="data-pick-wrap">
-                                    <div class="form-element__wrap" style="width: 168px">                                  
-                                        <div class="input-multi">
-                                          <span class="form-element__inner input-type">
-                                              <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="" id="datepicker_start" title="">
-                                          </span>
-                                        </div>
-                                    </div>  
-                                    <!-- 콤보박스 -->
-                                    <div class="select_box" style="width: 120px">
-                                      <span class="select">10시</span>
-                                      <div class="option">
-                                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                          <ul>
-                                            <li>선택함1</li>
-                                            <li>선택함2</li>
-                                            <li>선택함3</li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- //콤보박스 -->  
-                                      시
-                                    <!-- 콤보박스 -->
-                                    <div class="select_box"  style="width: 120px">
-                                      <span class="select">10분</span>
-                                      <div class="option">
-                                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                          <ul>
-                                            <li>선택함1</li>
-                                            <li>선택함2</li>
-                                            <li>선택함3</li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- //콤보박스 -->   
-                                      분 
-                                      <div class="dash">~</div>    
-                                      <div class="form-element__wrap"  style="width: 168px">                                  
-                                        <div class="input-multi">
-                                          <span class="form-element__inner input-type">
-                                              <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder=""  id="datepicker_end"  title="">
-                                          </span>
-                                        </div>
-                                      </div>  
-                                    <!-- 콤보박스 -->
-                                    <div class="select_box"  style="width: 120px">
-                                      <span class="select">10시</span>
-                                      <div class="option">
-                                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                          <ul>
-                                            <li>선택함1</li>
-                                            <li>선택함2</li>
-                                            <li>선택함3</li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- //콤보박스 -->  
-                                      시
-                                    <!-- 콤보박스 -->
-                                    <div class="select_box"  style="width: 120px">
-                                      <span class="select">10분</span>
-                                      <div class="option">
-                                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                          <ul>
-                                            <li>선택함1</li>
-                                            <li>선택함2</li>
-                                            <li>선택함3</li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- //콤보박스 -->   
-                                      분                                                              
+                          <th scope="row">노출 기간</th>
+                          <td>
+                            <div class="data-pick-wrap" style="overflow-y: auto;">
+                              <div class="form-element__wrap mo-fixed-width" style="width: 168px">
+                                <div class="input-multi">
+                                  <span class="form-element__inner input-type">
+                                    <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder=""
+                                      id="datepicker_start" title="">
+                                  </span>
                                 </div>
-                            </td>
-                        </tr>     
+                              </div>
+                              <!-- 콤보박스 -->
+                              <select name="" id="" class="selectbox sel-wd120"  title="선택하세요">
+                                <option value="선택함1">10시</option>
+                                <option value="선택함2">11시</option>
+                                <option value="선택함3">12시</option>
+                              </select>                          
+                              <!-- //콤보박스 -->
+                              시
+                              <!-- 콤보박스 -->
+                              <select name="" id="" class="selectbox sel-wd120"  title="선택하세요">
+                                <option value="선택함1">10시</option>
+                                <option value="선택함2">11시</option>
+                                <option value="선택함3">12시</option>
+                              </select>  
+                              <!-- //콤보박스 -->
+                              분
+                              <div class="dash">~</div>
+                              <div class="form-element__wrap mo-fixed-width" style="width: 168px">
+                                <div class="input-multi">
+                                  <span class="form-element__inner input-type">
+                                    <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder=""
+                                      id="datepicker_end" title="">
+                                  </span>
+                                </div>
+                              </div>
+                              <!-- 콤보박스 -->
+                              <select name="" id="" class="selectbox sel-wd120" title="선택하세요">
+                                <option value="선택함1">10시</option>
+                                <option value="선택함2">11시</option>
+                                <option value="선택함3">12시</option>
+                              </select>  
+                              <!-- //콤보박스 -->
+                              시
+                              <!-- 콤보박스 -->
+                              <select name="" id="" class="selectbox sel-wd120" title="선택하세요">
+                                <option value="선택함1">10시</option>
+                                <option value="선택함2">11시</option>
+                                <option value="선택함3">12시</option>
+                              </select>  
+                              <!-- //콤보박스 -->
+                              분
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">노출 대상</th>
+                          <td>
+                            <div class="flex-row">
+                              <div class="radio-box">
+                                <label id="r0a3">
+                                  <input type="radio" name="type8" value="type0a20" checked id="ra03">
+                                  <span>전체</span>
+                                </label>
+                                <label id="rb04">
+                                  <input type="radio" name="type8" value="type0a21" id="rb04">
+                                  <span>지정</span>
+                                </label>
+                              </div>
+                              <!-- 콤보박스 -->
+                              <select name="" id="" class="selectbox sel-wd120" title="선택하세요">
+                                <option value="선택함1">10시</option>
+                                <option value="선택함2">11시</option>
+                                <option value="선택함3">12시</option>
+                              </select>  
+                              <!-- //콤보박스 -->
+                            </div>
+                          </td>
+                        </tr>  
                         <tr>
                             <th scope="row">상단설정</th>
                             <td>
@@ -744,6 +740,8 @@
                                     </label>
                                 </div>                                  
                             </td>
+                        </tr>
+                        <tr>
                             <th scope="row">이벤트 여부</th>
                             <td>
                                 <div class="radio-box">
@@ -760,7 +758,7 @@
                         </tr> 
                         <tr>
                             <th scope="row">노출 여부</th>
-                            <td colspan="3">
+                            <td>
                                 <div class="radio-box">
                                     <label id="r03">
                                         <input type="radio" name="type2" value="type020" checked id="r03">

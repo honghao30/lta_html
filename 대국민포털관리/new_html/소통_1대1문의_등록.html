@@ -79,110 +79,58 @@
       <div class="content_wrap">
         <div class="inner">
           <!-- pc -->
-          <div class="pc">
-            <div class="table_cont">
-              <table class="table-body-only">
-                <caption><span class="ir-text">문의 유형 선택, 제목, 문의 내용으로 구성된 1:1 문의 등록 화면</span></caption>
-                <colgroup>                    
-                  <col width="160">
-                  <col>
-                </colgroup>
-                <tbody>
-                  <tr>    
-                    <th scope="row">문의 유형 선택</th>
-                    <td>
-                        <!-- 콤보박스 -->
-                        <select name="" id="" class="selectbox" title="문의 유형 선택">
-                          <option value="선택함1">전체</option>
-                          <option value="선택함2">선택함2</option>
-                          <option value="선택함3">선택함3</option>
-                        </select>
-                        <!-- //콤보박스 -->    
-                    </td>
-                  </tr>                  
-                  <tr>    
-                    <th scope="row">제목 <span class="red-color">*</span></th>
-                    <td>
-                        <div class="form-element__wrap">                                  
-                          <div class="input-multi has-text-count">
-                            <span class="form-element__inner input-type">
-                                <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="제목을 입력하세요" title="제목을 입력하세요">
-                            </span>
-                            <span class="input-text-count">
-                                <strong class="current">0</strong> / <strong>50자</strong>
-                            </span>
-                          </div>
-                        </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">문의 내용</th>
-                    <td>
+          <div class="table_cont">
+            <table class="table-body-only">
+              <caption><span class="ir-text">문의 유형 선택, 제목, 문의 내용으로 구성된 1:1 문의 등록 화면</span></caption>
+              <colgroup>                    
+                <col class="col-wid160">
+                <col>
+              </colgroup>
+              <tbody>
+                <tr>    
+                  <th scope="row">문의 유형 선택</th>
+                  <td>
+                      <!-- 콤보박스 -->
+                      <select name="" id="" class="selectbox" title="문의 유형 선택">
+                        <option value="선택함1">전체</option>
+                        <option value="선택함2">선택함2</option>
+                        <option value="선택함3">선택함3</option>
+                      </select>
+                      <!-- //콤보박스 -->    
+                  </td>
+                </tr>                  
+                <tr>    
+                  <th scope="row">제목 <span class="red-color">*</span></th>
+                  <td>
                       <div class="form-element__wrap">                                  
-                        <span class="form-element__inner text-area" style="height: 150px;">
-                          <textarea  style="height: 100%;" title="문의 내용을 입력하세요" placeholder="입력하세요."></textarea>                          
-                         </span>
-                        <div class="input-text-count wd-100p">
-                            <strong class="current">0</strong> / <strong>5,000자</strong>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <!-- mo -->
-          <div class="mo">
-            <div class="table_cont bg_none">
-              <table class="table-body-only">
-                <colgroup>                    
-                  <col width="60">
-                  <col>
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <th scope="row">제목 <span class="red-color">*</span></th>
-                    <td>
-                      <div class="form-element__wrap">     
-                        <div class="input-multi has-text-count">
+                        <div class="input-multi has-text-count mo-flex-col">
                           <span class="form-element__inner input-type">
-                            <input type="text" class="input-type1-font14" placeholder="제목을 입력해주세요." title="제목">
+                              <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="제목을 입력하세요" title="제목을 입력하세요">
                           </span>
                           <span class="input-text-count">
-                            <span class="current">0</span> / <span>50자</span>
+                              <strong class="current">0</strong> / <strong>50자</strong>
                           </span>
                         </div>
                       </div>
-                    </td>    
-                  </tr>
-                  <tr> 
-                    <td scope="row" colspan="2" class="full-width">
-                      상세내용
-                      <div class="edit-wrap">
-                        에디터 영역
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">문의 내용</th>
+                  <td>
+                    <div class="form-element__wrap  mo-flex-col">                                  
+                      <span class="form-element__inner text-area" style="height: 150px;">
+                        <textarea  style="height: 100%;" title="문의 내용을 입력하세요" placeholder="입력하세요."></textarea>                          
+                       </span>
+                      <div class="input-text-count wd-100p">
+                          <strong class="current">0</strong> / <strong>5,000자</strong>
                       </div>
-                    </td> 
-                  </tr>
-                  <tr>
-                    <td colspan="2" style="height:82px;">
-                      <div class="view_check">
-                        <label class="input_type check">
-                          <input type="checkbox" name="q01">
-                          <span class="txt">이메일로 답변 받기</span>
-                        </label>
-                        <div class="view mt10" style="width:100%;">
-                          <span class="input_cont">
-                            <input type="text" placeholder="이메일을 입력해 주세요.">
-                          </span>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+
           <div class="button__wrap flex-end pc-flex mt-32">
               <button type="button" class="btn-gray-default">
                   <i class="ico-remove"></i> 취소
