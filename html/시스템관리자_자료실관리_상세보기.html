@@ -147,7 +147,7 @@
           <div class="table_cont form-table">
             <table class="table-body-only table-fixed">
               <colgroup>
-                <col style="width:30%;">
+                <col class="col-wid160">
                 <col>
               </colgroup>          
               <tbody>
@@ -179,10 +179,10 @@
                     <td>
                         <ul class="file-list">
                             <li class="flex-col">
-                              <input type="file" name="" class="file" style="width: 100%;max-width: 600px;" />
+                              <input type="file" name="" class="file size-max-600" />
                               <div class="form-element__wrap">                                  
                                   <div class="input-multi file-up">
-                                      <span class="form-element__inner input-type">
+                                      <span class="form-element__inner input-type  mo-upfile-width">
                                           <input type="text"  placeholder=""  title="파일첨부">
                                       </span>
                                       <button type="button" class="btn-border-gray">
@@ -198,7 +198,7 @@
                                         추가
                                       </button>
                                   </div>
-                              </div>  
+                              </div>   
                             </li>
                         </ul>
                     </td>
@@ -218,7 +218,7 @@
                 <tr>
                     <th scope="row">노출 대상</th>
                     <td>
-                      <div class="flex-row flex-col">
+                      <div class="flex-row">
                         <div class="radio-box">
                             <label id="r0a3">
                                 <input type="radio" name="type8" value="type0a20" checked id="ra03">
@@ -229,15 +229,13 @@
                                 <span>지정</span>
                             </label>
                         </div> 
-                        <div class="">
-                            <!-- 콤보박스 -->
-                            <select name="" id="" class="selectbox" style="width: 150px;">
-                              <option value="선택함1">전체</option>
-                              <option value="선택함2">선택함2</option>
-                              <option value="선택함3">선택함3</option>
-                            </select>
-                            <!-- //콤보박스 -->    
-                         </div>                                                        
+                        <!-- 콤보박스 -->
+                        <select name="" id="" class="selectbox sel-wd120" title="선택하세요">
+                          <option value="선택함1">전체</option>
+                          <option value="선택함2">항목1</option>
+                          <option value="선택함3">항목2</option>
+                        </select>  
+                        <!-- //콤보박스 -->                                                               
                       </div>
                     </td>
                 </tr>

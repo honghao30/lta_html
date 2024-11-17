@@ -500,7 +500,7 @@ p.skip{margin-bottom:30px;}
     display: block;
     width: 100%;
     height: 100%;
-    background: url('../img/pc/ico/icon_minus.png') no-repeat;
+    background: url('../img/pc/ico/icon_minus.png') no-repeat center center;
     background-size: contain;
 }
 .ico-plus {
@@ -4001,7 +4001,7 @@ td:has(.text-type) {
         margin-top: 32px;
     }
     .col-wid160 {
-        width: 20%;
+        width: 28%;
     }
     .sel-wd120 {
         width: 80px;
@@ -4055,4 +4055,5 @@ td:has(.text-type) {
     .form-element-rows.border-none {
         padding: 0px 0;        
     }
+    .file-list.file-list-multi .form-element__inner.input-type {width: 200px;flex:none}
 }
