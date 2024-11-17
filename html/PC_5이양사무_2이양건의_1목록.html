@@ -234,9 +234,6 @@
               <li><a href="#none">이양사무</a></li>
             </ul>
           </div>
-          <div class="pc">
-            <a href="#none" class="btn ico_print"><span>프린트</span></a>
-          </div>
           <!-- 상단 프로세스 -->
           <div class="top-process-nav-wrap mt-32">
                 <ul class="process-step-list">
@@ -412,11 +409,13 @@
                         <th scope="row" rowspan="2">기간 선택</th>
                         <td colspan="3" class="text-l">   
                             <div class="form-element-rows">
-                                <div class="cate-text">                                
-                                    <label class="input_type check check-item">
-                                        <input type="checkbox" checked name="q01">
-                                        <span class="txt">건의일</span>
-                                    </label>  
+                                <div class="cate-text">   
+                                  <div class="radio-box">  
+                                    <label id="r01">
+                                      <input type="radio" name="type1" value="type010" id="r01">
+                                      <span>건의일</span>
+                                    </label>                 
+                                  </div>                                               
                                 </div>
                                 <div class="form-element__wrap" style="width: 168px;">                                  
                                     <div class="input-multi">
@@ -439,11 +438,13 @@
                     <tr>                        
                         <td colspan="3" class="text-l">                            
                             <div class="form-element-rows">
-                                <div class="cate-text">                                
-                                    <label class="input_type check check-item">
-                                        <input type="checkbox" checked name="q01">
-                                        <span class="txt">승인일</span>
-                                    </label>  
+                                <div class="cate-text">      
+                                  <div class="radio-box">  
+                                    <label id="r02">
+                                      <input type="radio" name="type1" value="type010" id="r02">
+                                      <span>승인일</span>
+                                    </label>               
+                                  </div>                                                 
                                 </div>
                                 <div class="form-element__wrap" style="width: 168px;">                                  
                                     <div class="input-multi">
@@ -561,7 +562,7 @@
           <!-- PC -->
           <div class="top_info_box">
             <div class="left_cont flex-row">
-              <span class="total">총 <strong>11,994</strong>건 <strong>201-220</strong> 중</span>
+              <span class="total">총 <strong>11,994</strong>건 중 <strong>201-220</strong></span>
               <span class="dv-bar"></span>
               <span class="radio-box ml-10">
                 <label id="r01">
@@ -647,7 +648,7 @@
                             <td>2024.08.14</td>                            
                             <td>2024.08.14</td>
                         </tr>
-                        <tr>                        
+                        <tr class="is-select">                        
                             <td>
                                 <label class="input_type check check-item">
                                     <input type="checkbox" name="">
@@ -659,8 +660,10 @@
                             <td><a href="#">전기공사업의 등록 등</a></td>                            
                             <td>농림축산부</td>
                             <td>
-                                농어촌정비법
-                                <button type="button" class="btn-refresh-16"><i></i></button>
+                                <div class="law-name">
+                                농어촌정비법농어촌정비법농어촌정비법
+                                <i  class="btn-refresh-16"></i>
+                                </div>
                             </td>
                             <td>국가→시도</td>
                             <td>과제 제외</td>
