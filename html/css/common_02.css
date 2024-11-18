@@ -194,9 +194,13 @@ p.skip{margin-bottom:30px;}
     border: 0;
     outline: 0;
     height: 80%;
-    color: #222222;
+    color: #717B8A;
     background-color: transparent;
     padding:0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
 }
 .form-element__wrap .form-element__inner input::placeholder {
     color: #717B8A;
@@ -226,6 +230,15 @@ p.skip{margin-bottom:30px;}
     font-weight: 400;
     line-height: 20px;
 }
+
+.mini-size-select {    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    border: 0;
+    padding: 0px 10px 0 16px;
+}
+
 .document-title {
     font-family: 'Pretendard';
     font-size: 24px;
