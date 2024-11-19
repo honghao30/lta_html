@@ -237,7 +237,7 @@
                                             <img src="./img/pc/ico/ico_arrow_right_bl.png" alt="" />
                                         </span>
                                         <span class="sub-text">
-                                            본회의 의결 진행 가능 
+                                            분과위 심의 진행 가능 
                                         </span>                                        
                                     </li>    
                                     <li>
@@ -287,7 +287,7 @@
                                     <div class="flex-row justify-between">
                                         <div>승인자 정보</div>
                                         <button type="button" class="btn-toggle-tbody">
-                                            <span>접기</span>
+                                            <span>펼침</span>
                                         </button>
                                     </div>
                                 </th>
@@ -371,9 +371,11 @@
                 </div>        
                 <script>
                     const tbodyToggleButton = document.querySelector('.btn-toggle-tbody');
-                    tbodyToggleButton && tbodyToggleButton.addEventListener('click', ()=> {
+                    tbodyToggleButton.addEventListener('click', ()=> {
                         tbodyToggleButton.classList.toggle('is-active');
                         document.getElementById('toggle-tbody').classList.toggle('is-active');
+                        tbodyToggleButton.querySelector('span').innerText =
+                        tbodyToggleButton.querySelector('span').innerText === '펼침' ? '접기' : '펼침';
                     });
                 </script>
                 <!-- //승인자정보 -->                         
@@ -400,10 +402,7 @@
                                                 <span class="dv-bar mg16"></span>
                                                 계속심의  <span class="total"><strong class="org-color">36</strong>건</span>                                                                                                
                                             </span>
-                                        </div>
-                                        <button type="button" class="btn-dark-light mr-16">                                        
-                                            의견이력보기
-                                        </button>                                        
+                                        </div>                                     
                                     </div>
 
 

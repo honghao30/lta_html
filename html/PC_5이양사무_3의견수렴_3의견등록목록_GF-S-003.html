@@ -235,13 +235,13 @@
             </ul>
           </div>
           <div class="pc">
+            <a href="#none" class="btn ico_file_download"><span>파일 다운로드</span></a>
             <a href="#none" class="btn ico_print"><span>프린트</span></a>
           </div>
 
           <div class="box-tab__wrap">
             <a href="#">이양사무 건의</a>
             <a href="#" class="is-active">의견 수렴</a>
-            <a href="#">단위사무 등록</a>
             <a href="#" class="is-disabled">전문위 심의</a>
             <a href="#" class="is-disabled">분과위 심의</a>
             <a href="#" class="is-disabled">본회의 의결</a>
@@ -269,16 +269,6 @@
                   </div>
 
               </div>              
-              <div class="gray-box-bottom">
-                  <div class="tit">
-                    이양건의 의견 수렴 프로세스
-                    <!-- <p class="description">* 심의요청서는 상단의 [심의요청보고서] 메뉴에서 작성하여 주세요.</p> -->
-                  </div>
-                  <ol class="step">
-                      <li class="is-active">중앙부처 및 지자체 의견 등록 및 수렴</li>
-                      <!-- <li>과제이력 등록 (심의요청서 작성)</li> -->
-                  </ol>
-              </div>
           </div>
 
           <!-- 이양사무 목록 -->
@@ -358,7 +348,7 @@
                                             <td>
                                                 <div class="radio-box">
                                                     <label id="">
-                                                        <input type="radio" name="type1" value="type010" id="">
+                                                        <input type="radio" name="type1" value="type010" id="" >
                                                         <span>동의</span>
                                                     </label>
                                                     <label id="">
@@ -530,11 +520,11 @@
                                                         <div class="dv-bar"></div>
                                                         <div class="radio-box">
                                                             <label id="r01">
-                                                                <input type="radio" name="type1" value="type010" id="r01">
+                                                                <input type="radio" name="type1" value="type010" id="r01" disabled>
                                                                 <span>수용</span>
                                                             </label>
                                                             <label id="r02">
-                                                                <input type="radio" name="type1" value="type011" id="r02" checked="">
+                                                                <input type="radio" name="type1" value="type011" id="r02" disabled>
                                                                 <span>수용곤란</span>
                                                             </label>                                      
                                                         </div>     
@@ -633,10 +623,33 @@
                                                 참조자료
                                             </th>                    
                                             <td colspan="3">
-                                                <a href="#" class="red-color">file.hwp</a> (13MB)
-                                                <span class="dv-bar ml-15"></span>
-                                                <a href="#" class="red-color  ml-15">file.hwp</a> (13MB)
-                                            </td>                                                 
+                                                <div class="upload-file-list">
+                                                    <div class="button-area">
+                                                        <button type="button" class="btn-dark-light">                                        
+                                                            선택 다운로드
+                                                        </button>
+                                                        <button type="button" class="btn-dark-light">                                        
+                                                            전체 다운로드
+                                                        </button>                                    
+                                                    </div>
+                                                    <ul class="upload-file-list" style="max-width: 532px;">
+                                                        <li>
+                                                            <label class="input_type check">
+                                                                <input type="checkbox" name="">
+                                                                <span class="txt">file.png </span>
+                                                                <span class="file-size">(13MB)</span>
+                                                            </label>                                                                        
+                                                        </li>
+                                                        <li>
+                                                            <label class="input_type check">
+                                                                <input type="checkbox" name="">
+                                                                <span class="txt">file.png</span>
+                                                                <span class="file-size">(13MB)</span>
+                                                            </label>                                                                        
+                                                        </li>                                    
+                                                    </ul>  
+                                                </div>
+                                            </td>                                                    
                                         </tr>                                                                                                                                                                                                                                                   
                                     </tbody>
                                 </table>
@@ -663,11 +676,11 @@
                                                         다수의견
                                                         <div class="radio-box">
                                                             <label id="r024">
-                                                                <input type="radio" name="type11" value="type013" id="r024" >
+                                                                <input type="radio" name="type11" value="type013" id="r024" disabled>
                                                                 <span>동의</span>
                                                             </label>
                                                             <label id="r02">
-                                                                <input type="radio" name="type11" value="type013" id="r022">
+                                                                <input type="radio" name="type11" value="type013" id="r022" disabled>
                                                                 <span>부동의</span>
                                                             </label>                                      
                                                         </div>     
@@ -710,10 +723,10 @@
                                                 광역자치단체 노출
                                             </td>     
                                             <th scope="row">
-                                                기관명
+                                                담당부서
                                             </th>                    
                                             <td>
-                                                기관명 노출
+                                                담당부서명 노출
                                             </td>                                             
                                         </tr>    
                                         <tr>    
@@ -812,11 +825,11 @@
                                                         다수의견
                                                         <div class="radio-box">
                                                             <label id="r024">
-                                                                <input type="radio" name="type11" value="type013" id="r024" >
+                                                                <input type="radio" name="type11" value="type013" id="r024" disabled>
                                                                 <span>동의</span>
                                                             </label>
                                                             <label id="r02">
-                                                                <input type="radio" name="type11" value="type013" id="r022">
+                                                                <input type="radio" name="type11" value="type013" id="r022" disabled>
                                                                 <span>부동의</span>
                                                             </label>                                      
                                                         </div>     
@@ -1066,16 +1079,65 @@
 ·또한, 해당 과제의 기대효과인 처리기한 단축은 중앙권한의 지방이양에 따른 지방자치단체의 자율과 책임을 강화한다는 취지와 무관하며, 권한이 위임되더라도 농업진흥지역 해제는 농지법령에 따라 신중히 검토되어야 할 사항으로 처리기한 단축과는 거리가 멈<br><br>
                                                 </div>
                                             </td>                                                 
+                                        </tr>  
+                                        <tr>    
+                                            <th scope="row">
+                                                예상 투입 인력<br>(Men/Month)
+                                            </th>                    
+                                            <td>
+                                                <div class="form-element__wrap">                                  
+                                                    <div class="input-multi">
+                                                        <span class="form-element__inner input-type">
+                                                            <input type="text" value="0.0" class="input-type1-font14 text-right" disabled maxlength="50" placeholder="예상 투입 인력 입력하세요."  title="예상 투입 인력 입력하세요.">
+                                                        </span>
+                                                    </div>
+                                                </div>   
+                                            </td>      
+                                            <th scope="row">
+                                                예상 금액
+                                            </th>                    
+                                            <td>
+                                                <div class="form-element__wrap">                                  
+                                                    <div class="input-multi">
+                                                        <span class="form-element__inner input-type">
+                                                            <input type="text" value="0" class="input-type1-font14 text-right" disabled maxlength="50" placeholder="예상 투입 인력 입력하세요."  title="예상 투입 인력 입력하세요.">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>                                                                                        
                                         </tr>    
                                         <tr>    
                                             <th scope="row">
                                                 참조자료
                                             </th>                    
                                             <td colspan="3">
-                                                <a href="#" class="red-color">file.hwp</a> (13MB)
-                                                <span class="dv-bar ml-15"></span>
-                                                <a href="#" class="red-color  ml-15">file.hwp</a> (13MB)
-                                            </td>                                                 
+                                                <div class="upload-file-list">
+                                                    <div class="button-area">
+                                                        <button type="button" class="btn-dark-light">                                        
+                                                            선택 다운로드
+                                                        </button>
+                                                        <button type="button" class="btn-dark-light">                                        
+                                                            전체 다운로드
+                                                        </button>                                    
+                                                    </div>
+                                                    <ul class="upload-file-list" style="max-width: 532px;">
+                                                        <li>
+                                                            <label class="input_type check">
+                                                                <input type="checkbox" name="">
+                                                                <span class="txt">file.png </span>
+                                                                <span class="file-size">(13MB)</span>
+                                                            </label>                                                                        
+                                                        </li>
+                                                        <li>
+                                                            <label class="input_type check">
+                                                                <input type="checkbox" name="">
+                                                                <span class="txt">file.png</span>
+                                                                <span class="file-size">(13MB)</span>
+                                                            </label>                                                                        
+                                                        </li>                                    
+                                                    </ul>  
+                                                </div>
+                                            </td>                                                    
                                         </tr>                                                                                                                                                                                                                                                   
                                     </tbody>
                                 </table>

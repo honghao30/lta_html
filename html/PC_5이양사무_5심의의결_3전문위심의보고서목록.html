@@ -176,13 +176,13 @@
             </ul>
           </div>
           <div class="pc">
+            <a href="#none" class="btn ico_file_download"><span>파일 다운로드</span></a>
             <a href="#none" class="btn ico_print"><span>프린트</span></a>
           </div>
 
           <div class="box-tab__wrap">
             <a href="#">이양사무 건의</a>
             <a href="#">의견 수렴</a>
-            <a href="#">단위사무 등록</a>
             <a href="#" class="is-active">전문위 심의</a>
             <a href="#" class="is-disabled">분과위 심의</a>
             <a href="#" class="is-disabled">본회의 의결</a>
@@ -236,7 +236,7 @@
                                             <img src="./img/pc/ico/ico_arrow_right_bl.png" alt="" />
                                         </span>
                                         <span class="sub-text">
-                                            본회의 의결 진행 가능
+                                            분과위 심의 진행 가능
                                         </span>                                        
                                     </li>    
                                     <li>
@@ -261,7 +261,7 @@
                     <div class="left_cont">
                         <a href="#none" class="btn ico_pencil"><span>이력확인</span></a> 
                         <a href="#none" class="btn ico_deliberation_end"><span>심의 종료 (현행 존치)</span></a>
-                        <a href="#none" class="btn ico_deliberation_end_org"><span>심의 완료</span></a>
+                        <a href="#none" class="btn ico_deliberation_end_org"><span>분과위 심의 요청</span></a>
                     </div>
                     <div class="right_cont">
                         <a href="#none" class="btn ico_new_window"><span>페이지 따로보기</span></a>      
@@ -414,25 +414,23 @@
                                     <div class="flex-row justify-between">
                                         <div class="radio-box">
                                             <label id="r01">
-                                                <input type="radio" name="type1" value="type010" id="r01">
+                                                <input type="radio" name="type1" value="type010" id="r01" disabled>
                                                 <span>현행 존치</span>
                                             </label>
                                             <label id="r02">
-                                                <input type="radio" name="type1" value="type011" id="r02" checked="">
+                                                <input type="radio" name="type1" value="type011" id="r02" checked="" disabled>
                                                 <span>지방이양</span>
                                             </label>
                                             <label id="r03">
-                                                <input type="radio" name="type1" value="type010" id="r03">
+                                                <input type="radio" name="type1" value="type010" id="r03" disabled>
                                                 <span>국가 환원</span>
                                             </label>     
                                             <label id="r04">
-                                                <input type="radio" name="type1" value="type010" id="r04">
+                                                <input type="radio" name="type1" value="type010" id="r04" disabled>
                                                 <span>계속 심의</span>
                                             </label>                                                              
                                         </div> 
-                                        <button type="button" class="btn-dark-light">                                        
-                                            의견이력보기
-                                        </button>
+                                        <a href="#none" class="btn ico_upload"><span>엑셀 업로드</span></a>
                                     </div>
                                 </td>                                                 
                             </tr>

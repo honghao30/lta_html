@@ -4117,3 +4117,35 @@ i.btn-refresh-16 {
     }
     .file-list.file-list-multi .form-element__inner.input-type {width: 200px;flex:none}
 }
+
+
+/* 2024 11 19 추가 */
+.badge-icon {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 13px;
+  letter-spacing: -2%;
+  line-height: 13px;
+  color: #222;
+  background-color: #E1E3E9;
+  border-radius: 10px;
+  margin-top: 2px;
+}
+
+.btn.ico_edit span {
+  background: url(../img/pc/ico/ic_h24_edit_gray.png) no-repeat 0 center;
+  background-size: contain;
+}
+
+.yiyang-cont-box.repose-height {
+  display: block;
+  height: 700px;
+  overflow: hidden;
+}
+
+.yiyang-cont-box.repose-height.is-active {
+  height: auto;
+}
+
+
+
