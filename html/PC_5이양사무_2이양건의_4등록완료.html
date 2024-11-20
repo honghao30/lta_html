@@ -242,7 +242,6 @@
           <div class="box-tab__wrap">
             <a href="#" class="is-active">이양사무 건의</a>
             <a href="#">의견 수렴</a>
-            <a href="#">단위사무 등록</a>
             <a href="#">전문위 심의</a>
             <a href="#">분과위 심의</a>
             <a href="#">본회의 의결</a>
@@ -273,7 +272,7 @@
                   </div>
                   <ol class="step">
                       <li>이양사무 건의 등록</li>
-                      <li class="is-active">담당자 과제 채택 및 등록</li>                      
+                      <li class="is-active">담당자 과제 채택 및 의견수렴으로 전환</li>                      
                   </ol>
               </div>
           </div>
@@ -451,60 +450,52 @@
                             이양방향
                         </th>                    
                         <td colspan="5">
-                          <ul class="form-el-list-wrap dynamic_add-list2">
-                            <li class="input-wrap flex-row">
-                                <!-- 콤보박스 -->
-                                <select name="" id="" style="width: 188px;">
-                                  <option value="선택함1">선택함1</option>
-                                  <option value="선택함2">선택함2</option>
-                                  <option value="선택함3">선택함3</option>
-                                </select>
-                                →
-                                <!-- //콤보박스 -->      
-                                <!-- 콤보박스 -->
-                                <select name="" id="" style="width: 188px;">
-                                  <option value="선택함1">선택함1</option>
-                                  <option value="선택함2">선택함2</option>
-                                  <option value="선택함3">선택함3</option>
-                                </select>       
-                                <div class="bar">&nbsp;</div>
-                                <label class="input_type check mr-0">
-                                    <input type="checkbox" name="q01">
-                                    <span class="txt"></span>
-                                </label>
-                                <div class="view on" style="width:280px;">
-                                    <span class="input_cont">
-                                    <input type="text" style="padding-left: 10px;" placeholder="내용 추가 (30자 이내)">
+                          <ul class="yiyang-direction-list">
+                            <li>
+                                <div class="form-element__wrap" >                                  
+                                    <div class="input-multi">
+                                        <span class="form-element__inner input-type" style="width: 188px;">
+                                            <input type="text" value="국가" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요."  title="내용을 입력하세요." disabled>
+                                        </span>
+                                        →
+                                        <span class="form-element__inner input-type" style="width: 188px;">
+                                            <input type="text" value="시군구" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요."  title="내용을 입력하세요." disabled>
+                                        </span> 
+                                    </div>
+                                </div>  
+                                <span class="dv-bar"></span>
+                                <div class="view on form-element__wrap" style="width:280px;">
+                                    <span class="input_cont form-element__inner">
+                                      <input type="text" style="padding-left: 10px;" value="인구 50만 미만" placeholder="내용 추가 (30자 이내)"  disabled>
                                     </span>
-                                </div>                                                                                                     
+                                </div>                                                            
                                 <div class="yiyang-info">
-                                  <span class="total">사무</span>
-                                  <span class="dv-bar ml-5"></span>  
-                                  <span class="total ml-5">3, 4, 5, 6, 7, 8</span>                                             
-                                </div>      
+                                    <span class="total">사무</span>
+                                    <span class="dv-bar ml-10"></span>  
+                                    <span class="total ml-10">1,2,6</span>                                             
+                                </div>
                             </li>
-                            <li class="input-wrap flex-row">
-                              <!-- 콤보박스 -->
-                              <select name="" id="" style="width: 188px;">
-                                <option value="선택함1">선택함1</option>
-                                <option value="선택함2">선택함2</option>
-                                <option value="선택함3">선택함3</option>
-                              </select>
-                              →
-                              <!-- //콤보박스 -->      
-                              <!-- 콤보박스 -->
-                              <select name="" id="" style="width: 188px;">
-                                <option value="선택함1">선택함1</option>
-                                <option value="선택함2">선택함2</option>
-                                <option value="선택함3">선택함3</option>
-                              </select>                                                                                                        
-                              <div class="yiyang-info">
-                                <span class="total">사무</span>
-                                <span class="dv-bar ml-5"></span>  
-                                <span class="total ml-5">3, 4, 5, 6, 7, 8</span>                                             
-                              </div>      
-                          </li>                            
-                          </ul> 
+                            <li>
+                                <div class="form-element__wrap mt-8" >                                  
+                                    <div class="input-multi">
+                                        <span class="form-element__inner input-type" style="width: 188px;">
+                                            <input type="text" value="국가" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요."  title="내용을 입력하세요." disabled>
+                                        </span>
+                                        →
+                                        <span class="form-element__inner input-type" style="width: 188px;">
+                                            <input type="text" value="시도" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요."  title="내용을 입력하세요." disabled>
+                                        </span>  
+                                    </div>                                         
+                                </div>    
+                                
+                                <div class="yiyang-info">
+                                    <span class="total">사무</span>
+                                    <span class="dv-bar ml-10"></span>  
+                                    <span class="total ml-10">1,2,6</span>   
+                                    <span class="total">1,2,6</span>                                             
+                                </div>                                                                                 
+                            </li>
+                          </ul>    
                         </td>                                                 
                     </tr>                                                                                                                                                                                                             
                 </tbody>
@@ -518,7 +509,8 @@
                 <thead>
                     <tr>
                         <th>
-                          근거법령 <span class="red-color">*</span>
+                          근거법령 <span class="dv-bar"></span>
+                          <span class="total">총 <strong>3</strong> 건</span>
                         </th>
                     </tr>
                 </thead>
@@ -568,11 +560,7 @@
                 </thead>
                 <tbody>
                     <tr>                        
-                        <td class="inner-table">          
-                            <div class="font-type16-400">
-                                ※단위사무와 부수사무는 법령 기준으로 반영됩니다.<br>
-    ※본 과제에 맞지 않는 사무가 있다면 법령 또는 단위사무를 삭제해 주세요. 두 항목이 연동되어 있어 하나만 삭제해도 함께 삭제 됩니다.
-                            </div>                
+                        <td class="inner-table">      
                             <div class="inner-table-cont mt-16">
                                 <table>
                                     <colgroup>
@@ -724,7 +712,6 @@
                 <tbody>
                     <tr>                        
                         <td class="inner-table">
-                            <div class="info-text">현행 법조문은 근거법령이 추가되면 자동으로 반영됩니다.</div>
                             <div class="inner-table-cont mt-16">
                               <table>
                                   <colgroup>
