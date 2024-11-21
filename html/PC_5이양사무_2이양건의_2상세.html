@@ -509,7 +509,7 @@
             </table>
           </div>
         <!-- 근거법령 -->
-        <div class="table_cont">
+        <div class="table_cont" style="overflow-x: visible;">
             <table class="table-body-only">
                 <colgroup>                    
                     <col width="" />
@@ -523,7 +523,7 @@
                 </thead>
                 <tbody>
                     <tr>                        
-                        <td class="inner-table">
+                        <td class="inner-table" style="overflow: visible;">
                             <div class="button__wrap flex_end">
                                 <button type="button" class="btn-dark-light btn-add">
                                 <i class="ico-minus"></i>
@@ -534,7 +534,7 @@
                               ※ 단위사무와 부수사무는 법령 기준으로 반영됩니다.<br>
 ※ 본 과제에 맞지 않는 사무가 있다면 법령 또는 단위사무를 삭제해 주세요. 두 항목이 연동되어 있어 하나만 삭제해도 함께 삭제 됩니다.
                             </div>                
-                            <div class="inner-table-cont mt-16 law-list2">
+                            <div class="inner-table-cont mt-16 law-list2" style="overflow: visible;">
                                 <table>
                                     <colgroup>                                      
                                         <col width="3%">
@@ -604,9 +604,13 @@
                                             <td>-</td>
                                             <td>X</td>
                                             <td>-</td>
-                                            <td>제10조<br>
-                                              제1항</td>
                                             <td>
+                                              <a>
+                                                제10조<br>
+                                                제1항
+                                              </a>
+                                            </td>
+                                            <td style="overflow: visible;">
                                                 <!-- 콤보박스 -->
                                                 <div class="select_box view-option wd168"  style="width: 100px">
                                                     <span class="select">전체</span>
@@ -735,11 +739,15 @@
                                               </div>
                                             </div>                                            
                                           </td>                                      
-                                          <td>제10조<br>
-                                            제1항</td>
                                           <td>
+                                            <a>
+                                              제10조<br>
+                                              제1항
+                                            </a>
+                                          </td>
+                                          <td style="overflow: visible;">
                                               <!-- 콤보박스 -->
-                                              <div class="select_box view-option wd168"  style="width: 100px">
+                                              <div class="select_box view-option wd168"  style="width: 100px;">
                                                   <span class="select">전체</span>
                                                   <div class="option">
                                                       <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
@@ -754,7 +762,7 @@
                                               <!-- //콤보박스 -->  
 
                                               <!-- 콤보박스 -->
-                                              <div class="select_box view-option wd168 mt-8"  style="width: 100px">
+                                              <div class="select_box view-option wd168 mt-8"  style="width: 100px;">
                                                   <span class="select">전체</span>
                                                   <div class="option">
                                                       <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
@@ -839,17 +847,15 @@
                     </tr>  
                     <tr>    
                       <th scope="row">
-                          <div class="form-element__wrap">                                  
-                            <div class="input-multi">
-                              <label class="input_type check mr-0">
-                                <input type="checkbox" name="q03">
-                                <span class="txt"></span>
-                              </label>
-                              <span class="form-element__inner input-type">
-                                  <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="구분 입력"  title="구분 입력을 입력하세요.">
-                              </span>
-                            </div>
-                        </div>                          
+                        <div class="form-element__wrap">                                  
+                          <label class="input_type check mr-0">
+                            <input type="checkbox" name="q03">
+                            <span class="txt"></span>
+                          </label>
+                          <span class="form-element__inner input-type">
+                            <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="구분 입력"  title="구분 입력을 입력하세요.">
+                          </span>
+                        </div>
                       </th>                    
                       <td>
                         <div class="form-element__wrap">                                  
@@ -915,6 +921,9 @@
                                         </td>
                                         <td>
                                           <textarea name="" id="" value="" style="width: 100%;height: 100%;" placeholder="개정안을 입력해 주세요."></textarea>
+                                          <div class="input-text-count text-area">
+                                            <strong class="current">0</strong> / <strong>100,000자</strong>
+                                          </div>
                                         </td>
                                     </tr>
                                   </tbody>
