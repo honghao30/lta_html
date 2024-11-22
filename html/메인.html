@@ -519,7 +519,9 @@
           </span>
         </div>
         <div class="inner">
-          <div class="swiper_wrap pc">
+          <!-- pc 배너 사용안함 -->
+          <!-- pc 배너 사용안함 -->
+          <div class="swiper_wrap pc" style="display: none;">
             <div class="swiper mySwiper type01" id="swiper1">
               <div class="swiper-wrapper">
                 <div class="swiper-slide"><a href="#"><img src="img/pc/banner/banner_01.png" alt=""></a></div>
@@ -569,8 +571,12 @@
               });
             </script>
           </div>
+          <!-- pc 배너 사용안함 -->
+          <!-- pc 배너 사용안함 -->
 
-          <div class="swiper_wrap mo">
+          <!-- mo 배너 사용안함 -->
+          <!-- mo 배너 사용안함 -->
+          <div class="swiper_wrap mo" style="display: none;">
             <div class="swiper mySwiper type01" id="mo_swiper1">
               <div class="swiper-wrapper">
                 <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
@@ -620,6 +626,85 @@
               });
             </script>
           </div>
+          <!-- mo 배너 사용안함 -->
+          <!-- mo 배너 사용안함 -->
+
+          <!-- pc,mo 합친 배너영역 -->
+          <!-- pc,mo 합친 배너영역 -->
+          <div class="swiper_wrap">
+            <div class="swiper mySwiper type01" id="swiper1">
+              <div class="swiper-wrapper">
+                <!-- <div class="swiper-slide"><a href="#"><img src="img/pc/banner/banner_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/pc/banner/banner_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/pc/banner/banner_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/pc/banner/banner_01.png" alt=""></a></div> -->
+
+                <div class="swiper-slide"><a href="#"><img src="https://www.mois.go.kr/utl/web/imgSrc.do?atchFileId=BBS_2024110701313155501_png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="https://www.mois.go.kr/utl/web/imgSrc.do?atchFileId=BBS_2024110701313155501_png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="https://www.mois.go.kr/utl/web/imgSrc.do?atchFileId=BBS_2024110701313155501_png" alt=""></a></div>
+                
+                <!-- <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div> -->
+              </div>
+              <div class="sw_bts">
+                <div class="pc">
+                  <div class="swiper-button-next"><img src="img/pc/swiper/btn_sw_right.png" alt=""></div>
+                  <div class="swiper-button-prev"><img src="img/pc/swiper/btn_sw_left.png" alt=""></div>
+                </div>
+                <div class="mo">
+                  <div class="swiper-button-next"><img src="img/mo/swiper/btn_sw_right.png" alt=""></div>
+                  <div class="swiper-button-prev"><img src="img/mo/swiper/btn_sw_left.png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-autoplay-button">
+                  <div class="pc">
+                    <img src="img/pc/swiper/btn_sw_pause.png" alt="" class="pause">
+                    <img src="img/pc/swiper/btn_sw_play.png" alt="" class="play">
+                  </div>
+
+                  <div class="mo">
+                    <img src="img/mo/swiper/btn_sw_pause.png" alt="" class="pause">
+                    <img src="img/mo/swiper/btn_sw_play.png" alt="" class="play">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script>
+              var swiper1 = new Swiper("#swiper1", {
+                slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
+                slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                loop: true,
+                // autoplay: {
+                //   delay: 3000,
+                //   disableOnInteraction: false,
+                // },
+                navigation: {
+                  nextEl: "#swiper1 .swiper-button-next",
+                  prevEl: "#swiper1 .swiper-button-prev",
+                },
+                pagination: {
+                  el: "#swiper1 .swiper-pagination",
+                  type: "fraction",
+                  clickable: true,
+                }
+              });
+              // swiper1의 일시정지 및 재생 제어
+              $("#swiper1 .swiper-autoplay-button .pause").on("click", function() {
+                swiper1.autoplay.stop();
+                $(this).hide();
+                $("#swiper1 .swiper-autoplay-button .play").show();
+              });
+              $("#swiper1 .swiper-autoplay-button .play").on("click", function() {
+                swiper1.autoplay.start();
+                $(this).hide();
+                $("#swiper1 .swiper-autoplay-button .pause").show();
+              });
+            </script>
+          </div>
+          <!-- pc,mo 합친 배너영역 -->
+          <!-- pc,mo 합친 배너영역 -->
         </div>
       </div>
       <!-- 공지사항, 자료실 -->
