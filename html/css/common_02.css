@@ -55,7 +55,7 @@ p.skip{margin-bottom:30px;}
     background-color: #F4F7FB;    
     border: 1px solid #D8DDE9;
 }
-.radio-box input[type="radio"]:checked+span::before {
+.radio-box input[type="radio"]:checked+span:before {
     content: '';
     display: block;
     background-color: #706DF0;
@@ -2357,18 +2357,14 @@ td:has(.text-type) {
     color:#494E56;
 }
 .btn-refresh-16 {
-    width: 24px;
-    height: 24px;
+    border: 0;
     padding:0;
     background-color: transparent;
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 2px;
     margin: 0 auto;
     color: #717B8A;
-    background-color: #fff;
-    border: 1px solid #E1E3E9;
-    border-radius: 4px;
 }
 .btn-refresh-16 i {
     display: inline-block;
@@ -4151,8 +4147,5 @@ i.btn-refresh-16 {
   height: auto;
 }
 
-.govment-part-dv {
-    text-align: left;
-    line-height: 1.7;
-}
+
 
