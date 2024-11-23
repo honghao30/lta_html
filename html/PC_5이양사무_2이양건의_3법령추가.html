@@ -378,7 +378,20 @@
                             소관부처
                         </th>                    
                         <td colspan="3">
-                            <ul class="form-el-list-wrap dynamic_add-list"><li class="input-wrap flex-row">
+                            <ul class="form-el-list-wrap dynamic_add-list">
+                              <li class="input-wrap flex-row">
+                                  <!-- 콤보박스 -->
+                                  <select name="" id="" style="width: 408px;">
+                                      <option value="선택함1">선택함1</option>
+                                      <option value="선택함2">선택함2</option>
+                                      <option value="선택함3">선택함3</option>
+                                  </select>                                
+                                  <button type="button" class="btn-dark-light btn-add">
+                                      <i class="ico-plus"></i>
+                                      추가
+                                  </button>
+                              </li>
+                              <li class="input-wrap flex-row">
                                 <select name="" id="" style="width: 408px;" title="선택하세요">
                                     <option value="선택함1">선택함1</option>
                                     <option value="선택함2">선택함2</option>
@@ -390,19 +403,7 @@
                                 <button type="button" class="btn-dark-light btn-add">
                                     <i class="ico-plus"></i> 추가
                                 </button>
-                            </li>
-                            <li class="input-wrap flex-row">
-                                <!-- 콤보박스 -->
-                                <select name="" id="" style="width: 408px;">
-                                    <option value="선택함1">선택함1</option>
-                                    <option value="선택함2">선택함2</option>
-                                    <option value="선택함3">선택함3</option>
-                                </select>                                
-                                <button type="button" class="btn-dark-light btn-add">
-                                    <i class="ico-plus"></i>
-                                    추가
-                                </button>
-                            </li>
+                            </li>                            
                             </ul>
                         </td>                                                 
                     </tr>       
@@ -411,7 +412,38 @@
                             이양방향
                         </th>                    
                         <td colspan="3">
-                            <ul class="form-el-list-wrap dynamic_add-list2"><li class="input-wrap flex-row">
+                            <ul class="form-el-list-wrap dynamic_add-list2">
+                              <li class="input-wrap flex-row">
+                                  <!-- 콤보박스 -->
+                                  <select name="" id="" style="width: 188px;">
+                                      <option value="선택함1">선택함1</option>
+                                      <option value="선택함2">선택함2</option>
+                                      <option value="선택함3">선택함3</option>
+                                  </select>
+                                  →
+                                  <!-- //콤보박스 -->      
+                                  <!-- 콤보박스 -->
+                                  <select name="" id="" style="width: 188px;">
+                                      <option value="선택함1">선택함1</option>
+                                      <option value="선택함2">선택함2</option>
+                                      <option value="선택함3">선택함3</option>
+                                  </select>
+                                  <!-- //콤보박스 -->         
+                                  <div class="bar">&nbsp;</div>
+                                  <label class="input_type check mr-0">
+                                      <input type="checkbox" checked name="q01">
+                                      <span class="txt"></span>
+                                  </label>
+                                  <div class="view on" style="width:280px;">
+                                      <span class="input_cont">
+                                      <input type="text" value="인구 50만 미만" style="padding-left: 10px;" placeholder="내용 추가 (30자 이내)">
+                                      </span>
+                                  </div>    
+                                  <button type="button" class="btn-dark-light btn-add">
+                                    <i class="ico-plus"></i> 추가
+                                  </button>                                                                                                  
+                              </li>                              
+                              <li class="input-wrap flex-row">
                                 <select name="" id="" style="width: 188px;" title="선택하세요">
                                     <option value="선택함1">선택함1</option>
                                     <option value="선택함2">선택함2</option>
@@ -430,7 +462,7 @@
                                 </label>
                                 <div class="view on" style="width:280px;">
                                     <span class="input_cont">
-                                    <input type="text" style="padding-left: 10px;" placeholder="내용 추가 (30자 이내)">
+                                    <input type="text" style="padding-left: 10px;" disabled placeholder="내용 추가 (30자 이내)">
                                     </span>
                                 </div>               
                                 <button type="button" class="btn-dark-light btn-delete">
@@ -439,80 +471,37 @@
                                 <button type="button" class="btn-dark-light btn-add">
                                     <i class="ico-plus"></i> 추가
                                 </button>                                                                              
-                        </li><li class="input-wrap flex-row">
-                                <select name="" id="" style="width: 188px;" title="선택하세요">
-                                    <option value="선택함1">선택함1</option>
-                                    <option value="선택함2">선택함2</option>
-                                    <option value="선택함3">선택함3</option>
-                                </select>
-                                →
-                                <select name="" id="" style="width: 188px;">
-                                    <option value="선택함1">선택함1</option>
-                                    <option value="선택함2">선택함2</option>
-                                    <option value="선택함3">선택함3</option>
-                                </select>
-                                <div class="bar">&nbsp;</div>
-                                <label class="input_type check mr-0">
-                                    <input type="checkbox" name="q01">
-                                    <span class="txt"></span>
-                                </label>
-                                <div class="view on" style="width:280px;">
-                                    <span class="input_cont">
-                                    <input type="text" style="padding-left: 10px;" placeholder="내용 추가 (30자 이내)">
-                                    </span>
-                                </div>               
-                                <button type="button" class="btn-dark-light btn-delete">
-                                    <i class="ico-minus"></i> 삭제
-                                </button>      
-                                <button type="button" class="btn-dark-light btn-add">
-                                    <i class="ico-plus"></i> 추가
-                                </button>                                                                              
-                        </li>
-                        <li class="input-wrap flex-row">
-                            <!-- 콤보박스 -->
-                            <select name="" id="" style="width: 188px;">
-                                <option value="선택함1">선택함1</option>
-                                <option value="선택함2">선택함2</option>
-                                <option value="선택함3">선택함3</option>
-                            </select>
-                            →
-                            <!-- //콤보박스 -->      
-                            <!-- 콤보박스 -->
-                            <select name="" id="" style="width: 188px;">
-                                <option value="선택함1">선택함1</option>
-                                <option value="선택함2">선택함2</option>
-                                <option value="선택함3">선택함3</option>
-                            </select>
-                            <!-- <div class="select_box" style="width: 188px;">
-                                <span class="select">시군구</span>
-                                <div class="option">
-                                <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                    <ul>
-                                    <li>선택함1</li>
-                                    <li>선택함2</li>
-                                    <li>선택함3</li>
-                                    </ul>
-                                </div>              
-                                </div>
-                            </div> -->
-                            <!-- //콤보박스 -->         
-                            <div class="bar">&nbsp;</div>
-                            <label class="input_type check mr-0">
-                                <input type="checkbox" checked name="q01">
-                                <span class="txt"></span>
-                            </label>
-                            <div class="view on" style="width:280px;">
-                                <span class="input_cont">
-                                <input type="text" value="인구 50만 미만" style="padding-left: 10px;" placeholder="내용 추가 (30자 이내)">
-                                </span>
-                            </div>                                                                                                     
-                        </li>
-                    </ul>
+                              </li>
+                          </ul>
                         </td>                                                 
                     </tr>                                                                                                                                                                                                             
                 </tbody>
             </table>
           </div>
+          <!-- //체크박스 시 활성화 -->
+          <script>                  
+              const checkItems = document.querySelectorAll('.dynamic_add-list2 .input-wrap input[type="checkbox"]');     
+              checkItems.forEach(item => {
+                  if(!item.checked) {
+                    item.closest('li').querySelector('.btn-add').classList.add('disabled');
+                    item.closest('li').querySelector('.btn-delete').classList.add('disabled');
+                  } 
+              });
+                      
+              checkItems.forEach(item => {
+                  item.addEventListener('change', (e) => {          
+                    if(item.checked) {
+                      item.parentElement.nextElementSibling.querySelector('input[type="text"]').disabled = false;
+                      item.closest('li').querySelector('.btn-add').classList.remove('disabled');
+                      item.closest('li').querySelector('.btn-delete').classList.remove('disabled');                      
+                    } else {
+                      item.parentElement.nextElementSibling.querySelector('input[type="text"]').disabled = true;
+                      item.closest('li').querySelector('.btn-add').classList.add('disabled');
+                      item.closest('li').querySelector('.btn-delete').classList.add('disabled');
+                    }                    
+                  })                  
+              });
+          </script>
           <div class="table_cont mt-32">
             <table class="table-body-only">
                 <colgroup>                    
@@ -977,7 +966,7 @@
                                         <td>
                                           <textarea name="" id="" value="" placeholder="개정안을 입력해 주세요." style="width: 100%;height: 100%;"></textarea>
                                             <div class="input-text-count text-area mt-10">
-                                            <strong class="current">0</strong> / <strong>10,000자</strong>
+                                            <strong class="current">0</strong> / <strong>100,000자</strong>
                                             </div>
                                         </td>
                                     </tr>

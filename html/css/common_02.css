@@ -210,7 +210,8 @@ p.skip{margin-bottom:30px;}
     opacity: 0.5;
 }
 .form-element__inner:has(input[disabled]),
-.form-element__inner.disabled {
+.form-element__inner.disabled, 
+.input_cont input:disabled {
     background-color: #F4F7FB; 
 }
 .form-element__inner.text-area {height: 404px;padding: 0;}
@@ -567,6 +568,9 @@ p.skip{margin-bottom:30px;}
 }
 .is-toggle-button-wrap .btn-dark-light.is-active::after {
     transform: rotate(180deg);
+}
+.btn-dark-light.disabled {
+    pointer-events : none;
 }
 .btn-border-gray.size-sm {
     height: 28px;

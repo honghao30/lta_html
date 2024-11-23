@@ -333,19 +333,35 @@ document.addEventListener("DOMContentLoaded", () => {
             const newListItem = document.createElement('li');
             newListItem.classList.add('input-wrap', 'flex-row');
             newListItem.innerHTML = itemHTML;
-            listElement.insertBefore(newListItem, listElement.firstChild);
+            listElement.appendChild(newListItem, listElement.firstChild);
+            //listElement.insertBefore(newListItem, listElement.firstChild);
         };
     
         listElement && listElement.addEventListener('click', (e) => {
             if (e.target.closest('.btn-add')) {
+                e.target.closest('.btn-add').style.display = 'none';
                 handleAddClick(itemHTML);
             }
     
             if (e.target.closest('.btn-delete')) {
                 const listItem = e.target.closest('li');
+                listItem.previousElementSibling.querySelector('.btn-add').style.display = 'flex';
                 listItem.remove();
             }
         });
+        if(listElement) {
+            const newList = listElement.querySelectorAll('li');
+            if(newList.length > 1) {
+                newList.forEach((item) => {
+                    item.querySelector('.btn-add').style.display = 'none'; // 기존 스타일 초기화
+                });
+            
+                // 마지막 요소에만 style.display = 'flex' 설정
+                const lastItem = newList[newList.length - 1];
+                lastItem.querySelector('.btn-add').style.display = 'flex';
+            } 
+        }       
+
     };
     const govPartSelectHtml = `
         <select name="" id="" style="width: 408px;"  title="선택하세요">
