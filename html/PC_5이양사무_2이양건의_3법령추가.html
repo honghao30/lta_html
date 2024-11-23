@@ -601,21 +601,22 @@
                                 <table>
                                     <colgroup>                                      
                                         <col width="3%">
-                                        <col width="5%">
+                                        <col width="3%">
                                         <col width="4%">
                                         <col>
-                                        <col width="5%">   
+
+                                        <col width="7%"> 
+                                        <col width="6%">
+                                        <col width="4%">
+                                        <col width="5%">
+
+                                        <col width="7%">
+                                        <col width="7%">
+                                        <col width="5%">
   
-                                        <col width="5%">
-                                        <col width="3%">
-                                        <col width="5%">
-                                        <col width="5%">
-                                        <col width="5%">
-                                        <col width="5%">
-  
-                                        <col width="5%">                                                                                                                                                                                                                           
-                                        <col width="5%">
-                                        <col width="5%">
+                                        <col width="6%">                                                                                                                                                                                                                           
+                                        <col width="6%">
+                                        <col width="6%">
                                         <col width="5%">
                                         <col width="9%">
                                     </colgroup>
@@ -714,7 +715,7 @@
                                             <div class="form-element__wrap">                                  
                                               <div class="input-multi">
                                                   <span class="form-element__inner input-type">
-                                                      <input type="text" value="수정레저" class="input-type1-font14" maxlength="50" placeholder="입력하세요." title="입력하세요.">
+                                                      <input type="text" value="수정레저" class="input-type1-font14" maxlength="50" placeholder="입력" title="입력하세요.">
                                                   </span>
                                               </div>
                                             </div>  
@@ -730,7 +731,7 @@
                                             <div class="form-element__wrap">                                  
                                               <div class="input-multi">
                                                   <span class="form-element__inner input-type">
-                                                      <input type="text" value="국가" class="input-type1-font14" maxlength="50" placeholder="입력하세요." title="입력하세요.">
+                                                      <input type="text" value="국가" class="input-type1-font14" maxlength="50" placeholder="입력" title="입력하세요.">
                                                   </span>
                                               </div>
                                             </div>                                          
@@ -753,7 +754,7 @@
                                             <div class="form-element__wrap">                                  
                                               <div class="input-multi">
                                                   <span class="form-element__inner input-type">
-                                                      <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="입력하세요." title="입력하세요.">
+                                                      <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="입력" title="입력하세요.">
                                                   </span>
                                               </div>
                                             </div>                                           
@@ -762,7 +763,7 @@
                                             <div class="form-element__wrap">                                  
                                               <div class="input-multi">
                                                   <span class="form-element__inner input-type">
-                                                      <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="입력하세요." title="입력하세요.">
+                                                      <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="입력" title="입력하세요.">
                                                   </span>
                                               </div>
                                             </div>                                           
@@ -778,7 +779,7 @@
                                             <div class="form-element__wrap">                                  
                                             <div class="input-multi">
                                                 <span class="form-element__inner input-type">
-                                                    <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="입력하세요." title="입력하세요.">
+                                                    <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="입력" title="입력하세요.">
                                                 </span>
                                             </div>
                                           </div> </td>
@@ -793,7 +794,7 @@
                                             <div class="form-element__wrap">                                  
                                               <div class="input-multi">
                                                   <span class="form-element__inner input-type">
-                                                      <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="입력하세요." title="입력하세요.">
+                                                      <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder="입력" title="입력하세요.">
                                                   </span>
                                               </div>
                                             </div>                                            
@@ -901,7 +902,7 @@
                     </tr>  
                     <tr>    
                       <th scope="row">
-                        <div class="form-element__wrap">                                  
+                        <div class="form-element__wrap flex-row">                                  
                           <label class="input_type check mr-0">
                             <input type="checkbox" name="q03">
                             <span class="txt"></span>
@@ -924,14 +925,16 @@
                     </tr>                                                                                                                                                                                                                          
                     <tr>
                         <td colspan="2">
-                          <button type="button" class="btn-dark-light btn-add">
-                            <i class="ico-plus"></i>
-                            입력 추가
-                          </button>
-                          <button type="button" class="btn-dark-light btn-minus">
-                            <i class="ico-minus"></i>
-                            선택 삭제
-                          </button>   
+                          <div class="flex-row">
+                            <button type="button" class="btn-dark-light btn-add">
+                              <i class="ico-plus"></i>
+                              입력 추가
+                            </button>
+                            <button type="button" class="btn-dark-light btn-minus">
+                              <i class="ico-minus"></i>
+                              선택 삭제
+                            </button>             
+                          </div>  
                         </td>
                     </tr>
                 </tbody>
@@ -974,7 +977,7 @@
                                         <td>
                                           <textarea name="" id="" value="" placeholder="개정안을 입력해 주세요." style="width: 100%;height: 100%;"></textarea>
                                             <div class="input-text-count text-area mt-10">
-                                            <strong class="current">0</strong> / <strong>1,000자</strong>
+                                            <strong class="current">0</strong> / <strong>10,000자</strong>
                                             </div>
                                         </td>
                                     </tr>
