@@ -1246,6 +1246,15 @@ p.skip{margin-bottom:30px;}
 .search-input-inner.deliberation {
     position: relative;
 }
+.ui-datepicker-title select {
+    padding: 0px 10px 0 16px;
+    height: 30px;
+    line-height: 30px;
+    width: 42% !important;
+    margin: 1px 3px !important;
+    border-radius: 6px;   
+    background: #fff url(../img/pc/ico/ico_select_arrow.png) no-repeat right 5px center !important;
+}
 .align-top {
     align-items: flex-start !important;
 }
