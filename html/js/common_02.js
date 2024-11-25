@@ -334,6 +334,7 @@ document.addEventListener("DOMContentLoaded", () => {
             newListItem.classList.add('input-wrap', 'flex-row');
             newListItem.innerHTML = itemHTML;
             listElement.appendChild(newListItem, listElement.firstChild);
+
             //listElement.insertBefore(newListItem, listElement.firstChild);
         };
     
@@ -341,6 +342,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (e.target.closest('.btn-add')) {
                 e.target.closest('.btn-add').style.display = 'none';
                 handleAddClick(itemHTML);
+                checkedLists();
             }
     
             if (e.target.closest('.btn-delete')) {
@@ -412,7 +414,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </select>
             <div class="bar">&nbsp;</div>
             <label class="input_type check mr-0">
-                <input type="checkbox" name="q01">
+                <input type="checkbox" checked name="q01">
                 <span class="txt"></span>
             </label>
             <div class="view on" style="width:280px;">
@@ -497,5 +499,29 @@ document.addEventListener("DOMContentLoaded", () => {
     checkboxListFn('.law-list2')
     checkboxListFn('.iyangsamu-table')
     
+    const checkedLists = () => {
+        const checkItems = document.querySelectorAll('.dynamic_add-list2 .input-wrap input[type="checkbox"]');     
+        checkItems.forEach(item => {
+            if(!item.checked) {
+                item.closest('li').querySelector('.btn-add').classList.add('disabled');
+                item.closest('li').querySelector('.btn-delete').classList.add('disabled');
+            } 
+        });
+                
+        checkItems.forEach(item => {
+            item.addEventListener('change', (e) => {          
+                if(item.checked) {
+                    item.parentElement.nextElementSibling.querySelector('input[type="text"]').disabled = false;
+                    item.closest('li').querySelector('.btn-add').classList.remove('disabled');
+                    item.closest('li').querySelector('.btn-delete').classList.remove('disabled');                      
+                } else {
+                    item.parentElement.nextElementSibling.querySelector('input[type="text"]').disabled = true;
+                    item.closest('li').querySelector('.btn-add').classList.add('disabled');
+                    item.closest('li').querySelector('.btn-delete').classList.add('disabled');
+                }                    
+            })                  
+        });
+    }
+    checkedLists();
     
 });
