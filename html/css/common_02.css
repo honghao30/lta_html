@@ -4189,3 +4189,13 @@ i.btn-refresh-16 {
     width: 150px;
     display: flex;
 }
+
+.btn-refresh-16 i {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid #E1E3E9;
+    background-color: #fff;
+    background-size: 16px 16px;
+    background-position: center;
+}
