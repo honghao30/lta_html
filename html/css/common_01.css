@@ -822,7 +822,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
     .top_info_box .btn+.btn{margin-left:2px;}
 
     .top_info_box .select_box.view-option{margin:0 5px;}
-    .top_info_box .select_box.view-option .select{min-width:70px;padding:0 25px 0 10px;background-position: center right 5px !important;}
+    .top_info_box .select_box.view-option .select{min-width:70px;padding:0 35px 0 10px;background-position: center right 5px !important;}
     .top_info_box .select_box.view-option .select::after{left:initial;right:25px;}
 
     .top_info_box .top_select_box{padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid #D8DDE9;}
@@ -1217,7 +1217,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .inner{padding:0 20px;position:relative;}
 
         .top_info_box .select_box.view-option{margin:0 5px;}
-        .top_info_box .select_box.view-option .select{width:70px;padding:0 25px 0 10px;background-position: center right 5px !important;}
+        .top_info_box .select_box.view-option .select{width:70px;padding:0 35px 0 10px;background-position: center right 5px !important;}
         .top_info_box .select_box.view-option .select::after{left:initial;right:25px;}
         .top_info_box .btn+.btn{margin-left:2px;}
 
@@ -1896,7 +1896,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
 
         .mo-search-detail-content{display:none !important;}
         .mo-search-detail-content.is-active{display:block !important;}
-        .scroll-type table{table-layout: fixed;}
+        /* .scroll-type table{table-layout: fixed;} */
         /* common_02.css 추가 아니면 수정할부분 */
         /* common_02.css 추가 아니면 수정할부분 */
         /* common_02.css 추가 아니면 수정할부분 */

@@ -3799,10 +3799,10 @@ i.btn-refresh-16 {
     border-top: 1px solid #C4C5F7;
     gap: 0 !important;
 }
-.form-element-rows {
+/* .form-element-rows {
     padding: 12px 0;
     border-bottom: 1px solid #C4C5F7; 
-}
+} */
 .form-element-rows.border-none {
     padding: 8px 0;
     border-bottom: 0;

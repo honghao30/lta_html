@@ -334,20 +334,25 @@ $(document).ready(function() {
 
 // 탭
 $(document).ready(function() {
-  $('.tab-menu li a').click(function(e) {
-    e.preventDefault(); // 링크 기본 동작 방지
+  $('.tabs').each(function() {
+    var $tabs = $(this); // 현재 탭 컨테이너 참조
 
-    var index = $(this).parent().index(); // 클릭한 탭의 인덱스 가져오기
+    $tabs.find('.tab-menu li a').click(function(e) {
+      e.preventDefault(); // 링크 기본 동작 방지
 
-    // 탭 메뉴 활성화 클래스 전환
-    $('.tab-menu li').removeClass('active');
-    $(this).parent().addClass('active');
+      var index = $(this).parent().index(); // 클릭한 탭의 인덱스 가져오기
 
-    // 탭 콘텐츠 활성화 클래스 전환 (인덱스 기준으로 매칭)
-    $('.tab').removeClass('active');
-    $('.tab').eq(index).addClass('active');
+      // 탭 메뉴 활성화 클래스 전환
+      $tabs.find('.tab-menu li').removeClass('active');
+      $(this).parent().addClass('active');
+
+      // 탭 콘텐츠 활성화 클래스 전환
+      $tabs.find('.tab').removeClass('active');
+      $tabs.find('.tab').eq(index).addClass('active');
+    });
   });
 });
+
 
 // 테이블에 체크박스 중복눌림 제어
 $(document).ready(function() {
