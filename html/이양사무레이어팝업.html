@@ -556,12 +556,12 @@
                             <input type="text" class="ico_search" placeholder="검색어를 입력해 주세요.">
                             <button class="btn_search"><span class="hidden">검색</span></button>
                         </span>
-                        <button class="btn btn_size_s btn_search_detail bg-purple"><span>상세검색</span></button>                         
+                        <button class="btn btn_size_s btn_search_detail bg-purple"><span>상세검색</span></button>
                     </span>
                 </div>
                 <!-- 검색 -->
         <!-- class on 이 붙으면 열림 -->
-        <div class="search_cont_detail iyangsamu-search mt-24">
+        <div class="search_cont_detail iyangsamu-search type02 mt-24">
             <div class="search-table">
                 <table class="table-body-only">
                     <colgroup>
@@ -592,53 +592,58 @@
                                 </select>
                                 <!-- select_box -->                            
                             </td>                        
-                        </tr>  
+                        </tr>
                         <tr>
                           <th scope="row">법령명 <span class="red-color">*</span></th>
                           <td colspan="3">
-                            <div class="form-element__wrap">                                
-                                <span class="form-element__inner input-type input_del">
-                                    <input type="text" class="input-type1-font14" value="도시재생 활성화 및 지원에 관한 법률" placeholder="법령명을 입력해 주세요." title="법령명을 입력해 주세요">
-                                    <button class="del"></button>
-                                </span>
-                            </div>  
+                            <div class="flex-box">
+                              <div class="form-element__wrap">                                
+                                  <span class="form-element__inner input-type input_del">
+                                      <input type="text" class="input-type1-font14" value="도시재생 활성화 및 지원에 관한 법률" placeholder="법령명을 입력해 주세요." title="법령명을 입력해 주세요">
+                                      <button class="del"></button>
+                                  </span>
+                              </div>
+                              <button class="btn_reset_only-icon"></button>
+                            </div>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">법령명<br>선택</th>
-                          <td colspan="3" class="text-l">                            
-                              <!-- select_box -->
-                              <select name="" id="" class="selectbox" title="법령명 선택" style="width: 100%;">
-                                <option value="선택함1">전체</option>
-                                <option value="선택함2">선택함2</option>
-                                <option value="선택함3">선택함3</option>
-                              </select>
-                              <!-- select_box -->                            
+                          <td colspan="3">
+                            <!-- select_box -->
+                            <select name="" id="" class="selectbox" title="법령명 선택" style="width: 100%;">
+                              <option value="선택함1">전체</option>
+                              <option value="선택함2">선택함2</option>
+                              <option value="선택함3">선택함3</option>
+                            </select>
+                            <!-- select_box -->
                           </td>          
                         </tr>                        
                         <tr>
                             <th scope="row">조문</th>
-                            <td colspan="3">
+                            <td>
                               <div class="form-element__wrap">                                  
                                 <div class="input-multi">
-                                  <span class="form-element__inner input-type wd-160">
+                                  <span class="form-element__inner input-type">
                                       <input type="text" value="" class="input-type1-font14" maxlength="10" placeholder="조문" title="조문 입력하세요">
                                   </span>
-                                  <span>조</span>
-                                  <span class="dv-bar"></span>
-                                  <span class="form-element__inner input-type">
-                                    <input type="text" value="" class="input-type1-font14" maxlength="10" placeholder="조문을 입력해 주세요." title="조문을 입력해 주세요.">
-                                  </span>                                  
+                                  <span>조</span>              
                                 </div>
                               </div>
                             </td>
+                            <th scope="row">조문상세</th>
+                            <td class="text-l flex-box">
+                              <span class="form-element__inner input-type">
+                                <input type="text" value="" class="input-type1-font14" maxlength="10" placeholder="조문을 입력해 주세요." title="조문을 입력해 주세요.">
+                              </span>
+                              <button class="btn_reset_only-icon"></button>
+                            </td>                       
                         </tr>     
                     </tbody>
                 </table>
             </div>          
               <button class="btn_close x-icon-purple"></button>
               <button class="btn_search_only-icon"></button>
-              <button class="btn_reset_only-icon"></button>
           </div>
         <!-- //상세검색 -->
                 <div class="top_info_box pc-flex mt-64">

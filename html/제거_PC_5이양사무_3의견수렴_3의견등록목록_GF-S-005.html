@@ -235,7 +235,6 @@
             </ul>
           </div>
           <div class="pc">
-            <a href="#none" class="btn ico_file_download"><span>파일 다운로드</span></a>
             <a href="#none" class="btn ico_print"><span>프린트</span></a>
           </div>
 
@@ -267,7 +266,6 @@
                     중앙부처는 법령, 정책, 방향, 기존 업무 성과 등을 분석하여 이양 대상 사무의 타당성을 검토합니다.<br>
 지방자치단체는 사무를 실제로 수행하는 현장을 조사하여 이양의 필요성, 준비 상태 점검 및 실효성을 검토합니다.
                   </div>
-
               </div>              
           </div>
 
@@ -280,15 +278,16 @@
                 <div class="flex-row justify-between flex-end mt-16">
                     <div class="left-button">
                         <a href="#none" class="btn ico_pencil"><span>이력확인</span></a> 
-                        <a href="#none" class="btn ico_listen"><span>의견수렴 종료</span></a>
-                        <a href="#none" class="btn ico_check_05"><span>분과위 심의 요청</span></a>   
                         <a href="#none" class="btn ico_opinion"><span>의견수렴 재개</span></a>
+                        <!-- <a href="#none" class="btn ico_listen"><span>의견수렴 종료</span></a> -->
+                        <!-- <a href="#none" class="btn ico_check_05"><span>분과위 심의 요청</span></a>    -->
                     </div>
                     <div class="right-button">                        
                         <a href="#none" class="btn ico_new_window"><span>페이지 따로보기</span></a>  
-                        <a href="#none" class="btn ico_gray_arrow"><span>의견 계속 등록</span></a>
+                        <!-- <a href="#none" class="btn ico_gray_arrow"><span>의견 계속 등록</span></a> -->
                     </div>
                 </div>
+                <!-- 승인자정보 -->
                 <div class="button__wrap justify-end mt-16">
                     <button type="button" class="btn-dark-light">                                        
                         정보보기
@@ -304,112 +303,59 @@
                                 <th>
                                     <div class="flex-row justify-between">
                                         <div>승인자 정보</div>
-                                        <button type="button" class="btn-toggle-tbody" style="display: none;">
-                                            <span>펼침</span>
-                                        </button>
                                     </div>
                                 </th>
                             </tr>
                         </thead>
-                        <tbody class="toggle-tbody">
+                        <tbody>
                             <tr>                        
                                 <td>
                                     <div class="td-inner-wrap">
                                         <div class="cate-tit">승인구분</div>
                                         <div class="form-element__wrap">                                
-                                            <span class="form-element__inner input-type">
-                                                <input type="text" value="의견수렴으로 전환" class="input-type1-font14" placeholder="승인구분 입력하세요" title="승인구분 입력하세요" disabled="">
+                                            <span class="form-element__inner input-type"  style="width: 150px;" >
+                                                <input type="text" value="의견수렴 완료" class="input-type1-font14" placeholder="의견수렴 완료" title="승인구분 입력하세요" disabled="">
                                             </span>
                                         </div>
                                         <div class="cate-tit ml-10">기관/부서명</div>
-                                        <div class="form-element__wrap">                                
+                                        <div class="form-element__wrap"   style="width: 150px;" >                                
                                             <span class="form-element__inner input-type disabled">
                                                 행정안전부/<br>자체분권지원과
                                             </span>
                                         </div>       
                                         <div class="cate-tit ml-10">이름</div>
                                         <div class="form-element__wrap">                                
-                                            <span class="form-element__inner input-type">
+                                            <span class="form-element__inner input-type" style="width: 150px;">
                                                 <input type="text" value="홍**" class="input-type1-font14" placeholder="이름을 입력하세요" title="이름을 입력하세요" disabled="">
                                             </span>
                                         </div>          
                                         <div class="cate-tit ml-10">부서번호</div>
                                         <div class="form-element__wrap">                                
-                                            <span class="form-element__inner input-type">
+                                            <span class="form-element__inner input-type" style="width: 150px;">
                                                 <input type="text" value="" class="input-type1-font14" placeholder="부서번호를 입력하세요" title="부서번호를 입력하세요" disabled="">
                                             </span>
                                         </div> 
                                         <div class="cate-tit ml-10">승인일</div>
                                         <div class="form-element__wrap">                                
-                                            <span class="form-element__inner input-type">
+                                            <span class="form-element__inner input-type" style="width: 150px;">
                                                 <input type="text" value="2024-09-03" class="input-type1-font14" placeholder="승인일 입력하세요" title="승인일 입력하세요" disabled="">
                                             </span>
                                         </div>                                                                                                                      
                                     </div>                          
                                 </td>                        
-                            </tr>      
-                            <tr class="tr-hide">                        
-                                <td>
-                                    <div class="td-inner-wrap">
-                                        <div class="cate-tit">승인구분</div>
-                                        <div class="form-element__wrap">                                
-                                            <span class="form-element__inner input-type">
-                                                <input type="text" value="의견수렴으로 전환" class="input-type1-font14" placeholder="승인구분 입력하세요" title="승인구분 입력하세요" disabled="">
-                                            </span>
-                                        </div>
-                                        <div class="cate-tit ml-10">기관/부서명</div>
-                                        <div class="form-element__wrap">                                
-                                            <span class="form-element__inner input-type disabled">
-                                                행정안전부/<br>자체분권지원과
-                                            </span>
-                                        </div>       
-                                        <div class="cate-tit ml-10">이름</div>
-                                        <div class="form-element__wrap">                                
-                                            <span class="form-element__inner input-type">
-                                                <input type="text" value="홍**" class="input-type1-font14" placeholder="이름을 입력하세요" title="이름을 입력하세요" disabled="">
-                                            </span>
-                                        </div>          
-                                        <div class="cate-tit ml-10">부서번호</div>
-                                        <div class="form-element__wrap">                                
-                                            <span class="form-element__inner input-type">
-                                                <input type="text" value="" class="input-type1-font14" placeholder="부서번호를 입력하세요" title="부서번호를 입력하세요" disabled="">
-                                            </span>
-                                        </div> 
-                                        <div class="cate-tit ml-10">승인일</div>
-                                        <div class="form-element__wrap">                                
-                                            <span class="form-element__inner input-type">
-                                                <input type="text" value="2024-09-03" class="input-type1-font14" placeholder="승인일 입력하세요" title="승인일 입력하세요" disabled="">
-                                            </span>
-                                        </div>                                                                                                                      
-                                    </div>                          
-                                </td>                       
-                            </tr>                                                                                                                                                                                                                           
+                            </tr>                                                                                                                                                                                                                                 
                         </tbody>
                     </table>
                 </div>        
                 <script>
                     const tbodyToggleButton = document.querySelector('.btn-toggle-tbody');
-                    const trList = document.querySelectorAll('.toggle-tbody tr'); // 수정: 올바른 선택자
-                    if (trList.length > 1) {
-                        tbodyToggleButton.style.display = 'block'; // 버튼 보이기
-                    } else {
-                        tbodyToggleButton.style.display = 'none'; // tr이 하나 이하라면 버튼 숨기기
-                    }
-
-                    tbodyToggleButton.addEventListener('click', () => {
-                        tbodyToggleButton.classList.toggle('is-active');                        
-                        tbodyToggleButton.querySelector('span').innerText =
-                            tbodyToggleButton.querySelector('span').innerText === '펼침' ? '접기' : '펼침';
-                        
-                        trList.forEach((tr,index) => {
-                            if(index !== 0) {
-                                tr.classList.toggle('tr-hide');
-                            }
-                            
-                        });
+                    tbodyToggleButton && tbodyToggleButton.addEventListener('click', ()=> {
+                        tbodyToggleButton.classList.toggle('is-active');
+                        document.getElementById('toggle-tbody').classList.toggle('is-active');
                     });
-
-                </script>                          
+                </script>
+                <!-- //승인자정보 -->   
+                 
                 <div class="table_cont mt-16">
                     <table class="table-body-only">
                         <colgroup>                                                
@@ -422,11 +368,11 @@
                                         <div>
                                             의견수렴 현황
                                             <div class="dv-bar ml-15"></div>                                    
-                                            <span class="total ml-15">총 <em>9</em> 건</span>
+                                            <span class="total ml-15">총 <em><a>9</a></em> 건</span>
                                             <div class="dv-bar ml-10"></div>  
-                                            <span class="total ml-10">수용 / 동의 <em>9</em> 건</span>
+                                            <span class="total ml-10">수용 / 동의 <em><a>9</a></em> 건</span>
                                             <div class="dv-bar ml-10"></div>  
-                                            <span class="total ml-10">수용곤란 / 부동의 <em>9</em> 건</span>
+                                            <span class="total ml-10">수용곤란 / 부동의 <em><a>9</a></em> 건</span>
                                         </div>
                                         <div class="mr-16 is-toggle-button-wrap">
                                             <button type="button" class="btn-dark-light">                                        
@@ -438,148 +384,143 @@
                             </tr>
                         </thead>
                     </table>
-                    <section class="toggle-dsplay-wrap wid600" style="display: none;">
+                    <section class="toggle-dsplay-wrap wid600" style="top: 66px;display: none;">
                         <div class="modal_n_wrap roll-modal full-width">
-                            <div class="modal-header"></div>
-                            <div class="modal_n_body list-table-ht500">
-                                <div class="table_cont tb_cursor">
-                                    <table class="table-list iyangsamu-table">
-                                        <colgroup>                        
-                                                <col style="width:5%;">                        
-                                                <col>    
-                                                <col> 
-                                                <col style="width:15%;">                            
-                                        </colgroup>
-                                        <thead>
-                                            <tr>                       
-                                                <th>No.</th>
-                                                <th colspan="2">의견제출기관</th>
-                                                <th>의견</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>중앙부처</td>
-                                                <td>대전</td>
-                                                <td>
-                                                    <div class="radio-box">
-                                                        <label id="">
-                                                            <input type="radio" name="type1" value="type010" id="" >
-                                                            <span>동의</span>
-                                                        </label>
-                                                        <label id="">
-                                                            <input type="radio" name="type1" value="type011" id="">
-                                                            <span>부동의</span>
-                                                        </label>                                      
-                                                    </div>  
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>중앙부처</td>
-                                                <td>대전</td>
-                                                <td>
-                                                    <div class="radio-box">
-                                                        <label id="">
-                                                            <input type="radio" name="type1" value="type010" id="">
-                                                            <span>동의</span>
-                                                        </label>
-                                                        <label id="">
-                                                            <input type="radio" name="type1" value="type011" id="" checked="">
-                                                            <span>부동의</span>
-                                                        </label>                                      
-                                                    </div>  
-                                                </td>
-                                            </tr>        
-                                            <tr>
-                                                <td>3</td>
-                                                <td>중앙부처</td>
-                                                <td>대전</td>
-                                                <td>
-                                                    <div class="radio-box">
-                                                        <label id="">
-                                                            <input type="radio" name="type1" value="type010" id="">
-                                                            <span>동의</span>
-                                                        </label>
-                                                        <label id="">
-                                                            <input type="radio" name="type1" value="type011" id="" checked="">
-                                                            <span>부동의</span>
-                                                        </label>                                      
-                                                    </div>  
-                                                </td>
-                                            </tr>  
-                                            <tr>
-                                                <td>1</td>
-                                                <td>중앙부처</td>
-                                                <td>대전</td>
-                                                <td>
-                                                    <div class="radio-box">
-                                                        <label id="">
-                                                            <input type="radio" name="type1" value="type010" id="">
-                                                            <span>동의</span>
-                                                        </label>
-                                                        <label id="">
-                                                            <input type="radio" name="type1" value="type011" id="" checked="">
-                                                            <span>부동의</span>
-                                                        </label>                                      
-                                                    </div>  
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>중앙부처</td>
-                                                <td>대전</td>
-                                                <td>
-                                                    <div class="radio-box">
-                                                        <label id="">
-                                                            <input type="radio" name="type1" value="type010" id="">
-                                                            <span>동의</span>
-                                                        </label>
-                                                        <label id="">
-                                                            <input type="radio" name="type1" value="type011" id="" checked="">
-                                                            <span>부동의</span>
-                                                        </label>                                      
-                                                    </div>  
-                                                </td>
-                                            </tr>        
-                                            <tr>
-                                                <td>3</td>
-                                                <td>중앙부처</td>
-                                                <td>대전</td>
-                                                <td>
-                                                    <div class="radio-box">
-                                                        <label id="">
-                                                            <input type="radio" name="type1" value="type010" id="">
-                                                            <span>동의</span>
-                                                        </label>
-                                                        <label id="">
-                                                            <input type="radio" name="type1" value="type011" id="" checked="">
-                                                            <span>부동의</span>
-                                                        </label>                                      
-                                                    </div>  
-                                                </td>
-                                            </tr>                                                                                
-                                        </tbody>
-                                    </table>
-                                </div>
+                          <div class="modal-header mini-size"></div>
+                          <div class="modal_n_body list-table-ht500">
+                            <div class="table_cont tb_cursor">
+                                <table class="table-list iyangsamu-table">
+                                    <colgroup>                        
+                                            <col style="width:5%;">                        
+                                            <col>    
+                                            <col> 
+                                            <col style="width:15%;">                            
+                                    </colgroup>
+                                    <thead>
+                                        <tr>                       
+                                            <th>No.</th>
+                                            <th colspan="2">의견제출기관</th>
+                                            <th>의견</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>중앙부처</td>
+                                            <td>대전</td>
+                                            <td>
+                                                <div class="radio-box">
+                                                    <label id="">
+                                                        <input type="radio" name="type1" value="type010" id="">
+                                                        <span>동의</span>
+                                                    </label>
+                                                    <label id="">
+                                                        <input type="radio" name="type1" value="type011" id="" checked="">
+                                                        <span>부동의</span>
+                                                    </label>                                      
+                                                </div>  
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>중앙부처</td>
+                                            <td>대전</td>
+                                            <td>
+                                                <div class="radio-box">
+                                                    <label id="">
+                                                        <input type="radio" name="type1" value="type010" id="">
+                                                        <span>동의</span>
+                                                    </label>
+                                                    <label id="">
+                                                        <input type="radio" name="type1" value="type011" id="" checked="">
+                                                        <span>부동의</span>
+                                                    </label>                                      
+                                                </div>  
+                                            </td>
+                                        </tr>        
+                                        <tr>
+                                            <td>3</td>
+                                            <td>중앙부처</td>
+                                            <td>대전</td>
+                                            <td>
+                                                <div class="radio-box">
+                                                    <label id="">
+                                                        <input type="radio" name="type1" value="type010" id="">
+                                                        <span>동의</span>
+                                                    </label>
+                                                    <label id="">
+                                                        <input type="radio" name="type1" value="type011" id="" checked="">
+                                                        <span>부동의</span>
+                                                    </label>                                      
+                                                </div>  
+                                            </td>
+                                        </tr>  
+                                        <tr>
+                                            <td>1</td>
+                                            <td>중앙부처</td>
+                                            <td>대전</td>
+                                            <td>
+                                                <div class="radio-box">
+                                                    <label id="">
+                                                        <input type="radio" name="type1" value="type010" id="">
+                                                        <span>동의</span>
+                                                    </label>
+                                                    <label id="">
+                                                        <input type="radio" name="type1" value="type011" id="" checked="">
+                                                        <span>부동의</span>
+                                                    </label>                                      
+                                                </div>  
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>중앙부처</td>
+                                            <td>대전</td>
+                                            <td>
+                                                <div class="radio-box">
+                                                    <label id="">
+                                                        <input type="radio" name="type1" value="type010" id="">
+                                                        <span>동의</span>
+                                                    </label>
+                                                    <label id="">
+                                                        <input type="radio" name="type1" value="type011" id="" checked="">
+                                                        <span>부동의</span>
+                                                    </label>                                      
+                                                </div>  
+                                            </td>
+                                        </tr>        
+                                        <tr>
+                                            <td>3</td>
+                                            <td>중앙부처</td>
+                                            <td>대전</td>
+                                            <td>
+                                                <div class="radio-box">
+                                                    <label id="">
+                                                        <input type="radio" name="type1" value="type010" id="">
+                                                        <span>동의</span>
+                                                    </label>
+                                                    <label id="">
+                                                        <input type="radio" name="type1" value="type011" id="" checked="">
+                                                        <span>부동의</span>
+                                                    </label>                                      
+                                                </div>  
+                                            </td>
+                                        </tr>                                                                                
+                                    </tbody>
+                                </table>
                             </div>
-                            <button type="button" onclick="closeLayer(event)" class="btn_close"><span class="hidden">닫기</span></button>   
+                          </div>
                         </div>
-                    </section>  
+                    </section>                                 
                 </div>     
                 <script>
-                        const toggleLayer = document.querySelector('.is-toggle-button-wrap .btn-dark-light');
-                        toggleLayer.addEventListener('click', () => {
-                            toggleLayer.classList.toggle('is-active');                           
-                            
-                            const nextElement = document.querySelector('.toggle-dsplay-wrap');
-                            nextElement.style.display = nextElement.style.display === 'none' ? 'block' : 'none';
-                        });
-                        const closeLayer = (event) => {
-                            toggleLayer.classList.remove('is-active');                           
-                            event.target.parentElement.parentElement.style.display = 'none';
-                        }
+                    const toggleLayer = document.querySelector('.is-toggle-button-wrap .btn-dark-light');
+                    toggleLayer.addEventListener('click', () => {
+                        toggleLayer.classList.toggle('is-active');                           
+                        
+                        const nextElement = document.querySelector('.toggle-dsplay-wrap');
+                        nextElement.style.display = nextElement.style.display === 'none' ? 'block' : 'none';
+                    });
 
                 </script>
                 <!-- 탭 -->
@@ -590,43 +531,13 @@
                         <li><a href="#">광역자치단체<span>(2)</span></a></li>
                         <li><a href="#">기초자치단체<span>(2)</span></a></li>    
                         <li><a href="#">지방시대위원회<span>(2)</span></a></li>    
-                        <li><a href="#">시도지사협의회<span>(2)</span></a></li>   
-                        <li><a href="#">시군구청장협의회<span>(2)</span></a></li>   
+                        <li><a href="#">시도지사협의회<span>(2)</span></a></li>    
+                        <li><a href="#">시군구청장협의회<span>(2)</span></a></li>                            
                     </ul>
                     
                     <div class="tab-content">
                         <div class="tab active">
                             <div class="table_cont">
-                                <table class="table-body-only">
-                                    <colgroup>                    
-                                        <col width="160" />
-                                        <col width="460" />
-                                        <col width="160" />
-                                        <col />                  
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>    
-                                            <th scope="row">
-                                                수용 / 동의
-                                            </th>                    
-                                            <td>
-                                                <div class="flex-row">
-                                                    <strong><a href="#">9</a></strong> 건 <span class="dv-bar ml-10"></span>
-                                                    <span class="ml-10">중앙부처명, 대전, 울산, 강원, 충북, 전북, 전남, 경북, 경남</span>
-                                                </div>
-                                            </td>    
-                                            <th scope="row">
-                                                수용곤란 / 부동의
-                                            </th>                    
-                                            <td>
-                                                <em><a href="#">9</a></em> 건 <span class="dv-bar"></span>
-                                                <span class="ml-10">인천, 세종</span>
-                                            </td> 
-                                        </tr> 
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="table_cont mt-32">
                                 <table class="table-body-only">
                                     <colgroup>                    
                                         <col width="160">
@@ -644,11 +555,11 @@
                                                         <div class="dv-bar"></div>
                                                         <div class="radio-box">
                                                             <label id="r01">
-                                                                <input type="radio" name="type1" value="type010" id="r01" disabled>
+                                                                <input type="radio" name="type1" value="type010" id="r01">
                                                                 <span>수용</span>
                                                             </label>
                                                             <label id="r02">
-                                                                <input type="radio" name="type1" value="type011" id="r02" disabled>
+                                                                <input type="radio" name="type1" value="type011" id="r02" checked="">
                                                                 <span>수용곤란</span>
                                                             </label>                                      
                                                         </div>     
@@ -673,10 +584,10 @@
                                                 중앙부처명 노출
                                             </td>     
                                             <th scope="row">
-                                                담당부서
+                                                기관명
                                             </th>                    
                                             <td>
-                                                담당부서명 노출
+                                                기관명 노출
                                             </td>                                             
                                         </tr>    
                                         <tr>    
@@ -684,7 +595,7 @@
                                                 담당자
                                             </th>                    
                                             <td>
-                                                홍**
+                                                담당자명 노출
                                             </td>     
                                             <th scope="row">
                                                 연락처
@@ -715,33 +626,7 @@
 ·또한, 해당 과제의 기대효과인 처리기한 단축은 중앙권한의 지방이양에 따른 지방자치단체의 자율과 책임을 강화한다는 취지와 무관하며, 권한이 위임되더라도 농업진흥지역 해제는 농지법령에 따라 신중히 검토되어야 할 사항으로 처리기한 단축과는 거리가 멈<br><br>
                                                 </div>
                                             </td>                                                 
-                                        </tr>
-                                        <tr>    
-                                            <th scope="row">
-                                                예상 투입 인력<br>(Men/Month)
-                                            </th>                    
-                                            <td>
-                                                <div class="form-element__wrap">                                  
-                                                    <div class="input-multi">
-                                                        <span class="form-element__inner input-type">
-                                                            <input type="text" value="0.0" class="input-type1-font14 text-right" disabled maxlength="50" placeholder="예상 투입 인력 입력하세요."  title="예상 투입 인력 입력하세요.">
-                                                        </span>
-                                                    </div>
-                                                </div>   
-                                            </td>      
-                                            <th scope="row">
-                                                예상 금액
-                                            </th>                    
-                                            <td>
-                                                <div class="form-element__wrap">                                  
-                                                    <div class="input-multi">
-                                                        <span class="form-element__inner input-type">
-                                                            <input type="text" value="0" class="input-type1-font14 text-right" disabled maxlength="50" placeholder="예상 투입 인력 입력하세요."  title="예상 투입 인력 입력하세요.">
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </td>                                                                                        
-                                        </tr>                                            
+                                        </tr>    
                                         <tr>    
                                             <th scope="row">
                                                 참조자료
@@ -773,8 +658,8 @@
                                                         </li>                                    
                                                     </ul>  
                                                 </div>
-                                            </td>                                                    
-                                        </tr>                                                                                                                                                                                                                                                   
+                                            </td>                                                 
+                                        </tr>                                                                                                                                                                                                                                                     
                                     </tbody>
                                 </table>
                             </div>
@@ -785,10 +670,10 @@
                             <div class="table_cont mt-32">
                                 <table class="table-body-only">
                                     <colgroup>                    
-                                        <col width="160" />
-                                        <col width="460" />
-                                        <col width="160" />
-                                        <col />    
+                                        <col width="160">
+                                        <col>
+                                        <col width="160">
+                                        <col>
                                     </colgroup>
                                     <thead>
                                         <tr>
@@ -796,15 +681,13 @@
                                                 <div class="flex-row justify-between">
                                                     <div class="flex-row">                                                        
                                                         광역자치단체 검토 의견
-                                                        <div class="dv-bar"></div>
-                                                        다수의견
                                                         <div class="radio-box">
                                                             <label id="r024">
-                                                                <input type="radio" name="type11" value="type013" id="r024" disabled>
+                                                                <input type="radio" name="type11" value="type013" id="r024"  checked="">
                                                                 <span>동의</span>
                                                             </label>
                                                             <label id="r02">
-                                                                <input type="radio" name="type11" value="type013" id="r022" disabled>
+                                                                <input type="radio" name="type11" value="type013" id="r022">
                                                                 <span>부동의</span>
                                                             </label>                                      
                                                         </div>     
@@ -847,10 +730,10 @@
                                                 광역자치단체 노출
                                             </td>     
                                             <th scope="row">
-                                                담당부서
+                                                기관명
                                             </th>                    
                                             <td>
-                                                담당부서명 노출
+                                                기관명 노출
                                             </td>                                             
                                         </tr>    
                                         <tr>    
@@ -934,10 +817,10 @@
                             <div class="table_cont mt-32">
                                 <table class="table-body-only">
                                     <colgroup>                    
-                                        <col width="160" />
-                                        <col width="460" />
-                                        <col width="160" />
-                                        <col />    
+                                        <col width="160">
+                                        <col>
+                                        <col width="160">
+                                        <col>
                                     </colgroup>
                                     <thead>
                                         <tr>
@@ -945,15 +828,13 @@
                                                 <div class="flex-row justify-between">
                                                     <div class="flex-row">                                                        
                                                         광역자치단체 검토 의견
-                                                        <div class="dv-bar"></div>
-                                                        다수의견
                                                         <div class="radio-box">
                                                             <label id="r024">
-                                                                <input type="radio" name="type11" value="type013" id="r024" disabled>
+                                                                <input type="radio" name="type11" value="type013" id="r024"  checked="">
                                                                 <span>동의</span>
                                                             </label>
                                                             <label id="r02">
-                                                                <input type="radio" name="type11" value="type013" id="r022" disabled>
+                                                                <input type="radio" name="type11" value="type013" id="r022">
                                                                 <span>부동의</span>
                                                             </label>                                      
                                                         </div>     
@@ -996,10 +877,10 @@
                                                 광역자치단체 노출
                                             </td>     
                                             <th scope="row">
-                                                담당부서
+                                                기관명
                                             </th>                    
                                             <td>
-                                                담당부서명 노출
+                                                기관명 노출
                                             </td>                                             
                                         </tr>    
                                         <tr>    
@@ -1090,30 +971,23 @@
                                 <table class="table-body-only">
                                     <colgroup>                    
                                         <col width="160" />
-                                        <col width="460" />
-                                        <col width="160" />
-                                        <col />                     
+                                        <col />                 
                                     </colgroup>
                                     <tbody>
                                         <tr>    
                                             <th scope="row">
-                                                수용
+                                                의견수렴 현황
                                             </th>                    
                                             <td>
-                                                <strong><a href="#">1</a></strong> 건 <span class="dv-bar ml-10"></span>
-                                                <span class="ml-10">대전</span>
+                                                <span class="total">총 <strong>9</strong> 건 </span><span class="dv-bar  ml-10"></span>
+                                                <span class="total ml-10">수용 <strong>9</strong> 건</span> <span class="dv-bar  ml-10"></span>
+                                                <span class="total ml-10">수용곤란 <strong>9</strong> 건</span>
+                                                
                                             </td>    
-                                            <th scope="row">
-                                                수용곤란
-                                            </th>                    
-                                            <td>
-                                                <em><a href="#">9</a></em> 건 <span class="dv-bar"></span>
-                                                <span class="ml-10">인천, 세종</span>
-                                            </td> 
                                         </tr> 
                                     </tbody>
                                 </table>
-                            </div>                            
+                            </div>
                             <div class="table_cont mt-32">
                                 <table class="table-body-only">
                                     <colgroup>                    
@@ -1132,11 +1006,11 @@
                                                         <div class="dv-bar"></div>
                                                         <div class="radio-box">
                                                             <label id="r01">
-                                                                <input type="radio" name="type1" value="type010" id="r01" disabled>
+                                                                <input type="radio" name="type1" value="type010" id="r01">
                                                                 <span>수용</span>
                                                             </label>
                                                             <label id="r02">
-                                                                <input type="radio" name="type1" value="type011" id="r02" disabled>
+                                                                <input type="radio" name="type1" value="type011" id="r02" checked="">
                                                                 <span>수용곤란</span>
                                                             </label>                                      
                                                         </div>     
@@ -1161,10 +1035,10 @@
                                                 중앙부처명 노출
                                             </td>     
                                             <th scope="row">
-                                                담당부서
+                                                기관명
                                             </th>                    
                                             <td>
-                                                담당부서명 노출
+                                                기관명 노출
                                             </td>                                             
                                         </tr>    
                                         <tr>    
@@ -1203,65 +1077,16 @@
 ·또한, 해당 과제의 기대효과인 처리기한 단축은 중앙권한의 지방이양에 따른 지방자치단체의 자율과 책임을 강화한다는 취지와 무관하며, 권한이 위임되더라도 농업진흥지역 해제는 농지법령에 따라 신중히 검토되어야 할 사항으로 처리기한 단축과는 거리가 멈<br><br>
                                                 </div>
                                             </td>                                                 
-                                        </tr>  
-                                        <tr>    
-                                            <th scope="row">
-                                                예상 투입 인력<br>(Men/Month)
-                                            </th>                    
-                                            <td>
-                                                <div class="form-element__wrap">                                  
-                                                    <div class="input-multi">
-                                                        <span class="form-element__inner input-type">
-                                                            <input type="text" value="0.0" class="input-type1-font14 text-right" disabled maxlength="50" placeholder="예상 투입 인력 입력하세요."  title="예상 투입 인력 입력하세요.">
-                                                        </span>
-                                                    </div>
-                                                </div>   
-                                            </td>      
-                                            <th scope="row">
-                                                예상 금액
-                                            </th>                    
-                                            <td>
-                                                <div class="form-element__wrap">                                  
-                                                    <div class="input-multi">
-                                                        <span class="form-element__inner input-type">
-                                                            <input type="text" value="0" class="input-type1-font14 text-right" disabled maxlength="50" placeholder="예상 투입 인력 입력하세요."  title="예상 투입 인력 입력하세요.">
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </td>                                                                                        
                                         </tr>    
                                         <tr>    
                                             <th scope="row">
                                                 참조자료
                                             </th>                    
                                             <td colspan="3">
-                                                <div class="upload-file-list">
-                                                    <div class="button-area">
-                                                        <button type="button" class="btn-dark-light">                                        
-                                                            선택 다운로드
-                                                        </button>
-                                                        <button type="button" class="btn-dark-light">                                        
-                                                            전체 다운로드
-                                                        </button>                                    
-                                                    </div>
-                                                    <ul class="upload-file-list" style="max-width: 532px;">
-                                                        <li>
-                                                            <label class="input_type check">
-                                                                <input type="checkbox" name="">
-                                                                <span class="txt">file.png </span>
-                                                                <span class="file-size">(13MB)</span>
-                                                            </label>                                                                        
-                                                        </li>
-                                                        <li>
-                                                            <label class="input_type check">
-                                                                <input type="checkbox" name="">
-                                                                <span class="txt">file.png</span>
-                                                                <span class="file-size">(13MB)</span>
-                                                            </label>                                                                        
-                                                        </li>                                    
-                                                    </ul>  
-                                                </div>
-                                            </td>                                                    
+                                                <a href="#" class="red-color">file.hwp</a> (13MB)
+                                                <span class="dv-bar ml-15"></span>
+                                                <a href="#" class="red-color  ml-15">file.hwp</a> (13MB)
+                                            </td>                                                 
                                         </tr>                                                                                                                                                                                                                                                   
                                     </tbody>
                                 </table>
@@ -1281,9 +1106,7 @@
                                 <table class="table-body-only">
                                     <colgroup>                    
                                         <col width="160" />
-                                        <col width="460" />
-                                        <col width="160" />
-                                        <col />                   
+                                        <col />                 
                                     </colgroup>
                                     <tbody>
                                         <tr>    
@@ -1291,14 +1114,14 @@
                                                 동의
                                             </th>                    
                                             <td>
-                                                <strong><a href="#">9</a></strong> 건 <span class="dv-bar"></span>
+                                                <strong><a>9</a></strong> 건 <span class="dv-bar"></span>
                                                 <span class="ml-10">중앙부처명, 대전, 울산</span>
                                             </td>    
                                             <th scope="row">
                                                 비동의
                                             </th>                    
                                             <td>
-                                                <em><a href="#">9</a></em> 건 <span class="dv-bar"></span>
+                                                <em><a>9</a></em> 건 <span class="dv-bar"></span>
                                                 <span class="ml-10">인천, 세종</span>
                                             </td> 
                                         </tr>
@@ -1322,11 +1145,11 @@
                                                         <div class="dv-bar"></div>
                                                         <div class="radio-box">
                                                             <label id="r01">
-                                                                <input type="radio" name="type1" value="type010" id="r01" disabled>
+                                                                <input type="radio" name="type1" value="type010" id="r01">
                                                                 <span>수용</span>
                                                             </label>
                                                             <label id="r02">
-                                                                <input type="radio" name="type1" value="type011" id="r02" disabled>
+                                                                <input type="radio" name="type1" value="type011" id="r02" checked="">
                                                                 <span>수용곤란</span>
                                                             </label>                                      
                                                         </div>     
@@ -1351,10 +1174,10 @@
                                                 광역자치단체 노출
                                             </td>     
                                             <th scope="row">
-                                                담당부서
+                                                기관명
                                             </th>                    
                                             <td>
-                                                담당부서명 노출
+                                                기관명 노출
                                             </td>                                             
                                         </tr>    
                                         <tr>    
@@ -1422,9 +1245,7 @@
                                 <table class="table-body-only">
                                     <colgroup>                    
                                         <col width="160" />
-                                        <col width="460" />
-                                        <col width="160" />
-                                        <col />                   
+                                        <col />                 
                                     </colgroup>
                                     <tbody>
                                         <tr>    
@@ -1432,14 +1253,14 @@
                                                 동의
                                             </th>                    
                                             <td>
-                                                <strong><a href="#">9</a></strong> 건 <span class="dv-bar"></span>
+                                                <strong><a>9</a></strong> 건 <span class="dv-bar"></span>
                                                 <span class="ml-10">중앙부처명, 대전, 울산</span>
                                             </td>    
                                             <th scope="row">
                                                 비동의
                                             </th>                    
                                             <td>
-                                                <em><a href="#">9</a></em> 건 <span class="dv-bar"></span>
+                                                <em><a>9</a></em> 건 <span class="dv-bar"></span>
                                                 <span class="ml-10">인천, 세종</span>
                                             </td> 
                                         </tr>
@@ -1463,11 +1284,11 @@
                                                         <div class="dv-bar"></div>
                                                         <div class="radio-box">
                                                             <label id="r01">
-                                                                <input type="radio" name="type1" value="type010" id="r01" disabled>
+                                                                <input type="radio" name="type1" value="type010" id="r01">
                                                                 <span>수용</span>
                                                             </label>
                                                             <label id="r02">
-                                                                <input type="radio" name="type1" value="type011" id="r02" disabled>
+                                                                <input type="radio" name="type1" value="type011" id="r02" checked="">
                                                                 <span>수용곤란</span>
                                                             </label>                                      
                                                         </div>     
@@ -1492,10 +1313,10 @@
                                                 기초자치단체 노출
                                             </td>     
                                             <th scope="row">
-                                                담당부서
+                                                기관명
                                             </th>                    
                                             <td>
-                                                담당부서명 노출
+                                                기관명 노출
                                             </td>                                             
                                         </tr>    
                                         <tr>    
@@ -1557,336 +1378,7 @@
                                     <i class="ico-list"></i> 목록
                                 </a>                          
                             </div>                            
-                        </div>             
-                        <div class="tab">
-                            <div class="table_cont">
-                                <table class="table-body-only">
-                                    <colgroup>                    
-                                        <col width="160" />
-                                        <col width="460" />
-                                        <col width="160" />
-                                        <col />                  
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>    
-                                            <th scope="row">
-                                                동의
-                                            </th>                    
-                                            <td>
-                                                <strong><a href="#">9</a></strong> 건 <span class="dv-bar"></span>
-                                                <span class="ml-10">중앙부처명, 대전, 울산</span>
-                                            </td>    
-                                            <th scope="row">
-                                                비동의
-                                            </th>                    
-                                            <td>
-                                                <em><a href="#">9</a></em> 건 <span class="dv-bar"></span>
-                                                <span class="ml-10">인천, 세종</span>
-                                            </td> 
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="table_cont mt-32">
-                                <table class="table-body-only">
-                                    <colgroup>                    
-                                        <col width="160">
-                                        <col>
-                                        <col width="160">
-                                        <col>
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th colspan="4">
-                                                <div class="flex-row justify-between">
-                                                    <div class="flex-row">                                                        
-                                                        기초자치단체 검토 의견
-                                                        <div class="dv-bar"></div>
-                                                        <div class="radio-box">
-                                                            <label id="r01">
-                                                                <input type="radio" name="type1" value="type010" id="r01" disabled>
-                                                                <span>수용</span>
-                                                            </label>
-                                                            <label id="r02">
-                                                                <input type="radio" name="type1" value="type011" id="r02" disabled>
-                                                                <span>수용곤란</span>
-                                                            </label>                                      
-                                                        </div>     
-                                                    </div>  
-                                                    <div class="flex-row yiyang-add-data">
-                                                        <strong>등록일</strong>
-                                                        2024.10.10
-                                                        <span class="dv-bar"></span>
-                                                        <strong>등록일</strong>
-                                                        2024.10.10
-                                                    </div> 
-                                                </div>                                          
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>    
-                                            <th scope="row">
-                                                기초자치단체
-                                            </th>                    
-                                            <td>
-                                                기초자치단체 노출
-                                            </td>     
-                                            <th scope="row">
-                                                담당부서
-                                            </th>                    
-                                            <td>
-                                                담당부서명 노출
-                                            </td>                                             
-                                        </tr>    
-                                        <tr>    
-                                            <th scope="row">
-                                                담당자
-                                            </th>                    
-                                            <td>
-                                                담당자명 노출
-                                            </td>     
-                                            <th scope="row">
-                                                연락처
-                                            </th>                    
-                                            <td>
-                                                044-204-0000
-                                            </td>                                             
-                                        </tr>      
-                                        <tr>    
-                                            <th scope="row">
-                                                제목 / 요약
-                                            </th>                    
-                                            <td colspan="3">
-                                                농업진흥지역 해제 면적 확대의 단점
-                                            </td>                                                 
-                                        </tr>       
-                                        <tr>    
-                                            <th scope="row">
-                                                이양과제 의견<br>상세
-                                            </th>                    
-                                            <td colspan="3">
-                                                <div class="edit-cont">
-                                                ·농업진흥지역은 경지정리 등 농업생산기반이 정비된 우량농지가 밀집한 지역으로 식량자급률 제고의 핵심이며,
-  -그 지정·변경·해제 요건과 절차를 농지법령으로 정하여 관리 중에 있음.<br><br>
-
-·농림축산식품부장관의 승인없이 농업진흥지역 해제를 할 수 있는 면적을 확대할 시, 농업경영환경 저해를 유발하는 시설 등의 전용을 목적으로 농업진흥지역 해제가 가능하게 되어 우량농지의 훼손 및 난개발을 야기할 우려가 높음.<br><br>
-
-·또한, 해당 과제의 기대효과인 처리기한 단축은 중앙권한의 지방이양에 따른 지방자치단체의 자율과 책임을 강화한다는 취지와 무관하며, 권한이 위임되더라도 농업진흥지역 해제는 농지법령에 따라 신중히 검토되어야 할 사항으로 처리기한 단축과는 거리가 멈<br><br>
-                                                </div>
-                                            </td>                                                 
-                                        </tr>    
-                                        <tr>    
-                                            <th scope="row">
-                                                참조자료
-                                            </th>                    
-                                            <td colspan="3">
-                                                <a href="#" class="red-color">file.hwp</a> (13MB)
-                                                <span class="dv-bar ml-15"></span>
-                                                <a href="#" class="red-color  ml-15">file.hwp</a> (13MB)
-                                            </td>                                                 
-                                        </tr>                                                                                                                                                                                                                                                   
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="button__wrap mt-32">
-                                <a href="#none" class="btn ico_pencll-notice"><span>수정</span></a>
-                            </div>
-
-                            <div class="button__wrap flex-end pc-flex mt-64">
-                                <a href="#" class="btn-gray-default">
-                                    <i class="ico-list"></i> 목록
-                                </a>                          
-                            </div>                            
-                        </div> 
-                        <div class="tab">
-                            <div class="table_cont">
-                                <table class="table-body-only">
-                                    <colgroup>                    
-                                        <col width="160" />
-                                        <col width="460" />
-                                        <col width="160" />
-                                        <col />            
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>    
-                                            <th scope="row">
-                                                동의
-                                            </th>                    
-                                            <td>
-                                                <strong><a href="#">9</a></strong> 건 <span class="dv-bar"></span>
-                                                <span class="ml-10">중앙부처명, 대전, 울산</span>
-                                            </td>    
-                                            <th scope="row">
-                                                비동의
-                                            </th>                    
-                                            <td>
-                                                <em><a href="#">9</a></em> 건 <span class="dv-bar"></span>
-                                                <span class="ml-10">인천, 세종</span>
-                                            </td> 
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="table_cont mt-32">
-                                <table class="table-body-only">
-                                    <colgroup>                    
-                                        <col width="160">
-                                        <col>
-                                        <col width="160">
-                                        <col>
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th colspan="4">
-                                                <div class="flex-row justify-between">
-                                                    <div class="flex-row">                                                        
-                                                        기초자치단체 검토 의견
-                                                        <div class="dv-bar"></div>
-                                                        <div class="radio-box">
-                                                            <label id="r01">
-                                                                <input type="radio" name="type1" value="type010" id="r01" disabled>
-                                                                <span>수용</span>
-                                                            </label>
-                                                            <label id="r02">
-                                                                <input type="radio" name="type1" value="type011" id="r02" disabled>
-                                                                <span>수용곤란</span>
-                                                            </label>                                      
-                                                        </div>     
-                                                    </div>  
-                                                    <div class="flex-row yiyang-add-data">
-                                                        <strong>등록일</strong>
-                                                        2024.10.10
-                                                        <span class="dv-bar"></span>
-                                                        <strong>등록일</strong>
-                                                        2024.10.10
-                                                    </div> 
-                                                </div>                                          
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>    
-                                            <th scope="row">
-                                                기초자치단체
-                                            </th>                    
-                                            <td>
-                                                기초자치단체 노출
-                                            </td>     
-                                            <th scope="row">
-                                                담당부서
-                                            </th>                    
-                                            <td>
-                                                담당부서명 노출
-                                            </td>                                             
-                                        </tr>    
-                                        <tr>    
-                                            <th scope="row">
-                                                담당자
-                                            </th>                    
-                                            <td>
-                                                담당자명 노출
-                                            </td>     
-                                            <th scope="row">
-                                                연락처
-                                            </th>                    
-                                            <td>
-                                                044-204-0000
-                                            </td>                                             
-                                        </tr>      
-                                        <tr>    
-                                            <th scope="row">
-                                                제목 / 요약
-                                            </th>                    
-                                            <td colspan="3">
-                                                농업진흥지역 해제 면적 확대의 단점
-                                            </td>                                                 
-                                        </tr>       
-                                        <tr>    
-                                            <th scope="row">
-                                                이양과제 의견<br>상세
-                                            </th>                    
-                                            <td colspan="3">
-                                                <div class="edit-cont">
-                                                ·농업진흥지역은 경지정리 등 농업생산기반이 정비된 우량농지가 밀집한 지역으로 식량자급률 제고의 핵심이며,
-  -그 지정·변경·해제 요건과 절차를 농지법령으로 정하여 관리 중에 있음.<br><br>
-
-·농림축산식품부장관의 승인없이 농업진흥지역 해제를 할 수 있는 면적을 확대할 시, 농업경영환경 저해를 유발하는 시설 등의 전용을 목적으로 농업진흥지역 해제가 가능하게 되어 우량농지의 훼손 및 난개발을 야기할 우려가 높음.<br><br>
-
-·또한, 해당 과제의 기대효과인 처리기한 단축은 중앙권한의 지방이양에 따른 지방자치단체의 자율과 책임을 강화한다는 취지와 무관하며, 권한이 위임되더라도 농업진흥지역 해제는 농지법령에 따라 신중히 검토되어야 할 사항으로 처리기한 단축과는 거리가 멈<br><br>
-                                                </div>
-                                            </td>                                                 
-                                        </tr>    
-                                        <tr>    
-                                            <th scope="row">
-                                                참조자료
-                                            </th>                    
-                                            <td colspan="3">
-                                                <a href="#" class="red-color">file.hwp</a> (13MB)
-                                                <span class="dv-bar ml-15"></span>
-                                                <a href="#" class="red-color  ml-15">file.hwp</a> (13MB)
-                                            </td>                                                 
-                                        </tr>                                                                                                                                                                                                                                                   
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="button__wrap mt-32">
-                                <a href="#none" class="btn ico_pencll-notice"><span>수정</span></a>
-                            </div>
-
-                            <div class="button__wrap flex-end pc-flex mt-64">
-                                <a href="#" class="btn-gray-default">
-                                    <i class="ico-list"></i> 목록
-                                </a>                          
-                            </div>                            
-                        </div>      
-                        <div class="tab">
-                            <div class="table_cont">
-                                <table class="table-body-only">
-                                    <colgroup>                    
-                                        <col width="160" />
-                                        <col width="460" />
-                                        <col width="160" />
-                                        <col />                    
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>    
-                                            <th scope="row">
-                                                동의
-                                            </th>                    
-                                            <td>
-                                                <strong><a href="#">0</a></strong> 건 <span class="dv-bar"></span>
-                                                <span class="ml-10">중앙부처명, 대전, 울산</span>
-                                            </td>    
-                                            <th scope="row">
-                                                비동의
-                                            </th>                    
-                                            <td>
-                                                <em><a href="#">0</a></em> 건 <span class="dv-bar"></span>
-                                                <span class="ml-10">인천, 세종</span>
-                                            </td> 
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <table class="table-body-only">
-                                <colgroup>                    
-                                    <col width="160">
-                                    <col>
-                                    <col width="160">
-                                    <col>
-                                </colgroup>
-                                <thead>
-                                <tbody>
-                                    <tr> 
-                                        <td colspan="4">
-                                            등록의견이 없습니다.
-                                        </td>                                                 
-                                    </tr>                                                                                                                                                                                                                                                         
-                                </tbody>
-                            </table>
-
-                        </div>                                                                            
+                        </div>                                             
                     </div>
                 </div>
 
@@ -1895,7 +1387,6 @@
         </div>
 
           <!-- //이양사무 등록 -->
-          
           <div class="top_info_box mt-80">
             <div class="left_cont">
               <h3 class="document-title">이양사무 정보 및 근거 법령</h3>
@@ -2116,7 +1607,7 @@
                 <thead>
                     <tr>
                         <th>
-                            단위사무 <span class="total"><strong>36</strong>건</span>
+                          단위사무 <span class="total"><strong>36</strong>건</span>
                         </th>
                     </tr>
                 </thead>
@@ -2130,8 +1621,8 @@
                                 </button>                              
                             </div>            
                             <div class="font-type16-400 mt-16">
-                                ※단위사무와 부수사무는 법령 기준으로 반영됩니다.<br>
-                                ※본 과제에 맞지 않는 사무가 있다면 법령 또는 단위사무를 삭제해 주세요. 두 항목이 연동되어 있어 하나만 삭제해도 함께 삭제 됩니다.
+                              ※단위사무와 부수사무는 법령 기준으로 반영됩니다.<br>
+  ※본 과제에 맞지 않는 사무가 있다면 법령 또는 단위사무를 삭제해 주세요. 두 항목이 연동되어 있어 하나만 삭제해도 함께 삭제 됩니다.
                             </div>                
                             <div class="inner-table-cont mt-16 law-list2">
                                 <table>
@@ -2146,7 +1637,8 @@
                                         <col width="3%">
                                         <col width="3%">
                                         <col width="3%">
-                                        <col width="5%">  
+                                        <col width="5%">
+  
                                         <col width="3%">                                                                                                                                                                                                                           
                                         <col width="3%">
                                         <col width="3%">
@@ -2156,10 +1648,10 @@
                                     <tbody>
                                         <tr>
                                             <td class="tit">
-                                                <label class="input_type check all-check">
-                                                    <input type="checkbox" name="">
-                                                    <span class="txt"></span>
-                                                </label>   
+                                              <label class="input_type check all-check">
+                                                <input type="checkbox" name="">
+                                                <span class="txt"></span>
+                                            </label>   
                                             </td>                                                                                        
                                             <td class="tit">번호</td>
                                             <td class="tit">사무구분</td>
@@ -2187,9 +1679,10 @@
                                             <td>2</td>
                                             <td>단위사무</td>
                                             <td>
-                                                <a href="#">수중레저기구 등에 대한 안전점검</a>
+                                              <a href="#">수중레저기구 등에 대한 안전점검</a>
                                             </td>         
                                             <td>해양수산부장관</td>
+  
                                             <td>국가</td>
                                             <td>수중레저사업</td>
                                             <td>-</td> 
@@ -2200,7 +1693,7 @@
                                             <td>X</td>
                                             <td>-</td>
                                             <td>제10조<br>
-                                                제1항</td>
+                                              제1항</td>
                                             <td>
                                                 <div>
                                                     <!-- select_box -->
@@ -2217,7 +1710,7 @@
                                                         <option value="선택함2">선택함2</option>
                                                         <option value="선택함3">선택함3</option>
                                                     </select>
-                                                </div>                                            
+                                                </div>                                              
                                             </td>
                                         </tr>      
                                     </tbody>
@@ -2276,15 +1769,15 @@
                 </table>
             </div> 
 
-        </div>     
-    
-        <div class="button__wrap mt-16">
-        <button type="button" class="btn-full-width"><span>펼치기</span></button>
-        </div>
+          </div>     
+       
+          <div class="button__wrap mt-16">
+            <button type="button" class="btn-full-width"><span>펼치기</span></button>
+         </div>
 
 
 
-        <script>
+          <script>
             const toggleLawButton2 = document.querySelector('.btn-full-width');
             toggleLawButton2 && toggleLawButton2.addEventListener('click', function() {
                 toggleLawButton2.classList.toggle('is-active');
@@ -2295,7 +1788,7 @@
 
                 document.querySelector('.yiyang-cont-box').classList.toggle('is-active');
             });          
-        </script>
+          </script>
 
           <!-- //PC -->
       </div>

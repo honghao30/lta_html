@@ -2595,6 +2595,12 @@ i.btn-refresh-16 {
     border-radius: 12px;
     overflow: hidden;
 }
+.type02 .btn_reset_only-icon {
+    position: initial;
+}
+.type02 .btn_search_only-icon {
+    bottom:40px;
+}
 .btn_search_only-icon {
     width: 46px;
     height: 46px;
@@ -3869,7 +3875,7 @@ i.btn-refresh-16 {
 
 /* 인기검색어 */
 .keyword-wrap-side {
-    position: fixed;
+    position: absolute;
     margin-left: 630px;
     top: 423px;
     left: 50%;
@@ -4198,4 +4204,8 @@ i.btn-refresh-16 {
     background-color: #fff;
     background-size: 16px 16px;
     background-position: center;
+}
+
+.table_cont .table-body-only tbody tr.tr-hide {
+    display: none;
 }
