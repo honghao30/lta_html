@@ -4237,3 +4237,10 @@ i.btn-refresh-16 {
     border-radius: 12px;
     border: 1px solid #706DF0;
 }
+.table_cont .table-body-only tbody th.text-c,
+.table_cont .table-body-only tbody td.text-c {
+    text-align: center;
+}
+.text-content {
+    line-height: 24px;
+}
