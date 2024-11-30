@@ -1384,7 +1384,9 @@ p.skip{margin-bottom:30px;}
     top: 0px;
     right: 10px;
 }    
-
+.search-input-keyword:only-child:before {
+    display: none;
+}
 .input_cont.multi-el .tit.size-sm {width: 70px;}
 .input_cont.multi-el .tit.size-sm-80 {width: 80px;}
 .search-input-inner {
@@ -4208,4 +4210,30 @@ i.btn-refresh-16 {
 
 .table_cont .table-body-only tbody tr.tr-hide {
     display: none;
+}
+
+.year-select-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px 0;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+.year-select-tab a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 2);
+    height: 56px;    
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    color:#222;
+}
+.year-select-tab a.is-active {
+    color:#706DF0;    
+    font-weight: 700;
+    border-radius: 12px;
+    border: 1px solid #706DF0;
 }

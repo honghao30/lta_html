@@ -234,9 +234,6 @@
               <li><a href="#none">이양사무</a></li>
             </ul>
           </div>
-          <div class="pc">
-            <a href="#none" class="btn ico_print"><span>프린트</span></a>
-          </div>
           <!-- 상단 프로세스 -->
           <div class="top-process-nav-wrap mt-32">
                 <ul class="process-step-list">
@@ -329,7 +326,7 @@
                           </dd>
                       </dl>
                     </li>
-                    <li class="detail-board last-child ml-56 is-active">
+                    <li class="detail-board last-child ml-56">
                       <dl>
                           <dt>이양 확정</dt>
                           <dd>
@@ -340,42 +337,39 @@
                 </ul>
 
           </div>
+
+        <div class="year-select-tab">
+          <a href="PC_5이양사무_8이양완료_1목록2023.html" >2023년 이전</a>
+          <a href="PC_5이양사무_8이양완료_1목록.html"  class="is-active">2024년 이후</a>
+        </div>
+
+
           <!-- 검색영역 -->
           <div class="search_cont pc mt-32">
             <span class="search_box">
-                <!-- 콤보박스 -->
-                <div class="select_box"  style="width: 200px">
-                    <span class="select">이양현황 선택</span>
-                    <div class="option">
-                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                        <ul>
-                            <li>선택함1</li>
-                            <li>선택함2</li>
-                            <li>선택함3</li>
-                        </ul>
+                <span class="input_cont multi-el">                             
+                    <div class="search-input-keyword disply-flex" style="width:983px">
+                        <div class="search-input-inner deliberation wid-100p">
+                            <div class="select_box"  style="width: 120px">
+                                <span class="select">전체</span>
+                                <div class="option">
+                                <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                    <ul>
+                                    <li>선택함1</li>
+                                    <li>선택함2</li>
+                                    <li>선택함3</li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>                   
+                            <input type="text" class="ico_search" style="width: 600px" placeholder="검색어 입력" title="검색어 입력">
+                            <button class="btn_search"><span class="hidden">검색</span></button>
                         </div>
-                    </div>
-                </div>                    
-                <!-- 콤보박스 -->
-                <div class="select_box ml-5"  style="width: 200px">
-                    <span class="select">선택</span>
-                    <div class="option">
-                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                        <ul>
-                            <li>선택함1</li>
-                            <li>선택함2</li>
-                            <li>선택함3</li>
-                        </ul>
-                        </div>
-                    </div>
-                </div>                   
-              <span class="input_cont">
-                <input type="text" class="ico_search" placeholder="검색어를 입력해 주세요.">
-                <button class="btn_search"><span class="hidden">검색</span></button>
-              </span>
-              <button class="btn btn_size_s btn_search_detail"><span>상세검색</span></button>
+                    </div>                     
+                </span>
+                <button class="btn btn_size_s btn_search_detail"><span>상세검색</span></button>
             </span>
-          </div>
+          </div>   
           <!-- //pc -->
 
 
@@ -386,161 +380,79 @@
               <table class="table-body-only">
                   <colgroup>
                       <col style="width:102px" />
-                      <col/>
+                      <col style="width:400px"  />
                       <col style="width:102px" />
                       <col/>                      
                   </colgroup>
                   <tbody>
                     <tr>
-                        <th scope="row">이양현황</th>
-                        <td colspan="3" class="text-l">                            
-                            <label class="input_type check">
-                                <input type="checkbox" name="q12">
-                                <span class="txt">이양건의</span>
-                            </label>
-                            <label class="input_type check">
-                            <input type="checkbox" name="q22">
-                                <span class="txt">과제등록</span>
-                            </label>
-                            <label class="input_type check">
-                                <input type="checkbox" name="q23">
-                                <span class="txt">과제제외</span>
-                            </label>                            
-                        </td>
-                    </tr>   
-                    <tr>
-                        <th scope="row" rowspan="2">기간 선택</th>
-                        <td colspan="3" class="text-l">   
-                            <div class="form-element-rows border-none">
-                                <div class="cate-text">                                
-                                    <label class="input_type check">
-                                        <input type="checkbox" checked name="q01">
-                                        <span class="txt">건의일</span>
-                                    </label>  
-                                </div>
-                                <div class="form-element__wrap" style="width: 168px;">                                  
-                                    <div class="input-multi">
-                                      <span class="form-element__inner input-type picker-input">
-                                          <input type="text" value="" class="input-type1-font14" placeholder="" id="datepicker_start" title="">
-                                      </span>
-                                    </div>
-                                </div>           
-                                <div class="dash">~</div>                                       
-                                <div class="form-element__wrap"  style="width: 168px;">                                  
-                                  <div class="input-multi">
-                                    <span class="form-element__inner input-type picker-input">
-                                        <input type="text" value="" class="input-type1-font14"  placeholder=""  id="datepicker_end"  title="">
-                                    </span>
-                                  </div>
-                                </div>                              
-                            </div>                                                                          
-                        </td>
-                    </tr>   
-                    <tr>                        
-                        <td colspan="3" class="text-l">                            
-                            <div class="form-element-rows border-none">
-                                <div class="cate-text">                                
-                                    <label class="input_type check">
-                                        <input type="checkbox" checked name="q01">
-                                        <span class="txt">승인일</span>
-                                    </label>  
-                                </div>
-                                <div class="form-element__wrap" style="width: 168px;">                                  
-                                    <div class="input-multi">
-                                      <span class="form-element__inner input-type picker-input">
-                                          <input type="text" value="" class="input-type1-font14" placeholder="" id="datepicker_start2" title="">
-                                      </span>
-                                    </div>
-                                </div>           
-                                <div class="dash">~</div>                                       
-                                <div class="form-element__wrap"  style="width: 168px;">                                  
-                                  <div class="input-multi">
-                                    <span class="form-element__inner input-type picker-input">
-                                        <input type="text" value="" class="input-type1-font14"  placeholder=""  id="datepicker_end2"  title="">
-                                    </span>
-                                  </div>
-                                </div>                              
-                            </div>                         
-                        </td>
-                    </tr>                                        
-                    <tr>
-                        <th scope="row">이양방향</th>
-                        <td colspan="3">
-                            <div class="form-element-rows border-none">
-                                <div class="text">이양 발신처</div>
-                                <!-- select_box -->
-                                <div class="select_box" style="width: 290px;">
-                                    <span class="select">선택하세요</span>
-                                    <div class="option">
-                                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                        <ul>
-                                            <li>선택함1</li>
-                                            <li>선택함2</li>
-                                            <li>선택함3</li>
-                                        </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- select_box -->  
-                                <div class="arrow-right">→</div>
-                                <div class="text">이양 수신처</div>
-                                <!-- select_box -->
-                                <div class="select_box" style="width: 290px;">
-                                    <span class="select">선택하세요</span>
-                                    <div class="option">
-                                        <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                        <ul>
-                                            <li>선택함1</li>
-                                            <li>선택함2</li>
-                                            <li>선택함3</li>
-                                        </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- select_box -->                                   
+                      <th scope="row">
+                          연도 선택
+                      </th>
+                      <td colspan="3">
+                          <div class="flex-row">
+                            <div class="radio-box">
+                              <label id="r0001">
+                                  <input type="radio" name="type11" value="type010" id="r0001"  checked="">
+                                  <span>이양완료</span>
+                              </label>
+                              <label id="r0002">
+                                  <input type="radio" name="type11" value="type011" id="r0002">
+                                  <span>이양확정</span>
+                              </label>
                             </div>
+                            <div class="dv-bar"></div>
+                            <select id="" name="" class="" style="width: 168px;">
+                              <option value="">전체</option>
+                                <option value="2024">2024</option>
+                            </select>
+                            <div>~</div>
+                            <select id="" name="" class="" style="width: 168px;">
+                              <option value="">전체</option>
+                                <option value="2024">2024</option>
+                            </select>                            
+                        </div>                        
 
-                        </td>
-                    </tr>  
+                      </td>
+                    </tr>
                     <tr>
-                        <th scope="row">소관부처</th>
-                        <td>
-                            <!-- select_box -->
-                            <div class="select_box" style="width: 100%;">
-                                <span class="select">선택하세요</span>
-                                <div class="option">
-                                <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                    <ul>
-                                    <li>선택함1</li>
-                                    <li>선택함2</li>
-                                    <li>선택함3</li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-                            <!-- select_box -->                        
-                        </td>
+                      <th scope="row">소관부처</th>
+                      <td>
+                        <select id="" name="" class="" style="width: 100%;">
+                          <option value="">선택하세요</option>
+                            <option value="">문화체육부</option>
+                        </select>                        
+                      </td>
+                      <th scope="row">이양방향</th>
+                      <td>
+                        <div class="flex-row">
+                          <select id="" name="" class=""  style="width: 168px;">
+                            <option value="">국가</option>                            
+                          </select>                         
+                          <div class="arrow-right">→</div>
+                          <select id="" name="" class=""  style="width: 168px;">
+                            <option value="">선택하세요</option>                            
+                          </select>   
+                        </div>
+                          
+                      </td>
+                    </tr>
+
+                    <tr> 
                         <th scope="row">
                             근거법령<br>
-                            (법령+조문)</th>
-                        <td>
-                            <!-- select_box -->
-                            <div class="select_box" style="width: 100%;">
-                                <span class="select">선택하세요</span>
-                                <div class="option">
-                                <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                                    <ul>
-                                    <li>선택함1</li>
-                                    <li>선택함2</li>
-                                    <li>선택함3</li>
-                                    </ul>
-                                </div>
-                                </div>
+                            (법령+조문)
+                        </th>
+                        <td colspan="3">
+                          <div class="form-element__wrap"  style="width: 100%;">                                  
+                            <div class="input-multi">
+                              <span class="form-element__inner input-type picker-input">
+                                  <input type="text" value="" class="input-type1-font14"  placeholder="근거법령(법령+조문)을 입력하세요"  title="근거법령(법령+조문)을 입력하세요">
+                              </span>
                             </div>
-                            <!-- select_box -->                          
+                          </div>  
                         </td>                      
                     </tr>  
-
                     <tr>
                         <th scope="row">과제명</th>
                         <td colspan="3">
@@ -551,7 +463,16 @@
                             </div>                           
                         </td>
                     </tr>                    
-
+                    <tr>
+                      <th scope="row">단위사무명</th>
+                      <td colspan="3">
+                          <div class="form-element__wrap">                                
+                              <span class="form-element__inner input-type">
+                              <input type="text" class="input-type1-font14" placeholder="단위사무명을 입력해 주세요." title="단위사무명을 입력해 주세요">
+                              </span>
+                          </div>                           
+                      </td>
+                  </tr>   
                   </tbody>
               </table>
           </div>          
@@ -605,7 +526,7 @@
                         <th>이양방향</th>
                         <th>이양단계</th>
                         <th>이양확정 연도</th>                    
-                        <th>승인날짜</th>
+                        <th>이양확정 연도</th>
                     </tr>
                 </thead>
                     <tbody>
@@ -623,7 +544,7 @@
                             <td>국가→시도</td>
                             <td>과제 제외</td>
                             <td>2024</td>                            
-                            <td>2024.08.14</td>
+                            <td>2024</td>
                         </tr>
                         <tr> 
                             <td>100</td>
@@ -640,7 +561,7 @@
                             <td>국가→시도</td>
                             <td>과제 제외</td>
                             <td>2024</td>                            
-                            <td>2024.08.14</td>
+                            <td>2024</td>
                         </tr>                            
                         <tr>
                             <td>100</td>
@@ -656,7 +577,7 @@
                             <td>국가→시도</td>
                             <td>과제 제외</td>
                             <td>2024</td>                            
-                            <td>2024.08.14</td>
+                            <td>2024</td>
                         </tr>   
                         <tr>
                             <td>100</td>
@@ -672,7 +593,7 @@
                             <td>국가→시도</td>
                             <td>과제 제외</td>
                             <td>2024</td>                            
-                            <td>2024.08.14</td>
+                            <td>2024</td>
                         </tr>                                                                         
                 </tbody>
             </table>
