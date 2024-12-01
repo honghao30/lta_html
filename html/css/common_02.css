@@ -1230,7 +1230,8 @@ p.skip{margin-bottom:30px;}
 .ml-40 {margin-left: 40px !important;}
 .ml-15 {margin-left: 15px !important;}
 .mr-0 {margin-right: 0px  !important;}
-.mr-16 {margin-right: 16px;}
+.mr-8 {margin-right: 8px;}
+.mr-16 {margin-right: 16px !important;}
 .mb-20 {margin-bottom: 24px;}
 .float-r {float:right !important;}
 .wid80 {width: 80px;}
