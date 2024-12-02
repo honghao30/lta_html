@@ -345,11 +345,29 @@ document.addEventListener("DOMContentLoaded", () => {
                 checkedLists();
             }
     
-            if (e.target.closest('.btn-delete')) {
+            if (e.target.closest('.btn-delete')) {       
+                const items = listElement.querySelectorAll('li');
+                const itemCount = items.length;         
                 const listItem = e.target.closest('li');
-                listItem.previousElementSibling.querySelector('.btn-add').style.display = 'flex';
+            
+                // 리스트 삭제 로직
                 listItem.remove();
-            }
+            
+                // 삭제 후 리스트 다시 가져오기
+                const updatedItems = listElement.querySelectorAll('li');
+                const updatedItemCount = updatedItems.length;
+            
+                // 조건에 따라 .btn-add 표시
+                if (updatedItemCount >= 2) {
+                    const index = Array.from(updatedItems).indexOf(listItem.previousElementSibling);
+                    if (index !== 0) {
+                        listItem.previousElementSibling.querySelector('.btn-add').style.display = 'flex';
+                    }
+                } else if (updatedItemCount === 1) {
+                    // 리스트가 1개만 남은 경우
+                    updatedItems[0].querySelector('.btn-add').style.display = 'flex';
+                }
+            }            
         });
         if(listElement) {
             const newList = listElement.querySelectorAll('li');

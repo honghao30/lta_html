@@ -2680,6 +2680,10 @@ i.btn-refresh-16 {
     background: url(../img/pc/ico/ic_assignment_add.png) no-repeat 0 center;
     background-size: contain;
 }
+.btn.ico_write span {
+    background: url(../img/pc/ico/Icon_write.png) no-repeat 0 center;
+    background-size: contain;
+}
 .btn.ico_new_window span {
     background: url(../img/pc/ico/ic_new_window.png) no-repeat 0 center;
     background-size: contain;

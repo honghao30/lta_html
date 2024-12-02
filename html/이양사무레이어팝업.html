@@ -219,6 +219,7 @@
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_04');return false">이력작성</button>  
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_05');return false">근거법령검색</button>  
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_06');return false">단위사무 등록 요청</button>  
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_07');return false">프로그래스바</button>  
 
       </div>
     </div>
@@ -611,7 +612,7 @@
                           <th scope="row">법령명<br>선택</th>
                           <td colspan="3">
                             <!-- select_box -->
-                            <select name="" id="" class="selectbox" title="법령명 선택" style="width: 100%;">
+                            <select name="" id="" class="selectbox" title="\법령명 선택" style="width: 100%;">
                               <option value="선택함1">전체</option>
                               <option value="선택함2">선택함2</option>
                               <option value="선택함3">선택함3</option>
@@ -795,6 +796,24 @@
                     <i></i> 단위사무 등록
                 </button>  
             </div>
+        </div>       
+      </div>
+    </div>
+  </section>
+  <!-- //모달 -->
+
+  <!-- 모달 -->
+  <!-- 프로그래스바 -->
+  <section class="modal_new modal_overlay roll-type" id="layer_pop_07"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+    <div class="modal_n_wrap roll-modal layer_login">
+      <div class="modal-header mini-size"></div>
+      <div class="modal_n_body">
+        <div class="pop_cont">
+          <div class="progress_wrap">
+            <span class="txt">다운로드 중입니다</span>
+            <div class="progress"><span style="width:50%"></span></div>
+            <span class="ing">50%</span>
+          </div>
         </div>       
       </div>
     </div>
