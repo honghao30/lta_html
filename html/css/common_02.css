@@ -2486,6 +2486,9 @@ i.btn-refresh-16 {
 .lable.type09 {
     background: #2EB000;
 }
+.label-wrap .only-text {
+    margin-right: 5px;
+}
 
 .btn.btn-default-line.size-ms {
     font-family: 'Pretendard';
