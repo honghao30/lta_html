@@ -553,7 +553,8 @@ p.skip{margin-bottom:30px;}
     gap: 4px;
     border-radius: 8px;
     display: flex;
-    align-self: center;  
+    align-self: center;
+    flex-shrink: 0;
 }
 .is-toggle-button-wrap  {
     position: relative;
@@ -1538,6 +1539,9 @@ linear-gradient(0deg, rgba(112, 109, 240, 0.1), rgba(112, 109, 240, 0.1));
     line-height: 16px;
     letter-spacing: -0.02em;
 }
+.modal_n_wrap.roll-modal.wd640 {
+    width: 640px;
+}
 .modal_n_wrap.roll-modal.wd1280 {
     width: 1280px;
 }
@@ -2163,6 +2167,7 @@ td:has(.text-type) {
     border-radius: 12px;
     margin-right: 56px;
     background-color: #fff;
+    overflow:hidden;
 }
 .process-step-list .process-step.ht-120 {
     height: 120px;
@@ -2171,6 +2176,17 @@ td:has(.text-type) {
 .process-step-list .process-step li {
     border-bottom: 1px solid #D8DDE9;
 }
+.process-step-list .process-step li.on{background:#706DF0;}
+.process-step-list .process-step li:hover a{color:#706DF0;padding-left:19px !important;background:none !important;}
+.process-step-list .process-step li.on a{color:#fff;padding-left:19px !important;background:none;}
+.process-step-list .process-step li.on a .ico-arrow-blue24 {
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    background: url(../img/pc/ico/ico_arrow_white24.png) no-repeat;
+    background-size: 100% auto;
+}
+
 .process-step-list .process-step li:last-child {
     border-bottom: 0;
 }
@@ -2181,7 +2197,7 @@ td:has(.text-type) {
     font-family: 'Pretendard';
     font-size: 18px;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 20px;
     letter-spacing: -0.02em;
     color:#494E56;
     padding: 19px 0 20px 19px;
@@ -2589,8 +2605,8 @@ i.btn-refresh-16 {
     border-bottom: 0;
 }
 .btn_reset_only-icon {
-    width: 46px;
-    height: 46px;
+    width: 56px;
+    height: 48px;
     background-image: url(../img/pc/btn/btn_search_icon48.png);
     background-position: center center;
     background-color: transparent;
@@ -2608,8 +2624,8 @@ i.btn-refresh-16 {
     bottom:40px;
 }
 .btn_search_only-icon {
-    width: 46px;
-    height: 46px;
+    width: 56px;
+    height: 48px;
     background-image: url(../img/pc/btn/btn_reset_48.png);
     background-position: center center;
     position: absolute;
@@ -3339,7 +3355,7 @@ i.btn-refresh-16 {
     border-top-right-radius: 12px;
 }
 .tabs.yiyang-tabs .tab-menu li {
-    width: calc(100% / 4);
+    width: calc(100% / 3);
 }
 .tabs.yiyang-tabs .tab-menu li a {
     display: block;

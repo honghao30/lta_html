@@ -3673,6 +3673,9 @@ td:has(.text-type) {
 .col-wid160 {
     width: 160px;
 }
+.col-wid170 {
+    width: 170px;
+}
 .sel-wd120 {
     width: 120px;
 }
@@ -3720,6 +3723,9 @@ td:has(.text-type) {
     .static-wrap {
         height: 400px;
         margin-top: 32px;
+    }
+    .col-wid170 {
+        width: 30%;
     }
     .col-wid160 {
         width: 20%;

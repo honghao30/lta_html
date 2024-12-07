@@ -220,6 +220,8 @@
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_05');return false">근거법령검색</button>  
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_06');return false">단위사무 등록 요청</button>  
         <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_07');return false">프로그래스바</button>  
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_08');return false">의견등록 시작</button>  
+        <button type="button" class="btn-gra-sm" onclick="modalControl('o','#layer_pop_main');return false">메인팝업</button>  
 
       </div>
     </div>
@@ -809,12 +811,145 @@
       <div class="modal-header mini-size"></div>
       <div class="modal_n_body">
         <div class="pop_cont">
-          <div class="progress_wrap">
+          <!-- 안씀 -->
+          <!-- <div class="progress_wrap">
             <span class="txt">다운로드 중입니다</span>
             <div class="progress"><span style="width:50%"></span></div>
             <span class="ing">50%</span>
+          </div> -->
+
+          <div class="progress_wrap">
+            <span class="txt g88">다운로드 중입니다...</span>
+            <div class="loading-spinner"></div>
+            <span class="txt ">48%</span>
           </div>
         </div>       
+      </div>
+    </div>
+  </section>
+  <!-- //모달 -->
+
+  <!-- 모달 -->
+  <!-- 단위사무 등록 요청 -->
+  <section class="modal_new modal_overlay roll-type" id="layer_pop_08"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+    <div class="modal_n_wrap roll-modal layer_login">
+      <div class="modal-header mini-size"></div>
+      <div class="modal_n_body">
+        <div class="pop_cont">
+            <div class="modal-msg">
+                <div class="font-type20-400">의견등록 시작</div>
+                <div class="font-type16-400 mt-16">
+                  의견등록을 시작하시면, 이양사무 건의 내용으로<br>
+                  중앙부처/광역자치단체/기초자치단체에서<br>
+                  의견 등록이 시작됩니다.<br>
+                  의견등록을 시작하시겠습니까?>
+                </div>
+            </div>
+            <div class="button__wrap flex-end mt-32">
+                <button type="button" class="btn-gray-default" onclick="modalControl('c')">
+                  <i class="ico-remove"></i> 취소
+                </button>           
+                <button type="button" class="btn-primary-default">
+                    <i></i> 확인
+                </button>  
+            </div>
+        </div>       
+      </div>
+    </div>
+  </section>
+  <!-- //모달 -->
+
+  <!-- 모달 -->
+  <!-- 메인팝업 -->
+  <section class="modal_new roll-type type02" id="layer_pop_main"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+    <div class="modal_n_wrap roll-modal pop_main">
+      <!-- <div class="modal-header">
+          <div class="tit">이력작성</div>        
+      </div> -->
+      <div class="modal_n_body">
+        <div class="pop_cont">
+            <!-- Swiper -->
+            <div class="swiper_wrap">
+              <div class="swiper mySwiper type01" id="swiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <!-- 메인팝업샘플 -->
+                      <div style="background:#F4F7FB;height:300px;width:560px;"></div>
+                      <!-- //메인팝업샘플 -->
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <!-- 메인팝업샘플 -->
+                      <div style="background:#dfe9f7;height:300px;width:560px;"></div>
+                      <!-- //메인팝업샘플 -->
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <!-- 메인팝업샘플 -->
+                      <div style="background:#caddf7;height:300px;width:560px;"></div>
+                      <!-- //메인팝업샘플 -->
+                    </a>
+                  </div>
+                </div>
+                <div class="sw_bts">
+                  <div class="pc">
+                    <div class="swiper-button-next"><img src="img/pc/swiper/btn_sw_right.png" alt=""></div>
+                    <div class="swiper-button-prev"><img src="img/pc/swiper/btn_sw_left.png" alt=""></div>
+                  </div>
+                  <div class="mo">
+                    <div class="swiper-button-next"><img src="img/mo/swiper/btn_sw_right.png" alt=""></div>
+                    <div class="swiper-button-prev"><img src="img/mo/swiper/btn_sw_left.png" alt=""></div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <script>
+                var swiper1 = new Swiper("#swiper1", {
+                  slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
+                  slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                  loop: true,
+                  // autoplay: {
+                  //   delay: 3000,
+                  //   disableOnInteraction: false,
+                  // },
+                  navigation: {
+                    nextEl: "#swiper1 .swiper-button-next",
+                    prevEl: "#swiper1 .swiper-button-prev",
+                  },
+                  pagination: {
+                    el: "#swiper1 .swiper-pagination",
+                    type: "fraction",
+                    clickable: true,
+                  }
+                });
+                // swiper1의 일시정지 및 재생 제어
+                $("#swiper1 .swiper-autoplay-button .pause").on("click", function() {
+                  swiper1.autoplay.stop();
+                  $(this).hide();
+                  $("#swiper1 .swiper-autoplay-button .play").show();
+                });
+                $("#swiper1 .swiper-autoplay-button .play").on("click", function() {
+                  swiper1.autoplay.start();
+                  $(this).hide();
+                  $("#swiper1 .swiper-autoplay-button .pause").show();
+                });
+              </script>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="button__wrap flex-end">
+            <label class="input_type check">
+              <input type="checkbox" name="q01">
+              <span class="txt">오늘 그만보기</span>
+            </label>
+              <button type="button" class="btn-gray-default"  onclick="modalControl('c')" >
+                  <i class="ico-remove"></i> 닫기
+              </button>
+          </div>
+        </div>
       </div>
     </div>
   </section>

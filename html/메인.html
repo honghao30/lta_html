@@ -9,6 +9,7 @@
   <!-- mCustomScrollbar css -->
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">  
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.sw.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
   <!-- REQUIRED SCRIPTS -->
   <script src="js/jquery-3.2.1.js"></script>
   <!-- mCustomScrollbar JS -->
@@ -18,6 +19,109 @@
   <!-- common.js -->
   <script src="js/common.js"></script>
   <script src="js/common_02.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script>
+    $(function() {
+            fn_default_datepicker();
+    });
+            
+    function fn_default_datepicker()
+    {
+        var start = $( "#datepicker_start" ).datepicker({
+            dateFormat: 'yy-mm-dd' //Input Display Format 변경
+            ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+            ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
+            ,changeYear: true //콤보박스에서 년 선택 가능
+            ,changeMonth: true //콤보박스에서 월 선택 가능                
+            ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시
+            ,buttonImage: "./img/pc/ico/icon_calendar.png" //버튼 이미지 경로
+            ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
+            ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
+            ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+            ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
+            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+            ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+            ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+            ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)                
+        });
+            
+        var end = $( "#datepicker_end" ).datepicker({
+            dateFormat: 'yy-mm-dd' //Input Display Format 변경
+            ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+            ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
+            ,changeYear: true //콤보박스에서 년 선택 가능
+            ,changeMonth: true //콤보박스에서 월 선택 가능                
+            ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
+            ,buttonImage: "./img/pc/ico/icon_calendar.png" //버튼 이미지 경로
+            ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
+            ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
+            ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+            ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
+            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+            ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+            ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+            ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)
+               ,defaultDate: "+1w"
+          });
+          var start = $( "#datepicker_start2" ).datepicker({
+            dateFormat: 'yy-mm-dd' //Input Display Format 변경
+            ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+            ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
+            ,changeYear: true //콤보박스에서 년 선택 가능
+            ,changeMonth: true //콤보박스에서 월 선택 가능                
+            ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시
+            ,buttonImage: "./img/pc/ico/icon_calendar.png" //버튼 이미지 경로
+            ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
+            ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
+            ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+            ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
+            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+            ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+            ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+            ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)                
+        });
+            
+        var end = $( "#datepicker_end2" ).datepicker({
+            dateFormat: 'yy-mm-dd' //Input Display Format 변경
+            ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+            ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
+            ,changeYear: true //콤보박스에서 년 선택 가능
+            ,changeMonth: true //콤보박스에서 월 선택 가능                
+            ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
+            ,buttonImage: "./img/pc/ico/icon_calendar.png" //버튼 이미지 경로
+            ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
+            ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
+            ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+            ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
+            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+            ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+            ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+            ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)
+               ,defaultDate: "+1w"
+          });        
+        //초기값을 오늘 날짜로 설정
+        $('#datepicker_start').datepicker('setDate', '-7D'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
+        $('#datepicker_end').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
+        $('#datepicker_start2').datepicker('setDate', '-7D'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
+        $('#datepicker_end2').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
+    }
+     
+    function getDate( element ) {
+        var date;
+        var dateFormat = "yy-mm-dd";
+        try {
+          date = $.datepicker.parseDate( dateFormat, element.value );
+        } catch( error ) {
+          date = null;
+        }
+        return date;
+     }
+     
+</script> 
   <!-- 파비콘 -->
   <link rel="icon" href="img/pc/favicon.png" type="image/x-icon">
 </head>
@@ -498,23 +602,121 @@
               <input type="text" class="ico_search" placeholder="검색어를 입력해 주세요.">
               <button class="btn_search"><span class="hidden">검색</span></button>
             </span>
+            <button class="btn btn_size_s btn_search_detail"><span>상세검색</span></button>
+            <div class="search_cont_detail iyangsamu-search search_detail_area">
+              <div class="search-table">
+                <table class="table-body-only">
+                  <colgroup>
+                      <col style="width:160px"/>
+                      <col>                      
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">결과내 재검색</th>
+                      <td class="text-l">                            
+                        <label class="input_type check check-item">
+                          <input type="checkbox" name="">
+                          <span class="txt">선택</span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">검색 영역</th>
+                      <td class="text-l">
+                        <div class="flex-row">
+                          <div class="radio-box">
+                            <label id="sc_box_input_01_01">
+                              <input type="radio" name="sc_box_01" value="sc_box_input_01_01" id="sc_box_input_01_01" checked>
+                              <span>전체</span>
+                            </label>
+                            <label id="sc_box_input_01_02">
+                              <input type="radio" name="sc_box_01" value="sc_box_input_01_02" id="sc_box_input_01_02">
+                              <span>제목</span>
+                            </label>
+                            <label id="sc_box_input_01_03">
+                              <input type="radio" name="sc_box_01" value="sc_box_input_01_03" id="sc_box_input_01_03">
+                              <span>내용</span>
+                            </label>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">등록일자<br>(변경일자)</th>
+                      <td class="text-l">
+                        <div class="flex-row">
+                          <div class="radio-box">
+                              <label id="sc_box_input_02_01">
+                                <input type="radio" name="sc_box_02" value="sc_box_input_02_01" id="sc_box_input_02_01" checked>
+                                <span>전체</span>
+                              </label>
+                              <label id="sc_box_input_02_02">
+                                <input type="radio" name="sc_box_02" value="sc_box_input_02_02" id="sc_box_input_02_02">
+                                <span>1주일</span>
+                              </label>
+                              <label id="sc_box_input_02_03">
+                                <input type="radio" name="sc_box_02" value="sc_box_input_02_03" id="sc_box_input_02_03">
+                                <span>1개월</span>
+                              </label>
+                          </div>
+                        </div>
+                        <div class="view_line"></div>
+                        <div class="form-element-rows">
+                          <div class="form-element__wrap" style="width: 168px;">                                  
+                            <div class="input-multi">
+                              <span class="form-element__inner input-type picker-input">
+                                <input type="text" value="" class="input-type1-font14" placeholder="" id="datepicker_start" title="">
+                              </span>
+                            </div>
+                          </div>           
+                          <div class="dash">~</div>                                       
+                          <div class="form-element__wrap"  style="width: 168px;">                                  
+                            <div class="input-multi">
+                              <span class="form-element__inner input-type picker-input">
+                                <input type="text" value="" class="input-type1-font14"  placeholder=""  id="datepicker_end"  title="">
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="s_txt mt10">※ 법령은 시행일 기준으로 검색됩니다.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>          
+              <button class="btn_close"></button>
+              <button class="btn_search_only-icon"></button>
+              <button class="btn_reset_only-icon"></button>
+            </div>
             <div class="search_total">
-              <p class="txt">최근검색어</p>
+              <ul>
+                <li class="no_data">
+                  <span class="txt">검색 결과가 없습니다.</span>
+                </li>
+                <li><a href="#none"><span class="point">농업</span></a></li>
+                <li><a href="#none"><span class="point">농업</span>부산물</a></li>
+                <li><a href="#none"><span class="point">농업</span> 단계</a></li>
+                <li><a href="#none"><span class="point">농업</span> 폐기물</a></li>
+                <li><a href="#none"><span class="point">농업</span>시행</a></li>
+                <li><a href="#none"><span class="point">농업</span>지원</a></li>
+                <li><a href="#none"><span class="point">농업</span>비용</a></li>
+                <li><a href="#none"><span class="point">농업</span>규칙</a></li>
+                <li><a href="#none"><span class="point">농업</span>시도지사지원</a></li>
+                <li><a href="#none"><span class="point">농업</span>구역정비에 관한 시행령</a></li>
+              </ul>
+              <div class="line"></div>
               <ul>
                 <!-- <li class="no_data">
                   <span class="txt">검색 결과가 없습니다.</span>
                 </li> -->
-                <li><a href="#none"><span class="point">농</span>업</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
-                <li><a href="#none"><span class="point">농</span>업진흥특별법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
-                <li><a href="#none"><span class="point">농</span>촌일손</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
-                <li><a href="#none"><span class="point">농</span>촌일손</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
-                <li><a href="#none"><span class="point">농</span>업특별구역 지정에 관한 법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
-                <li><a href="#none"><span class="point">농</span>경지침수에 따른 배상에 관한 법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
-                <li><a href="#none"><span class="point">농</span>업구획 및 그 역할에 대한 법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
-                <li><a href="#none"><span class="point">농</span>업진흥지역 설치에 관한 법</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
-                <li><a href="#none"><span class="point">농</span>림축산식품부</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
-                <li><a href="#none"><span class="point">농</span>업진흥청</a><span class="btn_del"><span class="hidden">삭제</span></span></li>
+                <li><a href="#none">지역<span class="point">농업</span></a></li>
+                <li><a href="#none">고용<span class="point">농업</span></a></li>
+                <li><a href="#none">감자<span class="point">농업</span></a></li>
+                <li><a href="#none">지역지원 <span class="point">농업</span></a></li>
+                <li><a href="#none">해외거주민<span class="point">농업</span></a></li>
               </ul>
+              <button class="btn mt-16">끝단어 검색 더보기</button>
+              <button class="btn mt-16">앞단어 검색 더보기</button>
             </div>
           </span>
         </div>
@@ -734,7 +936,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="144" height="69" viewBox="0 0 144 69" fill="none" class="mo">
                   <path d="M0 24C0 10.7452 10.7452 0 24 0H114.389C124.143 0 132.928 5.9039 136.611 14.936L143.571 32V45C143.571 58.2548 132.826 69 119.571 69H0V24Z" fill="#BBD2FF"/>
                 </svg>
-                <strong class="tit">자료실</strong>
+                <strong class="tit">정책자료</strong>
                 <span class="txt">이양사무에 관련된 서식, 자료</span>
                 <a href="#none" class="btn ico_arrow"><span>자세히 보기</span></a>
               </div>
@@ -747,7 +949,7 @@
         <div class="inner">
           <strong class="tit"><span>과제이력관리 현황</span></strong>
         </div>
-        <div class="swiper_wrap inner pc">
+        <div class="swiper_wrap inner">
           <div class="swiper mySwiper type03" id="swiper2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -846,7 +1048,7 @@
             });
           </script>
         </div>
-        <div class="swiper_wrap inner mo">
+        <!-- <div class="swiper_wrap inner mo">
           <div class="swiper mySwiper type03" id="mo_swiper2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -915,7 +1117,7 @@
               }
             });
           </script>
-        </div>
+        </div> -->
       </div>
       <!-- 사무 배분 현황 -->
       <div class="graph_cont">
@@ -983,11 +1185,88 @@
         <div class="inner">
           <ul>
             <li><a href="#none" class="txt"><span>이양사무 이용안내</span></a></li>
-            <li><a href="#none" class="txt"><span>문의하기</a></li>
-            <li><a href="#none" class="txt"><span>자주하는 질문</a></li>
+            <li><a href="#none" class="txt"><span>시스템 문의</a></li>
           </ul>
         </div>
       </div>
+
+      <!--  -->
+      <div class="institution_wrap bg_cor_gray">
+        <div class="swiper_wrap inner">
+          <div class="swiper mySwiper type03" id="swiper3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <ul class="cont">
+                  <li>
+                    <a href="#none">
+                      <img src="img/pc/banner/img_Institution_01.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="cont">
+                  <li>
+                    <a href="#none">
+                      <img src="img/pc/banner/img_Institution_02.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="cont">
+                  <li>
+                    <a href="#none">
+                      <img src="img/pc/banner/img_Institution_03.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="cont">
+                  <li>
+                    <a href="#none">
+                      <img src="img/pc/banner/img_Institution_04.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="cont">
+                  <li>
+                    <a href="#none">
+                      <img src="img/pc/banner/img_Institution_01.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="sw_bts">
+            <div class="swiper-button-next btn_circle"><img src="img/pc/swiper/btn_sw_circle_right.png" alt=""></div>
+            <div class="swiper-button-prev btn_circle"><img src="img/pc/swiper/btn_sw_circle_left.png" alt=""></div>
+          </div>
+          <script>
+            var swiper3 = new Swiper("#swiper3", {
+              slidesPerView: 4,
+              spaceBetween: 10,
+              freeMode: true,
+              // slidesPerView: 4, // 한번에 보여지는 슬라이드 숫자
+              // slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+              loop: true,
+              // autoplay: {
+              //   delay: 3000,
+              //   disableOnInteraction: false,
+              // },
+              navigation: {
+                nextEl: "#swiper3+.sw_bts .swiper-button-next",
+                prevEl: "#swiper3+.sw_bts .swiper-button-prev",
+              }
+            });
+          </script>
+        </div>
+      </div>
+      <!--  -->
     </div>
   </div>
 
