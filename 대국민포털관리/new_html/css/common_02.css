@@ -1183,6 +1183,13 @@ p.skip{margin-bottom:30px;}
     position: relative;
 }
 
+@media (max-width: 768px) {
+    .mt-16 {margin-top: 8px;}
+    .mt-24 {margin-top: 12px;}
+    .mt-32 {margin-top: 16px;}
+    .mt-64 {margin-top: 32px;}
+}
+
 .btn.ico_penci-bl span{
     background:url(../img/pc/ico/ico_pencil.png) no-repeat 0 center;
     background-size: 24px auto;
