@@ -2325,10 +2325,10 @@ td:has(.text-type) {
 /* 이양 사무 검색 */
 .search-table {width: 100%;max-width: 977px;}
 .search-table .table-body-only {width: 100%;}
-.search_cont_detail.iyangsamu-search.on {
+/* .search_cont_detail.iyangsamu-search.on {
     height: auto;
     transition: all 0.3s;
-}
+} */
 .search_cont_detail .search-table .table-body-only tbody tr th {
     background-color: #F3F5FD;
     text-align: center;
