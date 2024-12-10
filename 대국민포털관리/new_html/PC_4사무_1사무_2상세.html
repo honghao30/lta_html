@@ -35,16 +35,16 @@
             <div class="header_cont">
                 <div class="header_top_cont">
                 <h1 class="logo">
-                    <a href="/" title="메인으로 이동">
+                    <a href="메인.html" title="메인으로 이동">
                     <img src="img/pc/logo_new.png" alt="지방이양사무관리시스템 대국민서비스">              
                     </a>
                 </h1>
                 <div class="info_cont">
                     <!-- 로그인 전 -->
-                    <ul class="info_menu default">
+                    <!-- <ul class="info_menu default">
                     <li><a href="#" class="ico_login"><span>로그인</span></a></li>
                     <li><a href="#none" class="ico_join"><span>회원가입</span></a></li>
-                    </ul> 
+                    </ul>  -->
                     <!-- 로그인 후 -->
                     <!-- <ul class="info_menu">
                     <li class="bar"><a href="#none">마이페이지</a></li>
@@ -64,10 +64,10 @@
     <div class="global-navy_wrap">
         <div class="top_menu_cont">
             <ul class="menu portal-web" id="gnb">
-            <li><a href="#none">법령</a></li>
-            <li><a href="#none" class="on">사무</a></li>
-            <li><a href="#none">통계</a></li>
-            <li><a href="#none">정보자료</a></li>                
+                <li><a href="PC_3법령_1리스트.html">법령</a></li>
+                <li><a href="PC_4사무_1사무_1목록.html"  class="on">사무</a></li>
+                <li><a href="#none">통계</a></li>
+                <li><a href="PC_8정보자료_1공지사항_1목록.html">정보자료</a></li>              
             </ul>
         </div>
     </div>
@@ -283,7 +283,82 @@
                     </tbody>
                 </table>
             </div>
-
+            <div class="table_cont ">
+                <table class="table-body-only confirm-table">
+                    <colgroup>
+                        <col width="160" />
+                        <col width="90" />
+                        <col width="" />
+                        <col width="90" />
+                        <col width="" />
+                        <col width="90" />
+                        <col width="" />
+                        <col width="100" />
+                    </colgroup>
+                    <tbody>             
+                        <tr>
+                            <th class="title-cell">승인요청자</th>
+                            <th>소속</th>
+                            <td>
+                                <div class="form-element__wrap">                                
+                                    <span class="form-element__inner input-type">
+                                        <input type="text" value="소속" class="input-type1-font14" placeholder="소속" title="소속" disabled>
+                                    </span>
+                                </div>                             
+                            </td>
+                            <th>이름</th>
+                            <td>
+                                <div class="form-element__wrap">                                
+                                    <span class="form-element__inner input-type">
+                                        <input type="text" value="이름" class="input-type1-font14" placeholder="이름" title="이름" disabled>
+                                    </span>
+                                </div>                            
+                            </td>
+                            <th>요청날짜</th>
+                            <td>
+                                <div class="form-element__wrap">                                
+                                    <span class="form-element__inner input-type">
+                                        <input type="text" value="2024.07.15" class="input-type1-font14" placeholder="요청날짜" title="요청날짜" disabled>
+                                    </span>
+                                </div>                           
+                            </td>
+                            <td>
+                                <button type="button" class="btn-gra-sm">정보 보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="title-cell">승인자</th>
+                            <th>소속</th>
+                            <td>
+                                <div class="form-element__wrap">                                
+                                    <span class="form-element__inner input-type">
+                                        <input type="text" value="소속" class="input-type1-font14" placeholder="소속" title="소속" disabled>
+                                    </span>
+                                </div>                             
+                            </td>
+                            <th>이름</th>
+                            <td>
+                                <div class="form-element__wrap">                                
+                                    <span class="form-element__inner input-type">
+                                        <input type="text" value="이름" class="input-type1-font14" placeholder="이름" title="이름" disabled>
+                                    </span>
+                                </div>                            
+                            </td>
+                            <th>승인날짜</th>
+                            <td>
+                                <div class="form-element__wrap">                                
+                                    <span class="form-element__inner input-type">
+                                        <input type="text" value="2024.07.15" class="input-type1-font14" placeholder="승인날짜" title="승인날짜" disabled>
+                                    </span>
+                                </div>                           
+                            </td>
+                            <td>
+                                <button type="button" class="btn-gra-sm">정보 보기</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <div class="top_info_box pc mt-64">
                 <div class="left_cont">
                     <h3 class="document-title">근거법령 정보</h3>
@@ -325,24 +400,10 @@
                         <tr>
                             <th scope="row">소관부처</th>
                             <td colspan="3">
-                            <!-- 콤보박스 -->
-                            <div class="select_box disabled" style="min-width:320px;">
-                                <span class="select">소관부처</span>
-                                <div class="option" style="display: none;">
-                                    <div class="mCustomScrollbar _mCS_5 mCS-autoHide mCS_no_scrollbar" data-mcs-theme="minimal-dark" style="overflow: visible; height: 100px; position: relative;">
-                                    <div id="mCSB_5" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0">
-                                        <div class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                                            <ul>
-                                                <li>사무</li>
-                                                <li>선택함2</li>
-                                                <li>선택함3</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>  
-                            </div>
-                            <!-- //콤보박스 -->
+                                <!-- 콤보박스 -->
+                                <select class="selectbox" name="" title="선택하세요"  style="min-width:320px;">
+                                    <option>사무</option>
+                                </select>
                             </td>
                         </tr>
                         <tr>
@@ -365,7 +426,7 @@
                                         <td class="tit">중분류</td>
                                         <td class="tit">소분류</td>
                                         <td class="tit">세분류</td>
-                                        <td rowspan="2" class="no-line">호</td>
+                                        <td rowspan="2" class="no-line" style="border-left: 1px solid #D8DDE9 !important;">호</td>
                                     </tr>
                                     <tr>
                                         <td>4장 농지의보존등</td>

@@ -233,7 +233,13 @@ p.skip{margin-bottom:30px;}
     line-height: 24px;
     letter-spacing: -0.02em;    
 }
-
+.document-title2 {
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;    
+}
 .btn.ico_pencil span {    
     background: url(../img/pc/ico/ico_pencil.png) no-repeat 0 center;
     background-size: contain;
@@ -1173,6 +1179,8 @@ p.skip{margin-bottom:30px;}
 .ml-8 {margin-left: 8px;}
 .ml-10 {margin-left: 10px !important;}
 .ml-15 {margin-left: 15px !important;}
+.mr-0 {margin-right: 0px;}
+.mr-8 {margin-right: 8px;}
 .mr-16 {margin-right: 16px;}
 .mb-20 {margin-bottom: 24px;}
 .float-r {float:right !important;}
@@ -4356,4 +4364,10 @@ td:has(.text-type) {
     .flex-row.justify-between .text {
         word-break: keep-all;
     }
+}
+
+.text-area-box {
+    border-radius: 12px;
+    border: 1px solid #E1E3E9;
+    padding: 16px;
 }

@@ -35,16 +35,16 @@
             <div class="header_cont">
                 <div class="header_top_cont">
                 <h1 class="logo">
-                    <a href="/" title="메인으로 이동">
+                    <a href="메인.html" title="메인으로 이동">
                     <img src="img/pc/logo_new.png" alt="지방이양사무관리시스템 대국민서비스">              
                     </a>
                 </h1>
                 <div class="info_cont">
                     <!-- 로그인 전 -->
-                    <ul class="info_menu default">
+                    <!-- <ul class="info_menu default">
                     <li><a href="#" class="ico_login"><span>로그인</span></a></li>
                     <li><a href="#none" class="ico_join"><span>회원가입</span></a></li>
-                    </ul> 
+                    </ul>  -->
                     <!-- 로그인 후 -->
                     <!-- <ul class="info_menu">
                     <li class="bar"><a href="#none">마이페이지</a></li>
@@ -64,10 +64,10 @@
     <div class="global-navy_wrap">
         <div class="top_menu_cont">
             <ul class="menu portal-web" id="gnb">
-            <li><a href="#none" class="on">법령</a></li>
-            <li><a href="#none">사무</a></li>
-            <li><a href="#none">통계</a></li>
-            <li><a href="#none">정보자료</a></li>                
+                <li><a href="PC_3법령_1리스트.html" class="on">법령</a></li>
+                <li><a href="PC_4사무_1사무_1목록.html">사무</a></li>
+                <li><a href="#none">통계</a></li>
+                <li><a href="PC_8정보자료_1공지사항_1목록.html">정보자료</a></li>               
             </ul>
         </div>
     </div>
@@ -82,9 +82,10 @@
                     <ul>
                     <li><a href="#none">홈</a></li>
                     <li><a href="#none">법령</a></li>              
+                    <li><a href="#none">상세</a></li>   
                     </ul>
                 </div>
-                <h2 class="title">법령</h2>
+                <h2 class="title">법령정보</h2>
                 <div class="pc">
                     <a href="#none" class="btn ico_print"><span>프린트</span></a>
                 </div>
@@ -258,7 +259,129 @@
             </div>
         </div>
     </div>
-
+        <!-- 모달 -->
+        <section class="modal_new modal_overlay roll-type" id="main_layer_pop"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+            <div class="modal_n_wrap roll-modal">
+              <div class="modal-header">
+                  <div class="tit">법령개정정보</div>
+              </div>
+              <div class="modal_n_body">
+                <div class="pop_cont">
+                    <div class="document-title-ft18">
+                        개정된 법령
+                    </div>
+                    <div class="table-cont  mt-16">
+                        <table>
+                            <colgroup>
+                              <col width="40" />
+                              <col width="40" />
+                              <col width="40" />
+                              <col width="240" />
+                              <col width="80" />
+                              <col width="" />                                                        
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="3">장번호</th>
+                                    <th scope="col">장제목</th>
+                                    <th scope="col">절번호</th>
+                                    <th scope="col">절제목</th>
+                                </tr>
+                                <tr>
+                                  <th scope="col">조</th>
+                                  <th scope="col">항</th>
+                                  <th scope="col">호</th>
+                                  <th scope="col">조문제목</th>                                
+                                  <th scope="col" colspan="2">조문</th>                              
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">7</td>
+                                    <td class="text-l">개인정보 분쟁조정위원회</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>집단분쟁조정</td>
+                                    <td colspan="2">제1조(목적) 이 법은 10ㆍ27법난과 관련하여 피해를 입은 사람과 불교계의 명예를 회복시켜줌으로써 인권신장과 국민화합에 이바지함을 목적으로 한다. <개정 2022. 8. 8.></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">재개정 구분</td>
+                                    <td colspan="3" class="text-l">일부개정</td>
+                                </tr>
+                                <tr>
+                                  <td colspan="3">시행일</td>
+                                  <td colspan="3" class="text-l">2023.11.12</td>
+                                </tr>                                                                                    
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="document-title-ft18 mt-32">
+                      개정이전 법령
+                    </div>   
+                    <div class="table-cont mt-16">
+                        <table>
+                            <colgroup>
+                              <col width="40" />
+                              <col width="40" />
+                              <col width="40" />
+                              <col width="240" />
+                              <col width="80" />
+                              <col width="" />                                                        
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="3">장번호</th>
+                                    <th scope="col">장제목</th>
+                                    <th scope="col">절번호</th>
+                                    <th scope="col">절제목</th>
+                                </tr>
+                                <tr>
+                                  <th scope="col">조</th>
+                                  <th scope="col">항</th>
+                                  <th scope="col">호</th>
+                                  <th scope="col">조문제목</th>                                
+                                  <th scope="col" colspan="2">조문</th>                              
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">7</td>
+                                    <td class="text-l">개인정보 분쟁조정위원회</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>집단분쟁조정</td>
+                                    <td colspan="2">제1조(목적) 이 법은 10ㆍ27법난과 관련하여 피해를 입은 사람과 불교계의 명예를 회복시켜줌으로써 인권신장과 국민화합에 이바지함을 목적으로 한다. <개정 2022. 8. 8.></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">재개정 구분</td>
+                                    <td colspan="3" class="text-l">일부개정</td>
+                                </tr>
+                                <tr>
+                                  <td colspan="3">시행일</td>
+                                  <td colspan="3" class="text-l">2023.11.12</td>
+                                </tr>                                                                                    
+                            </tbody>
+                        </table>
+                    </div>  
+                    <div class="button__wrap flex-end mt-32">
+                        <button type="button" class="btn-primary-default wd-108 "  onclick="modalControl('c')" >
+                          <i></i> 확인
+                        </button>  
+                    </div>  
+                </div>
+                
+                <button type="button" onclick="modalControl('c')" class="btn_close"><span class="hidden">닫기</span></button>
+              </div>
+            </div>
+          </section>
     <!-- footer -->
     <div class="footer">
         <div class="inner">
