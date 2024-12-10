@@ -1182,6 +1182,7 @@ p.skip{margin-bottom:30px;}
 .mr-0 {margin-right: 0px;}
 .mr-8 {margin-right: 8px;}
 .mr-16 {margin-right: 16px;}
+.mb-0 {margin-bottom: 0px !important;}
 .mb-20 {margin-bottom: 24px;}
 .float-r {float:right !important;}
 .wid80 {width: 80px;}
@@ -3845,6 +3846,22 @@ td:has(.text-type) {
     .search_cont_detail.iyangsamu-search.type02.on .btn_reset_only-icon {
         right: 20px;
         bottom: 24px;
+    }
+    .form-element-rows.mo-board-manage {        
+        padding: 8px 16px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .form-element-rows.datepicker-cell {
+        flex-direction: column;
+        padding: 8px 16px 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+        border-bottom: 0;
+    }
+    .form-element-rows.datepicker-cell {
+
     }
 }
 

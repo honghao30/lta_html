@@ -1311,7 +1311,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .header_top_cont{height:64px;line-height:64px;}
         .header_top_cont .logo{display:inline-block;}
         .header_top_cont .logo a{height:30px;line-height:30px;display:block;color: #222;font-size: 16px;font-style: normal;font-weight: 500;}
-        .header_top_cont .logo img{width:146px;vertical-align: middle;padding-right:5px;}
+        .header_top_cont .logo img{width:46px;vertical-align: middle;padding-right:5px;}
         .header_top_cont .logo.portal-web img{width:30px;vertical-align: middle;padding-right:5px;}
         .header_top_cont .right_cont{position:absolute;top:0;right:20px;}
         .header_top_cont .right_cont button{margin-left:16px;border:0;}
