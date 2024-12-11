@@ -1311,7 +1311,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .header_top_cont{height:64px;line-height:64px;}
         .header_top_cont .logo{display:inline-block;}
         .header_top_cont .logo a{height:30px;line-height:30px;display:block;color: #222;font-size: 16px;font-style: normal;font-weight: 500;}
-        .header_top_cont .logo img{width:46px;vertical-align: middle;padding-right:5px;}
+        .header_top_cont .logo img{width:136px;vertical-align: middle;padding-right:5px;}
         .header_top_cont .logo.portal-web img{width:30px;vertical-align: middle;padding-right:5px;}
         .header_top_cont .right_cont{position:absolute;top:0;right:20px;}
         .header_top_cont .right_cont button{margin-left:16px;border:0;}
@@ -1326,6 +1326,7 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .header_cont .menu li+li{margin-left:21px;}
         .header_cont .menu li a{font-size:16px;}
         .header_cont .menu li a.on {color: #706DF0;font-weight: 700;}
+        .header_top_cont a.btn_search{background:url(../img/mo/btn_search.png) no-repeat center !important;background-size:24px auto !important;width:24px !important;height:24px !important;}
 
         .header_cont .info_cont{position: absolute;top: 50%;right:20px;transform: translate(0, -50%);}
         .header_cont .info_cont .info_menu.default{line-height:0;}
@@ -1463,7 +1464,8 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
         .btn{text-align:center; display:inline-block;vertical-align:middle;color: #222;font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: 18px;letter-spacing: -0.32px;border-radius: 8px;border: 1px solid #D8DDE9;background: #FFF;height: 36px;padding: 8px 12px;}
         .btn>span{height:100%;}
         .btn_search{border: 1px solid #FFF;background:none;color: #FFF;height:50px;vertical-align:middle;}
-        .btn_search span{padding-left:32px;background:url(../img/pc/ico/ico_btn_search.png) no-repeat 0 center;line-height:32px;display:inline-block;;}
+        .btn_search span{padding-left:32px;background:url(../img/pc/ico/ico_btn_search.png) no-repeat 0 center;line-height:32px;display:inline-block;}
+        a.btn_search span{padding-top:0px;background:url(../img/pc/ico/ico_btn_search.png) no-repeat center 0;line-height:32px;display:inline-block;padding-left:0;}
         .btn.type02{text-align:left;padding:8px 12px;height:auto;border-radius: 8px;}
         .btn.type02 span{padding-top:20px;padding-left:0;background-position: 0 0 !important;}
         .btn.type03{text-align:left;padding:8px 12px;height:auto;border-radius: 8px;display:table;}
@@ -1983,11 +1985,13 @@ textarea{color: #222;font-family: Pretendard;font-size: 16px;font-style: normal;
   width: 264px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
+  padding-left: 16px;
   color: #222;
+  gap: 8px;
 }
 .graph_cont .content .tit_cont .btn-more-arrow {
   position: absolute;
