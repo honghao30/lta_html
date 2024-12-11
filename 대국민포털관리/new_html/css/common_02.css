@@ -4381,6 +4381,25 @@ td:has(.text-type) {
     .flex-row.justify-between .text {
         word-break: keep-all;
     }
+    .mo-table {
+        display: none;
+    } 
+    .table-body-only.mo-responesive {
+        display: block;
+    }
+    .table-body-only.mo-responesive > tbody,
+    .table-body-only.mo-responesive > tbody > tr,
+    .table-body-only.mo-responesive > tbody > tr > th,
+    .table-body-only.mo-responesive > tbody > tr > td {        
+        width: 100%;
+        display: flex;
+        width: 100%;
+        flex-direction: column;        
+        justify-content: center;
+    }
+    .table-body-only.mo-responesive > tbody > tr > td.inner-table {
+        height: auto;
+    }
 }
 
 .text-area-box {
