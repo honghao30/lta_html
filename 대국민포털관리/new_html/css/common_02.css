@@ -1184,10 +1184,13 @@ p.skip{margin-bottom:30px;}
 .mr-16 {margin-right: 16px;}
 .mb-0 {margin-bottom: 0px !important;}
 .mb-20 {margin-bottom: 24px;}
+.mb-32 {margin-bottom: 32px !important;}
+
 .float-r {float:right !important;}
 .wid80 {width: 80px;}
 .wd-90 {width: 90px !important; flex: initial !important;}
 .ht-120 {height: 120px  !important;;}
+.wd-100p {width: 100%;}
 .search-input-inner.deliberation {
     position: relative;
 }
@@ -1204,6 +1207,7 @@ p.skip{margin-bottom:30px;}
     .mt-24 {margin-top: 12px;}
     .mt-32 {margin-top: 16px;}
     .mt-64 {margin-top: 32px;}
+    .mo-mb-32 {margin-bottom: 32px !important;}
 }
 
 .btn.ico_penci-bl span{
@@ -2455,7 +2459,7 @@ td:has(.text-type) {
 .btn_search_only-icon {
     width: 46px;
     height: 46px;
-    background-image: url(../img/pc/btn/btn_reset_48.png);
+    background-image: url(../img/pc/btn/btn_reset_48.png) !important;
     background-position: center center;
     position: absolute;
     right: 40px;
@@ -2465,10 +2469,10 @@ td:has(.text-type) {
     overflow: hidden;
     background-color: transparent;
 }
-.btn_search_only-icon.btn-law-reset {
-    right: 80px;
-    bottom: 36px;
-}
+/* .btn_search_only-icon.btn-law-reset {
+    right: 0 !important;
+    bottom: 0px !important;
+} */
 
 .popup_new.type-window .modal_n_wrap {
     width: 1280px;
@@ -4103,6 +4107,30 @@ td:has(.text-type) {
     align-items: center;
 }
 .btn-white-box .ico-arrow-right {    
+    display: inline-flex;
+    background: url('../img/pc/ico/ic_h24_arrow1_purple_right.png') no-repeat center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+.btn-white-box-line {
+    height: 36px;
+    border: 1px solid #AEB7C6;
+    background-color: #fff;
+    border-radius: 12px;    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+    padding: 10px 12px;
+    color:#222;
+    display: flex;
+    align-items: center;
+}
+.btn-white-box-line .ico-arrow-right {    
     display: inline-flex;
     background: url('../img/pc/ico/ic_h24_arrow1_purple_right.png') no-repeat center;
     background-size: contain;
