@@ -4428,6 +4428,10 @@ td:has(.text-type) {
     .table-body-only.mo-responesive > tbody > tr > td.inner-table {
         height: auto;
     }
+
+    .form-element-rows.mo-search {
+        margin: 0 16px;
+    }
 }
 
 .text-area-box {
