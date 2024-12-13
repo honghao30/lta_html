@@ -483,34 +483,43 @@
       <div class="content_wrap">
         <div class="inner">
           <!-- PC -->
-          <div class="table_cont form-table pc">
-            <table class="table-body-only table-fixed">
+          <div class="table_cont form-table">
+            <table class="table-body-only">
               <colgroup>
-                <col width="160" />
-                <col width="" />
-                <col width="160" />
+                <col class="col-wid170" />
                 <col width="" />
               </colgroup>
               <tbody>
                 <tr>
                   <th scope="row">등록일</th>
                   <td>2024.10.10 10:10</td>
+                </tr>
+                <tr>                  
                   <th scope="row">분류</th>
                   <td>문의</td>
                 </tr>
                 <tr>
-                  <th scope="row">대상</th>
-                  <td>이양사무</td>
-                  <th scope="row">공개여부</th>
-                  <td>비공개</td>
-                </tr>
-                <tr>
                   <th scope="row">등록자</th>
-                  <td colspan="3">홍길동</td>
+                  <td>홍길동</td>
+                </tr>
+                <tr>                  
+                  <th scope="row">공개여부</th>
+                  <td>
+                    <div class="radio-box">
+                      <label id="sc_box_input_01_01">
+                        <input type="radio" name="sc_box_01" value="sc_box_input_01_01" id="sc_box_input_01_01" checked>
+                        <span>공개</span>
+                      </label>
+                      <label id="sc_box_input_01_02">
+                        <input type="radio" name="sc_box_01" value="sc_box_input_01_02" id="sc_box_input_01_02">
+                        <span>비공개</span>
+                      </label>
+                    </div>                    
+                  </td>
                 </tr>
                 <tr>
                   <th scope="row">제목</th>
-                  <td colspan="3">
+                  <td>
                     <div class="form-element__wrap">
                       <span class="form-element__inner input-type">
                         <input type="text" value="지방이양사무관리시스템 오픈 안내" class="input-type1-font14" maxlength="50" placeholder="제목" title="제목">
@@ -520,7 +529,7 @@
                 </tr>
                 <tr>
                   <th scope="row">상세내용</th>
-                  <td colspan="3">
+                  <td>
                     <div class="form-element__wrap">                                
                       <span class="form-element__inner text-area">
                         <textarea placeholder="상세내용" title="상세내용">내용 노출</textarea>
@@ -529,8 +538,23 @@
                   </td>
                 </tr>
                 <tr>
+                  <td style="height:82px;" colspan="2">
+                    <div class="view_check">
+                      <label class="input_type check">
+                        <input type="checkbox" name="q01">
+                        <span class="txt">이메일로 답변 받기</span>
+                      </label>
+                      <div class="view mt-8" style="width:100%;">
+                        <span class="input_cont">
+                          <input type="text" placeholder="이메일을 입력해 주세요.">
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>                
+                <tr>
                   <th scope="row">답변내용</th>
-                  <td colspan="3">
+                  <td>
                     <div class="form-element__wrap">                                
                       <span class="form-element__inner text-area ht-120">
                         <textarea placeholder="답변내용" title="답변내용">내용 노출</textarea>
@@ -541,6 +565,8 @@
                 <tr>
                   <th scope="row">답변일</th>
                   <td>2024.10.10 10:10</td>
+                </tr>
+                <tr>                  
                   <th scope="row">답변자</th>
                   <td>관리자</td>
                 </tr>
@@ -549,17 +575,13 @@
           </div>
 
           <!-- MOBILE -->
-          <div class="table_cont mo">
+          <div class="table_cont mo" style="display: none;">
             <table class="table-body-only no-line-type">
               <colgroup>
                 <col width="30%" />
                 <col width="" />
               </colgroup>
               <tbody>
-                <tr></tr>
-                  <th scope="row">분류</th>
-                  <td>문의</td>                
-                </tr>
                 <tr>
                   <th scope="row">등록일</th>
                   <td>2024.10.10 10:10</td>                
