@@ -480,10 +480,10 @@
     <div class="content_wrap">
       <div class="inner">
 
-        <div class="table_cont form-table pc">
+        <div class="table_cont form-table">
             <table class="table-body-only table-fixed">
                 <colgroup>
-                    <col style="width:160px;">
+                    <col class="col-wid170">
                     <col>              
                 </colgroup>
                 <tbody>
@@ -530,7 +530,7 @@
                                 <li>
                                     <input type="file" name="" class="file" style="width: 100%;">
                                     <div class="form-element__wrap">                                  
-                                        <div class="input-multi file-up">
+                                        <div class="input-multi file-up mo-flex-col">
                                             <span class="form-element__inner input-type">
                                                 <input type="text" placeholder="" title="파일첨부">
                                             </span>
@@ -548,7 +548,7 @@
                             <li>
                                 <input type="file" name="" class="file" style="width: 100%;">
                                 <div class="form-element__wrap">                                  
-                                    <div class="input-multi file-up">
+                                    <div class="input-multi file-up mo-flex-col">
                                         <span class="form-element__inner input-type">
                                             <input type="text" placeholder="" title="파일첨부">
                                         </span>
@@ -560,27 +560,77 @@
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row">설명</th>
+                      <th scope="row">발송자 명<span class="red-color">*</span></th>
+                      <td>
+                        <div class="form-element__wrap">
+                          <div class="input-multi">
+                            <span class="form-element__inner input-type">
+                                <input type="text" value="" class="input-type1-font14" maxlength="" title="페이지 설명을 입력하세요">
+                            </span>
+                          </div>
+                          <div class="info-text mt-8">자동 메일 발송 시 사용되는 담당자 정보입니다.</div>
+                        </div>           
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">발송자 메일 주소<span class="red-color">*</span></th>
+                      <td>
+                        <div class="form-element__wrap">
+                          <div class="input-multi">
+                            <span class="form-element__inner input-type">
+                                <input type="text" value="" class="input-type1-font14" maxlength="" title="페이지 설명을 입력하세요">
+                            </span>
+                          </div>
+                        </div>           
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">담당자 명<span class="red-color">*</span></th>
+                      <td>
+                        <div class="form-element__wrap">
+                          <div class="input-multi">
+                            <span class="form-element__inner input-type">
+                                <input type="text" value="" class="input-type1-font14" maxlength="" title="페이지 설명을 입력하세요">
+                            </span>
+                          </div>
+                        </div>           
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">담당자 메일 주소<span class="red-color">*</span></th>
+                      <td>
+                        <div class="form-element__wrap">
+                          <div class="input-multi">
+                            <span class="form-element__inner input-type">
+                                <input type="text" value="" class="input-type1-font14" maxlength="" title="페이지 설명을 입력하세요">
+                            </span>
+                          </div>
+                        </div>           
+                      </td>
+                    </tr>
+  
+                    <tr>
+                        <th scope="row">페이지 설명</th>
                         <td>
-                          <div class="form-element__wrap">
-                              <div class="input-multi">
-                              <span class="form-element__inner input-type">
-                                  <input type="text" value="설명" class="input-type1-font14" maxlength="" placeholder="설명을 입력하세요" title="설명을 입력하세요">
-                              </span>
-                              </div>
-                          </div>                    
+                                <div class="form-element__wrap">
+                                    <div class="input-multi">
+                                    <span class="form-element__inner input-type">
+                                        <input type="text" value="설명" class="input-type1-font14" maxlength="" placeholder="페이지 설명을 입력하세요" title="페이지 설명을 입력하세요">
+                                    </span>
+                                    </div>
+                                </div>                    
                         </td>
-                    </tr>            
+                    </tr>             
                 </tbody>
             </table>
         </div>
 
-          <div class="button__wrap flex-end mt-64 pc">                        
+          <div class="button__wrap flex-end mt-64">                        
               <a href="#" class="btn-gray-default">
                   <i class="ico-modify"></i> 수정
               </a> 
           </div>
-          <div class="table_cont mo">
+          <div class="table_cont mo" style="display: none;">
             <table class="table-body-only no-line-type flex-wrap">
               <colgroup>
                 <col width="30%" />
@@ -660,7 +710,7 @@
                       </td>
                   </tr>
                   <tr>
-                    <th scope="row">설명</th>
+                    <th scope="row">발송자 명<span class="red-color">*</span></th>
                     <td>
                       <div class="form-element__wrap">
                         <div class="input-multi">
@@ -668,10 +718,59 @@
                               <input type="text" value="" class="input-type1-font14" maxlength="" title="페이지 설명을 입력하세요">
                           </span>
                         </div>
-                       
+                        <div class="info-text mt-8">자동 메일 발송 시 사용되는 담당자 정보입니다.</div>
                       </div>           
                     </td>
                   </tr>
+                  <tr>
+                    <th scope="row">발송자 메일 주소<span class="red-color">*</span></th>
+                    <td>
+                      <div class="form-element__wrap">
+                        <div class="input-multi">
+                          <span class="form-element__inner input-type">
+                              <input type="text" value="" class="input-type1-font14" maxlength="" title="페이지 설명을 입력하세요">
+                          </span>
+                        </div>
+                      </div>           
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">담당자 명<span class="red-color">*</span></th>
+                    <td>
+                      <div class="form-element__wrap">
+                        <div class="input-multi">
+                          <span class="form-element__inner input-type">
+                              <input type="text" value="" class="input-type1-font14" maxlength="" title="페이지 설명을 입력하세요">
+                          </span>
+                        </div>
+                      </div>           
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">담당자 메일 주소<span class="red-color">*</span></th>
+                    <td>
+                      <div class="form-element__wrap">
+                        <div class="input-multi">
+                          <span class="form-element__inner input-type">
+                              <input type="text" value="" class="input-type1-font14" maxlength="" title="페이지 설명을 입력하세요">
+                          </span>
+                        </div>
+                      </div>           
+                    </td>
+                  </tr>
+
+                  <tr>
+                      <th scope="row">페이지 설명</th>
+                      <td>
+                              <div class="form-element__wrap">
+                                  <div class="input-multi">
+                                  <span class="form-element__inner input-type">
+                                      <input type="text" value="설명" class="input-type1-font14" maxlength="" placeholder="페이지 설명을 입력하세요" title="페이지 설명을 입력하세요">
+                                  </span>
+                                  </div>
+                              </div>                    
+                      </td>
+                  </tr>   
                           
               </tbody>
             </table>

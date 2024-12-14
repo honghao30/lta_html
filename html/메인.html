@@ -576,7 +576,7 @@
           </li>
         </ul>
       </div>
-      <div class="mo-flex">
+      <div class="mo">
         <ul class="menu">
           <li><a href="#none"  onclick="gnbLayer01(this);" class="on">법령</a></li>
           <li><a href="#none">사무</a></li>
@@ -840,10 +840,16 @@
                 <div class="swiper-slide"><a href="#"><img src="img/pc/banner/banner_01.png" alt=""></a></div>
                 <div class="swiper-slide"><a href="#"><img src="img/pc/banner/banner_01.png" alt=""></a></div>
                 <div class="swiper-slide"><a href="#"><img src="img/pc/banner/banner_01.png" alt=""></a></div> -->
+                
+                <div class="swiper-slide"><a href="#"><img src="img/pc/banner/banner_main.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/pc/banner/banner_main.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/pc/banner/banner_main.png" alt=""></a></div>
 
+                <!-- 테스트 링크 -->
+                <!-- <div class="swiper-slide"><a href="#"><img src="https://www.mois.go.kr/utl/web/imgSrc.do?atchFileId=BBS_2024110701313155501_png" alt=""></a></div>
                 <div class="swiper-slide"><a href="#"><img src="https://www.mois.go.kr/utl/web/imgSrc.do?atchFileId=BBS_2024110701313155501_png" alt=""></a></div>
-                <div class="swiper-slide"><a href="#"><img src="https://www.mois.go.kr/utl/web/imgSrc.do?atchFileId=BBS_2024110701313155501_png" alt=""></a></div>
-                <div class="swiper-slide"><a href="#"><img src="https://www.mois.go.kr/utl/web/imgSrc.do?atchFileId=BBS_2024110701313155501_png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="https://www.mois.go.kr/utl/web/imgSrc.do?atchFileId=BBS_2024110701313155501_png" alt=""></a></div> -->
+                <!-- //테스트 링크 -->
                 
                 <!-- <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
                 <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
@@ -949,52 +955,12 @@
         <div class="inner">
           <strong class="tit"><span>과제이력관리 현황</span></strong>
         </div>
-        <div class="swiper_wrap inner">
+        <div class="swiper_wrap inner" id="swiper2_wrap">
           <div class="swiper mySwiper type03" id="swiper2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <ul class="history_cont">
-                  <li>
-                    <a href="#none">
-                      <div class="tit_cont">
-                        <span class="tit">농림축산식품부</span>
-                        <span class="ico_round color_orange">의견수렴완료 / 심의요청 전</span>
-                      </div>
-                      <div class="info_cont">
-                        <strong class="tit">농업진흥진역 해제에 관한 법률</strong>
-                        <span class="ico_round color_gray">국가 → 시도</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <div class="tit_cont">
-                        <span class="tit">농림축산식품부</span>
-                        <span class="ico_round color_green">심의요청완료 / 전문위 심의중</span>
-                      </div>
-                      <div class="info_cont">
-                        <strong class="tit">농업진흥진역 해제에 관한 법률</strong>
-                        <span class="ico_round color_gray">국가 → 시도</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <div class="tit_cont">
-                        <span class="tit">농림축산식품부</span>
-                        <span class="ico_round color_purple">전문위 심의완료 / 분과위 심의중</span>
-                      </div>
-                      <div class="info_cont">
-                        <strong class="tit">농업진흥진역 해제에 관한 법률</strong>
-                        <span class="ico_round color_gray">국가 → 시도</span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="swiper-slide">
-                <ul class="history_cont">
-                  <li>
+                <div class="history_cont">
+                  <a href="#none">
                     <div class="tit_cont">
                       <span class="tit">농림축산식품부</span>
                       <span class="ico_round color_orange">의견수렴완료 / 심의요청 전</span>
@@ -1003,8 +969,12 @@
                       <strong class="tit">농업진흥진역 해제에 관한 법률</strong>
                       <span class="ico_round color_gray">국가 → 시도</span>
                     </div>
-                  </li>
-                  <li>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="history_cont">
+                  <a href="#none">
                     <div class="tit_cont">
                       <span class="tit">농림축산식품부</span>
                       <span class="ico_round color_green">심의요청완료 / 전문위 심의중</span>
@@ -1013,8 +983,12 @@
                       <strong class="tit">농업진흥진역 해제에 관한 법률</strong>
                       <span class="ico_round color_gray">국가 → 시도</span>
                     </div>
-                  </li>
-                  <li>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="history_cont">
+                  <a href="#none">
                     <div class="tit_cont">
                       <span class="tit">농림축산식품부</span>
                       <span class="ico_round color_purple">전문위 심의완료 / 분과위 심의중</span>
@@ -1023,29 +997,103 @@
                       <strong class="tit">농업진흥진역 해제에 관한 법률</strong>
                       <span class="ico_round color_gray">국가 → 시도</span>
                     </div>
-                  </li>
-                </ul>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="history_cont">
+                  <div class="tit_cont">
+                    <span class="tit">농림축산식품부</span>
+                    <span class="ico_round color_orange">의견수렴완료 / 심의요청 전</span>
+                  </div>
+                  <div class="info_cont">
+                    <strong class="tit">농업진흥진역 해제에 관한 법률</strong>
+                    <span class="ico_round color_gray">국가 → 시도</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="history_cont">
+                  <div class="tit_cont">
+                    <span class="tit">농림축산식품부</span>
+                    <span class="ico_round color_green">심의요청완료 / 전문위 심의중</span>
+                  </div>
+                  <div class="info_cont">
+                    <strong class="tit">농업진흥진역 해제에 관한 법률</strong>
+                    <span class="ico_round color_gray">국가 → 시도</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="history_cont">
+                  <div class="tit_cont">
+                    <span class="tit">농림축산식품부</span>
+                    <span class="ico_round color_purple">전문위 심의완료 / 분과위 심의중</span>
+                  </div>
+                  <div class="info_cont">
+                    <strong class="tit">농업진흥진역 해제에 관한 법률</strong>
+                    <span class="ico_round color_gray">국가 → 시도</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="sw_bts">
             <div class="swiper-button-next btn_circle"><img src="img/pc/swiper/btn_sw_circle_right.png" alt=""></div>
             <div class="swiper-button-prev btn_circle"><img src="img/pc/swiper/btn_sw_circle_left.png" alt=""></div>
+            <div class="swiper-pagination"></div>
           </div>
           <script>
-            var swiper2 = new Swiper("#swiper2", {
-              slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
-              slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
-              loop: true,
-              // autoplay: {
-              //   delay: 3000,
-              //   disableOnInteraction: false,
-              // },
-              navigation: {
-                nextEl: "#swiper2+.sw_bts .swiper-button-next",
-                prevEl: "#swiper2+.sw_bts .swiper-button-prev",
-              }
-            });
+            // 미디어 쿼리 조건 정의
+            const mediaQuery = window.matchMedia("(max-width: 480px)");
+
+            // 조건에 따라 실행할 함수
+            function handleMediaQueryChange(e) {
+                if (e.matches) {
+                    // 화면이 480px 이하일 때 실행할 코드
+                    console.log("화면이 480px 이하입니다.");
+                    var swiper2 = new Swiper("#swiper2", {
+                      slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
+                      slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                      loop: true,
+                      // autoplay: {
+                      //   delay: 3000,
+                      //   disableOnInteraction: false,
+                      // },
+                      pagination: {
+                        el: "#swiper2_wrap .swiper-pagination",
+                        clickable: true,
+                      },
+
+                    });
+                } else {
+                    // 화면이 480px 이상일 때 실행할 코드
+                    console.log("화면이 480px 이상입니다.");
+                    var swiper2 = new Swiper("#swiper2", {
+                      slidesPerView: 3, // 한번에 보여지는 슬라이드 숫자
+                      slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                      loop: true,
+                      // autoplay: {
+                      //   delay: 3000,
+                      //   disableOnInteraction: false,
+                      // },
+                      navigation: {
+                        nextEl: "#swiper2+.sw_bts .swiper-button-next",
+                        prevEl: "#swiper2+.sw_bts .swiper-button-prev",
+                      }
+                    });
+                    // 데스크탑 전용 스크립트를 추가
+                }
+            }
+
+
+// 초기 상태 확인 및 핸들러 실행
+handleMediaQueryChange(mediaQuery);
+
+// 화면 크기가 변경될 때 이벤트 리스너 추가
+mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+            
           </script>
         </div>
         <!-- <div class="swiper_wrap inner mo">
@@ -1141,6 +1189,7 @@
                     <span class="percent">35%</span>
                   </div>
                   <span class="line"></span>
+                  <span class="circle" style="left:35%;"></span>
                 </span>
                 <span class="num"><strong>31,000</strong>건</span>
               </li>
@@ -1157,6 +1206,7 @@
                     <span class="percent">35%</span>
                   </div>
                   <span class="line"></span>
+                  <span class="circle" style="left:35%;"></span>
                 </span>
                 <span class="num"><strong>18,000</strong>건</span>
               </li>
@@ -1173,6 +1223,7 @@
                     <span class="percent">35%</span>
                   </div>
                   <span class="line"></span>
+                  <span class="circle" style="left:35%;"></span>
                 </span>
                 <span class="num"><strong>31,000</strong>건</span>
               </li>
@@ -1427,7 +1478,7 @@
 
   <!-- layerPopup -->
   <!-- 하단 메인 팝업 영역 -->
-  <section class="modal_new modal_overlay mo" id="main_banner_pop"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
+  <section class="modal_new modal_overlay  modal_on" id="main_banner_pop"><!-- 클래스에 modal_overlay를 넣으면 오버레이 클릭 시 닫힙니다 -->
     
     <div class="modal_n_wrap">
       <div class="modal-header">
@@ -1440,181 +1491,67 @@
       </div>
       <div class="modal_n_body">
         <div class="pop_cont">
-          <div class="swiper_wrap mo">
-            <div class="swiper mySwiper type03" id="mo_banner_swiper1">
+          <div class="swiper_wrap">
+            <div class="swiper mySwiper type01" id="mo_banner_swiper1">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="swiper_wrap">
-                    <div class="swiper mySwiper type01" id="mo_banner_swiper_cont1">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
-                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
-                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
-                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
-                      </div>
-                      <div class="sw_bts">
-                        <div class="swiper-button-next"><img src="img/mo/swiper/btn_sw_right.png" alt=""></div>
-                        <div class="swiper-button-prev"><img src="img/mo/swiper/btn_sw_left.png" alt=""></div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-autoplay-button">
-                          <img src="img/mo/swiper/btn_sw_pause.png" alt="" class="pause">
-                          <img src="img/mo/swiper/btn_sw_play.png" alt="" class="play">
-                        </div>
-                      </div>
-                    </div>
-                    <script>
-                      var mo_banner_swiper_cont1 = new Swiper("#mo_banner_swiper_cont1", {
-                        slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
-                        slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
-                        loop: true,
-                        autoplay: {
-                          delay: 3000,
-                          disableOnInteraction: false,
-                        },
-                        navigation: {
-                          nextEl: "#mo_banner_swiper_cont1 .swiper-button-next",
-                          prevEl: "#mo_banner_swiper_cont1 .swiper-button-prev",
-                        },
-                        pagination: {
-                          el: "#mo_banner_swiper_cont1 .swiper-pagination",
-                          type: "fraction",
-                          clickable: true,
-                        }
-                      });
-                      // mo_banner_swiper_cont1의 일시정지 및 재생 제어
-                      $("#mo_banner_swiper_cont1 .swiper-autoplay-button .pause").on("click", function() {
-                        mo_banner_swiper_cont1.autoplay.stop();
-                        $(this).hide();
-                        $("#mo_banner_swiper_cont1 .swiper-autoplay-button .play").show();
-                      });
-                      $("#mo_banner_swiper_cont1 .swiper-autoplay-button .play").on("click", function() {
-                        mo_banner_swiper_cont1.autoplay.start();
-                        $(this).hide();
-                        $("#mo_banner_swiper_cont1 .swiper-autoplay-button .pause").show();
-                      });
-                    </script>
-                  </div>
+                <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
+              </div>
+              <div class="sw_bts">
+                <div class="pc">
+                  <div class="swiper-button-next"><img src="img/pc/swiper/btn_sw_right.png" alt=""></div>
+                  <div class="swiper-button-prev"><img src="img/pc/swiper/btn_sw_left.png" alt=""></div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="swiper_wrap">
-                    <div class="swiper mySwiper type01" id="mo_banner_swiper_cont2">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
-                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
-                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
-                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
-                      </div>
-                      <div class="sw_bts">
-                        <div class="swiper-button-next"><img src="img/mo/swiper/btn_sw_right.png" alt=""></div>
-                        <div class="swiper-button-prev"><img src="img/mo/swiper/btn_sw_left.png" alt=""></div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-autoplay-button">
-                          <img src="img/mo/swiper/btn_sw_pause.png" alt="" class="pause">
-                          <img src="img/mo/swiper/btn_sw_play.png" alt="" class="play">
-                        </div>
-                      </div>
-                    </div>
-                    <script>
-                      var mo_banner_swiper_cont2 = new Swiper("#mo_banner_swiper_cont2", {
-                        slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
-                        slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
-                        loop: true,
-                        autoplay: {
-                          delay: 3000,
-                          disableOnInteraction: false,
-                        },
-                        navigation: {
-                          nextEl: "#mo_banner_swiper_cont2 .swiper-button-next",
-                          prevEl: "#mo_banner_swiper_cont2 .swiper-button-prev",
-                        },
-                        pagination: {
-                          el: "#mo_banner_swiper_cont2 .swiper-pagination",
-                          type: "fraction",
-                          clickable: true,
-                        }
-                      });
-                      // mo_banner_swiper_cont2의 일시정지 및 재생 제어
-                      $("#mo_banner_swiper_cont2 .swiper-autoplay-button .pause").on("click", function() {
-                        mo_banner_swiper_cont2.autoplay.stop();
-                        $(this).hide();
-                        $("#mo_banner_swiper_cont2 .swiper-autoplay-button .play").show();
-                      });
-                      $("#mo_banner_swiper_cont2 .swiper-autoplay-button .play").on("click", function() {
-                        mo_banner_swiper_cont2.autoplay.start();
-                        $(this).hide();
-                        $("#mo_banner_swiper_cont2 .swiper-autoplay-button .pause").show();
-                      });
-                    </script>
-                  </div>
+                <div class="mo">
+                  <div class="swiper-button-next"><img src="img/mo/swiper/btn_sw_right.png" alt=""></div>
+                  <div class="swiper-button-prev"><img src="img/mo/swiper/btn_sw_left.png" alt=""></div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="swiper_wrap">
-                    <div class="swiper mySwiper type01" id="mo_banner_swiper_cont3">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
-                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
-                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
-                        <div class="swiper-slide"><a href="#"><img src="img/mo/banner/banner_01.png" alt=""></a></div>
-                      </div>
-                      <div class="sw_bts">
-                        <div class="swiper-button-next"><img src="img/mo/swiper/btn_sw_right.png" alt=""></div>
-                        <div class="swiper-button-prev"><img src="img/mo/swiper/btn_sw_left.png" alt=""></div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-autoplay-button">
-                          <img src="img/mo/swiper/btn_sw_pause.png" alt="" class="pause">
-                          <img src="img/mo/swiper/btn_sw_play.png" alt="" class="play">
-                        </div>
-                      </div>
-                    </div>
-                    <script>
-                      var mo_banner_swiper_cont3 = new Swiper("#mo_banner_swiper_cont3", {
-                        slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
-                        slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
-                        loop: true,
-                        autoplay: {
-                          delay: 3000,
-                          disableOnInteraction: false,
-                        },
-                        navigation: {
-                          nextEl: "#mo_banner_swiper_cont3 .swiper-button-next",
-                          prevEl: "#mo_banner_swiper_cont3 .swiper-button-prev",
-                        },
-                        pagination: {
-                          el: "#mo_banner_swiper_cont3 .swiper-pagination",
-                          type: "fraction",
-                          clickable: true,
-                        }
-                      });
-                      // mo_banner_swiper_cont3의 일시정지 및 재생 제어
-                      $("#mo_banner_swiper_cont3 .swiper-autoplay-button .pause").on("click", function() {
-                        mo_banner_swiper_cont3.autoplay.stop();
-                        $(this).hide();
-                        $("#mo_banner_swiper_cont3 .swiper-autoplay-button .play").show();
-                      });
-                      $("#mo_banner_swiper_cont3 .swiper-autoplay-button .play").on("click", function() {
-                        mo_banner_swiper_cont3.autoplay.start();
-                        $(this).hide();
-                        $("#mo_banner_swiper_cont3 .swiper-autoplay-button .pause").show();
-                      });
-                    </script>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-autoplay-button">
+                  <div class="pc">
+                    <img src="img/pc/swiper/btn_sw_pause.png" alt="" class="pause">
+                    <img src="img/pc/swiper/btn_sw_play.png" alt="" class="play">
+                  </div>
+                  <div class="mo">
+                    <img src="img/mo/swiper/btn_sw_pause.png" alt="" class="pause">
+                    <img src="img/mo/swiper/btn_sw_play.png" alt="" class="play">
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
             <script>
               var mo_banner_swiper1 = new Swiper("#mo_banner_swiper1", {
                 slidesPerView: 1, // 한번에 보여지는 슬라이드 숫자
                 slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
                 loop: true,
-                pagination: {
-                  el: ".swiper-pagination",
-                  clickable: true,
+                autoplay: {
+                  delay: 3000,
+                  disableOnInteraction: false,
                 },
+                navigation: {
+                  nextEl: "#mo_banner_swiper1 .swiper-button-next",
+                  prevEl: "#mo_banner_swiper1 .swiper-button-prev",
+                },
+                pagination: {
+                  el: "#mo_banner_swiper1 .swiper-pagination",
+                  type: "fraction",
+                  clickable: true,
+                }
                 // navigation: {
                 //   nextEl: ".swiper-button-next",
                 //   prevEl: ".swiper-button-prev",
                 // }
+              });
+               // mo_banner_swiper1의 일시정지 및 재생 제어
+               $("#mo_banner_swiper1 .swiper-autoplay-button .pause").on("click", function() {
+                mo_banner_swiper1.autoplay.stop();
+                $(this).hide();
+                $("#mo_banner_swiper1 .swiper-autoplay-button .play").show();
+              });
+              $("#mo_banner_swiper1 .swiper-autoplay-button .play").on("click", function() {
+                mo_banner_swiper1.autoplay.start();
+                $(this).hide();
+                $("#mo_banner_swiper1 .swiper-autoplay-button .pause").show();
               });
             </script>
           </div>

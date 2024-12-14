@@ -483,22 +483,20 @@
 
       <div class="content_wrap">
         <div class="inner">
-          <div class="table_cont form-table pc">
+          <div class="table_cont form-table">
             <table class="table-body-only table-fixed">
               <colgroup>
-                <col style="width:160px;">
-                <col>
-                <col style="width:160px;">
+                <col class="col-wid170">
                 <col>
               </colgroup>
               <tbody>
                 <tr>
                   <th scope="row">노출위치</th>
-                  <td colspan="3">메인</td>
+                  <td>메인</td>
                 </tr>
                 <tr>
                   <th scope="row">제목 <span class="red-color">*</span> </th>
-                  <td colspan="3">
+                  <td>
                     <div class="form-element__wrap">
                       <div class="input-multi has-text-count">
                         <span class="form-element__inner input-type">
@@ -513,7 +511,7 @@
                 </tr>
                 <tr>
                   <th scope="row">랜딩URL</th>
-                  <td colspan="3">
+                  <td>
                     <div class="form-element__wrap">
                       <div class="input-multi">
                         <span class="form-element__inner input-type">
@@ -525,7 +523,7 @@
                 </tr>
                 <tr>
                   <th scope="row">배너 이미지 파일 <span class="red-color">*</span> </th>
-                  <td colspan="3">
+                  <td>
                     <div class="info-text color-important">배너 이미지 사이즈(크기) : 000x000</div>
                     <ul class="file-list file-list-multi" style="max-width: 100%;">
                       <li>
@@ -559,7 +557,7 @@
                 </tr>
                 <tr>
                   <th scope="row">배너 내용 <span class="red-color">*</span> </th>
-                  <td colspan="3">
+                  <td>
                     <div class="form-element__wrap">                                
                       <span class="form-element__inner text-area ht-120">
                         <textarea placeholder="배너 내용" title="배너 내용">배너 내용</textarea>
@@ -570,141 +568,114 @@
                 </tr>
                 <tr>
                   <th scope="row">노출 기간</th>
-                  <td colspan="3">
-                    <div class="radio-box">
-                      <label id="r0">
-                        <input type="radio" name="type8" value="type0a20" checked id="r0">
-                        <span>지정</span>
-                      </label>
-                      <label id="rb">
-                        <input type="radio" name="type8" value="type0a21" id="rb">
-                        <span>1주</span>
-                      </label>
-                      <label id="rb">
-                        <input type="radio" name="type8" value="type0a21" id="rb">
-                        <span>1개월</span>
-                      </label>
-                      <label id="rb">
-                        <input type="radio" name="type8" value="type0a21" id="rb">
-                        <span>2개월</span>
-                      </label>
-                      <label id="rb">
-                        <input type="radio" name="type8" value="type0a21" id="rb">
-                        <span>3개월</span>
-                      </label>
-                    </div>
-                    <div class="divide-line"></div>
-                    <div class="data-pick-wrap">
-                      <div class="form-element__wrap" style="width: 168px">
-                        <div class="input-multi">
-                          <span class="form-element__inner input-type">
-                            <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder=""
-                              id="datepicker_start" title="">
-                          </span>
+                  <td>
+                    <div class="mo-responesive">
+                        <div class="radio-box">
+                          <label id="r0">
+                            <input type="radio" name="type8" value="type0a20" checked id="r0">
+                            <span>지정</span>
+                          </label>
+                          <label id="rb">
+                            <input type="radio" name="type8" value="type0a21" id="rb">
+                            <span>1주</span>
+                          </label>
+                          <label id="rb">
+                            <input type="radio" name="type8" value="type0a21" id="rb">
+                            <span>1개월</span>
+                          </label>
+                          <label id="rb">
+                            <input type="radio" name="type8" value="type0a21" id="rb">
+                            <span>2개월</span>
+                          </label>
+                          <label id="rb">
+                            <input type="radio" name="type8" value="type0a21" id="rb">
+                            <span>3개월</span>
+                          </label>
                         </div>
-                      </div>
-                      <!-- 콤보박스 -->
-                      <div class="select_box" style="width: 120px">
-                        <span class="select">10시</span>
-                        <div class="option">
-                          <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                            <ul>
-                              <li>선택함1</li>
-                              <li>선택함2</li>
-                              <li>선택함3</li>
-                            </ul>
+                        <div class="divide-line"></div>
+                        <div class="data-pick-wrap">
+                          <div class="form-element__wrap mo-fixed-width">
+                            <div class="input-multi">
+                              <span class="form-element__inner input-type">
+                                <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder=""
+                                  id="datepicker_start" title="">
+                              </span>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <!-- //콤보박스 -->
-                      시
-                      <!-- 콤보박스 -->
-                      <div class="select_box" style="width: 120px">
-                        <span class="select">10분</span>
-                        <div class="option">
-                          <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                            <ul>
-                              <li>선택함1</li>
-                              <li>선택함2</li>
-                              <li>선택함3</li>
-                            </ul>
+                          <!-- 콤보박스 -->
+                          <div class="select_box" style="width: 120px">
+                            <span class="select">10시</span>
+                            <div class="option">
+                              <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                <ul>
+                                  <li>선택함1</li>
+                                  <li>선택함2</li>
+                                  <li>선택함3</li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <!-- //콤보박스 -->
-                      분
-                      <div class="dash">~</div>
-                      <div class="form-element__wrap" style="width: 168px">
-                        <div class="input-multi">
-                          <span class="form-element__inner input-type">
-                            <input type="text" value="" class="input-type1-font14" maxlength="50" placeholder=""
-                              id="datepicker_end" title="">
-                          </span>
-                        </div>
-                      </div>
-                      <!-- 콤보박스 -->
-                      <div class="select_box" style="width: 120px">
-                        <span class="select">10시</span>
-                        <div class="option">
-                          <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                            <ul>
-                              <li>선택함1</li>
-                              <li>선택함2</li>
-                              <li>선택함3</li>
-                            </ul>
+                          <!-- //콤보박스 -->
+                          시
+                          <!-- 콤보박스 -->
+                          <div class="select_box" style="width: 120px">
+                            <span class="select">10분</span>
+                            <div class="option">
+                              <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                <ul>
+                                  <li>선택함1</li>
+                                  <li>선택함2</li>
+                                  <li>선택함3</li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <!-- //콤보박스 -->
-                      시
-                      <!-- 콤보박스 -->
-                      <div class="select_box" style="width: 120px">
-                        <span class="select">10분</span>
-                        <div class="option">
-                          <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                            <ul>
-                              <li>선택함1</li>
-                              <li>선택함2</li>
-                              <li>선택함3</li>
-                            </ul>
+                          <!-- //콤보박스 -->
+                          분
+                          <div class="dash">~</div>
+                          <div class="form-element__wrap mo-fixed-width">
+                            <div class="input-multi">
+                              <span class="form-element__inner input-type ">
+                                <input type="text" value="" class="input-type1-font14 " maxlength="50" placeholder=""
+                                  id="datepicker_end" title="">
+                              </span>
+                            </div>
                           </div>
+                          <!-- 콤보박스 -->
+                          <div class="select_box" style="width: 120px">
+                            <span class="select">10시</span>
+                            <div class="option">
+                              <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                <ul>
+                                  <li>선택함1</li>
+                                  <li>선택함2</li>
+                                  <li>선택함3</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- //콤보박스 -->
+                          시
+                          <!-- 콤보박스 -->
+                          <div class="select_box" style="width: 120px">
+                            <span class="select">10분</span>
+                            <div class="option">
+                              <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+                                <ul>
+                                  <li>선택함1</li>
+                                  <li>선택함2</li>
+                                  <li>선택함3</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- //콤보박스 -->
+                          분
                         </div>
-                      </div>
-                      <!-- //콤보박스 -->
-                      분
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row">노출 대상</th>
-                  <td>
-                    <div class="flex-row">
-                      <div class="radio-box">
-                        <label id="r0a3">
-                          <input type="radio" name="type8" value="type0a20" checked id="ra03">
-                          <span>전체</span>
-                        </label>
-                        <label id="rb04">
-                          <input type="radio" name="type8" value="type0a21" id="rb04">
-                          <span>지정</span>
-                        </label>
-                      </div>
-                      <!-- 콤보박스 -->
-                      <div class="select_box">
-                        <span class="select">10등급</span>
-                        <div class="option">
-                          <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
-                            <ul>
-                              <li>선택함1</li>
-                              <li>선택함2</li>
-                              <li>선택함3</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- //콤보박스 -->
-                    </div>
-                  </td>
                   <th scope="row">노출 상태</th>
                   <td>
                     <div class="radio-box">
@@ -723,7 +694,7 @@
             </table>
           </div>
 
-          <div class="table_cont mo">
+          <div class="table_cont mo" style="display: none;">
             <table class="table-body-only no-line-type flex-wrap">
               <colgroup>
                 <col width="30%" />

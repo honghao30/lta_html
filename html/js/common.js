@@ -492,7 +492,7 @@ $(document).ready(function () {
           var listItem = $("<li class='file-item'></li>");
           var fileNameSpan = $("<span class='file-info'>" + file.name + "</span>");
           var fileSizeSpan = $("<span class='file-info'> (" + formatBytes(file.size) + ")</span>");
-          var deleteBtn = $("<span class='delete-btn'>&times;</span>");
+          var deleteBtn = $("<span class='delete-btn'>X</span>");
 
           listItem.append(fileNameSpan);
           listItem.append(fileSizeSpan);

@@ -37,6 +37,7 @@ p.skip{margin-bottom:30px;}
     line-height: 16px;
     letter-spacing: -0.02em;
 }
+.radio-box label span{flex:1;}
 .radio-box input[type="radio"] {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -534,7 +535,7 @@ p.skip{margin-bottom:30px;}
     border: 1px solid #D8DDE9;
     background-color: #fff;
     color:#222;
-    min-width: 103px;
+    min-width: 105px;
     height: 36px;
     padding: 8px 12px;
     gap: 4px;
@@ -641,7 +642,7 @@ p.skip{margin-bottom:30px;}
     font-family: 'Pretendard';
     font-size: 18px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 26px;
     letter-spacing: -0.02em;
     vertical-align: middle;
     text-align: left;
@@ -650,7 +651,7 @@ p.skip{margin-bottom:30px;}
     padding-left: 12px;
     cursor: default;
     border-bottom: 1px solid #D8DDE9;
-    overflow:auto;
+    /* overflow:auto; */
 }
 .table_cont .table-body-only tbody td .txt{
     color: #222;
@@ -2177,10 +2178,13 @@ td:has(.text-type) {
 .process-step-list .process-step li {
     border-bottom: 1px solid #D8DDE9;
 }
-.process-step-list .process-step li.on{background:#706DF0;}
+.process-step-list .process-step li.on,
+.process-step-list .process-step li:active{background:#706DF0;}
 .process-step-list .process-step li:hover a{color:#706DF0;padding-left:19px !important;background:none !important;}
-.process-step-list .process-step li.on a{color:#fff;padding-left:19px !important;background:none;}
-.process-step-list .process-step li.on a .ico-arrow-blue24 {
+.process-step-list .process-step li.on a,
+.process-step-list .process-step li:active a{color:#fff;padding-left:19px !important;background:none;}
+.process-step-list .process-step li.on a .ico-arrow-blue24,
+.process-step-list .process-step li:active a .ico-arrow-blue24 {
     display: inline-flex;
     width: 24px;
     height: 24px;
@@ -2573,7 +2577,10 @@ i.btn-refresh-16 {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding:12px 0;
+    border-top: 1px solid #C4C5F7;
 }
+.form-element-rows:last-child{border-bottom: 1px solid #C4C5F7;}
 
 .search_cont_detail .search-table .table-body-only tbody tr td .input_type.check input:checked+.txt:before {
     background: url(../img/pc/ico/input_check2_on.png) 50% no-repeat;
@@ -3588,6 +3595,24 @@ i.btn-refresh-16 {
     border:1px solid #2FB363;
     background: rgba(47, 179, 99, 0.1);
 }
+.box-info.type0 {
+    display: flex;
+    width: 160px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color:#fff;
+    border:1px solid #000;
+    background: rgba(0, 0, 0, 1);
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: -0.36px;
+    border-radius: 30px;
+}
 
 /* 모달 법령 검색 */
 .search_cont.no-bg-type {
@@ -3829,7 +3854,6 @@ i.btn-refresh-16 {
 .search-list-items {
     display: flex;
     flex-direction: column;
-    border-top: 1px solid #C4C5F7;
     gap: 0 !important;
 }
 /* .form-element-rows {
@@ -4059,6 +4083,7 @@ i.btn-refresh-16 {
     font-weight: 400;
     line-height: 14px;
     color:#222;
+    height:48px;
 }
 
 .picker-input168 {

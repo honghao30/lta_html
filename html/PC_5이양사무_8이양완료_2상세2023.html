@@ -179,49 +179,197 @@
       </div>
     </div>
 
-    <!-- header -->
-    <div class="header">
+    <!-- header_wrap -->
+    <div class="header_wrap">
+      <div class="header">
       <div class="inner">
-        <div class="header_cont">
+          <div class="header_cont">
           <div class="header_top_cont">
-            <h1 class="logo"><a href="#none">지방이양사무관리시스템</a></h1>
-            <div class="right_cont mo">
+              <h1 class="logo">
+              <div class="pc"><a href="#none"><img src="img/pc/logo.png" alt="로고">지방이양사무관리시스템</a></div>
+              <div class="mo"><a href="#none"><img src="img/mo/logo.png" alt="로고">지방이양사무관리시스템</a></div>
+              </h1>
+              <div class="right_cont mo">
               <button class="btn_search" onclick="searchLayer(this);"><span class="hidden">검색</span></button>
               <button class="btn_login"><span class="hidden">로그인</span></button>
-              <button class="btn_menu"><span class="hidden">메뉴</span></button>
-            </div>
-          </div>
-          <div class="top_menu_cont">
-            <ul class="menu">
-              <li><a href="#none" class="on">법령</a></li>
-              <li><a href="#none">조사</a></li>
-              <li><a href="#none">사무</a></li>
-              <li><a href="#none">이양사무</a></li>
-              <li><a href="#none">통계</a></li>
-              <li><a href="#none">대국민 포털관리</a></li>
-              <li><a href="#none">시스템 관리</a></li>
-            </ul>
+              <!-- <button class="btn_logout"><span class="hidden">로그아웃</span></button> -->
+              <button class="btn_menu" onclick="mypagelayer(this);"><span class="hidden">메뉴</span></button>
+              </div>
           </div>
           <!-- 로그인/회원가입 버튼 -->
           <div class="info_cont" style="display: none;">
-            <span class="bar"><a href="#none" class="ico_login"><span>로그인</span></a></span>
-            <span><a href="#none" class="ico_join"><span>회원가입</span></a></span>
+              <span class="bar"><a href="#none" class="ico_login"><span>로그인</span></a></span>
+              <span><a href="#none" class="ico_join"><span>회원가입</span></a></span>
           </div>
 
           <!-- 마이페이지/사용자/로그아웃 -->
           <div class="info_cont pc">
-            <ul class="info_menu">
+              <!-- 로그인 전 -->
+              <!-- <ul class="info_menu default">
+              <li><a href="#" class="ico_login"><span>로그인</span></a></li>
+              <li><a href="#none" class="ico_join"><span>회원가입</span></a></li>
+              </ul>  -->
+              <!-- 로그인 후 -->
+              <ul class="info_menu">
               <li class="bar"><a href="#none">마이페이지</a></li>
-            </ul>
-            <span class="user"><strong>홍길동</strong>님 <span class="rank"><strong>7</strong>등급</span></span>
-            <button class="btn_log">
+              </ul>
+              <span class="user"><strong>홍길동</strong>님 <span class="rank"><strong>7</strong>등급</span></span>
+              <button class="btn_log">
               <span class="txt">로그아웃</span>
               <span class="time">09:55</span>
-            </button>
+              </button>
           </div>
-        </div>
+          </div>
+      </div>
       </div>
     </div>
+    <!-- gnb -->
+    <div class="global-navy_wrap">
+        <div class="top_menu_cont">
+        <div class="pc">
+            <ul class="menu">
+            <li><a href="#none" class="menu_layer">법령</a></li>
+            <li><a href="#none" class="menu_layer">사무</a></li>
+            <li><a href="#none" class="menu_layer on">사무이양관리</a></li>
+            <li><a href="#none" class="menu_layer">통계</a></li>
+            <li><a href="#none" class="menu_layer">정보자료</a></li>
+            <li><a href="#none" class="menu_layer">사무총조사</a></li>
+            <li><a href="#none" class="menu_layer">시스템 관리</a>
+                <div class="layer_gnb">
+                <div class="location">
+                    <ul>
+                    <li><a href="#none">시스템관리77</a></li>
+                    <li><a href="#none">내부시스템관리77</a></li>
+                    <li><a href="#none">코드관리77</a></li>
+                    </ul>
+                </div>
+                <div class="list_box">
+                    <ul class="on_depth01">
+                    <li class="depth01"><a href="#none">공지관리</a>
+                        <!-- depth02 -->
+                        <ul>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a>
+                            <!-- depth03 -->
+                            <ul>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a></li>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a></li>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth01"><a href="#none">회원관리</a>
+                        <!-- depth02 -->
+                        <ul>
+                        <li class="depth02"><a href="#none">회원관리 2뎁스</a>
+                            <!-- depth03 -->
+                            <ul>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth02"><a href="#none">2뎁스</a></li>
+                        <li class="depth02"><a href="#none">2뎁스</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth01"><a href="#none">문의/건의관리</a></li>
+                    <li class="depth01"><a href="#none">자주하는질문관리</a></li>
+                    <li class="depth01"><a href="#none">자료실관리</a></li>
+                    <li class="depth01"><a href="#none">권한관리</a></li>
+                    <li class="depth01"><a href="#none">배너/팝업관리</a></li>
+                    <li class="depth01"><a href="#none">내부시스템관리</a></li>
+                    <li class="depth01"><a href="#none">조직관리</a></li>
+                    </ul>
+                </div>
+                <div class="link_cont">
+                    <a href="#none" class="btn ico_propose"><span>이양 건의 바로가기</span></a>
+                </div>
+                <a href="#none" class="btn_layer_close"><strong>닫기</strong></a>
+                </div>
+            </li>          
+            <li><a href="#none" class="menu_layer">대국민 관리</a>
+                <div class="layer_gnb">
+                <div class="location">
+                    <ul>
+                    <li><a href="#none">대국민 포털관리</a></li>
+                    <li><a href="#none">공지관리</a></li>
+                    <li><a href="#none">공지관리 2뎁스</a></li>
+                    <li><a href="#none">공지관리 3뎁스</a></li>
+                    </ul>
+                </div>
+                <div class="list_box">
+                    <ul class="on_depth01">
+                    <li class="depth01"><a href="#none">공지관리</a>
+                        <!-- depth02 -->
+                        <ul>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a>
+                            <!-- depth03 -->
+                            <ul>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a></li>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a></li>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth01"><a href="#none">회원관리</a>
+                        <!-- depth02 -->
+                        <ul>
+                        <li class="depth02"><a href="#none">회원관리 2뎁스</a>
+                            <!-- depth03 -->
+                            <ul>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth02"><a href="#none">2뎁스</a></li>
+                        <li class="depth02"><a href="#none">2뎁스</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth01"><a href="#none">문의/건의관리</a></li>
+                    <li class="depth01"><a href="#none">자주하는질문관리</a></li>
+                    <li class="depth01"><a href="#none">자료실관리</a></li>
+                    <li class="depth01"><a href="#none">권한관리</a></li>
+                    <li class="depth01"><a href="#none">배너/팝업관리</a></li>
+                    <li class="depth01"><a href="#none">내부시스템관리</a></li>
+                    <li class="depth01"><a href="#none">조직관리</a></li>
+                    </ul>
+                </div>
+                <div class="link_cont">
+                    <a href="#none" class="btn ico_propose"><span>이양 건의 바로가기</span></a>
+                </div>
+                <a href="#none" class="btn_layer_close"><strong>닫기</strong></a>
+                </div>
+            </li>
+            </ul>
+        </div>
+        <div class="mo-flex">
+            <ul class="menu">
+            <li><a href="#none"  onclick="gnbLayer01(this);" class="on">법령</a></li>
+            <li><a href="#none">사무</a></li>
+            <li><a href="#none">사무이양관리</a></li>
+            <li><a href="#none">통계</a></li>
+            <li><a href="#none">정보자료</a></li>
+            <li><a href="#none"  onclick="gnbLayer02(this);">사무총조사</a></li>          
+            <li><a href="#none">시스템 관리</a></li>
+            <li><a href="#none">대국민 관리</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <!-- //gnb -->
 
     <!-- container -->
     <div class="container">
@@ -235,14 +383,13 @@
             </ul>
           </div>
 
-          <h2 class="title">이양사무 건의</h2>          
+          <h2 class="title">이양완료 (2023년 이전)</h2>          
         </div>
       </div>
 
       <div class="content_wrap">
         <div class="inner">
-          <!-- PC -->
-          <div class="table_cont mt-64">
+          <div class="table_cont">
             <table class="table-body-only">
                 <colgroup>                    
                     <col width="160">
@@ -262,75 +409,51 @@
                 <tbody>
                     <tr>     
                         <th scope="row">이양완료 년도</th>                   
-                        <td>
-                            
-                        </td>           
+                        <td>2012</td>           
                         <th scope="row">이양방향 1</th>                   
-                        <td>
-                            
-                        </td>                                                    
+                        <td>국가→시도</td>                                                    
                     </tr>
                     <tr>     
                         <th scope="row">부처명</th>                   
-                        <td>
-                            
-                        </td>           
+                        <td>국토교통부</td>           
                         <th scope="row">이양방향 2</th>                   
-                        <td>
-                            
-                        </td>                                                    
+                        <td>국가-국가, 시도</td>                                                    
                     </tr>       
                     <tr>     
                         <th scope="row">
-                            사무성격 (기관<br>위임사무여부)
+                            사무성격<br>(기관위임사무여부)
                         </th>                   
-                        <td>
-                            
-                        </td>           
+                        <td>0</td>           
                         <th scope="row">원처리권자</th>                   
-                        <td>
-                            
-                        </td>                                                    
+                        <td>국토해양부장관</td>                                                    
                     </tr>    
                     <tr>     
                         <th scope="row">
                             특행기관사무여부
                         </th>                   
-                        <td>
-                            
-                        </td>           
+                        <td>부</td>           
                         <th scope="row">위임리권자</th>                   
-                        <td>
-                            
-                        </td>                                                    
+                        <td>-</td>                                                    
                     </tr>     
                     <tr>     
                         <th scope="row">
                             과제명
                         </th>                   
-                        <td colspan="3">
-                            
-                        </td>                                                             
+                        <td colspan="3">모니터링 대상 건축물의 지정 등 기능</td>                                                             
                     </tr>                  
                     <tr>     
                         <th scope="row">
                             기능분류
                         </th>                   
-                        <td colspan="3">
-                            
-                        </td>                                                             
+                        <td colspan="3">도시, 주택</td>                                                             
                     </tr>     
                     <tr>     
                         <th scope="row">
                             사무수행체계
                         </th>                   
-                        <td>
-                            
-                        </td>           
+                        <td>-</td>           
                         <th scope="row">분권형태</th>                   
-                        <td>
-                            
-                        </td>                                                    
+                        <td>-</td>                                                    
                     </tr>                                                                                         
                 </tbody>
             </table>
@@ -356,24 +479,22 @@
                 <tbody>
                     <tr>     
                         <th scope="row">단위사무 1</th>                   
-                        <td colspan="3">
-                            
-                        </td>                                                             
+                        <td colspan="3">모니터링 대상 건축물의 지정 등</td>                                                             
                     </tr>
                     <tr>     
                         <th scope="row">비고</th>                   
-                        <td colspan="3">
+                        <td colspan="3">동법 제71조 제4항은 제외
                             
                         </td>                                                             
                     </tr>                    
                     <tr>     
                         <th scope="row">법령구분 1</th>                   
                         <td>
-                            
+                          법률
                         </td>           
                         <th scope="row">법령구분 2</th>                   
                         <td>
-                            
+                          법률
                         </td>                                                    
                     </tr>     
                     <tr>     
@@ -385,19 +506,19 @@
                     <tr>     
                         <th scope="row">근거법령 2</th>                   
                         <td colspan="3">
-                            
+                          건축법
                         </td>                                                             
                     </tr> 
                     <tr>     
                         <th scope="row">조항</th>                   
                         <td colspan="3">
-                            
+                          제72조제6항 및 제7항
                         </td>                                                             
                     </tr>
                     <tr>     
                         <th scope="row">위임조항</th>                   
                         <td colspan="3">
-                            
+                          위임사무
                         </td>                                                             
                     </tr>
                 </tbody>
@@ -422,8 +543,7 @@
                     <tr>     
                         <th scope="row">실무위원회 <br>심의결과</th>                   
                         <td colspan="3">
-                            시ㆍ도에 이양<br>
-O 교육부와 시ㆍ도교육청 양측이 이양에 동의하고 있으므로 시ㆍ도에 이양하기로 심의ㆍ조정함
+                          이양결정
                         </td>                                                             
                     </tr>
                     <tr>     
@@ -434,85 +554,134 @@ O 교육부와 시ㆍ도교육청 양측이 이양에 동의하고 있으므로 
                         </td>        
                         <th scope="row">회차</th>                   
                         <td>
-                            
+                          51차
                         </td>                                                                             
                     </tr>                    
                     <tr>     
                         <th scope="row">심의결과 일자</th>                   
                         <td>
-                            
+                          2012.04.18
                         </td>           
                         <th scope="row">최종결정</th>                   
                         <td>
-                            
+                          이양결정
                         </td>                                                    
                     </tr>     
                     <tr>     
-                        <th scope="row">근거법령 1</th>                   
+                        <th scope="row">이양방향1</th>                   
                         <td>
-                            
+                          국가 → 국가, 시도
                         </td>   
-                        <th scope="row">근거법령 2</th>                   
+                        <th scope="row">이양방향2</th>                   
                         <td>
-                            
+                          -
                         </td>                                                                                   
                     </tr>                      
                     <tr>     
                         <th scope="row">비고</th>                   
                         <td colspan="3">
-                            
+                          -
                         </td>                                                             
                     </tr>
                     <tr>     
                         <th scope="row">확정년도</th>                   
                         <td>
-                            
+                          2012
                         </td>   
-                        <th scope="row">완료현황<br>
-                            (‘25.9월 기준) 2</th>                   
+                        <th scope="row">완료현황</th>                   
                         <td>
-                            
+                          완료
                         </td>                                                                                   
                     </tr>                      
                     <tr>     
                         <th scope="row">일괄이양법 <br>
                             반영여부</th>                   
                         <td>
-                            
+                          부
                         </td>   
                         <th scope="row">이력관리<br>
                             완료년도</th>                   
                         <td>
-                            
+                          2012
                         </td>                                                                                   
                     </tr>   
                 </tbody>
-            </table>           
+            </table>
             <table class="table-body-only" style="border-top: 0;">
                 <colgroup>                    
-                    <col width="160">
-                    <col width="">
                     <col width="160">
                     <col width="">
                 </colgroup>
                 <thead>
                     <tr>
-                        <th colspan="4"  style="border-top: 0 !important;">
+                        <th colspan="2"  style="border-top: 0 !important;">
                             <div class="flex-row justify-between">
-                                <div>이력관리</div>
+                                <div>의견내용</div>
                             </div>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>     
-                        <th scope="row">평가자료(신규)</th>                   
-                        <td colspan="3">
-                            
-                        </td>                                                             
-                    </tr>
+                  <tr>     
+                      <th scope="row">종합의견(중앙부처)</th>
+                      <td>
+                        부동의
+                      </td>
+                  </tr>
+                  <tr>     
+                      <th scope="row">세부검토의견<br>(중앙부처)</th>
+                      <td>
+                        ❍ 특별건축구역은 조화롭고 창의적인 건축을 위하여 높이제한, 건폐율, 일조권 등 디자인을 제약하는 건축법령의 일부 규정을 완화 적용할 수 있도록 특별히 지정하는 구역임
+                        - 특별건축구역 내 건축물의 모니터링 등 제도의 취지는 특별건축구역 내에서 특례를 적용한 건축물에 대한 전반적인 과정 등을 검토하고 실제로 건축물에 구현된 기능․미관․환경 등을 분석․평가하여 건축법 또는 관계 법령의 제도를 개선하기 위한 것으로 국토해양부장관의 업무로 존속함이 타당
+                        - 시․도지사는 특별건축구역 제도와 관련, 건축법 등 관계 법령상의 제도개선에 직접 관여하지 않고 있음을 고려할 때 특별건축구역의 모니터링 등의 권한을 시․도지사에게 이양할 실익이 없음
+                      </td>
+                  </tr>
+                  <tr>     
+                      <th scope="row">종합의견(지자체)</th>
+                      <td>
+                        -
+                      </td>
+                  </tr>
+                  <tr>     
+                      <th scope="row">세부검토의견<br>(지자체)</th>
+                      <td>
+                        ❍ 위 사무는 국토해양부장관이 건축제도의 개선 및 건설기술의 향상을 위하여 특별건축구역 내 모니터링 대상 건축물 지정 등에 관하여 수행하는 사무임
+                        ❍ 특별건축구역 내 특례를 적용하여 건립하는 건축물 중에서 모니터링 대상 건축물 지정, 모니터링 보고서 접수 및 건축물의 검사 등에 관한 사무로 동 사무를 조사 및 분석하여 건축제도의 개선  및 건설기술의 향상을 도모하고자 하는 취지로서
+                         - 해당 건축물의 모니터링 등 업무는 특별건축구역의 현황을 잘 알고 있는 시‧도로 이양하여 추진하는 것이 바람직하다는 의견이 있고 
+                         - 관계법령의 적용 특례를 적용한 건축물의 사용승인 이후 지속적으로 모니터링을 실시함으로써 기능, 미관, 환경 등을 분석하여 제도개선에 반영하기 위해 규정한 사항으로 현행 규정대로 국가에서 수행하는 것이 타당하다는 의견도 있음
+                      </td>
+                  </tr>
+                  <tr>     
+                      <th scope="row">참고 유사법령</th>
+                      <td>
+                        -
+                      </td>
+                  </tr>
                 </tbody>
-            </table>               
+            </table>
+            <table class="table-body-only" style="border-top: 0;">
+              <colgroup>                    
+                  <col width="160">
+                  <col width="">
+              </colgroup>
+              <thead>
+                  <tr>
+                      <th colspan="2"  style="border-top: 0 !important;">
+                          <div class="flex-row justify-between">
+                              <div>이력관리</div>
+                          </div>
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>     
+                    <th scope="row">평가자료(신규)</th>
+                    <td>
+                      -
+                    </td>
+                </tr>
+              </tbody>
+          </table>
         </div>  
 
         <div class="table_cont mt-64">
@@ -534,9 +703,9 @@ O 교육부와 시ㆍ도교육청 양측이 이양에 동의하고 있으므로 
                 </thead>
                 <tbody>
                     <tr>     
-                        <th scope="row">단위사무 1</th>                   
+                        <th scope="row">단위사무 2</th>                   
                         <td colspan="3">
-                            
+                          특별건축구역 건축물의 모니터링 보고서 제출 등
                         </td>                                                             
                     </tr>
                     <tr>     
@@ -548,11 +717,11 @@ O 교육부와 시ㆍ도교육청 양측이 이양에 동의하고 있으므로 
                     <tr>     
                         <th scope="row">법령구분 1</th>                   
                         <td>
-                            
+                          법률
                         </td>           
                         <th scope="row">법령구분 2</th>                   
                         <td>
-                            
+                          법률
                         </td>                                                    
                     </tr>     
                     <tr>     
@@ -564,19 +733,19 @@ O 교육부와 시ㆍ도교육청 양측이 이양에 동의하고 있으므로 
                     <tr>     
                         <th scope="row">근거법령 2</th>                   
                         <td colspan="3">
-                            
+                          건축법
                         </td>                                                             
                     </tr> 
                     <tr>     
                         <th scope="row">조항</th>                   
                         <td colspan="3">
-                            
+                          제76조
                         </td>                                                             
                     </tr>
                     <tr>     
                         <th scope="row">위임조항</th>                   
                         <td colspan="3">
-                            
+                          위임사무
                         </td>                                                             
                     </tr>
                 </tbody>
@@ -601,39 +770,38 @@ O 교육부와 시ㆍ도교육청 양측이 이양에 동의하고 있으므로 
                     <tr>     
                         <th scope="row">실무위원회 <br>심의결과</th>                   
                         <td colspan="3">
-                            시ㆍ도에 이양<br>
-O 교육부와 시ㆍ도교육청 양측이 이양에 동의하고 있으므로 시ㆍ도에 이양하기로 심의ㆍ조정함
+                          이양결정
                         </td>                                                             
                     </tr>
                     <tr>     
                         <th scope="row">최종위원회 / <br>
                             국회 검토보고</th>                   
                         <td>
-                            
+                          -
                         </td>        
                         <th scope="row">회차</th>                   
                         <td>
-                            
+                          51차
                         </td>                                                                             
                     </tr>                    
                     <tr>     
                         <th scope="row">심의결과 일자</th>                   
                         <td>
-                            
+                          2012.04.18
                         </td>           
                         <th scope="row">최종결정</th>                   
                         <td>
-                            
+                          이양결정
                         </td>                                                    
                     </tr>     
                     <tr>     
-                        <th scope="row">근거법령 1</th>                   
+                        <th scope="row">이양방향1</th>                   
                         <td>
-                            
+                          국가 → 국가, 시도
                         </td>   
-                        <th scope="row">근거법령 2</th>                   
+                        <th scope="row">이양방향2</th>                   
                         <td>
-                            
+                          -
                         </td>                                                                                   
                     </tr>                      
                     <tr>     
@@ -645,28 +813,79 @@ O 교육부와 시ㆍ도교육청 양측이 이양에 동의하고 있으므로 
                     <tr>     
                         <th scope="row">확정년도</th>                   
                         <td>
-                            
+                          2012
                         </td>   
-                        <th scope="row">완료현황<br>
-                            (‘25.9월 기준) 2</th>                   
+                        <th scope="row">완료현황</th>                   
                         <td>
-                            
+                          완료
                         </td>                                                                                   
                     </tr>                      
                     <tr>     
                         <th scope="row">일괄이양법 <br>
                             반영여부</th>                   
                         <td>
-                            
+                          부
                         </td>   
                         <th scope="row">이력관리<br>
                             완료년도</th>                   
                         <td>
-                            
+                          2012
                         </td>                                                                                   
                     </tr>   
                 </tbody>
-            </table>           
+            </table>
+            <table class="table-body-only" style="border-top: 0;">
+                <colgroup>                    
+                    <col width="160">
+                    <col width="">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th colspan="2"  style="border-top: 0 !important;">
+                            <div class="flex-row justify-between">
+                                <div>의견내용</div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <th scope="row">종합의견(중앙부처)</th>
+                      <td>
+                        부동의
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">세부검토의견<br>(중앙부처)</th>
+                      <td>
+                        ❍ 특별건축구역은 조화롭고 창의적인 건축을 위하여 높이제한, 건폐율, 일조권 등 디자인을 제약하는 건축법령의 일부 규정을 완화 적용할 수 있도록 특별히 지정하는 구역임
+                        - 특별건축구역 내 건축물의 모니터링 등 제도의 취지는 특별건축구역 내에서 특례를 적용한 건축물에 대한 전반적인 과정 등을 검토하고 실제로 건축물에 구현된 기능․미관․환경 등을 분석․평가하여 건축법 또는 관계 법령의 제도를 개선하기 위한 것으로 국토해양부장관의 업무로 존속함이 타당
+                        - 시․도지사는 특별건축구역 제도와 관련, 건축법 등 관계 법령상의 제도개선에 직접 관여하지 않고 있음을 고려할 때 특별건축구역의 모니터링 등의 권한을 시․도지사에게 이양할 실익이 없음
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">종합의견(지자체)</th>
+                      <td>
+                        -
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">세부검토의견<br>(지자체)</th>
+                      <td>
+                        ❍ 위 사무는 국토해양부장관이 건축제도의 개선 및 건설기술의 향상을 위하여 특별건축구역 내 모니터링 대상 건축물 지정 등에 관하여 수행하는 사무임
+                        ❍ 특별건축구역 내 특례를 적용하여 건립하는 건축물 중에서 모니터링 대상 건축물 지정, 모니터링 보고서 접수 및 건축물의 검사 등에 관한 사무로 동 사무를 조사 및 분석하여 건축제도의 개선  및 건설기술의 향상을 도모하고자 하는 취지로서
+                         - 해당 건축물의 모니터링 등 업무는 특별건축구역의 현황을 잘 알고 있는 시‧도로 이양하여 추진하는 것이 바람직하다는 의견이 있고 
+                         - 관계법령의 적용 특례를 적용한 건축물의 사용승인 이후 지속적으로 모니터링을 실시함으로써 기능, 미관, 환경 등을 분석하여 제도개선에 반영하기 위해 규정한 사항으로 현행 규정대로 국가에서 수행하는 것이 타당하다는 의견도 있음
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">참고 유사법령</th>
+                      <td>
+                          
+                      </td>
+                  </tr>
+                </tbody>
+            </table>
             <table class="table-body-only" style="border-top: 0;">
                 <colgroup>                    
                     <col width="160">
@@ -685,13 +904,13 @@ O 교육부와 시ㆍ도교육청 양측이 이양에 동의하고 있으므로 
                 </thead>
                 <tbody>
                     <tr>     
-                        <th scope="row">평가자료(신규)</th>                   
+                        <th scope="row">평가자료(신규)</th>
                         <td colspan="3">
                             
-                        </td>                                                             
+                        </td>
                     </tr>
                 </tbody>
-            </table>               
+            </table>
         </div>  
 
         <div class="table_cont mt-64">
@@ -713,49 +932,49 @@ O 교육부와 시ㆍ도교육청 양측이 이양에 동의하고 있으므로 
                 </thead>
                 <tbody>
                     <tr>     
-                        <th scope="row">단위사무 1</th>                   
+                        <th scope="row">단위사무 3</th>                   
                         <td colspan="3">
-                            
+                          특별건축구역 건축물의 검사 등
                         </td>                                                             
                     </tr>
                     <tr>     
                         <th scope="row">비고</th>                   
                         <td colspan="3">
-                            
+                          -
                         </td>                                                             
                     </tr>                    
                     <tr>     
                         <th scope="row">법령구분 1</th>                   
                         <td>
-                            
+                          법률
                         </td>           
                         <th scope="row">법령구분 2</th>                   
                         <td>
-                            
+                          법률
                         </td>                                                    
                     </tr>     
                     <tr>     
                         <th scope="row">근거법령 1</th>                   
                         <td colspan="3">
-                            
+                          -
                         </td>                                                             
                     </tr>                      
                     <tr>     
                         <th scope="row">근거법령 2</th>                   
                         <td colspan="3">
-                            
+                          건축법
                         </td>                                                             
                     </tr> 
                     <tr>     
                         <th scope="row">조항</th>                   
                         <td colspan="3">
-                            
+                          제77조
                         </td>                                                             
                     </tr>
                     <tr>     
                         <th scope="row">위임조항</th>                   
                         <td colspan="3">
-                            
+                          위임사무
                         </td>                                                             
                     </tr>
                 </tbody>
@@ -779,10 +998,7 @@ O 교육부와 시ㆍ도교육청 양측이 이양에 동의하고 있으므로 
                 <tbody>
                     <tr>     
                         <th scope="row">실무위원회 <br>심의결과</th>                   
-                        <td colspan="3">
-                            시ㆍ도에 이양<br>
-O 교육부와 시ㆍ도교육청 양측이 이양에 동의하고 있으므로 시ㆍ도에 이양하기로 심의ㆍ조정함
-                        </td>                                                             
+                        <td colspan="3">이양결정</td>                                                             
                     </tr>
                     <tr>     
                         <th scope="row">최종위원회 / <br>
@@ -792,60 +1008,111 @@ O 교육부와 시ㆍ도교육청 양측이 이양에 동의하고 있으므로 
                         </td>        
                         <th scope="row">회차</th>                   
                         <td>
-                            
+                          53차
                         </td>                                                                             
                     </tr>                    
                     <tr>     
                         <th scope="row">심의결과 일자</th>                   
                         <td>
-                            
+                          2012.04.18
                         </td>           
                         <th scope="row">최종결정</th>                   
                         <td>
-                            
+                          이양결정
                         </td>                                                    
                     </tr>     
                     <tr>     
-                        <th scope="row">근거법령 1</th>                   
+                        <th scope="row">이양방향1</th>                   
                         <td>
-                            
+                          국가 → 시도
                         </td>   
-                        <th scope="row">근거법령 2</th>                   
+                        <th scope="row">이양방향2</th>                   
                         <td>
-                            
+                          -
                         </td>                                                                                   
                     </tr>                      
                     <tr>     
                         <th scope="row">비고</th>                   
                         <td colspan="3">
-                            
+                          -
                         </td>                                                             
                     </tr>
                     <tr>     
                         <th scope="row">확정년도</th>                   
                         <td>
-                            
+                          2012
                         </td>   
-                        <th scope="row">완료현황<br>
-                            (‘25.9월 기준) 2</th>                   
+                        <th scope="row">완료현황</th>                   
                         <td>
-                            
+                          완료
                         </td>                                                                                   
                     </tr>                      
                     <tr>     
                         <th scope="row">일괄이양법 <br>
                             반영여부</th>                   
                         <td>
-                            
+                          부
                         </td>   
                         <th scope="row">이력관리<br>
                             완료년도</th>                   
                         <td>
-                            
+                          2012
                         </td>                                                                                   
                     </tr>   
                 </tbody>
-            </table>           
+            </table>
+            <table class="table-body-only" style="border-top: 0;">
+              <colgroup>                    
+                  <col width="160">
+                  <col width="">
+              </colgroup>
+              <thead>
+                  <tr>
+                      <th colspan="2"  style="border-top: 0 !important;">
+                          <div class="flex-row justify-between">
+                              <div>의견내용</div>
+                          </div>
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <th scope="row">종합의견(중앙부처)</th>
+                    <td>
+                      부동의
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">세부검토의견<br>(중앙부처)</th>
+                    <td>
+                      ❍ 특별건축구역은 조화롭고 창의적인 건축을 위하여 높이제한, 건폐율, 일조권 등 디자인을 제약하는 건축법령의 일부 규정을 완화 적용할 수 있도록 특별히 지정하는 구역임
+                      - 특별건축구역 내 건축물의 모니터링 등 제도의 취지는 특별건축구역 내에서 특례를 적용한 건축물에 대한 전반적인 과정 등을 검토하고 실제로 건축물에 구현된 기능․미관․환경 등을 분석․평가하여 건축법 또는 관계 법령의 제도를 개선하기 위한 것으로 국토해양부장관의 업무로 존속함이 타당
+                      - 시․도지사는 특별건축구역 제도와 관련, 건축법 등 관계 법령상의 제도개선에 직접 관여하지 않고 있음을 고려할 때 특별건축구역의 모니터링 등의 권한을 시․도지사에게 이양할 실익이 없음
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">종합의견(지자체)</th>
+                    <td>
+                      -
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">세부검토의견<br>(지자체)</th>
+                    <td>
+                      ❍ 위 사무는 국토해양부장관이 건축제도의 개선 및 건설기술의 향상을 위하여 특별건축구역 내 모니터링 대상 건축물 지정 등에 관하여 수행하는 사무임
+                      ❍ 특별건축구역 내 특례를 적용하여 건립하는 건축물 중에서 모니터링 대상 건축물 지정, 모니터링 보고서 접수 및 건축물의 검사 등에 관한 사무로 동 사무를 조사 및 분석하여 건축제도의 개선  및 건설기술의 향상을 도모하고자 하는 취지로서
+                       - 해당 건축물의 모니터링 등 업무는 특별건축구역의 현황을 잘 알고 있는 시‧도로 이양하여 추진하는 것이 바람직하다는 의견이 있고 
+                       - 관계법령의 적용 특례를 적용한 건축물의 사용승인 이후 지속적으로 모니터링을 실시함으로써 기능, 미관, 환경 등을 분석하여 제도개선에 반영하기 위해 규정한 사항으로 현행 규정대로 국가에서 수행하는 것이 타당하다는 의견도 있음
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">참고 유사법령</th>
+                    <td>
+                        
+                    </td>
+                </tr>
+              </tbody>
+            </table>
             <table class="table-body-only" style="border-top: 0;">
                 <colgroup>                    
                     <col width="160">
@@ -870,7 +1137,13 @@ O 교육부와 시ㆍ도교육청 양측이 이양에 동의하고 있으므로 
                         </td>                                                             
                     </tr>
                 </tbody>
-            </table>               
+            </table>
+            <!-- 버튼 -->
+            <div class="button__wrap flex-end mt-64">
+              <a href="PC_5이양사무_8이양완료_1목록2023.html" class="btn-gray-default">
+                  <i class="ico-list"></i> 목록
+              </a>
+            </div>               
         </div>  
 
 

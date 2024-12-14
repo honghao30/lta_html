@@ -179,49 +179,197 @@
       </div>
     </div>
 
-    <!-- header -->
-    <div class="header">
-      <div class="inner">
-        <div class="header_cont">
-          <div class="header_top_cont">
-            <h1 class="logo"><a href="#none">지방이양사무관리시스템</a></h1>
-            <div class="right_cont mo">
-              <button class="btn_search" onclick="searchLayer(this);"><span class="hidden">검색</span></button>
-              <button class="btn_login"><span class="hidden">로그인</span></button>
-              <button class="btn_menu"><span class="hidden">메뉴</span></button>
+    <!-- header_wrap -->
+    <div class="header_wrap">
+        <div class="header">
+        <div class="inner">
+            <div class="header_cont">
+            <div class="header_top_cont">
+                <h1 class="logo">
+                <div class="pc"><a href="#none"><img src="img/pc/logo.png" alt="로고">지방이양사무관리시스템</a></div>
+                <div class="mo"><a href="#none"><img src="img/mo/logo.png" alt="로고">지방이양사무관리시스템</a></div>
+                </h1>
+                <div class="right_cont mo">
+                <button class="btn_search" onclick="searchLayer(this);"><span class="hidden">검색</span></button>
+                <button class="btn_login"><span class="hidden">로그인</span></button>
+                <!-- <button class="btn_logout"><span class="hidden">로그아웃</span></button> -->
+                <button class="btn_menu" onclick="mypagelayer(this);"><span class="hidden">메뉴</span></button>
+                </div>
             </div>
-          </div>
-          <div class="top_menu_cont">
-            <ul class="menu">
-              <li><a href="#none" class="on">법령</a></li>
-              <li><a href="#none">조사</a></li>
-              <li><a href="#none">사무</a></li>
-              <li><a href="#none">이양사무</a></li>
-              <li><a href="#none">통계</a></li>
-              <li><a href="#none">대국민 포털관리</a></li>
-              <li><a href="#none">시스템 관리</a></li>
-            </ul>
-          </div>
-          <!-- 로그인/회원가입 버튼 -->
-          <div class="info_cont" style="display: none;">
-            <span class="bar"><a href="#none" class="ico_login"><span>로그인</span></a></span>
-            <span><a href="#none" class="ico_join"><span>회원가입</span></a></span>
-          </div>
+            <!-- 로그인/회원가입 버튼 -->
+            <div class="info_cont" style="display: none;">
+                <span class="bar"><a href="#none" class="ico_login"><span>로그인</span></a></span>
+                <span><a href="#none" class="ico_join"><span>회원가입</span></a></span>
+            </div>
 
-          <!-- 마이페이지/사용자/로그아웃 -->
-          <div class="info_cont pc">
-            <ul class="info_menu">
-              <li class="bar"><a href="#none">마이페이지</a></li>
-            </ul>
-            <span class="user"><strong>홍길동</strong>님 <span class="rank"><strong>7</strong>등급</span></span>
-            <button class="btn_log">
-              <span class="txt">로그아웃</span>
-              <span class="time">09:55</span>
-            </button>
-          </div>
+            <!-- 마이페이지/사용자/로그아웃 -->
+            <div class="info_cont pc">
+                <!-- 로그인 전 -->
+                <!-- <ul class="info_menu default">
+                <li><a href="#" class="ico_login"><span>로그인</span></a></li>
+                <li><a href="#none" class="ico_join"><span>회원가입</span></a></li>
+                </ul>  -->
+                <!-- 로그인 후 -->
+                <ul class="info_menu">
+                <li class="bar"><a href="#none">마이페이지</a></li>
+                </ul>
+                <span class="user"><strong>홍**</strong>님 <span class="rank"><strong>7</strong>등급</span></span>
+                <button class="btn_log">
+                <span class="txt">로그아웃</span>
+                <span class="time">09:55</span>
+                </button>
+            </div>
+            </div>
         </div>
-      </div>
+        </div>
     </div>
+    <!-- gnb -->
+    <div class="global-navy_wrap">
+        <div class="top_menu_cont">
+        <div class="pc">
+            <ul class="menu">
+            <li><a href="#none" class="menu_layer">법령</a></li>
+            <li><a href="#none" class="menu_layer">사무</a></li>
+            <li><a href="#none" class="menu_layer on">사무이양관리</a></li>
+            <li><a href="#none" class="menu_layer">통계</a></li>
+            <li><a href="#none" class="menu_layer">정보자료</a></li>
+            <li><a href="#none" class="menu_layer">사무총조사</a></li>
+            <li><a href="#none" class="menu_layer">시스템 관리</a>
+                <div class="layer_gnb">
+                <div class="location">
+                    <ul>
+                    <li><a href="#none">시스템관리77</a></li>
+                    <li><a href="#none">내부시스템관리77</a></li>
+                    <li><a href="#none">코드관리77</a></li>
+                    </ul>
+                </div>
+                <div class="list_box">
+                    <ul class="on_depth01">
+                    <li class="depth01"><a href="#none">공지관리</a>
+                        <!-- depth02 -->
+                        <ul>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a>
+                            <!-- depth03 -->
+                            <ul>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a></li>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a></li>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth01"><a href="#none">회원관리</a>
+                        <!-- depth02 -->
+                        <ul>
+                        <li class="depth02"><a href="#none">회원관리 2뎁스</a>
+                            <!-- depth03 -->
+                            <ul>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth02"><a href="#none">2뎁스</a></li>
+                        <li class="depth02"><a href="#none">2뎁스</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth01"><a href="#none">문의/건의관리</a></li>
+                    <li class="depth01"><a href="#none">자주하는질문관리</a></li>
+                    <li class="depth01"><a href="#none">자료실관리</a></li>
+                    <li class="depth01"><a href="#none">권한관리</a></li>
+                    <li class="depth01"><a href="#none">배너/팝업관리</a></li>
+                    <li class="depth01"><a href="#none">내부시스템관리</a></li>
+                    <li class="depth01"><a href="#none">조직관리</a></li>
+                    </ul>
+                </div>
+                <div class="link_cont">
+                    <a href="#none" class="btn ico_propose"><span>이양 건의 바로가기</span></a>
+                </div>
+                <a href="#none" class="btn_layer_close"><strong>닫기</strong></a>
+                </div>
+            </li>          
+            <li><a href="#none" class="menu_layer">대국민 관리</a>
+                <div class="layer_gnb">
+                <div class="location">
+                    <ul>
+                    <li><a href="#none">대국민 포털관리</a></li>
+                    <li><a href="#none">공지관리</a></li>
+                    <li><a href="#none">공지관리 2뎁스</a></li>
+                    <li><a href="#none">공지관리 3뎁스</a></li>
+                    </ul>
+                </div>
+                <div class="list_box">
+                    <ul class="on_depth01">
+                    <li class="depth01"><a href="#none">공지관리</a>
+                        <!-- depth02 -->
+                        <ul>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a>
+                            <!-- depth03 -->
+                            <ul>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">공지관리 3뎁스</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a></li>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a></li>
+                        <li class="depth02"><a href="#none">공지관리 2뎁스</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth01"><a href="#none">회원관리</a>
+                        <!-- depth02 -->
+                        <ul>
+                        <li class="depth02"><a href="#none">회원관리 2뎁스</a>
+                            <!-- depth03 -->
+                            <ul>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            <li class="depth03"><a href="#none">회원관리 3뎁스</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth02"><a href="#none">2뎁스</a></li>
+                        <li class="depth02"><a href="#none">2뎁스</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth01"><a href="#none">문의/건의관리</a></li>
+                    <li class="depth01"><a href="#none">자주하는질문관리</a></li>
+                    <li class="depth01"><a href="#none">자료실관리</a></li>
+                    <li class="depth01"><a href="#none">권한관리</a></li>
+                    <li class="depth01"><a href="#none">배너/팝업관리</a></li>
+                    <li class="depth01"><a href="#none">내부시스템관리</a></li>
+                    <li class="depth01"><a href="#none">조직관리</a></li>
+                    </ul>
+                </div>
+                <div class="link_cont">
+                    <a href="#none" class="btn ico_propose"><span>이양 건의 바로가기</span></a>
+                </div>
+                <a href="#none" class="btn_layer_close"><strong>닫기</strong></a>
+                </div>
+            </li>
+            </ul>
+        </div>
+        <div class="mo-flex">
+            <ul class="menu">
+            <li><a href="#none"  onclick="gnbLayer01(this);" class="on">법령</a></li>
+            <li><a href="#none">사무</a></li>
+            <li><a href="#none">사무이양관리</a></li>
+            <li><a href="#none">통계</a></li>
+            <li><a href="#none">정보자료</a></li>
+            <li><a href="#none"  onclick="gnbLayer02(this);">사무총조사</a></li>          
+            <li><a href="#none">시스템 관리</a></li>
+            <li><a href="#none">대국민 관리</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <!-- //gnb -->
 
     <!-- container -->
     <div class="container">
@@ -234,19 +382,22 @@
               <li><a href="#none">이양사무</a></li>
             </ul>
           </div>
+          <div class="pc">
+            <a href="#none" class="btn ico_file_download"><span>파일 다운로드</span></a>
+            <a href="#none" class="btn ico_print"><span>프린트</span></a>
+          </div>
 
-          <h2 class="title">이양사무 건의</h2>          
+          <h2 class="title">이양완료</h2>          
         </div>
       </div>
 
       <div class="content_wrap">
         <div class="inner">
-          <!-- PC -->
-            <div class="yiyang-add-wrap">
+            <div class="yiyang-add-wrap mt0">
                 <div class="yiyang-add-inner">
 
                     <!-- 승인자 정보 -->
-                    <div class="flex-row justify-end mt-16">
+                    <div class="flex-row justify-end">
                         <button type="button" class="btn-dark-light">                                        
                             정보 보기
                         </button>
@@ -275,7 +426,7 @@
                                             <div class="cate-tit">승인구분</div>
                                             <div class="form-element__wrap">                                
                                                 <span class="form-element__inner input-type">
-                                                    <input type="text" value="의견수렴으로 전환" class="input-type1-font14" placeholder="승인구분 입력하세요" title="승인구분 입력하세요" disabled="">
+                                                    <input type="text" value="이양완료" class="input-type1-font14" placeholder="승인구분 입력하세요" title="승인구분 입력하세요" disabled="">
                                                 </span>
                                             </div>
                                             <div class="cate-tit ml-10">기관/부서명</div>
@@ -293,13 +444,13 @@
                                             <div class="cate-tit ml-10">부서번호</div>
                                             <div class="form-element__wrap">                                
                                                 <span class="form-element__inner input-type">
-                                                    <input type="text" value="" class="input-type1-font14" placeholder="부서번호를 입력하세요" title="부서번호를 입력하세요" disabled="">
+                                                    <input type="text" value="044-205-0000" class="input-type1-font14" placeholder="부서번호를 입력하세요" title="부서번호를 입력하세요" disabled="">
                                                 </span>
                                             </div> 
                                             <div class="cate-tit ml-10">승인일</div>
                                             <div class="form-element__wrap">                                
                                                 <span class="form-element__inner input-type">
-                                                    <input type="text" value="2024-09-03" class="input-type1-font14" placeholder="승인일 입력하세요" title="승인일 입력하세요" disabled="">
+                                                    <input type="text" value="2024.12.19" class="input-type1-font14" placeholder="승인일 입력하세요" title="승인일 입력하세요" disabled="">
                                                 </span>
                                             </div>                                                                                                                      
                                         </div>                          
@@ -418,20 +569,54 @@
                                         도시재생
                                     </td>                                                    
                                 </tr>
-                                <tr>     
-                                    <th scope="row">소관부처</th>                   
-                                    <td>
-                                        국토교통부
-                                    </td>           
-                                    <th scope="row">이양방향</th>                   
-                                    <td>
-                                        <div class="yiyang-info">
-                                            <span class="total">사무</span>
-                                            <span class="dv-bar ml-5"></span>  
-                                            <span class="total ml-5">3, 4, 5, 6, 7, 8</span>                                             
-                                        </div> 
-                                    </td>                                                    
-                                </tr>                        
+                                <tr>    
+                                    <th scope="row">
+                                        소관부처
+                                    </th>                    
+                                    <td colspan="3">
+                                        <div class="form-element__wrap">                                  
+                                            <div class="input-multi">
+                                                <span class="form-element__inner input-type" style=" width: 408px;flex: initial;">
+                                                    <input type="text" value="해양수산부" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요." title="내용을 입력하세요." disabled="">
+                                                </span>
+                                                <div class="yiyang-info">
+                                                    <span class="total">사무</span>
+                                                    <span class="dv-bar ml-5"></span>  
+                                                    <span class="total ml-5">1</span>                                             
+                                                </div>                                    
+                                            </div>                                   
+                                        </div>  
+              
+                                    </td>                                                 
+                                </tr>       
+                                <tr>    
+                                    <th scope="row">
+                                        이양방향
+                                    </th>                    
+                                    <td colspan="3">
+                                        <ul class="form-el-list-wrap dynamic_add-list2">
+                                            <li class="input-wrap flex-row">
+                                                <div class="form-element__wrap">
+                                                    <div class="input-multi">
+                                                        <span class="form-element__inner input-type" style="width:160px;flex:initial;">
+                                                            <input type="text" value="국가" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요." title="내용을 입력하세요." disabled="">
+                                                        </span>
+                                                        →
+                                                        <span class="form-element__inner input-type" style="width:160px;flex:initial;">
+                                                            <input type="text" value="시·도" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요." title="내용을 입력하세요." disabled="">
+                                                        </span>               
+                                                        <div class="bar">&nbsp;</div>
+                                                        <div class="yiyang-info">
+                                                            <span class="total">사무</span>
+                                                            <span class="dv-bar ml-5"></span>  
+                                                            <span class="total ml-5">1</span>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </li>
+                                        </ul> 
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>              
@@ -441,13 +626,13 @@
                     <div class="table_cont mt-32">
                         <table class="table-body-only">
                             <colgroup>                    
-                                <col width="">
+                                <col width="" />
                             </colgroup>
                             <thead>
                                 <tr>
                                     <th>
                                     근거법령 <span class="dv-bar"></span>
-                                    <span class="total">총 <strong>36</strong>건</span>
+                                    <span class="total">총 <strong>1</strong>건</span>
                                     </th>
                                 </tr>
                             </thead>
@@ -457,23 +642,23 @@
                                         <div class="inner-table-cont mt-16">
                                         <table>
                                             <colgroup> 
-                                                <col>                                        
+                                                <col>
                                                 <col width="15%">
                                             </colgroup>
                                             <tbody>
                                                 <tr>
                                                     <td class="tit">법령</td>
-                                                    <td></td>
+                                                    <td>소관부처</td>
                                                 </tr>
                                                 <tr>       
                                                     <td class="text-l">
-                                                        <strong>수중레저활동의 안전 및 활성화 등에 관한 법률</strong>
-                                                        <p class="mt-16">
-                                                            제3장 조시재생전략계획 등 제20조(도시재생 활성화 계획의 확정 및 승인 등)<br>
-        ⑤ 제1항부터 제4항까지의 규정에도 불구하고<br>&nbsp;대통령령으로 정하는 경미한 사항을 변경하는 경우에는 관계 행정기관 장과의 협의, 지방위원회 심의, 공청회, 지방의회의 의견청취 절차 및 특별위원회의 심의를 거치지 아니할 수 있다.&nbsp;&lt;신설 2019. 8. 27.&gt;
-                                                        </p>
+                                                    <strong>도시재생 활성화 및 지원에 관한 특별법</strong>
+                                                    <p class="mt-16">
+                                                    제3장 도시재생전략계획 등 제20조 (도시재생활성화계획의 확정 및 승인 등)<br>
+                                                    ⑤ 제1항부터 제4항까지의 규정에도 불구하고<br>대통령령으로 정하는 경미한 사항을 변경하는 경우에는 관계 행정기관 장과의 협의, 지방위원회 심의, 공청회, 지방의회의 의견청취 절차 및 특별위원회의 심의를 거치지 아니할 수 있다.
+                                                    </p>
                                                     </td>                                                                                                                                                    
-                                                    <td>해양수산부</td>
+                                                    <td>국토교통부</td>
                                                 </tr>   
                                             </tbody>
                                         </table>
@@ -483,186 +668,156 @@
                             </tbody>
                         </table>
                     </div>
-                    <!-- //근거법령  -->
+                    <!-- //근거법령 -->
 
-                    <!-- 단위사무 -->
-                    <div class="table_cont  mt-32">
+                    <!-- 사무 -->
+                    <div class="table_cont mt-32">
                         <table class="table-body-only">
-                            <colgroup>                    
-                                <col width="">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th>
-                                    단위사무 <span class="total"><strong>36</strong>건</span>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>                        
-                                    <td class="inner-table">
-                                        <!-- <div class="button__wrap flex_end">
-                                            <button type="button" class="btn-dark-light btn-add">
-                                            <i class="ico-minus"></i>
-                                                선택 삭제
-                                            </button>                              
-                                        </div>             -->
-                                        <div class="inner-table-cont law-list2">
-                                            <table>
-                                                <colgroup>                                      
-                                                    <!-- <col width="3%">                                         -->
-                                                    <col width="5%">
-                                                    <col width="5%">
-                                                    <col>
-                                                    <col width="5%">   
-                                                    <col width="5%">   
-                                                    <col width="5%">
-                                                    <col width="3%">
-                                                    <col width="3%">
-                                                    <col width="3%">
-                                                    <col width="5%">
-            
-                                                    <col width="3%">                                                                                                                                                                                                                           
-                                                    <col width="3%">
-                                                    <col width="3%">
-                                                    <col width="5%">
-                                                    <col width="9%">
-                                                </colgroup>
-                                                <tbody>
-                                                    <tr>
-                                                        <!-- <td class="tit">
-                                                        <label class="input_type check all-check">
-                                                            <input type="checkbox" name="">
-                                                            <span class="txt"></span>
-                                                        </label>   
-                                                        </td>                                                                                         -->
-                                                        <td class="tit">번호</td>
-                                                        <td class="tit">사무구분</td>
-                                                        <td class="tit">사무명</td>
-                                                        <td class="tit">사무주체</td>
-                                                        <td class="tit">사무유형</td>
-                                                        <td class="tit">세부<br>사무유형</td>
-                                                        <td class="tit">위임<br>사무유형</td>
-                                                        <td class="tit">수임기관</td>
-                                                        <td class="tit">특행기관</td>
-                                                        <td class="tit">재위임<br>사무여부</td>
-                                                        <td class="tit">재위임<br>기관</td>
-                                                        <td class="tit">위탁사무<br>여부</td>
-                                                        <td class="tit">수탁기관</td>
-                                                        <td class="tit">법조항</td>
-                                                        <td class="tit">소관부처 / 이양방향</td>                                          
-                                                    </tr>
-                                                    <tr>
-                                                        <!-- <td>
-                                                            <label class="input_type check check=item">
-                                                                <input type="checkbox" name="">
-                                                                <span class="txt"></span>
-                                                            </label>                                          
-                                                        </td>                                                                                         -->
-                                                        <td>2</td>
-                                                        <td>단위사무</td>
-                                                        <td>
-                                                        <a href="#" style="color: #FF8B4A;">수중레저기구 등에 대한 안전점검</a>
-                                                        </td>         
-                                                        <td>해양수산부장관</td>
-            
-                                                        <td>국가</td>
-                                                        <td>수중레저사업</td>
-                                                        <td>-</td> 
-                                                        <td>X</td>
-                                                        <td>-</td>
-                                                        <td>1</td>
-                                                        <td>-</td>
-                                                        <td>X</td>
-                                                        <td>-</td>
-                                                        <td>제10조<br>
-                                                        제1항</td>
-                                                        <td>
-                                                            행정안전부 / <br>국가,시·도                                           
-                                                        </td>
-                                                    </tr>      
-                                                </tbody>
-                                            </table>
-                                        </div>                            
-                                    </td>                        
-                                </tr>                                                                                                                                                                                
-                            </tbody>
+                        <colgroup>                    
+                            <col width="" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                            <th>
+                                <div class="flex-row justify-between">
+                                <div>
+                                    단위사무 <span class="dv-bar"></span>
+                                    <span class="font-type16-500">
+                                        총 <span class="total"><strong>1</strong>건</span>
+                                    </span>
+                                </div>
+                                </div>  
+                            </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td class="inner-table">
+                                <div class="inner-table-cont mt-16">
+                                    <table>
+                                        <colgroup>
+                                            <col width="4%">
+                                            <col width="7%">
+                                            <col>
+                                            <col width="7%">
+                                            <col width="7%">
+                                            <col width="7%">
+                                            <col width="5%">
+                                            <col width="5%">
+                                            <col width="5%">
+                                            <col width="7%">
+                                            <col width="5%">                                                                                                                                                                                                                           
+                                            <col width="5%">
+                                            <col width="5%">
+                                            <col width="7%">
+                                            <col width="9%">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>                                           
+                                                <td class="tit">번호</td>
+                                                <td class="tit">사무구분</td>
+                                                <td class="tit">사무명</td>
+                                                <td class="tit">사무주체</td>
+                                                <td class="tit">사무유형</td>
+                                                <td class="tit">세부<br>사무유형</td>
+                                                <td class="tit">위임사무<br>여부</td>
+                                                <td class="tit">수임기관</td>
+                                                <td class="tit">특행기관</td>
+                                                <td class="tit">재위임<br>사무여부</td>
+                                                <td class="tit">재위임<br>기관</td>
+                                                <td class="tit">위탁사무<br>여부</td>
+                                                <td class="tit">수탁기관</td>
+                                                <td class="tit">법조항</td>
+                                                <td class="tit">소관부처/<br>이양방향</td>                                          
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>단위사무</td>
+                                                <td>
+                                                    <a href="#" class="link-underline">도시재생활성화계획 수립·심의 확정</a>
+                                                </td>         
+                                                <td>국토교통부    </td>
+
+                                                <td>국가</td>
+                                                <td>국가직접처리<br>사무</td>
+                                                <td>○</td>  
+                                                <td>-</td> 
+                                                <td>-</td>
+                                                <td>○</td>
+                                                <td>-</td>
+                                                <td>○</td>
+                                                <td>-</td>
+                                                <td>제10조<br>
+                                                    제5항</td>
+                                                <td>
+                                                    국토교통부 /<br>국가 → 시·도
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>                            
+                            </td>
+                            </tr>
+                        </tbody>
                         </table>
                     </div>
-                    <!-- //단위사무 -->
+                    <!-- //사무 -->   
 
                     <!-- 권한 이양 내용 -->
-                    <div class="table_cont  mt-32">
+                    <div class="table_cont mt-32">
                         <table class="table-body-only">
                             <colgroup>                    
-                                <col width="">
+                                <col width="160" />
+                                <col />
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th>
-                                        권한이양 내용
+                                    <th colspan="2">
+                                        권한이양 개요 
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>                        
-                                    <td class="inner-table">
-                                        <strong>주요 내용</strong>
-                                        <p>도시재생산업의 경미한 사항 변경 시 국가지원사항 결정 권한을 국토교통부장관에서 시·도지사로 이양</p>
-                                    </td>                        
-                                </tr>    
-                                <tr>                        
-                                    <td class="inner-table">
-                                        <strong>권한이양 개요</strong>
-                                        <p>도시재생산업의 경미한 사항 변경 시 국가지원사항 결정 권한을 국토교통부장관에서 시·도지사로 이양</p>
-                                    </td>                        
-                                </tr>                                                                                                                                                                                                      
+                                <tr>    
+                                    <th scope="row">
+                                        개요 
+                                    </th>                    
+                                    <td>
+                                        •도시재생산업의 경미한 사항 변경 시 국가지원사항 결정 권한을 국토교통부장관에서 시·도지사로 이양<br>
+                                        •건의 : 경기도
+                                    </td>                                                                         
+                                </tr>         
+                                <tr>    
+                                    <th scope="row">
+                                        주요내용 
+                                    </th>                    
+                                    <td>
+                                        <strong>① 현황</strong><br>
+                                        ○ 도시재생법에 따라 국가지원사항이 포함된 <strong>도시재생산업을 변경</strong>하기 위해서는 최초결정과 동일한 행정절차(공정회, 의회의견 청취, 관계기관 협의 등)를 거친 후 <strong>국토교통부장관이 결정</strong><br>
+                                        - 다만, 경미한 사항의 변경은 행정절차를 생략할 수 있으나, 국가지원 사항 결정을 위해서는 별도의 <strong>국토부 결정절차*</strong> 이행<br>
+                                        지원기구(HUG) 검토 및 국토부 사업당당부서 협의, 국토부가 필요하다고 판단하는 경우 실현 가능성 및 타당성 평가 시행 등<br>
+                                        <br>
+                                        <strong>②문제점</strong><br>
+                                        ○ 사업추진 과정에서 주민요구, 현장여건 등 다양한 변경수요에 대응하여 성과 창출을 위한 신속한 의사결정은 필수<br>
+                                        - 경미한 사항의 변경 시 국가지원 사항은 여전히 국토부장관의 결정을 받도록하여 신속한 사업추진이 어려울 뿐만 아니라 경미한 사항의 변경 처리에 대한 법의 취지를 충분히 살리기 어려운 실정<br>
+                                        <br>
+                                        <strong>③개선방안</strong><br>
+                                        ○ 도시재생활성화계획이 수립된 도시재생사업의 경미한 변경에 대한 국가지원 사항을 시·도지사가 결정하도록 개정
+                                    </td>                                                                         
+                                </tr>  
+                                <tr>    
+                                    <th scope="row">
+                                    기대효과 
+                                    </th>                    
+                                    <td>
+                                        처리기한 단축○ 현장 중심 업무체계 전환을 통한 신속한 틔사결정 및 책임성 제고<br>
+                                        ○ 식속한 사업추진을 통한 주민 체감 및 성과 창출 등 지역 활성화 기대으로 민원인 편의 증진
+                                    </td>                                                                         
+                                </tr>  
                             </tbody>
                         </table>
                     </div>
                     <!-- //권한 이양 내용 -->
-                    <div class="table_cont mt-32">
-                        <table class="table-body-only">
-                            <colgroup>                    
-                                <col width="160">
-                                <col>              
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">
-                                        참조자료
-                                    </th>    
-                                    <td>
-                                        <div class="upload-file-list">
-                                            <div class="button-area">
-                                                <button type="button" class="btn-dark-light">                                        
-                                                    선택 다운로드
-                                                </button>
-                                                <button type="button" class="btn-dark-light">                                        
-                                                    전체 다운로드
-                                                </button>                                    
-                                            </div>
-                                            <ul class="upload-file-list" style="max-width: 532px;">
-                                                <li>
-                                                    <label class="input_type check">
-                                                        <input type="checkbox" name="">
-                                                        <span class="txt">file.png (13MB)</span>
-                                                    </label>                                                                        
-                                                </li>
-                                                <li>
-                                                    <label class="input_type check">
-                                                        <input type="checkbox" name="">
-                                                        <span class="txt">file.png (13MB)</span>
-                                                    </label>                                                                        
-                                                </li>                                    
-                                            </ul>  
-                                        </div>                                                                    
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- //참조자료 -->
                 </div>
             </div>
 
@@ -684,11 +839,11 @@
                                             <div>
                                                 의견수렴 현황
                                                 <div class="dv-bar ml-15"></div>                                    
-                                                <span class="total ml-15">총 <strong>9</strong> 건</span>
+                                                <span class="total ml-15">총 <strong>7</strong> 건</span>
                                                 <div class="dv-bar ml-10"></div>  
-                                                <span class="total ml-10">수용 / 동의 <strong>9</strong> 건</span>
+                                                <span class="total ml-10">수용 / 동의 <strong>6</strong> 건</span>
                                                 <div class="dv-bar ml-10"></div>  
-                                                <span class="total ml-10">수용곤란 / 부동의 <strong>9</strong> 건</span>
+                                                <span class="total ml-10">수용곤란 / 부동의 <strong>1</strong> 건</span>
                                             </div>
                                         </div>
                                     </th>
@@ -701,22 +856,24 @@
                                     </th>                    
                                     <td>
                                         <div class="flex-row">
-                                            <strong>9</strong> 건 <span class="dv-bar ml-10"></span>
-                                            <span class="ml-10">중앙부처명, 대전, 울산, 강원, 충북, 전북, 전남, 경북, 경남</span>
+                                            <strong>6</strong> 건 <span class="dv-bar ml-10"></span>
+                                            <span class="ml-10">광주, 대전, 울산, 경기,부산 중구, 광주 서구</span>
                                         </div>
                                     </td>    
                                     <th scope="row">
-                                        수용곤란 / 부동의
+                                        수용곤란/비동의
                                     </th>                    
                                     <td>
-                                        <strong>9</strong> 건 <span class="dv-bar ml-10"></span>
-                                        <span class="ml-10">인천, 세종</span>
+                                        <strong>1</strong> 건 <span class="dv-bar ml-10"></span>
+                                        <span class="ml-10">국토교통부</span>
                                     </td> 
                                 </tr>
                             </tbody>
                         </table>
                     </div> 
                     <!-- //의견수렵현황 --> 
+                    
+                    <!-- 중앙부처 -->
                     <div class="table_cont mt-64">
                         <table class="table-body-only">
                             <colgroup>                    
@@ -735,61 +892,63 @@
                                                 <div class="dv-bar"></div>
                                                 <div class="radio-box">
                                                     <label id="r01">
-                                                        <input type="radio" name="type1" value="type010" id="r01" checked>
+                                                        <input type="radio" name="type1" value="type010" id="r01">
                                                         <span>수용</span>
                                                     </label>
                                                     <label id="r02">
-                                                        <input type="radio" name="type1" value="type011" id="r02">
+                                                        <input type="radio" name="type1" value="type011" id="r02" checked>
                                                         <span>수용곤란</span>
                                                     </label>                                      
                                                 </div>     
                                             </div>  
                                             <div class="flex-row yiyang-add-data">
                                                 <strong>등록일</strong>
-                                                2024.10.10
+                                                2024.12.19
                                                 <span class="dv-bar"></span>
-                                                <strong>등록일</strong>
-                                                2024.10.10
+                                                <strong>최종수정일</strong>
+                                                2024.12.19
                                             </div> 
                                         </div>                                          
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>    
-                                    <th scope="row">
-                                        중앙부처
-                                    </th>                    
-                                    <td>
-                                        중앙부처명 노출
-                                    </td>     
-                                    <th scope="row">
-                                        기관명
-                                    </th>                    
-                                    <td>
-                                        기관명 노출
-                                    </td>                                             
-                                </tr>    
-                                <tr>    
-                                    <th scope="row">
-                                        담당자
-                                    </th>                    
-                                    <td>
-                                        홍**
-                                    </td>     
-                                    <th scope="row">
-                                        연락처
-                                    </th>                    
-                                    <td>
-                                        044-204-0000
-                                    </td>                                             
-                                </tr>      
+                                <tr>
+                                    <td colspan="4">
+                                        <div class="td-inner-wrap">
+                                            <div class="cate-tit">중앙부처</div>
+                                            <div class="form-element__wrap">                                
+                                                <span class="form-element__inner input-type">
+                                                    <input type="text" value="국토교통부" class="input-type1-font14" placeholder="기관명을 입력하세요" title="기관명을 입력하세요" disabled>
+                                                </span>
+                                            </div>
+                                            <div class="cate-tit ml-10">기관명</div>
+                                            <div class="form-element__wrap">                                
+                                                <span class="form-element__inner input-type">
+                                                    <input type="text" value="도심재생과" class="input-type1-font14" placeholder="부서명을 입력하세요" title="부서명을 입력하세요" disabled>
+                                                </span>
+                                            </div>       
+                                            <div class="cate-tit ml-10">담당자</div>
+                                            <div class="form-element__wrap">                                
+                                                <span class="form-element__inner input-type">
+                                                    <input type="text" value="최**" class="input-type1-font14" placeholder="이름을 입력하세요" title="이름을 입력하세요" disabled>
+                                                </span>
+                                            </div>          
+                                            <div class="cate-tit ml-10">부서번호</div>
+                                            <div class="form-element__wrap">                                
+                                                <span class="form-element__inner input-type">
+                                                    <input type="text" value="041-201-4930" class="input-type1-font14" placeholder="부서번호을 입력하세요" title="부서번호을 입력하세요" disabled>
+                                                </span>
+                                            </div>                                                                                      
+                                        </div>  
+                                    </td>
+                                </tr>
                                 <tr>    
                                     <th scope="row">
                                         제목 / 요약
                                     </th>                    
                                     <td colspan="3">
-                                        농업진흥지역 해제 면적 확대의 단점
+                                        도시재생법 제 20조에 따라 활성화계획을 수립·    변경하는 주체는 원칙적으로 각급 지자체이므로 수용 가능
                                     </td>                                                 
                                 </tr>       
                                 <tr>    
@@ -798,12 +957,14 @@
                                     </th>                    
                                     <td colspan="3">
                                         <div class="edit-cont">
-                                        ·농업진흥지역은 경지정리 등 농업생산기반이 정비된 우량농지가 밀집한 지역으로 식량자급률 제고의 핵심이며,
--그 지정·변경·해제 요건과 절차를 농지법령으로 정하여 관리 중에 있음.<br><br>
-
-·농림축산식품부장관의 승인없이 농업진흥지역 해제를 할 수 있는 면적을 확대할 시, 농업경영환경 저해를 유발하는 시설 등의 전용을 목적으로 농업진흥지역 해제가 가능하게 되어 우량농지의 훼손 및 난개발을 야기할 우려가 높음.<br><br>
-
-·또한, 해당 과제의 기대효과인 처리기한 단축은 중앙권한의 지방이양에 따른 지방자치단체의 자율과 책임을 강화한다는 취지와 무관하며, 권한이 위임되더라도 농업진흥지역 해제는 농지법령에 따라 신중히 검토되어야 할 사항으로 처리기한 단축과는 거리가 멈<br><br>
+                                            ○ 도새재생법 제30조에따라 황성화계획을 수립·변경하는 주체는 원칙적으로 각급 지자체이며,<br>
+                                            - 다만 활성화계획에 <strong>국가지원 사항이 포함된 경우 국토교통부장관에게 국가지원 사항에 대한 결정</strong>을 받도록 규정<br>
+                                            <span class="fcpoint4">- 이는 각 지제차가 국고 보조사업을 통해 교부받은 보조금을 교부결정의 내용에 따라 합목적적으로 진행되도록 하고 도시재생사업 효과가 극대화될 수 있도록 하기 위한 최소한이 관리수단이므로 권한 이양의 대상으로 보기 곤란<br>
+                                            <br>
+                                            ○ 또한, 도시재생활성화 사업은 국고 보조금 지원을 통한 마중물사업(사업자별 평균 10개 내외)이 기능 내용적으로 유기적 연계된 계획이 수립되어 있어, 일부 마중물사업에서 경미한 변경사항이 발생하면 다른 마중물사업의 투입 예산, 사업규모 들에 영향을 끼칠 수 밖에 없는 설정임<br>
+                                            - 따라서 국기지원 사항이 포함된 도시재생활성화계획을 변경할 경우에는 국토교통부장관의 결정을 받도록 하여 도시재생사업을 유기적이고 종합적으로 관리할 필요가 있음<br>
+                                            ※ 한편, 현행 규정상 국가지원 사항이 포함되지 않은 경미한 계획변경의 경우(활성화계획 中 지자체 자체사업 등) 국토교통부장관의 결정없이 지자체에서 계획변경 가능한 상황임
+                                            </span>
                                         </div>
                                     </td>                                                 
                                 </tr>
@@ -837,6 +998,8 @@
                         </table>
                     </div>
                     <!-- //중앙부처 -->
+
+                    <!-- 광역자치단체 -->
                     <div class="table_cont mt-64">
                         <table class="table-body-only">
                             <colgroup>                    
@@ -852,25 +1015,24 @@
                                             <div class="flex-row">                                                        
                                                 광역자치단체 검토 의견
                                                 <div class="dv-bar"></div>
-                                                다수의견
                                                 <div class="radio-box">
-                                                    <label id="r024">
-                                                        <input type="radio" name="type11" value="type013" id="r024" >
+                                                    <label id="r01_01">
+                                                        <input type="radio" name="type01" value="type013" id="r01_01" checked>
                                                         <span>동의</span>
                                                     </label>
-                                                    <label id="r02">
-                                                        <input type="radio" name="type11" value="type013" id="r022">
+                                                    <label id="r01_02">
+                                                        <input type="radio" name="type01" value="type013" id="r01_02">
                                                         <span>부동의</span>
-                                                    </label>                                      
-                                                </div>     
+                                                    </label>
+                                                </div>
                                             </div>  
                                             <div class="flex-row yiyang-add-data">
                                                 <strong>등록일</strong>
-                                                2024.10.10
+                                                2024.12.19
                                                 <span class="dv-bar"></span>
-                                                <strong>등록일</strong>
-                                                2024.10.10
-                                            </div> 
+                                                <strong>최종수정일</strong>
+                                                2024.12.19
+                                            </div>
                                         </div>                                          
                                     </th>
                                 </tr>
@@ -878,34 +1040,16 @@
                             <tbody>
                                 <tr>    
                                     <th scope="row">
-                                        동의
-                                    </th>                    
-                                    <td>
-                                        <span class="total">3</span> 건
-                                        <span class="dv-bar"></span>
-                                        <span class="ml-10"> 울산, 강원, 충북, 전북, 전남, 경북, 경남</span>
-                                    </td>     
-                                    <th scope="row">
-                                        부동의
-                                    </th>                    
-                                    <td>
-                                        <span class="total">3</span> 건
-                                        <span class="dv-bar"></span>
-                                        <span class="ml-10"> 울산, 강원</span>
-                                    </td>                                             
-                                </tr>                                          
-                                <tr>    
-                                    <th scope="row">
                                         광역자치단체
                                     </th>                    
                                     <td>
-                                        광역자치단체 노출
+                                        대전광역시
                                     </td>     
                                     <th scope="row">
-                                        기관명
+                                        담당부서
                                     </th>                    
                                     <td>
-                                        기관명 노출
+                                        도시계획과
                                     </td>                                             
                                 </tr>    
                                 <tr>    
@@ -913,13 +1057,13 @@
                                         담당자
                                     </th>                    
                                     <td>
-                                        담당자명 노출
+                                        홍길동
                                     </td>     
                                     <th scope="row">
                                         연락처
                                     </th>                    
                                     <td>
-                                        044-204-0000
+                                        042-270-6221
                                     </td>                                             
                                 </tr>      
                                 <tr>    
@@ -927,28 +1071,307 @@
                                         제목 / 요약
                                     </th>                    
                                     <td colspan="3">
-                                        농업진흥지역 해제 면적 확대의 단점
+                                        지자체 자율성 강화를 위한 도시재생활성화계획의 독립적 변경 필요성
                                     </td>                                                 
                                 </tr>       
                                 <tr>    
                                     <th scope="row">
-                                        이양과제 의견<br>상세 등록
+                                        이양과제 의견<br>상세
                                     </th>                    
                                     <td colspan="3">
                                         <div class="edit-cont">
-                                        ·농업진흥지역은 경지정리 등 농업생산기반이 정비된 우량농지가 밀집한 지역으로 식량자급률 제고의 핵심이며,
--그 지정·변경·해제 요건과 절차를 농지법령으로 정하여 관리 중에 있음.<br><br>
-
-·농림축산식품부장관의 승인없이 농업진흥지역 해제를 할 수 있는 면적을 확대할 시, 농업경영환경 저해를 유발하는 시설 등의 전용을 목적으로 농업진흥지역 해제가 가능하게 되어 우량농지의 훼손 및 난개발을 야기할 우려가 높음.<br><br>
-
-·또한, 해당 과제의 기대효과인 처리기한 단축은 중앙권한의 지방이양에 따른 지방자치단체의 자율과 책임을 강화한다는 취지와 무관하며, 권한이 위임되더라도 농업진흥지역 해제는 농지법령에 따라 신중히 검토되어야 할 사항으로 처리기한 단축과는 거리가 멈<br><br>
+                                            ○ 도시재생법 제30조에 따라 도시재생활성화 계획을 수립·변경하는 주체는 중앙정부가 아닌, 각급 지자체가 보다 주도적으로 역할을 할 수 있어야 합니다.<br>
+                                            특히, 활성화계획에 국가지원 사항이 포함된 경우에도 국토교통부장관의 승인 없이 지자체가 자율적으로 결정을 내릴 수 있도록 하여, 지자체가 국고 보조금을 효과적으로 활용하고, 지역 특성에 맞는 도시재생사업을 추진할 수 있는 환경을 마련할 필요가 있습니다.<br>
+                                            ○ 또한, 도시재생활성화 사업은 마중물사업 간의 연계성에 따라 달라질 수 있지만, 일부 경미한 변경 사항은 다른 사업에 큰 영향을 주지 않는 경우도 있습니다.<br>
+                                            따라서 국가지원 사항이 포함된 도시재생활성화계획도 지자체가 독립적으로 변경할 수 있는 권한이 주어진다면, 더 유연하고 효율적으로 사업을 관리할 수 있을 것입니다.
                                         </div>
                                     </td>                                                 
+                                </tr>                                                                                                                                                                                                                                                      
+                                <tr>    
+                                    <th scope="row">
+                                        참조자료
+                                    </th>                    
+                                    <td colspan="3">
+                                        <div class="upload-file-list">
+                                            <div class="button-area">
+                                                <button type="button" class="btn-dark-light">                                        
+                                                    선택 다운로드
+                                                </button>
+                                                <button type="button" class="btn-dark-light">                                        
+                                                    전체 다운로드
+                                                </button>                                    
+                                            </div>
+                                            <ul class="upload-file-list" style="max-width: 532px;">
+                                                <li>
+                                                    <label class="input_type check">
+                                                        <input type="checkbox" name="">
+                                                        <span class="txt">file.png (13MB)</span>
+                                                    </label>                                                                        
+                                                </li>
+                                                <li>
+                                                    <label class="input_type check">
+                                                        <input type="checkbox" name="">
+                                                        <span class="txt">file.png (13MB)</span>
+                                                    </label>                                                                        
+                                                </li>                                    
+                                            </ul>  
+                                        </div>                                            
+                                    </td>
                                 </tr>                                                                                                                                                                                                                                                      
                             </tbody>
                         </table>
                     </div>
                     <!-- //광역자치단체 -->
+
+                    <!-- 광역자치단체 -->
+                    <div class="table_cont mt-64">
+                        <table class="table-body-only">
+                            <colgroup>                    
+                                <col width="160">
+                                <col>
+                                <col width="160">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="4">
+                                        <div class="flex-row justify-between">
+                                            <div class="flex-row">                                                        
+                                                광역자치단체 검토 의견
+                                                <div class="dv-bar"></div>
+                                                <div class="radio-box">
+                                                    <label id="r02_01">
+                                                        <input type="radio" name="type02" value="type013" id="r02_01" checked>
+                                                        <span>동의</span>
+                                                    </label>
+                                                    <label id="r02_02">
+                                                        <input type="radio" name="type02" value="type013" id="r02_02">
+                                                        <span>부동의</span>
+                                                    </label>
+                                                </div>
+                                            </div>  
+                                            <div class="flex-row yiyang-add-data">
+                                                <strong>등록일</strong>
+                                                2024.12.19
+                                                <span class="dv-bar"></span>
+                                                <strong>최종수정일</strong>
+                                                2024.12.19
+                                            </div>
+                                        </div>                                          
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>    
+                                    <th scope="row">
+                                        광역자치단체
+                                    </th>                    
+                                    <td>
+                                        광주광역시
+                                    </td>     
+                                    <th scope="row">
+                                        담당부서
+                                    </th>                    
+                                    <td>
+                                        도시계획과
+                                    </td>                                             
+                                </tr>    
+                                <tr>    
+                                    <th scope="row">
+                                        담당자
+                                    </th>                    
+                                    <td>
+                                        김**
+                                    </td>     
+                                    <th scope="row">
+                                        연락처
+                                    </th>                    
+                                    <td>
+                                        042-270-6221
+                                    </td>                                             
+                                </tr>      
+                                <tr>    
+                                    <th scope="row">
+                                        제목 / 요약
+                                    </th>                    
+                                    <td colspan="3">
+                                        도시재생활성화계획에서의 경미한 변경에 대한 국가 지원 사항을 시·도지사가 결정하도록 개정 필요  
+                                    </td>                                                 
+                                </tr>       
+                                <tr>    
+                                    <th scope="row">
+                                        이양과제 의견<br>상세
+                                    </th>                    
+                                    <td colspan="3">
+                                        <div class="edit-cont">
+                                            ○ 도시재생법 제30조에 따라 도시재생활성화 계획을 수립·변경하는 주체는 중앙정부가 아닌, 각급 지자체가 보다 주도적으로 역할을 할 수 있어야 합니다.<br>
+                                            특히, 활성화계획에 국가지원 사항이 포함된 경우에도 국토교통부장관의 승인 없이 지자체가 자율적으로 결정을 내릴 수 있도록 하여, 지자체가 국고 보조금을 효과적으로 활용하고, 지역 특성에 맞는 도시재생사업을 추진할 수 있는 환경을 마련할 필요가 있습니다.<br>
+                                            ○ 또한, 도시재생활성화 사업은 마중물사업 간의 연계성에 따라 달라질 수 있지만, 일부 경미한 변경 사항은 다른 사업에 큰 영향을 주지 않는 경우도 있습니다.<br>
+                                            따라서 국가지원 사항이 포함된 도시재생활성화계획도 지자체가 독립적으로 변경할 수 있는 권한이 주어진다면, 더 유연하고 효율적으로 사업을 관리할 수 있을 것입니다.
+                                        </div>
+                                    </td>                                                 
+                                </tr>                                                                                                                                                                                                                                                      
+                                <tr>    
+                                    <th scope="row">
+                                        참조자료
+                                    </th>                    
+                                    <td colspan="3">
+                                        <div class="upload-file-list">
+                                            <div class="button-area">
+                                                <button type="button" class="btn-dark-light">                                        
+                                                    선택 다운로드
+                                                </button>
+                                                <button type="button" class="btn-dark-light">                                        
+                                                    전체 다운로드
+                                                </button>                                    
+                                            </div>
+                                            <ul class="upload-file-list" style="max-width: 532px;">
+                                                <li>
+                                                    <label class="input_type check">
+                                                        <input type="checkbox" name="">
+                                                        <span class="txt">file.png (13MB)</span>
+                                                    </label>                                                                        
+                                                </li>
+                                                <li>
+                                                    <label class="input_type check">
+                                                        <input type="checkbox" name="">
+                                                        <span class="txt">file.png (13MB)</span>
+                                                    </label>                                                                        
+                                                </li>                                    
+                                            </ul>  
+                                        </div>                                            
+                                    </td>
+                                </tr>                                                                                                                                                                                                                                                      
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //광역자치단체 -->
+
+                    <!-- 광역자치단체 -->
+                    <div class="table_cont mt-64">
+                        <table class="table-body-only">
+                            <colgroup>                    
+                                <col width="160">
+                                <col>
+                                <col width="160">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="4">
+                                        <div class="flex-row justify-between">
+                                            <div class="flex-row">                                                        
+                                                광역자치단체 검토 의견
+                                                <div class="dv-bar"></div>
+                                                <div class="radio-box">
+                                                    <label id="r03_01">
+                                                        <input type="radio" name="type03" value="type013" id="r03_01" checked>
+                                                        <span>동의</span>
+                                                    </label>
+                                                    <label id="r03_02">
+                                                        <input type="radio" name="type03" value="type013" id="r03_02">
+                                                        <span>부동의</span>
+                                                    </label>
+                                                </div>
+                                            </div>  
+                                            <div class="flex-row yiyang-add-data">
+                                                <strong>등록일</strong>
+                                                2024.12.19
+                                                <span class="dv-bar"></span>
+                                                <strong>최종수정일</strong>
+                                                2024.12.19
+                                            </div>
+                                        </div>                                          
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>    
+                                    <th scope="row">
+                                        광역자치단체
+                                    </th>                    
+                                    <td>
+                                        울산광역시
+                                    </td>     
+                                    <th scope="row">
+                                        담당부서
+                                    </th>                    
+                                    <td>
+                                        도시계획과
+                                    </td>                                             
+                                </tr>    
+                                <tr>    
+                                    <th scope="row">
+                                        담당자
+                                    </th>                    
+                                    <td>
+                                        김**
+                                    </td>     
+                                    <th scope="row">
+                                        연락처
+                                    </th>                    
+                                    <td>
+                                        052-229-4354
+                                    </td>                                             
+                                </tr>      
+                                <tr>    
+                                    <th scope="row">
+                                        제목 / 요약
+                                    </th>                    
+                                    <td colspan="3">
+                                        지자체 자율성 강화를 위한 도시재생활성화 계획과 경미한 변경사항 시·도지사 결정 개정 필요성
+                                    </td>                                                 
+                                </tr>       
+                                <tr>    
+                                    <th scope="row">
+                                        이양과제 의견<br>상세
+                                    </th>                    
+                                    <td colspan="3">
+                                        <div class="edit-cont">
+                                            ○ 도시재생법 제30조에 따라 도시재생활성화 계획을 수립·변경하는 주체는 중앙정부가 아닌, 각급 지자체가 보다 주도적으로 역할을 할 수 있어야 합니다.<br>
+                                            특히, 활성화계획에 국가지원 사항이 포함된 경우에도 국토교통부장관의 승인 없이 지자체가 자율적으로 결정을 내릴 수 있도록 하여, 지자체가 국고 보조금을 효과적으로 활용하고, 지역 특성에 맞는 도시재생사업을 추진할 수 있는 환경을 마련할 필요가 있습니다.<br>
+                                            ○ 또한, 도시재생활성화 사업은 마중물사업 간의 연계성에 따라 달라질 수 있지만, 일부 경미한 변경 사항은 다른 사업에 큰 영향을 주지 않는 경우도 있습니다.<br>
+                                            따라서 국가지원 사항이 포함된 도시재생활성화계획도 지자체가 독립적으로 변경할 수 있는 권한이 주어진다면, 더 유연하고 효율적으로 사업을 관리할 수 있을 것입니다.
+                                        </div>
+                                    </td>                                                 
+                                </tr>                                                                                                                                                                                                                                                      
+                                <tr>    
+                                    <th scope="row">
+                                        참조자료
+                                    </th>                    
+                                    <td colspan="3">
+                                        <div class="upload-file-list">
+                                            <div class="button-area">
+                                                <button type="button" class="btn-dark-light">                                        
+                                                    선택 다운로드
+                                                </button>
+                                                <button type="button" class="btn-dark-light">                                        
+                                                    전체 다운로드
+                                                </button>                                    
+                                            </div>
+                                            <ul class="upload-file-list" style="max-width: 532px;">
+                                                <li>
+                                                    <label class="input_type check">
+                                                        <input type="checkbox" name="">
+                                                        <span class="txt">file.png (13MB)</span>
+                                                    </label>                                                                        
+                                                </li>
+                                                <li>
+                                                    <label class="input_type check">
+                                                        <input type="checkbox" name="">
+                                                        <span class="txt">file.png (13MB)</span>
+                                                    </label>                                                                        
+                                                </li>                                    
+                                            </ul>  
+                                        </div>                                            
+                                    </td>
+                                </tr>                                                                                                                                                                                                                                                      
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //광역자치단체 -->
+
+                    <!-- 기초자치단체 -->
                     <div class="table_cont mt-64">
                         <table class="table-body-only">
                             <colgroup>                    
@@ -964,25 +1387,24 @@
                                             <div class="flex-row">                                                        
                                                 기초자치단체 검토 의견
                                                 <div class="dv-bar"></div>
-                                                다수의견
                                                 <div class="radio-box">
-                                                    <label id="r024">
-                                                        <input type="radio" name="type11" value="type013" id="r024" >
+                                                    <label id="r04_01">
+                                                        <input type="radio" name="type04" value="type013" id="r04_01" checked>
                                                         <span>동의</span>
                                                     </label>
-                                                    <label id="r02">
-                                                        <input type="radio" name="type11" value="type013" id="r022">
+                                                    <label id="r04_02">
+                                                        <input type="radio" name="type04" value="type013" id="r04_02">
                                                         <span>부동의</span>
-                                                    </label>                                      
-                                                </div>     
+                                                    </label>
+                                                </div>
                                             </div>  
                                             <div class="flex-row yiyang-add-data">
                                                 <strong>등록일</strong>
-                                                2024.10.10
+                                                2024.12.19
                                                 <span class="dv-bar"></span>
-                                                <strong>등록일</strong>
-                                                2024.10.10
-                                            </div> 
+                                                <strong>최종수정일</strong>
+                                                2024.12.19
+                                            </div>
                                         </div>                                          
                                     </th>
                                 </tr>
@@ -990,34 +1412,16 @@
                             <tbody>
                                 <tr>    
                                     <th scope="row">
-                                        동의
-                                    </th>                    
-                                    <td>
-                                        <span class="total">3</span> 건
-                                        <span class="dv-bar"></span>
-                                        <span class="ml-10"> 울산, 강원, 충북, 전북, 전남, 경북, 경남</span>
-                                    </td>     
-                                    <th scope="row">
-                                        부동의
-                                    </th>                    
-                                    <td>
-                                        <span class="total">3</span> 건
-                                        <span class="dv-bar"></span>
-                                        <span class="ml-10"> 울산, 강원</span>
-                                    </td>                                             
-                                </tr>                                          
-                                <tr>    
-                                    <th scope="row">
                                         기초자치단체
                                     </th>                    
                                     <td>
-                                        기초자치단체 노출
+                                        부산광역시 중구
                                     </td>     
                                     <th scope="row">
                                         담당부서
                                     </th>                    
                                     <td>
-                                        담당부서 노출
+                                        재생건축과
                                     </td>                                             
                                 </tr>    
                                 <tr>    
@@ -1025,13 +1429,13 @@
                                         담당자
                                     </th>                    
                                     <td>
-                                        담당자명 노출
+                                        이**
                                     </td>     
                                     <th scope="row">
                                         연락처
                                     </th>                    
                                     <td>
-                                        044-204-0000
+                                        051-600-4624
                                     </td>                                             
                                 </tr>      
                                 <tr>    
@@ -1039,28 +1443,59 @@
                                         제목 / 요약
                                     </th>                    
                                     <td colspan="3">
-                                        농업진흥지역 해제 면적 확대의 단점
+                                        도시재생활성화 계획의 독립적 변경과 경미한 변경사항 시·도지사 결정 권한 확대
                                     </td>                                                 
                                 </tr>       
                                 <tr>    
                                     <th scope="row">
-                                        심의 의견
+                                        이양과제 의견<br>상세
                                     </th>                    
                                     <td colspan="3">
                                         <div class="edit-cont">
-                                        ·농업진흥지역은 경지정리 등 농업생산기반이 정비된 우량농지가 밀집한 지역으로 식량자급률 제고의 핵심이며,
--그 지정·변경·해제 요건과 절차를 농지법령으로 정하여 관리 중에 있음.<br><br>
-
-·농림축산식품부장관의 승인없이 농업진흥지역 해제를 할 수 있는 면적을 확대할 시, 농업경영환경 저해를 유발하는 시설 등의 전용을 목적으로 농업진흥지역 해제가 가능하게 되어 우량농지의 훼손 및 난개발을 야기할 우려가 높음.<br><br>
-
-·또한, 해당 과제의 기대효과인 처리기한 단축은 중앙권한의 지방이양에 따른 지방자치단체의 자율과 책임을 강화한다는 취지와 무관하며, 권한이 위임되더라도 농업진흥지역 해제는 농지법령에 따라 신중히 검토되어야 할 사항으로 처리기한 단축과는 거리가 멈<br><br>
+                                            ○ 도시재생법 제30조에 따라 도시재생활성화 계획을 수립·변경하는 주체는 중앙정부가 아닌, 각급 지자체가 보다 주도적으로 역할을 할 수 있어야 합니다.<br>
+                                            특히, 활성화계획에 국가지원 사항이 포함된 경우에도 국토교통부장관의 승인 없이 지자체가 자율적으로 결정을 내릴 수 있도록 하여, 지자체가 국고 보조금을 효과적으로 활용하고, 지역 특성에 맞는 도시재생사업을 추진할 수 있는 환경을 마련할 필요가 있습니다.<br>
+                                            ○ 또한, 도시재생활성화 사업은 마중물사업 간의 연계성에 따라 달라질 수 있지만, 일부 경미한 변경 사항은 다른 사업에 큰 영향을 주지 않는 경우도 있습니다.<br>
+                                            따라서 국가지원 사항이 포함된 도시재생활성화계획도 지자체가 독립적으로 변경할 수 있는 권한이 주어진다면, 더 유연하고 효율적으로 사업을 관리할 수 있을 것입니다.
                                         </div>
                                     </td>                                                 
+                                </tr>                                                                                                                                                                                                                                                      
+                                <tr>    
+                                    <th scope="row">
+                                        참조자료
+                                    </th>                    
+                                    <td colspan="3">
+                                        <div class="upload-file-list">
+                                            <div class="button-area">
+                                                <button type="button" class="btn-dark-light">                                        
+                                                    선택 다운로드
+                                                </button>
+                                                <button type="button" class="btn-dark-light">                                        
+                                                    전체 다운로드
+                                                </button>                                    
+                                            </div>
+                                            <ul class="upload-file-list" style="max-width: 532px;">
+                                                <li>
+                                                    <label class="input_type check">
+                                                        <input type="checkbox" name="">
+                                                        <span class="txt">file.png (13MB)</span>
+                                                    </label>                                                                        
+                                                </li>
+                                                <li>
+                                                    <label class="input_type check">
+                                                        <input type="checkbox" name="">
+                                                        <span class="txt">file.png (13MB)</span>
+                                                    </label>                                                                        
+                                                </li>                                    
+                                            </ul>  
+                                        </div>                                            
+                                    </td>
                                 </tr>                                                                                                                                                                                                                                                      
                             </tbody>
                         </table>
                     </div>
-                    <!-- //기초단체장 -->
+                    <!-- //기초자치단체 -->
+
+                    <!-- 기초자치단체 -->
                     <div class="table_cont mt-64">
                         <table class="table-body-only">
                             <colgroup>                    
@@ -1072,6 +1507,255 @@
                             <thead>
                                 <tr>
                                     <th colspan="4">
+                                        <div class="flex-row justify-between">
+                                            <div class="flex-row">                                                        
+                                                기초자치단체 검토 의견
+                                                <div class="dv-bar"></div>
+                                                <div class="radio-box">
+                                                    <label id="r05_01">
+                                                        <input type="radio" name="type05" value="type013" id="r05_01" checked>
+                                                        <span>동의</span>
+                                                    </label>
+                                                    <label id="r05_02">
+                                                        <input type="radio" name="type05" value="type013" id="r05_02">
+                                                        <span>부동의</span>
+                                                    </label>
+                                                </div>
+                                            </div>  
+                                            <div class="flex-row yiyang-add-data">
+                                                <strong>등록일</strong>
+                                                2024.12.19
+                                                <span class="dv-bar"></span>
+                                                <strong>최종수정일</strong>
+                                                2024.12.19
+                                            </div>
+                                        </div>                                          
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>    
+                                    <th scope="row">
+                                        기초자치단체
+                                    </th>                    
+                                    <td>
+                                        광주광역시 서구
+                                    </td>     
+                                    <th scope="row">
+                                        담당부서
+                                    </th>                    
+                                    <td>
+                                        주택과
+                                    </td>                                             
+                                </tr>    
+                                <tr>    
+                                    <th scope="row">
+                                        담당자
+                                    </th>                    
+                                    <td>
+                                        박**
+                                    </td>     
+                                    <th scope="row">
+                                        연락처
+                                    </th>                    
+                                    <td>
+                                        062-360-7985
+                                    </td>                                             
+                                </tr>      
+                                <tr>    
+                                    <th scope="row">
+                                        제목 / 요약
+                                    </th>                    
+                                    <td colspan="3">
+                                        지자체 자율성 확대: 도시재생활성화 계획과 경미한 변경사항, 시·도지사 결정 개정안
+                                    </td>                                                 
+                                </tr>       
+                                <tr>    
+                                    <th scope="row">
+                                        이양과제 의견<br>상세
+                                    </th>                    
+                                    <td colspan="3">
+                                        <div class="edit-cont">
+                                            ○ 도시재생법 제30조에 따라 도시재생활성화 계획을 수립·변경하는 주체는 중앙정부가 아닌, 각급 지자체가 보다 주도적으로 역할을 할 수 있어야 합니다.<br>
+                                            특히, 활성화계획에 국가지원 사항이 포함된 경우에도 국토교통부장관의 승인 없이 지자체가 자율적으로 결정을 내릴 수 있도록 하여, 지자체가 국고 보조금을 효과적으로 활용하고, 지역 특성에 맞는 도시재생사업을 추진할 수 있는 환경을 마련할 필요가 있습니다.<br>
+                                            ○ 또한, 도시재생활성화 사업은 마중물사업 간의 연계성에 따라 달라질 수 있지만, 일부 경미한 변경 사항은 다른 사업에 큰 영향을 주지 않는 경우도 있습니다.<br>
+                                            따라서 국가지원 사항이 포함된 도시재생활성화계획도 지자체가 독립적으로 변경할 수 있는 권한이 주어진다면, 더 유연하고 효율적으로 사업을 관리할 수 있을 것입니다.
+                                        </div>
+                                    </td>                                                 
+                                </tr>                                                                                                                                                                                                                                                      
+                                <tr>    
+                                    <th scope="row">
+                                        참조자료
+                                    </th>                    
+                                    <td colspan="3">
+                                        <div class="upload-file-list">
+                                            <div class="button-area">
+                                                <button type="button" class="btn-dark-light">                                        
+                                                    선택 다운로드
+                                                </button>
+                                                <button type="button" class="btn-dark-light">                                        
+                                                    전체 다운로드
+                                                </button>                                    
+                                            </div>
+                                            <ul class="upload-file-list" style="max-width: 532px;">
+                                                <li>
+                                                    <label class="input_type check">
+                                                        <input type="checkbox" name="">
+                                                        <span class="txt">file.png (13MB)</span>
+                                                    </label>                                                                        
+                                                </li>
+                                                <li>
+                                                    <label class="input_type check">
+                                                        <input type="checkbox" name="">
+                                                        <span class="txt">file.png (13MB)</span>
+                                                    </label>                                                                        
+                                                </li>                                    
+                                            </ul>  
+                                        </div>                                            
+                                    </td>
+                                </tr>                                                                                                                                                                                                                                                      
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //기초자치단체 -->
+
+                    <!-- 광역자치단체 -->
+                    <div class="table_cont mt-64">
+                        <table class="table-body-only">
+                            <colgroup>                    
+                                <col width="160">
+                                <col>
+                                <col width="160">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="4">
+                                        <div class="flex-row justify-between">
+                                            <div class="flex-row">                                                        
+                                                광역자치단체 검토 의견
+                                                <div class="dv-bar"></div>
+                                                <div class="radio-box">
+                                                    <label id="r06_01">
+                                                        <input type="radio" name="type06" value="type013" id="r06_01" checked>
+                                                        <span>동의</span>
+                                                    </label>
+                                                    <label id="r06_02">
+                                                        <input type="radio" name="type06" value="type013" id="r06_02">
+                                                        <span>부동의</span>
+                                                    </label>
+                                                </div>
+                                            </div>  
+                                            <div class="flex-row yiyang-add-data">
+                                                <strong>등록일</strong>
+                                                2024.12.19
+                                                <span class="dv-bar"></span>
+                                                <strong>최종수정일</strong>
+                                                2024.12.19
+                                            </div>
+                                        </div>                                          
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>    
+                                    <th scope="row">
+                                        기초자치단체
+                                    </th>                    
+                                    <td>
+                                        경기도
+                                    </td>     
+                                    <th scope="row">
+                                        담당부서
+                                    </th>                    
+                                    <td>
+                                        공간전략과
+                                    </td>                                             
+                                </tr>    
+                                <tr>    
+                                    <th scope="row">
+                                        담당자
+                                    </th>                    
+                                    <td>
+                                        최**
+                                    </td>     
+                                    <th scope="row">
+                                        연락처
+                                    </th>                    
+                                    <td>
+                                        031-8008-6178
+                                    </td>                                             
+                                </tr>      
+                                <tr>    
+                                    <th scope="row">
+                                        제목 / 요약
+                                    </th>                    
+                                    <td colspan="3">
+                                        경미한 변경사항 시·도지사 결정으로 지자체 주도의 도시재생활성화 계획 강화
+                                    </td>                                                 
+                                </tr>       
+                                <tr>    
+                                    <th scope="row">
+                                        이양과제 의견<br>상세
+                                    </th>                    
+                                    <td colspan="3">
+                                        <div class="edit-cont">
+                                            ○ 도시재생법 제30조에 따라 도시재생활성화 계획을 수립·변경하는 주체는 중앙정부가 아닌, 각급 지자체가 보다 주도적으로 역할을 할 수 있어야 합니다.<br>
+                                            특히, 활성화계획에 국가지원 사항이 포함된 경우에도 국토교통부장관의 승인 없이 지자체가 자율적으로 결정을 내릴 수 있도록 하여, 지자체가 국고 보조금을 효과적으로 활용하고, 지역 특성에 맞는 도시재생사업을 추진할 수 있는 환경을 마련할 필요가 있습니다.<br>
+                                            ○ 또한, 도시재생활성화 사업은 마중물사업 간의 연계성에 따라 달라질 수 있지만, 일부 경미한 변경 사항은 다른 사업에 큰 영향을 주지 않는 경우도 있습니다.<br>
+                                            따라서 국가지원 사항이 포함된 도시재생활성화계획도 지자체가 독립적으로 변경할 수 있는 권한이 주어진다면, 더 유연하고 효율적으로 사업을 관리할 수 있을 것입니다.
+                                        </div>
+                                    </td>                                                 
+                                </tr>                                                                                                                                                                                                                                                      
+                                <tr>    
+                                    <th scope="row">
+                                        참조자료
+                                    </th>                    
+                                    <td colspan="3">
+                                        <div class="upload-file-list">
+                                            <div class="button-area">
+                                                <button type="button" class="btn-dark-light">                                        
+                                                    선택 다운로드
+                                                </button>
+                                                <button type="button" class="btn-dark-light">                                        
+                                                    전체 다운로드
+                                                </button>                                    
+                                            </div>
+                                            <ul class="upload-file-list" style="max-width: 532px;">
+                                                <li>
+                                                    <label class="input_type check">
+                                                        <input type="checkbox" name="">
+                                                        <span class="txt">file.png (13MB)</span>
+                                                    </label>                                                                        
+                                                </li>
+                                                <li>
+                                                    <label class="input_type check">
+                                                        <input type="checkbox" name="">
+                                                        <span class="txt">file.png (13MB)</span>
+                                                    </label>                                                                        
+                                                </li>                                    
+                                            </ul>  
+                                        </div>                                            
+                                    </td>
+                                </tr>                                                                                                                                                                                                                                                      
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //광역자치단체 -->
+
+                    <!-- 승인자정보 -->
+                    <div class="table_cont mt-64">
+                        <table class="table-body-only">
+                            <colgroup>                    
+                                <col>
+                                <col>
+                                <col width="160">
+                                <col width="160">
+                                <col width="160">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="5">
                                         <div class="flex-row justify-between">
                                             <div class="flex-row">                                                        
                                                 승인자 정보
@@ -1094,24 +1778,28 @@
                                     <th scope="col" class="text-c">
                                         부서번호
                                     </th>                                                                                                                                                      
+                                    <th scope="col" class="text-c">
+                                        날짜
+                                    </th>                                                                                                                                                      
                                 </tr>       
                                 <tr>
                                     <td class="text-c">의견수렴 종료</td>
                                     <td class="text-c">행정안전부 / 자치분권지원과</td>
                                     <td class="text-c">홍**</td>
                                     <td class="text-c">044-000-0000</td>
-                                </tr>                                   
+                                    <td class="text-c">2024.12.19</td>
+                                </tr> 
                                 <tr>
-                                    <td class="text-c">의견수렴 종료</td>
+                                    <td class="text-c">의견수렴 시작</td>
                                     <td class="text-c">행정안전부 / 자치분권지원과</td>
                                     <td class="text-c">홍**</td>
                                     <td class="text-c">044-000-0000</td>
-                                </tr>                                                                                                                                                                                                                                                         
+                                    <td class="text-c">2024.12.19</td>
+                                </tr> 
                             </tbody>
                         </table>
                     </div>
-                    <!-- //승인정보 -->
-
+                    <!-- //승인자정보 -->
                 </div>
             </div>
             <!-- 단체별 의견수렵 -->
@@ -1132,15 +1820,15 @@
                                         전문위 심의 의견 통합
                                         <span class="dv-bar mg16"></span>
                                         <span class="font-type16-500">
-                                            전체 <span class="total"><strong>36</strong>건</span>
+                                            전체 <span class="total"><strong>3</strong>건</span>
                                             <span class="dv-bar mg16"></span>
-                                            현행존치  <span class="total"><strong>36</strong>건</span>
+                                            현행존치  <span class="total"><strong>1</strong>건</span>
                                             <span class="dv-bar mg16"></span>
-                                            지방이양  <span class="total"><strong>36</strong>건</span>
+                                            지방이양  <span class="total"><strong>2</strong>건</span>
                                             <span class="dv-bar mg16"></span>
-                                            국가환원  <span class="total"><strong>36</strong>건</span>
+                                            국가환원  <span class="total"><strong>0</strong>건</span>
                                             <span class="dv-bar mg16"></span>
-                                            계속심의  <span class="total"><strong>36</strong>건</span>                                                                                                
+                                            계속심의  <span class="total"><strong>0</strong>건</span>                                                                                                
                                         </span>
                                     </th>
                                 </tr>
@@ -1151,48 +1839,51 @@
                     <div class="table_cont mt-16">
                         <table class="table-body-only">
                             <colgroup>                    
-                                <col width="160">
-                                <col>              
+                                <col width="200">
+                                <col width="160">              
                             </colgroup>
                             <tbody>
-                                <tr>    
+                                <tr>
+                                    <td>
+                                        <span class="box-info type0">분과위 심의중</span>
+                                    </td>
                                     <th scope="row">
                                         전문위 심의 의견
                                     </th>                    
                                     <td>
                                         <div class="flex-row justify-between">
                                             <div class="radio-box">
-                                                <label id="r01">
-                                                    <input type="radio" name="type1" value="type010" id="r01">
+                                                <label id="r07_0_01">
+                                                    <input type="radio" name="type07_0" value="type010" id="r07_0_01">
                                                     <span>현행 존치</span>
                                                 </label>
-                                                <label id="r02">
-                                                    <input type="radio" name="type1" value="type011" id="r02" checked="">
+                                                <label id="r07_0_02">
+                                                    <input type="radio" name="type07_0" value="type011" id="r07_0_02" checked="">
                                                     <span>지방이양</span>
                                                 </label>
-                                                <label id="r03">
-                                                    <input type="radio" name="type1" value="type010" id="r03">
+                                                <label id="r07_0_03">
+                                                    <input type="radio" name="type07_0" value="type010" id="r07_0_03">
                                                     <span>국가 환원</span>
                                                 </label>     
-                                                <label id="r04">
-                                                    <input type="radio" name="type1" value="type010" id="r04">
+                                                <label id="r07_0_04">
+                                                    <input type="radio" name="type07_0" value="type010" id="r07_0_04">
                                                     <span>계속 심의</span>
                                                 </label>                                                              
                                             </div> 
                                             <div class="label-info">
-                                                <span class="box-info type2">심의 2차</span>
-                                                2024.10.10
+                                                <span class="box-info type1">심의 5차</span>
+                                                2024.12.19
                                             </div>
                                         </div>
                                     </td>                                                 
                                 </tr>                                
                                 <tr> 
-                                    <td colspan="2">
+                                    <td colspan="3">
                                         <div class="td-inner-wrap">
                                             <div class="cate-tit">기관/부서명</div>
                                             <div class="form-element__wrap">                                
                                                 <span class="form-element__inner input-type">
-                                                    <input type="text" value="담당부서" class="input-type1-font14" placeholder="담당부서 입력하세요" title="담당부서 입력하세요" disabled="">
+                                                    <input type="text" value="행정안전부 / 자치분권지원과" class="input-type1-font14" placeholder="담당부서 입력하세요" title="담당부서 입력하세요" disabled="">
                                                 </span>
                                             </div>
                                             <div class="cate-tit ml-10">담당자</div>
@@ -1204,13 +1895,13 @@
                                             <div class="cate-tit ml-10">부서번호</div>
                                             <div class="form-element__wrap">                                
                                                 <span class="form-element__inner input-type">
-                                                    <input type="text" value="2024-09-03" class="input-type1-font14" placeholder="부서번호를 입력하세요" title="부서번호" disabled="">
+                                                    <input type="text" value="043-000-0000" class="input-type1-font14" placeholder="부서번호를 입력하세요" title="부서번호" disabled="">
                                                 </span>
                                             </div>    
-                                            <div class="cate-tit ml-10">연락처</div>
+                                            <div class="cate-tit ml-10">승인일</div>
                                             <div class="form-element__wrap">                                
                                                 <span class="form-element__inner input-type">
-                                                    <input type="text" value="" class="input-type1-font14" placeholder="연락처 입력하세요" title="연락처 입력하세요" disabled="">
+                                                    <input type="text" value="2024.12.19" class="input-type1-font14" placeholder="연락처 입력하세요" title="연락처 입력하세요" disabled="">
                                                 </span>
                                             </div>                                                                                                                                                               
                                         </div> 
@@ -1220,24 +1911,24 @@
                                     <th scope="row">
                                         제목 / 요약
                                     </th>                    
-                                    <td>
-                                        총 12명 위원 : 현행존치 (6) 지방이양 (3) 국가환원 (0) 계속심의 (3)
+                                    <td colspan="2">
+                                        경미한 사항은 정무적 판단과 지방사무의 특성에 부합할 가능성이 높아, 지방이양 필요성에 따라 추가 검토 및 분과위에서 논의가 필요
                                     </td> 
                                 </tr>
                                 <tr>    
                                     <th scope="row">
                                         심의 의견
                                     </th>                    
-                                    <td >
+                                    <td colspan="2">
                                         <div class="text-content">
-                                        •경미한 사항 변경 시 국가지원(보조금) 사항에 대한 관리.감독 필요성 등 추가 논의가 필요하다고 판단됨에 따라 계속 심의로 결정함
-※ (국토부)국가지원이 포함된 경우 보조금사업의 교부결정 내용에 따라 합목적적으로 집행하도록 하기 위한 최소한의 통제수단으로 이양곤란
-※ (경기도) 신속한 사업 추신이 어려울 뿐만 아니라 경미한 사항의 변경 협의에 대한 법의 취지를 실리기 어려운 실정 </div>
+                                            경미한 사항은 자의적으로 해설될 여지가 있어 중앙부처 사무로 볼수는 있으나 지방이양 필요성 관점에서 볼때 경미한 사항은 정무적 판단과 다양하게 해석될 여지가 있다는 점, 지역주민 삶의 질과 밀접한 사업으로 지방사무의 특성에 더 부합할 가능성이 있는 점 등을 고려하여 전향적으로 추가 검토가 필요하다고 판단됨.
+                                            따라서 본 과제는 분과위에 상정하여 논쟁을 통해 결정할 필요가 있음
+                                        </div>
                                     </td> 
                                 </tr>
                             </tbody>
                         </table>
-                    </div>                    
+                    </div>
                     <div class="table_cont mt-16">
                         <table class="table-body-only">
                             <colgroup>                    
@@ -1252,26 +1943,26 @@
                                     <td>
                                         <div class="flex-row justify-between">
                                             <div class="radio-box">
-                                                <label id="r01">
-                                                    <input type="radio" name="type1" value="type010" id="r01">
+                                                <label id="r07_01">
+                                                    <input type="radio" name="type07" value="type010" id="r07_01">
                                                     <span>현행 존치</span>
                                                 </label>
-                                                <label id="r02">
-                                                    <input type="radio" name="type1" value="type011" id="r02" checked="">
+                                                <label id="r07_02">
+                                                    <input type="radio" name="type07" value="type011" id="r07_02" checked="">
                                                     <span>지방이양</span>
                                                 </label>
-                                                <label id="r03">
-                                                    <input type="radio" name="type1" value="type010" id="r03">
+                                                <label id="r07_03">
+                                                    <input type="radio" name="type07" value="type010" id="r07_03">
                                                     <span>국가 환원</span>
                                                 </label>     
-                                                <label id="r04">
-                                                    <input type="radio" name="type1" value="type010" id="r04">
+                                                <label id="r07_04">
+                                                    <input type="radio" name="type07" value="type010" id="r07_04">
                                                     <span>계속 심의</span>
                                                 </label>                                                              
                                             </div> 
                                             <div class="label-info">
-                                                <span class="box-info type2">심의 2차</span>
-                                                2024.10.10
+                                                <span class="box-info type2">심의 3차</span>
+                                                2024.12.19
                                             </div>
                                         </div>
                                     </td>                                                 
@@ -1282,7 +1973,7 @@
                                             <div class="cate-tit">기관/부서명</div>
                                             <div class="form-element__wrap">                                
                                                 <span class="form-element__inner input-type">
-                                                    <input type="text" value="담당부서" class="input-type1-font14" placeholder="담당부서 입력하세요" title="담당부서 입력하세요" disabled="">
+                                                    <input type="text" value="행정안전부 / 자치분권지원과" class="input-type1-font14" placeholder="담당부서 입력하세요" title="담당부서 입력하세요" disabled="">
                                                 </span>
                                             </div>
                                             <div class="cate-tit ml-10">담당자</div>
@@ -1294,13 +1985,13 @@
                                             <div class="cate-tit ml-10">부서번호</div>
                                             <div class="form-element__wrap">                                
                                                 <span class="form-element__inner input-type">
-                                                    <input type="text" value="2024-09-03" class="input-type1-font14" placeholder="부서번호를 입력하세요" title="부서번호" disabled="">
+                                                    <input type="text" value="043-000-0000" class="input-type1-font14" placeholder="부서번호를 입력하세요" title="부서번호" disabled="">
                                                 </span>
                                             </div>    
-                                            <div class="cate-tit ml-10">연락처</div>
+                                            <div class="cate-tit ml-10">승인일</div>
                                             <div class="form-element__wrap">                                
                                                 <span class="form-element__inner input-type">
-                                                    <input type="text" value="" class="input-type1-font14" placeholder="연락처 입력하세요" title="연락처 입력하세요" disabled="">
+                                                    <input type="text" value="2024.12.19" class="input-type1-font14" placeholder="연락처 입력하세요" title="연락처 입력하세요" disabled="">
                                                 </span>
                                             </div>                                                                                                                                                               
                                         </div> 
@@ -1311,7 +2002,7 @@
                                         제목 / 요약
                                     </th>                    
                                     <td>
-                                        총 12명 위원 : 현행존치 (6) 지방이양 (3) 국가환원 (0) 계속심의 (3)
+                                        경미한 사항은 정무적 판단과 지방사무의 특성에 부합할 가능성이 높아, 지방이양 필요성에 따라 추가 검토 및 분과위에서 논의가 필요
                                     </td> 
                                 </tr>
                                 <tr>    
@@ -1320,23 +2011,115 @@
                                     </th>                    
                                     <td >
                                         <div class="text-content">
-                                        •경미한 사항 변경 시 국가지원(보조금) 사항에 대한 관리.감독 필요성 등 추가 논의가 필요하다고 판단됨에 따라 계속 심의로 결정함
-※ (국토부)국가지원이 포함된 경우 보조금사업의 교부결정 내용에 따라 합목적적으로 집행하도록 하기 위한 최소한의 통제수단으로 이양곤란
-※ (경기도) 신속한 사업 추신이 어려울 뿐만 아니라 경미한 사항의 변경 협의에 대한 법의 취지를 실리기 어려운 실정 </div>
+                                            경미한 사항은 자의적으로 해설될 여지가 있어 중앙부처 사무로 볼수는 있으나 지방이양 필요성 관점에서 볼때 경미한 사항은 정무적 판단과 다양하게 해석될 여지가 있다는 점, 지역주민 삶의 질과 밀접한 사업으로 지방사무의 특성에 더 부합할 가능성이 있는 점 등을 고려하여 전향적으로 추가 검토가 필요하다고 판단됨.
+                                            따라서 본 과제는 분과위에 상정하여 논쟁을 통해 결정할 필요가 있음
+                                        </div>
+                                    </td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table_cont mt-16">
+                        <table class="table-body-only">
+                            <colgroup>                    
+                                <col width="160">
+                                <col>              
+                            </colgroup>
+                            <tbody>
+                                <tr>    
+                                    <th scope="row">
+                                        전문위 심의 의견
+                                    </th>                    
+                                    <td>
+                                        <div class="flex-row justify-between">
+                                            <div class="radio-box">
+                                                <label id="r08_01">
+                                                    <input type="radio" name="type08" value="type010" id="r08_01" checked="">
+                                                    <span>현행 존치</span>
+                                                </label>
+                                                <label id="r08_02">
+                                                    <input type="radio" name="type08" value="type011" id="r08_02">
+                                                    <span>지방이양</span>
+                                                </label>
+                                                <label id="r08_03">
+                                                    <input type="radio" name="type08" value="type010" id="r08_03">
+                                                    <span>국가 환원</span>
+                                                </label>     
+                                                <label id="r08_04">
+                                                    <input type="radio" name="type08" value="type010" id="r08_04">
+                                                    <span>계속 심의</span>
+                                                </label>                                                              
+                                            </div> 
+                                            <div class="label-info">
+                                                <span class="box-info type2">심의 1차</span>
+                                                2024.12.19
+                                            </div>
+                                        </div>
+                                    </td>                                                 
+                                </tr>                                
+                                <tr> 
+                                    <td colspan="2">
+                                        <div class="td-inner-wrap">
+                                            <div class="cate-tit">기관/부서명</div>
+                                            <div class="form-element__wrap">                                
+                                                <span class="form-element__inner input-type">
+                                                    <input type="text" value="행정안전부 / 자치분권지원과" class="input-type1-font14" placeholder="담당부서 입력하세요" title="담당부서 입력하세요" disabled="">
+                                                </span>
+                                            </div>
+                                            <div class="cate-tit ml-10">담당자</div>
+                                            <div class="form-element__wrap">                                
+                                                <span class="form-element__inner input-type">
+                                                    <input type="text" value="홍**" class="input-type1-font14" placeholder="담당자 입력하세요" title="담당자 입력하세요" disabled="">
+                                                </span>
+                                            </div>   
+                                            <div class="cate-tit ml-10">부서번호</div>
+                                            <div class="form-element__wrap">                                
+                                                <span class="form-element__inner input-type">
+                                                    <input type="text" value="043-000-0000" class="input-type1-font14" placeholder="부서번호를 입력하세요" title="부서번호" disabled="">
+                                                </span>
+                                            </div>    
+                                            <div class="cate-tit ml-10">승인일</div>
+                                            <div class="form-element__wrap">                                
+                                                <span class="form-element__inner input-type">
+                                                    <input type="text" value="2024.12.19" class="input-type1-font14" placeholder="연락처 입력하세요" title="연락처 입력하세요" disabled="">
+                                                </span>
+                                            </div>                                                                                                                                                               
+                                        </div> 
+                                    </td> 
+                                </tr> 
+                                <tr>    
+                                    <th scope="row">
+                                        제목 / 요약
+                                    </th>                    
+                                    <td>
+                                        경미한 사항 변경에 대한 국가지원 관리 감독 필요성으로 계속 심의 필요
+                                    </td> 
+                                </tr>
+                                <tr>    
+                                    <th scope="row">
+                                        심의 의견
+                                    </th>                    
+                                    <td >
+                                        <div class="text-content">
+                                            •경미한 사항 변경 시 국가지원(보조금) 사항에 대한 관리.감독 필요성 등 추가 논의가 필요하다고 판단됨에 따라 계속 심의로 결정함<br>
+                                            ※ (국토부)국가지원이 포함된 경우 보조금사업의 교부결정 내용에 따라 합목적적으로 집행하도록 하기 위한 최소한의 통제수단으로 이양곤란<br>
+                                            ※ (경기도) 신속한 사업 추신이 어려울 뿐만 아니라 경미한 사항의 변경 협의에 대한 법의 취지를 실리기 어려운 실정
+                                        </div>
                                     </td> 
                                 </tr>
                             </tbody>
                         </table>
                     </div>    
 
-                    <div class="table_cont mt-64">
+                    <!-- 승인자정보 -->
+                    <div class="table_cont mt-32">
                         <table class="table-body-only">
                             <colgroup>                    
-                                <col width="160">
+                                <col>
                                 <col>
                                 <col width="160">
-                                <col>
-                                <col width="220">
+                                <col width="160">
+                                <col width="160">
                             </colgroup>
                             <thead>
                                 <tr>
@@ -1362,36 +2145,62 @@
                                     </th>  
                                     <th scope="col" class="text-c">
                                         부서번호
-                                    </th>   
+                                    </th>                                                                                                                                                      
                                     <th scope="col" class="text-c">
                                         날짜
-                                    </th>                                                                                                                                              
+                                    </th>                                                                                                                                                      
                                 </tr>       
                                 <tr>
-                                    <td class="text-c">의견수렴 종료</td>
+                                    <td class="text-c">전문위 심의 완료</td>
                                     <td class="text-c">행정안전부 / 자치분권지원과</td>
                                     <td class="text-c">홍**</td>
                                     <td class="text-c">044-000-0000</td>
-                                    <td class="text-c">2024-09-03</td>
-                                </tr>                                   
+                                    <td class="text-c">2024.12.19</td>
+                                </tr> 
                                 <tr>
-                                    <td class="text-c">의견수렴 종료</td>
+                                    <td class="text-c">전문위 심의 요청</td>
                                     <td class="text-c">행정안전부 / 자치분권지원과</td>
                                     <td class="text-c">홍**</td>
                                     <td class="text-c">044-000-0000</td>
-                                    <td class="text-c">2024-09-03</td>
-                                </tr>                                                                                                                                                                                                                                                         
+                                    <td class="text-c">2024.12.19</td>
+                                </tr> 
                             </tbody>
                         </table>
                     </div>
-                    <!-- //승인정보 -->
+                    <!-- //승인자정보 -->
                 </div>
             </div>
-
+            
             <div class="yiyang-add-wrap">
                 <div class="yiyang-add-inner">
                     <div class="document-title black-color">
-                        분과위원 검토의견
+                        분과위 검토 의견
+                    </div>
+                    <div class="table_cont mt-16">
+                        <table class="table-body-only">
+                            <colgroup>                    
+                                <col width="">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        본회의 심의·의결 통합
+                                        <span class="dv-bar mg16"></span>
+                                        <span class="font-type16-500">
+                                            전체 <span class="total"><strong>1</strong>건</span>
+                                            <span class="dv-bar mg16"></span>
+                                            현행존치  <span class="total"><strong>0</strong>건</span>
+                                            <span class="dv-bar mg16"></span>
+                                            지방이양  <span class="total"><strong>1</strong>건</span>
+                                            <span class="dv-bar mg16"></span>
+                                            국가환원  <span class="total"><strong>0</strong>건</span>
+                                            <span class="dv-bar mg16"></span>
+                                            계속심의  <span class="total"><strong>0</strong>건</span>                                                                                                
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
                     </div>
                     <div class="table_cont mt-16">
                         <table class="table-body-only">
@@ -1402,31 +2211,31 @@
                             <tbody>
                                 <tr>    
                                     <th scope="row">
-                                        분과위 심의 의견
+                                        분과위 검토 의견
                                     </th>                    
                                     <td>
                                         <div class="flex-row justify-between">
                                             <div class="radio-box">
-                                                <label id="r01">
-                                                    <input type="radio" name="type1" value="type010" id="r01">
+                                                <label id="r09_01">
+                                                    <input type="radio" name="type09" value="type010" id="r09_01">
                                                     <span>현행 존치</span>
                                                 </label>
-                                                <label id="r02">
-                                                    <input type="radio" name="type1" value="type011" id="r02" checked="">
+                                                <label id="r09_02">
+                                                    <input type="radio" name="type09" value="type011" id="r09_02" checked="">
                                                     <span>지방이양</span>
                                                 </label>
-                                                <label id="r03">
-                                                    <input type="radio" name="type1" value="type010" id="r03">
+                                                <label id="r09_03">
+                                                    <input type="radio" name="type09" value="type010" id="r09_03">
                                                     <span>국가 환원</span>
                                                 </label>     
-                                                <label id="r04">
-                                                    <input type="radio" name="type1" value="type010" id="r04">
+                                                <label id="r09_04">
+                                                    <input type="radio" name="type09" value="type010" id="r09_04">
                                                     <span>계속 심의</span>
                                                 </label>                                                              
                                             </div> 
                                             <div class="label-info">
-                                                <span class="box-info type2">심의 2차</span>
-                                                2024.10.10
+                                                <span class="box-info type1">심의 2차</span>
+                                                2024.12.19
                                             </div>
                                         </div>
                                     </td>                                                 
@@ -1437,10 +2246,10 @@
                                             <div class="cate-tit">기관/부서명</div>
                                             <div class="form-element__wrap">                                
                                                 <span class="form-element__inner input-type">
-                                                    <input type="text" value="담당부서" class="input-type1-font14" placeholder="담당부서 입력하세요" title="담당부서 입력하세요" disabled="">
+                                                    <input type="text" value="행정안전부 / 자치분권지원과" class="input-type1-font14" placeholder="담당부서 입력하세요" title="담당부서 입력하세요" disabled="">
                                                 </span>
                                             </div>
-                                            <div class="cate-tit ml-10">담당자</div>
+                                            <div class="cate-tit ml-10">이름</div>
                                             <div class="form-element__wrap">                                
                                                 <span class="form-element__inner input-type">
                                                     <input type="text" value="홍**" class="input-type1-font14" placeholder="담당자 입력하세요" title="담당자 입력하세요" disabled="">
@@ -1449,13 +2258,13 @@
                                             <div class="cate-tit ml-10">부서번호</div>
                                             <div class="form-element__wrap">                                
                                                 <span class="form-element__inner input-type">
-                                                    <input type="text" value="2024-09-03" class="input-type1-font14" placeholder="부서번호를 입력하세요" title="부서번호" disabled="">
+                                                    <input type="text" value="043-000-0000" class="input-type1-font14" placeholder="부서번호를 입력하세요" title="부서번호" disabled="">
                                                 </span>
                                             </div>    
-                                            <div class="cate-tit ml-10">연락처</div>
+                                            <div class="cate-tit ml-10">승인일</div>
                                             <div class="form-element__wrap">                                
                                                 <span class="form-element__inner input-type">
-                                                    <input type="text" value="" class="input-type1-font14" placeholder="연락처 입력하세요" title="연락처 입력하세요" disabled="">
+                                                    <input type="text" value="2024.12.19" class="input-type1-font14" placeholder="승인일을 입력하세요" title="승인일을 입력하세요" disabled="">
                                                 </span>
                                             </div>                                                                                                                                                               
                                         </div> 
@@ -1466,7 +2275,7 @@
                                         제목 / 요약
                                     </th>                    
                                     <td>
-                                        총 12명 위원 : 현행존치 (6) 지방이양 (3) 국가환원 (0) 계속심의 (3)
+                                        경미한 사항은 정무적 판단과 지방사무의 특성에 부합할 가능성이 높아  지방이양 필요
                                     </td> 
                                 </tr>
                                 <tr>    
@@ -1475,112 +2284,23 @@
                                     </th>                    
                                     <td >
                                         <div class="text-content">
-                                        •경미한 사항 변경 시 국가지원(보조금) 사항에 대한 관리.감독 필요성 등 추가 논의가 필요하다고 판단됨에 따라 계속 심의로 결정함
-※ (국토부)국가지원이 포함된 경우 보조금사업의 교부결정 내용에 따라 합목적적으로 집행하도록 하기 위한 최소한의 통제수단으로 이양곤란
-※ (경기도) 신속한 사업 추신이 어려울 뿐만 아니라 경미한 사항의 변경 협의에 대한 법의 취지를 실리기 어려운 실정 </div>
-                                    </td> 
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div> 
-                    <div class="table_cont mt-16">
-                        <table class="table-body-only">
-                            <colgroup>                    
-                                <col width="160">
-                                <col>              
-                            </colgroup>
-                            <tbody>
-                                <tr>    
-                                    <th scope="row">
-                                        분과위 심의 의견
-                                    </th>                    
-                                    <td>
-                                        <div class="flex-row justify-between">
-                                            <div class="radio-box">
-                                                <label id="r01">
-                                                    <input type="radio" name="type1" value="type010" id="r01">
-                                                    <span>현행 존치</span>
-                                                </label>
-                                                <label id="r02">
-                                                    <input type="radio" name="type1" value="type011" id="r02" checked="">
-                                                    <span>지방이양</span>
-                                                </label>
-                                                <label id="r03">
-                                                    <input type="radio" name="type1" value="type010" id="r03">
-                                                    <span>국가 환원</span>
-                                                </label>     
-                                                <label id="r04">
-                                                    <input type="radio" name="type1" value="type010" id="r04">
-                                                    <span>계속 심의</span>
-                                                </label>                                                              
-                                            </div> 
-                                            <div class="label-info">
-                                                <span class="box-info type2">심의 2차</span>
-                                                2024.10.10
-                                            </div>
+                                            경미한 사항은 자의적으로 해설될 여지가 있어 중앙부처 사무로 볼수는 있으나 지방이양  필요성 관점에서 볼때 경미한 사항은 정무적 판단과 다양하게 해석될 여지가 있다는 점, 지역주민 삶의 질과 밀접한 사업으로 지방사무의 특성에 더 부합하다고 판단됨.
                                         </div>
-                                    </td>                                                 
-                                </tr>                                
-                                <tr> 
-                                    <td colspan="2">
-                                        <div class="td-inner-wrap">
-                                            <div class="cate-tit">기관/부서명</div>
-                                            <div class="form-element__wrap">                                
-                                                <span class="form-element__inner input-type">
-                                                    <input type="text" value="담당부서" class="input-type1-font14" placeholder="담당부서 입력하세요" title="담당부서 입력하세요" disabled="">
-                                                </span>
-                                            </div>
-                                            <div class="cate-tit ml-10">담당자</div>
-                                            <div class="form-element__wrap">                                
-                                                <span class="form-element__inner input-type">
-                                                    <input type="text" value="홍**" class="input-type1-font14" placeholder="담당자 입력하세요" title="담당자 입력하세요" disabled="">
-                                                </span>
-                                            </div>   
-                                            <div class="cate-tit ml-10">부서번호</div>
-                                            <div class="form-element__wrap">                                
-                                                <span class="form-element__inner input-type">
-                                                    <input type="text" value="2024-09-03" class="input-type1-font14" placeholder="부서번호를 입력하세요" title="부서번호" disabled="">
-                                                </span>
-                                            </div>    
-                                            <div class="cate-tit ml-10">연락처</div>
-                                            <div class="form-element__wrap">                                
-                                                <span class="form-element__inner input-type">
-                                                    <input type="text" value="" class="input-type1-font14" placeholder="연락처 입력하세요" title="연락처 입력하세요" disabled="">
-                                                </span>
-                                            </div>                                                                                                                                                               
-                                        </div> 
-                                    </td> 
-                                </tr> 
-                                <tr>    
-                                    <th scope="row">
-                                        제목 / 요약
-                                    </th>                    
-                                    <td>
-                                        총 12명 위원 : 현행존치 (6) 지방이양 (3) 국가환원 (0) 계속심의 (3)
-                                    </td> 
-                                </tr>
-                                <tr>    
-                                    <th scope="row">
-                                        심의 의견
-                                    </th>                    
-                                    <td >
-                                        <div class="text-content">
-                                        •경미한 사항 변경 시 국가지원(보조금) 사항에 대한 관리.감독 필요성 등 추가 논의가 필요하다고 판단됨에 따라 계속 심의로 결정함
-※ (국토부)국가지원이 포함된 경우 보조금사업의 교부결정 내용에 따라 합목적적으로 집행하도록 하기 위한 최소한의 통제수단으로 이양곤란
-※ (경기도) 신속한 사업 추신이 어려울 뿐만 아니라 경미한 사항의 변경 협의에 대한 법의 취지를 실리기 어려운 실정 </div>
                                     </td> 
                                 </tr>
                             </tbody>
                         </table>
-                    </div>                     
+                    </div>
+                    
+                    <!-- 승인자정보 -->
                     <div class="table_cont mt-64">
                         <table class="table-body-only">
                             <colgroup>                    
-                                <col width="160">
+                                <col>
                                 <col>
                                 <col width="160">
-                                <col>
-                                <col width="220">
+                                <col width="160">
+                                <col width="160">
                             </colgroup>
                             <thead>
                                 <tr>
@@ -1606,276 +2326,255 @@
                                     </th>  
                                     <th scope="col" class="text-c">
                                         부서번호
-                                    </th>   
+                                    </th>                                                                                                                                                      
                                     <th scope="col" class="text-c">
                                         날짜
-                                    </th>                                                                                                                                              
+                                    </th>                                                                                                                                                      
                                 </tr>       
                                 <tr>
                                     <td class="text-c">분과위 심의 완료</td>
                                     <td class="text-c">행정안전부 / 자치분권지원과</td>
                                     <td class="text-c">홍**</td>
                                     <td class="text-c">044-000-0000</td>
-                                    <td class="text-c">2024-09-03</td>
-                                </tr>                                   
+                                    <td class="text-c">2024.12.19</td>
+                                </tr>        
                                 <tr>
-                                    <td class="text-c">분과위 심의 완료</td>
+                                    <td class="text-c">분과위 심의 요청</td>
                                     <td class="text-c">행정안전부 / 자치분권지원과</td>
                                     <td class="text-c">홍**</td>
                                     <td class="text-c">044-000-0000</td>
-                                    <td class="text-c">2024-09-03</td>
-                                </tr>                                                                                                                                                                                                                                                         
+                                    <td class="text-c">2024.12.19</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
-                    <!-- //승인정보 --> 
-                </div>
-            </div>
-
-            <div class="yiyang-add-wrap">
-                <div class="yiyang-add-inner">
-                    <div class="document-title black-color">
-                        본회의원 검토의견
-                    </div>
-                    <div class="table_cont mt-16">
-                        <table class="table-body-only">
-                            <colgroup>                    
-                                <col width="160">
-                                <col>              
-                            </colgroup>
-                            <tbody>
-                                <tr>    
-                                    <th scope="row">
-                                        본회의원 검토의견
-                                    </th>                    
-                                    <td>
-                                        <div class="flex-row justify-between">
-                                            <div class="radio-box">
-                                                <label id="r01">
-                                                    <input type="radio" name="type1" value="type010" id="r01">
-                                                    <span>현행 존치</span>
-                                                </label>
-                                                <label id="r02">
-                                                    <input type="radio" name="type1" value="type011" id="r02" checked="">
-                                                    <span>지방이양</span>
-                                                </label>
-                                                <label id="r03">
-                                                    <input type="radio" name="type1" value="type010" id="r03">
-                                                    <span>국가 환원</span>
-                                                </label>     
-                                                <label id="r04">
-                                                    <input type="radio" name="type1" value="type010" id="r04">
-                                                    <span>계속 심의</span>
-                                                </label>                                                              
-                                            </div> 
-                                            <div class="label-info">
-                                                <span class="box-info type2">심의 2차</span>
-                                                2024.10.10
-                                            </div>
-                                        </div>
-                                    </td>                                                 
-                                </tr>                                
-                                <tr> 
-                                    <td colspan="2">
-                                        <div class="td-inner-wrap">
-                                            <div class="cate-tit">기관/부서명</div>
-                                            <div class="form-element__wrap">                                
-                                                <span class="form-element__inner input-type">
-                                                    <input type="text" value="담당부서" class="input-type1-font14" placeholder="담당부서 입력하세요" title="담당부서 입력하세요" disabled="">
-                                                </span>
-                                            </div>
-                                            <div class="cate-tit ml-10">담당자</div>
-                                            <div class="form-element__wrap">                                
-                                                <span class="form-element__inner input-type">
-                                                    <input type="text" value="홍**" class="input-type1-font14" placeholder="담당자 입력하세요" title="담당자 입력하세요" disabled="">
-                                                </span>
-                                            </div>   
-                                            <div class="cate-tit ml-10">부서번호</div>
-                                            <div class="form-element__wrap">                                
-                                                <span class="form-element__inner input-type">
-                                                    <input type="text" value="2024-09-03" class="input-type1-font14" placeholder="부서번호를 입력하세요" title="부서번호" disabled="">
-                                                </span>
-                                            </div>    
-                                            <div class="cate-tit ml-10">연락처</div>
-                                            <div class="form-element__wrap">                                
-                                                <span class="form-element__inner input-type">
-                                                    <input type="text" value="" class="input-type1-font14" placeholder="연락처 입력하세요" title="연락처 입력하세요" disabled="">
-                                                </span>
-                                            </div>                                                                                                                                                               
-                                        </div> 
-                                    </td> 
-                                </tr> 
-                                <tr>    
-                                    <th scope="row">
-                                        제목 / 요약
-                                    </th>                    
-                                    <td>
-                                        총 12명 위원 : 현행존치 (6) 지방이양 (3) 국가환원 (0) 계속심의 (3)
-                                    </td> 
-                                </tr>
-                                <tr>    
-                                    <th scope="row">
-                                        심의 의견
-                                    </th>                    
-                                    <td >
-                                        <div class="text-content">
-                                        •경미한 사항 변경 시 국가지원(보조금) 사항에 대한 관리.감독 필요성 등 추가 논의가 필요하다고 판단됨에 따라 계속 심의로 결정함
-※ (국토부)국가지원이 포함된 경우 보조금사업의 교부결정 내용에 따라 합목적적으로 집행하도록 하기 위한 최소한의 통제수단으로 이양곤란
-※ (경기도) 신속한 사업 추신이 어려울 뿐만 아니라 경미한 사항의 변경 협의에 대한 법의 취지를 실리기 어려운 실정 </div>
-                                    </td> 
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div> 
-                    <div class="table_cont mt-16">
-                        <table class="table-body-only">
-                            <colgroup>                    
-                                <col width="160">
-                                <col>              
-                            </colgroup>
-                            <tbody>
-                                <tr>    
-                                    <th scope="row">
-                                        본회의원 검토의견
-                                    </th>                    
-                                    <td>
-                                        <div class="flex-row justify-between">
-                                            <div class="radio-box">
-                                                <label id="r01">
-                                                    <input type="radio" name="type1" value="type010" id="r01">
-                                                    <span>현행 존치</span>
-                                                </label>
-                                                <label id="r02">
-                                                    <input type="radio" name="type1" value="type011" id="r02" checked="">
-                                                    <span>지방이양</span>
-                                                </label>
-                                                <label id="r03">
-                                                    <input type="radio" name="type1" value="type010" id="r03">
-                                                    <span>국가 환원</span>
-                                                </label>     
-                                                <label id="r04">
-                                                    <input type="radio" name="type1" value="type010" id="r04">
-                                                    <span>계속 심의</span>
-                                                </label>                                                              
-                                            </div> 
-                                            <div class="label-info">
-                                                <span class="box-info type2">심의 2차</span>
-                                                2024.10.10
-                                            </div>
-                                        </div>
-                                    </td>                                                 
-                                </tr>                                
-                                <tr> 
-                                    <td colspan="2">
-                                        <div class="td-inner-wrap">
-                                            <div class="cate-tit">기관/부서명</div>
-                                            <div class="form-element__wrap">                                
-                                                <span class="form-element__inner input-type">
-                                                    <input type="text" value="담당부서" class="input-type1-font14" placeholder="담당부서 입력하세요" title="담당부서 입력하세요" disabled="">
-                                                </span>
-                                            </div>
-                                            <div class="cate-tit ml-10">담당자</div>
-                                            <div class="form-element__wrap">                                
-                                                <span class="form-element__inner input-type">
-                                                    <input type="text" value="홍**" class="input-type1-font14" placeholder="담당자 입력하세요" title="담당자 입력하세요" disabled="">
-                                                </span>
-                                            </div>   
-                                            <div class="cate-tit ml-10">부서번호</div>
-                                            <div class="form-element__wrap">                                
-                                                <span class="form-element__inner input-type">
-                                                    <input type="text" value="2024-09-03" class="input-type1-font14" placeholder="부서번호를 입력하세요" title="부서번호" disabled="">
-                                                </span>
-                                            </div>    
-                                            <div class="cate-tit ml-10">연락처</div>
-                                            <div class="form-element__wrap">                                
-                                                <span class="form-element__inner input-type">
-                                                    <input type="text" value="" class="input-type1-font14" placeholder="연락처 입력하세요" title="연락처 입력하세요" disabled="">
-                                                </span>
-                                            </div>                                                                                                                                                               
-                                        </div> 
-                                    </td> 
-                                </tr> 
-                                <tr>    
-                                    <th scope="row">
-                                        제목 / 요약
-                                    </th>                    
-                                    <td>
-                                        총 12명 위원 : 현행존치 (6) 지방이양 (3) 국가환원 (0) 계속심의 (3)
-                                    </td> 
-                                </tr>
-                                <tr>    
-                                    <th scope="row">
-                                        심의 의견
-                                    </th>                    
-                                    <td >
-                                        <div class="text-content">
-                                        •경미한 사항 변경 시 국가지원(보조금) 사항에 대한 관리.감독 필요성 등 추가 논의가 필요하다고 판단됨에 따라 계속 심의로 결정함
-※ (국토부)국가지원이 포함된 경우 보조금사업의 교부결정 내용에 따라 합목적적으로 집행하도록 하기 위한 최소한의 통제수단으로 이양곤란
-※ (경기도) 신속한 사업 추신이 어려울 뿐만 아니라 경미한 사항의 변경 협의에 대한 법의 취지를 실리기 어려운 실정 </div>
-                                    </td> 
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>                     
-                    <div class="table_cont mt-64">
-                        <table class="table-body-only">
-                            <colgroup>                    
-                                <col width="160">
-                                <col>
-                                <col width="160">
-                                <col>
-                                <col width="220">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th colspan="5">
-                                        <div class="flex-row justify-between">
-                                            <div class="flex-row">                                                        
-                                                승인자 정보
-                                            </div> 
-                                        </div>                                          
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>    
-                                    <th scope="col" class="text-c">
-                                        승인구분
-                                    </th>                    
-                                    <th scope="col" class="text-c">
-                                        기관/부서명
-                                    </th>  
-                                    <th scope="col" class="text-c">
-                                        이름
-                                    </th>  
-                                    <th scope="col" class="text-c">
-                                        부서번호
-                                    </th>   
-                                    <th scope="col" class="text-c">
-                                        날짜
-                                    </th>                                                                                                                                              
-                                </tr>       
-                                <tr>
-                                    <td class="text-c">분과위 심의 완료</td>
-                                    <td class="text-c">행정안전부 / 자치분권지원과</td>
-                                    <td class="text-c">홍**</td>
-                                    <td class="text-c">044-000-0000</td>
-                                    <td class="text-c">2024-09-03</td>
-                                </tr>                                   
-                                <tr>
-                                    <td class="text-c">분과위 심의 완료</td>
-                                    <td class="text-c">행정안전부 / 자치분권지원과</td>
-                                    <td class="text-c">홍**</td>
-                                    <td class="text-c">044-000-0000</td>
-                                    <td class="text-c">2024-09-03</td>
-                                </tr>                                                                                                                                                                                                                                                         
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- //승인정보 --> 
+                    <!-- //승인자정보 -->
                 </div>
             </div>         
             
+            <div class="yiyang-add-wrap">
+                <div class="yiyang-add-inner">
+                    <div class="document-title black-color">
+                        본회의 의결 의견 통합
+                    </div>
+                    <div class="table_cont mt-16">
+                        <table class="table-body-only">
+                            <colgroup>                    
+                                <col width="">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        분과위 심의 의견 통합
+                                        <span class="dv-bar mg16"></span>
+                                        <span class="font-type16-500">
+                                            전체 <span class="total"><strong>1</strong>건</span>
+                                            <span class="dv-bar mg16"></span>
+                                            현행존치  <span class="total"><strong>0</strong>건</span>
+                                            <span class="dv-bar mg16"></span>
+                                            지방이양  <span class="total"><strong>1</strong>건</span>
+                                            <span class="dv-bar mg16"></span>
+                                            국가환원  <span class="total"><strong>0</strong>건</span>
+                                            <span class="dv-bar mg16"></span>
+                                            계속심의  <span class="total"><strong>0</strong>건</span>                                                                                                
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="table_cont mt-16">
+                        <table class="table-body-only">
+                            <colgroup>                    
+                                <col width="160">
+                                <col>              
+                            </colgroup>
+                            <tbody>
+                                <tr> 
+                                    <td colspan="2">
+                                        <div class="td-inner-wrap">
+                                            <div class="cate-tit">소속</div>
+                                            <div class="form-element__wrap">                                
+                                                <span class="form-element__inner input-type">
+                                                    <input type="text" value="행정안전부 / 자치분권지원과" class="input-type1-font14" placeholder="담당부서 입력하세요" title="담당부서 입력하세요" disabled="">
+                                                </span>
+                                            </div>
+                                            <div class="cate-tit ml-10">담당자</div>
+                                            <div class="form-element__wrap">                                
+                                                <span class="form-element__inner input-type">
+                                                    <input type="text" value="홍길동" class="input-type1-font14" placeholder="담당자 입력하세요" title="담당자 입력하세요" disabled="">
+                                                </span>
+                                            </div>   
+                                            <div class="cate-tit ml-10">연락처</div>
+                                            <div class="form-element__wrap">                                
+                                                <span class="form-element__inner input-type">
+                                                    <input type="text" value="044-111-1111" class="input-type1-font14" placeholder="연락처를 입력하세요" title="연락처를 입력하세요" disabled="">
+                                                </span>
+                                            </div>    
+                                            <div class="cate-tit ml-10">등록일</div>
+                                            <div class="form-element__wrap">                                
+                                                <span class="form-element__inner input-type">
+                                                    <input type="text" value="2024.12.19" class="input-type1-font14" placeholder="등록일을 입력하세요" title="등록일을 입력하세요" disabled="">
+                                                </span>
+                                            </div>                                                                                                                                                               
+                                        </div> 
+                                    </td> 
+                                </tr>
+                                <tr>               
+                                    <td colspan="2">
+                                        <div class="flex-row justify-between">
+                                            <div class="label-info">
+                                                <span class="box-info type1">심의 3차</span>
+                                                2024.10.10
+                                            </div>
+                                        </div>
+                                    </td> 
+                                </tr>
+                                <tr>    
+                                    <th scope="row">
+                                        본회의 의결 의견
+                                    </th>                    
+                                    <td>
+                                        <div class="flex-row justify-between">
+                                            <div class="radio-box">
+                                                <label id="r10_01">
+                                                    <input type="radio" name="type10" value="type010" id="r10_01">
+                                                    <span>현행 존치</span>
+                                                </label>
+                                                <label id="r10_02">
+                                                    <input type="radio" name="type10" value="type011" id="r10_02" checked>
+                                                    <span>지방이양</span>
+                                                </label>
+                                                <label id="r10_03">
+                                                    <input type="radio" name="type10" value="type010" id="r10_03">
+                                                    <span>국가 환원</span>
+                                                </label>     
+                                                <label id="r10_04">
+                                                    <input type="radio" name="type10" value="type010" id="r10_04">
+                                                    <span>계속 심의</span>
+                                                </label>                                                              
+                                            </div>
+                                        </div>
+                                    </td>                                                 
+                                </tr>
+                                <tr>    
+                                    <th scope="row">
+                                        제목 / 요약
+                                    </th>                    
+                                    <td>
+                                        <div class="form-element__wrap">                                  
+                                            <div class="input-multi">
+                                                <span class="form-element__inner input-type">
+                                                    <input type="text" value="경미한 사항은 정무적 판단과 지방사무의 특성에 부합할 가능성이 높아  지방이양 필요" class="input-type1-font14" maxlength="50" placeholder="내용을 입력하세요." title="내용을 입력하세요." disabled="">
+                                                </span>
+                                            </div>                                   
+                                        </div>
+                                    </td>     
+                                </tr>
+                                <tr>    
+                                    <th scope="row">
+                                        상세 내용
+                                    </th>                    
+                                    <td>
+                                        <div class="form-element__wrap">
+                                            <textarea name="" id="" disabled>경미한 사항은 자의적으로 해설될 여지가 있어 중앙부처 사무로 볼수는 있으나 지방이양  필요성 관점에서 볼때 경미한 사항은 정무적 판단과 다양하게 해석될 여지가 있다는 점, 지역주민 삶의 질과 밀접한 사업으로 지방사무의 특성에 더 부합하다고 판단됨.</textarea>
+                                        </div>
+                                    </td>     
+                                </tr>                                                                                                                                                                                                                                                      
+                                <tr>    
+                                    <th scope="row">
+                                        참조자료
+                                    </th>                    
+                                    <td>
+                                        <div class="upload-file-list">
+                                            <div class="button-area">
+                                                <button type="button" class="btn-dark-light">                                        
+                                                    선택 다운로드
+                                                </button>
+                                                <button type="button" class="btn-dark-light">                                        
+                                                    전체 다운로드
+                                                </button>                                    
+                                            </div>
+                                            <ul class="upload-file-list" style="max-width: 532px;">
+                                                <li>
+                                                    <label class="input_type check">
+                                                        <input type="checkbox" name="">
+                                                        <span class="txt">file.png (13MB)</span>
+                                                    </label>                                                                        
+                                                </li>
+                                                <li>
+                                                    <label class="input_type check">
+                                                        <input type="checkbox" name="">
+                                                        <span class="txt">file.png (13MB)</span>
+                                                    </label>                                                                        
+                                                </li>                                    
+                                            </ul>  
+                                        </div>                                            
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 승인자정보 -->
+                    <div class="table_cont mt-64">
+                        <table class="table-body-only">
+                            <colgroup>                    
+                                <col>
+                                <col>
+                                <col width="160">
+                                <col width="160">
+                                <col width="160">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="5">
+                                        <div class="flex-row justify-between">
+                                            <div class="flex-row">                                                        
+                                                승인자 정보
+                                            </div> 
+                                        </div>                                          
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>    
+                                    <th scope="col" class="text-c">
+                                        승인구분
+                                    </th>                    
+                                    <th scope="col" class="text-c">
+                                        기관/부서명
+                                    </th>  
+                                    <th scope="col" class="text-c">
+                                        이름
+                                    </th>  
+                                    <th scope="col" class="text-c">
+                                        부서번호
+                                    </th>                                                                                                                                                      
+                                    <th scope="col" class="text-c">
+                                        날짜
+                                    </th>                                                                                                                                                      
+                                </tr>       
+                                <tr>
+                                    <td class="text-c">본회의 의결 완료</td>
+                                    <td class="text-c">행정안전부 / 자치분권지원과</td>
+                                    <td class="text-c">홍**</td>
+                                    <td class="text-c">044-000-0000</td>
+                                    <td class="text-c">2024.12.19</td>
+                                </tr>        
+                                <tr>
+                                    <td class="text-c">본회의 의결 요청</td>
+                                    <td class="text-c">행정안전부 / 자치분권지원과</td>
+                                    <td class="text-c">홍**</td>
+                                    <td class="text-c">044-000-0000</td>
+                                    <td class="text-c">2024.12.19</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //승인자정보 -->
+                </div>
+            </div>
+
             <div class="yiyang-add-wrap">
                 <div class="yiyang-add-inner">
                     <div class="document-title black-color">
@@ -1895,8 +2594,8 @@
                             </thead>
                             <tbody>
                                 <tr>                        
-                                    <td class="inner-table">
-                                        <div class="inner-table-cont">
+                                    <td class="inner-table">                                        
+                                        <div class="inner-table-cont mt-16">
                                           <table>
                                               <colgroup>
                                                   <col width="50%">
@@ -1908,14 +2607,14 @@
                                                     <td class="tit">개정안</td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="2">문화유산의 보존 및 활용에 관한 법률 4장 국가지정문화유산 3절 보존·관리 및 활용 3조 허가사항</td>                                          
+                                                    <td colspan="2">제20조 (도시재생활성화계획의 확정 및 승인 등) 제5항</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-l vertical-t">
-                                                      ① 국가지정문화유산에 대하여 다음 각 호의 어느 하나에 해당하는 행위를 하려는 자는 대통령령으로 정하는 바에 따라 국가유산청장의 허가를 받아야 하며, 허가사항을 변경하려는 경우에도 국가유산청장의 허가를 받아야 한다. 다만, 국가지정문화유산 보호구역에 안내판 및 경고판을 설치하는 행위 등 대통령령으로 정하는 경미한 행위에 대해서는 특별자치시장, 특별자치도지사, 시장ㆍ군수 또는 구청장의 허가(변경허가를 포함한다)를 받아야 한다. <개정 2014. 1. 28., 2015. 3. 27., 2017. 11. 28., 2019. 11. 26., 2020. 12. 22., 2021. 5. 18., 2023. 3. 21., 2023. 8. 8., 2024. 2. 13.>                                          
+                                                        ⑤ 제1항부터 제4항까지의 규정에도 불구하고 대통령령으로 정하는 경미한 사항을 변경하는 경우에는 관계 행정기관 장과의 협의, 지방위원회 심의, 공청회, 지방의회의 의견청취 절차 및 특별위원회의 심의를 거치지 아니할 수 있다.
                                                     </td>
                                                     <td class="text-l vertical-t">
-                                                      국가지정문화유산에 대하여 다음 각 호의 어느 하나에 해당하는 행위를 하려는 자는 대통령령으로 정하는 바에 따라 국가유산청장의 허가를 받아야 하며, 허가사항을 변경하려는 경우에도 국가유산청장의 허가를 받아야 한다.
+                                                        ⑤ 제1항부터 제4항까지의 규정에도 불구하고 대통령령으로 정하는 경미한 사항을 변경하는 경우에는 관계 행정기관 장과의 협의, 지방위원회 심의, 공청회, 지방의회의 의견청취 절차, 국토교통부장관의 결정 및 특별위원회의 심의를 거치지 아니할 수 있다.
                                                     </td>
                                                 </tr>
                                               </tbody>
@@ -1938,12 +2637,18 @@
                                         의결서
                                     </th>                  
                                     <td>                                                     
-                                        <a href="#"><span class="org-color">수중레저활동등의 안정 및 활성화 과제 의결서.hwpx</span></a>
+                                        <a href="#"><span class="org-color">의결서_도시재생사업 경미한 사항 변경 권한.hwpx</span></a>
                                     </td>                        
                                 </tr>                                                                                                                                                                                
                             </tbody>
                         </table>
-                    </div>  
+                        <!-- 버튼 -->
+            <div class="button__wrap flex-end mt-64">
+                <a href="PC_5이양사무_8이양완료_1목록.html" class="btn-gray-default">
+                    <i class="ico-list"></i> 목록
+                </a>
+              </div>  
+                    </div>
 
                 </div>
             </div>

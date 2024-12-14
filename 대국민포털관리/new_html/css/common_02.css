@@ -3867,6 +3867,12 @@ td:has(.text-type) {
     .form-element-rows.datepicker-cell {
 
     }
+    .mo-responesive {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        overflow: auto;
+    }
 }
 
 .law-name {

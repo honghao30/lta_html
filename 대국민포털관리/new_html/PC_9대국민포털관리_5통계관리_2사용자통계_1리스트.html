@@ -475,11 +475,18 @@
             <li><a href="#none">사용자통계</a></li>
           </ul>
         </div>
+        <div class="tabmenu-link-wrap">                    
+          <a href="#">접속통계</a>
+          <a href="#" class="is-active">사용자통계</a>
+          <a href="#">메뉴이용통계</a>
+          <a href="#">게시판이용통계</a>
+          <a href="#">팝업/배너통계</a>         
+        </div>  
         <h2 class="title">사용자통계</h2>
         <div class="search_cont pc-flex">
           <span class="search_box">
             <span class="input_cont multi-el">
-                <div class="tit first-item">발생일자</div>
+                <div class="tit first-item">조회기간</div>
                 <div class="form-element__wrap" style="width: 168px">                                  
                     <div class="input-multi">
                       <span class="form-element__inner input-type picker-input">
@@ -604,25 +611,6 @@
     </div>
     <div class="content_wrap chart-page">
       <div class="inner">
-        <div class="chart-wrap pc-flex">
-            <div class="chart-title">
-                <div class="switch_wrap switch-type1">
-                    <label><span>통계보기</span></label>
-                    <input type="checkbox">
-                </div>
-            </div>
-            <div class="chart-area">
-
-            </div>
-        </div>
-        <!-- // 챠트영역 -->
-        <script>
-            const toggleButton = document.querySelector('.switch-type1 input[type="checkbox"]');
-            
-            toggleButton.addEventListener('change', function() {
-                document.querySelector('.chart-area').classList.toggle('is-active');
-            });
-        </script>
         
 
         <div class="top_info_box pc">
